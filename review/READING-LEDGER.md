@@ -56,6 +56,12 @@ or evidence of exhaustive whole-ecosystem reading.
   separately evidenced; full release
   qualification and a human comprehension trial remain open.
 
+The final bounded Opus closure covers the 27-document snapshot published at
+`5bc22b3d9084c6fb293404ec636ebb7c8d2610ad`. The
+[continuity protocol](VERIFICATION-AND-CONTINUITY.md) records this initial Git
+identity and how later edits are distinguished. This closes the initial
+publication-identity gap, not the remaining reading or release obligations.
+
 No source is marked read merely because a keyword search found a passage.
 Unresolved requirements remain open even when they have been documented here.
 

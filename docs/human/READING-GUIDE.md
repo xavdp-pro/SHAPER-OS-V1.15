@@ -1,5 +1,9 @@
 # Human reading guide — five depths
 
+Status: **EDITORIAL** reading guidance; concept explanations and fictional
+examples are **EXPLANATION**. These routes confer no authority and do not
+complete the still-open successor-law reconciliation.
+
 The five depths preserve V1.14's existing human route. They describe what a
 reader wants to understand, not their value, rank or permissions. A person may
 move between them. Begin with the [board's orientation](../CONTEXT-INDEX.md),

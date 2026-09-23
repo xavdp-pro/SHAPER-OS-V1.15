@@ -5,6 +5,8 @@ Not a complete review of inherited law, all ecosystem sources or deployed system
 Historical snapshot: the original 22-file state, before the independent Opus
 review and [subsequent corrections](OPUS-CORRECTIONS-2026-09-23.md). Counts and
 “no second reviewer” statements below describe that earlier pass only.
+The candidate was subsequently reviewed independently and published; see the
+[publication checkpoint](VERIFICATION-AND-CONTINUITY.md) for its Git identity.
 
 ## Pass 1 — Meaning and governance
 
@@ -63,6 +65,8 @@ No second reviewer was used. The reading organization is populated and usable;
 the whole V1.15 remains in preparation. Follow the
 [ledger](READING-LEDGER.md) and [source map](SOURCE-MAP.md).
 
-The candidate is local, not yet initialized as a Git repository, committed or
-published. Existing V1.14 and three-layer working copies remain unchanged by this
-organization pass. No production behavior has been altered.
+At this original 22-file checkpoint, the candidate was local and had not yet
+been initialized, committed or published. That historical state was superseded
+by the published checkpoint recorded in the continuity protocol. Existing V1.14
+and three-layer working copies were unchanged by this organization pass.
+No production behavior was altered.

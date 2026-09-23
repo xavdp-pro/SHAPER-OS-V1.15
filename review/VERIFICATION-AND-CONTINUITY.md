@@ -2,9 +2,25 @@
 
 Status: editorial procedure for this candidate; no runtime qualification.
 
-## Snapshot identity before Git publication
+## Published candidate checkpoint
 
-Until the candidate has a committed revision, identify a checkpoint by a sorted
+On 23 September 2026 the documentation candidate was published publicly at
+[xavdp-pro/SHAPER-OS-V1.15](https://github.com/xavdp-pro/SHAPER-OS-V1.15).
+The initial published commit on `main` is
+[`5bc22b3d9084c6fb293404ec636ebb7c8d2610ad`](https://github.com/xavdp-pro/SHAPER-OS-V1.15/commit/5bc22b3d9084c6fb293404ec636ebb7c8d2610ad).
+It contains the 27-document snapshot checked by the final Opus closure review.
+Local HEAD and remote main were verified equal at publication. This is a dated
+checkpoint, not a claim that a moving branch or later local edits remain equal.
+Public availability does not finish the law crosswalk or adopt successor law.
+
+For subsequent work, record the actual full commit ID, branch and clean/dirty
+state. Identify unpublished edits by a content manifest relative to their base
+commit. Check remote refs before claiming a push is synchronized. A new commit
+does not inherit an earlier review's coverage for changed text.
+
+## Content identity before and after publication
+
+Before the initial commit, or for uncommitted changes, identify a checkpoint by a sorted
 manifest of every relative file path and its SHA-256 content digest. Store the
 manifest outside SHAPER OS to avoid self-hashing recursion. Name the checkpoint
 and hash the manifest itself; retain the exact bytes used. A date alone is not a
@@ -46,6 +62,13 @@ files, chapter prerequisites and pedagogy, provenance labels, profile/corpus
 navigation and scenario rubric coverage. It never fetches external content,
 reads secrets or mutates the candidate. A different machine may place it elsewhere;
 verify its recorded digest and supply the candidate root as its argument.
+
+For a Git checkout, run the v2 checker on an external document-only snapshot:
+exclude Git administration metadata, but inventory all actual candidate content
+so untracked files are not silently omitted. Preserve relative paths and content
+digests, and verify that the snapshot matches the intended worktree or commit.
+Git metadata is not implementation content; do not feed `.git` to this checker.
+Record the snapshot location and whether it represents committed or dirty state.
 
 If the referenced checker cannot be retrieved, mark its replay unavailable.
 A new checker may be written **outside** SHAPER OS against these declared checks,
