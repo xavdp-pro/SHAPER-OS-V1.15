@@ -24,6 +24,9 @@ conflicting storage or isolation mechanism. No alternate profile is adopted here
 A “future profile” means a separately proposed, explicitly approved construction
 model with a documented mapping of all affected obligations and new qualification.
 It is not a choice an implementation agent may infer from the word agnostic.
+For new work under the current construction model, the owner has answered the
+applicability question: see the
+[24 September functional-unit MariaDB decision](../../decisions/2026-09-24-FUNCTIONAL-UNIT-MARIADB.md).
 The exact generalization of this target into successor law remains F-02/F-05.
 See [interim authority](../GOVERNING-CORPUS.md) for existing operational versions.
 

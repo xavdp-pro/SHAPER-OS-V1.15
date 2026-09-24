@@ -14,7 +14,10 @@ copy of the law and not a deployment-status database.
 2. [Current decision](../decisions/2026-09-23-AGNOSTIC-NO-CODE.md): what the human
    has explicitly requested for the successor. The later
    [reference bridge decision](../decisions/2026-09-24-REFERENCE-OPENCODE-BRIDGE.md)
-   selects OpenCode for the proposed reference composition.
+   selects OpenCode for the proposed reference composition. The
+   [functional-unit MariaDB decision](../decisions/2026-09-24-FUNCTIONAL-UNIT-MARIADB.md)
+   states that every next unit under the current model owns a private MariaDB,
+   with existing SQLite prototypes kept as separate, declared debt.
 3. [Reading contract](READING-CONTRACT.md): document authority, comprehension
    and continuity after context loss.
 4. [Glossary](GLOSSARY.md): first meanings, then the
