@@ -34,21 +34,41 @@ universes, not a live container copied with its identity and data.
    container with its own private MariaDB and scoped identity. Cognition Bridge
    is optional only when the declared work requires it. Another profile needs
    explicit approval and a mapped set of obligations; it is not inferred here.
+   Several agents may independently produce candidate references from the same
+   fixed brief, governing revision and acceptance criteria. Give each candidate
+   a separate workspace and artifact identity; do not let one candidate silently
+   inherit another's implementation or test result.
 4. **Configure and test the composition.** Check bootstrap order and identity
    continuity, unit readiness, authorized exchanges, persistence, duplicate and
    retry behavior, degraded operation, evidence of real effects, backup and
    proven restoration. Record observed results and failures against the
    contracts. Resolve gaps before calling the reference qualified.
-5. **Freeze a reproducible reference.** Record immutable image digests *and* the
+5. **Compare candidates before selection.** Apply the same tests and resource
+   limits to every candidate. First reject any candidate that misses a binding
+   requirement, data/identity boundary, restoration proof or observable effect.
+   Then compare correctness, recovery, clarity of composition, reproducibility,
+   security, operating cost and measured performance. Keep test inputs, results,
+   defects, agent attribution and evaluator decision in the record. More than
+   one candidate may pass; select by the declared trade-offs, not by an agent's
+   own claim or a single aggregate score.
+6. **Freeze a reproducible reference.** Record immutable image digests *and* the
    versioned composition, configuration schema, migrations, qualification
    evidence and provenance. An image alone cannot contain the proof of external
    databases or the contract of a multi-unit universe. Publish a reference
    identifier only after the required checks pass.
-6. **Derive a new universe safely.** Instantiate from the qualified reference
+7. **Derive a new universe safely.** Instantiate from the qualified reference
    with fresh universe identity, scoped credentials, empty or explicitly migrated
    state, and its own persistent volumes/databases. Never clone Vault's secret
    identity or another universe's live business history. Recheck target-specific
    integrations and prove the derived universe's own operation before promotion.
+8. **Rebuild when the reference changes.** A change to the governing rules,
+   functional-unit structure, dependencies, storage, bootstrap, identity model
+   or intended behavior triggers an impact review. If it affects the qualified
+   composition, create new isolated candidates from the new fixed brief, rerun
+   the comparison and qualification, and publish a new immutable reference
+   identifier. Never mutate the old reference in place or silently relabel it
+   compliant. Existing derived universes need a separate migration and
+   requalification decision; a new base does not upgrade them automatically.
 
 ## Decision gates
 
