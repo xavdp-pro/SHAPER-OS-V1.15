@@ -1,6 +1,6 @@
 # Reading and reconciliation ledger
 
-Date: 23 September 2026. Overall state: **OPEN**. This candidate is a real
+Date: 24 September 2026. Overall state: **OPEN**. This candidate is a real
 documentation candidate with a populated reading path, not a completed V1.15
 or evidence of exhaustive whole-ecosystem reading.
 
@@ -62,6 +62,23 @@ The final bounded Opus closure covers the 27-document snapshot published at
 identity and how later edits are distinguished. This closes the initial
 publication-identity gap, not the remaining reading or release obligations.
 
+## Changes after the reviewed snapshot
+
+On 23 September, after that snapshot, the human guide and review records were
+reconciled with the publication status. On 24 September the candidate gained two
+scoped operator decisions, the
+[reference bridge](../decisions/2026-09-24-REFERENCE-OPENCODE-BRIDGE.md) and the
+[functional-unit MariaDB](../decisions/2026-09-24-FUNCTIONAL-UNIT-MARIADB.md),
+and the [Reference Universe Procedure](../docs/procedures/01-REFERENCE-UNIVERSE.md);
+the board, README, chapter 4 and September profile link them, and the
+[governing-corpus](../docs/GOVERNING-CORPUS.md) study set and agent entrance now
+list them. None of these post-closure edits has been independently reviewed;
+the Opus closure covers only `5bc22b3`.
+
+The V1.14 rules the MariaDB decision cites, Rules 4 and 26, exist under those
+titles at the fixed comparison reference `958e0b7`. That check located their
+headings; it is not the full RULES reading that F-02 requires.
+
 No source is marked read merely because a keyword search found a passage.
 Unresolved requirements remain open even when they have been documented here.
 
@@ -69,4 +86,4 @@ See the [source map](SOURCE-MAP.md) for lineage and
 [reading-structure review](READING-STRUCTURE-REVIEW.md) for the bounded checks.
 Use [interim authority](../docs/GOVERNING-CORPUS.md) rather than guessing what
 “adopted foundation” means. Follow [continuity](VERIFICATION-AND-CONTINUITY.md)
-for external reading records and digest snapshots until Git publication.
+for external reading records and for digest snapshots of uncommitted edits.

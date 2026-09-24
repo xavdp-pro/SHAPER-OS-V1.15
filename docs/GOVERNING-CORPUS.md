@@ -25,6 +25,15 @@ The six learning chapters, glossary, profile preservation note and worked exampl
 are explanatory or target-design documents with the status stated in each.
 They are mandatory study material for the principal agent, not new runtime laws.
 
+Later dated operator decisions record further scoped directions: the
+[reference bridge decision](../decisions/2026-09-24-REFERENCE-OPENCODE-BRIDGE.md)
+and the [functional-unit MariaDB decision](../decisions/2026-09-24-FUNCTIONAL-UNIT-MARIADB.md).
+Each applies within the scope it states and, like the original direction,
+controls conflicting editorial text within that scope. They do not enlarge the
+editorial foundation above, seal successor law or certify a built artifact. The
+[Reference Universe Procedure](procedures/01-REFERENCE-UNIVERSE.md) is a
+proposed editorial procedure that records those directions.
+
 ## What governs operational work in the meantime?
 
 V1.15 is not a replacement for V1.14 yet. Existing realizations retain their
@@ -59,15 +68,19 @@ required coverage, not a second reading order. Enter through the board and follo
 its navigation, including prerequisites and the common learning sequence:
 
 1. The five editorial-foundation documents listed above.
-2. [Board](CONTEXT-INDEX.md), [glossary](GLOSSARY.md) and
+2. The later scoped decisions listed above, the
+   [reference bridge](../decisions/2026-09-24-REFERENCE-OPENCODE-BRIDGE.md) and the
+   [functional-unit MariaDB](../decisions/2026-09-24-FUNCTIONAL-UNIT-MARIADB.md),
+   and the [Reference Universe Procedure](procedures/01-REFERENCE-UNIVERSE.md).
+3. [Board](CONTEXT-INDEX.md), [glossary](GLOSSARY.md) and
    [artifact vocabulary](architecture/VOCABULARY-BOUNDARY.md).
-3. All six numbered learning chapters linked by the board, in order.
-4. [September target profile](profiles/SEPTEMBER-CONTAINER-MARIADB.md).
-5. [Human guide](human/READING-GUIDE.md), [self-checks](human/METACOGNITION.md),
+4. All six numbered learning chapters linked by the board, in order.
+5. [September target profile](profiles/SEPTEMBER-CONTAINER-MARIADB.md).
+6. [Human guide](human/READING-GUIDE.md), [self-checks](human/METACOGNITION.md),
    [medium route](agent/MEDIUM.md) and [strong route](agent/STRONG.md).
-6. [Scenario checks](examples/COMPREHENSION-CHECKS.md) and
+7. [Scenario checks](examples/COMPREHENSION-CHECKS.md) and
    [worked answers](examples/WORKED-ANSWERS.md).
-7. [Source map](../review/SOURCE-MAP.md), [ledger](../review/READING-LEDGER.md),
+8. [Source map](../review/SOURCE-MAP.md), [ledger](../review/READING-LEDGER.md),
    [continuity protocol](../review/VERIFICATION-AND-CONTINUITY.md) and the
    [correction record](../review/OPUS-CORRECTIONS-2026-09-23.md).
 

@@ -100,6 +100,19 @@ bootstrap continuity, private MariaDB per unit and reconstruction proof. They
 explicitly remain target design, not canon changes or implementation. Individual
 unit target files remain unread; this overview is not a substitute for them.
 
+## S08 — Scoped operator directions, 24 September 2026
+
+Two human–agent conversations on 24 September gave scoped directions, each
+restated in English in its own record with its provenance and scope: the
+[reference bridge decision](../decisions/2026-09-24-REFERENCE-OPENCODE-BRIDGE.md)
+selects the OpenCode Cognition Bridge by default in the reference composition,
+and the [functional-unit MariaDB decision](../decisions/2026-09-24-FUNCTIONAL-UNIT-MARIADB.md)
+answers the September profile's applicability question for new work under the
+current construction model. Neither seals successor law or certifies a built
+image or universe. The profile and chapter 4 label the reference choice
+**[MANDATE: 24 September reference choice]**; the profile's applicability
+section links the MariaDB decision.
+
 ## Still open
 
 The independent Claude Opus 5.5 review of the previous 22-file candidate is advice,

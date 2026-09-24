@@ -1,8 +1,9 @@
 # Agent entrance
 
 Read [the board](docs/CONTEXT-INDEX.md), then the
-[governing corpus](docs/GOVERNING-CORPUS.md), [intent](INTENT.md) and
-[decision](decisions/2026-09-23-AGNOSTIC-NO-CODE.md). This documentation candidate
+[governing corpus](docs/GOVERNING-CORPUS.md), [intent](INTENT.md), the
+[23 September decision](decisions/2026-09-23-AGNOSTIC-NO-CODE.md) and the later
+scoped decisions the governing corpus lists. This documentation candidate
 does not replace existing operational law. Its gaps grant no new permission.
 
 Dialogue with the operator is French. Technical repository content is English.
