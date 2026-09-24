@@ -15,15 +15,18 @@ working and tested against the applicable contracts. Its versioned composition
 is the reusable starting point that a project deploys before adding its own
 functions. A base image alone does not include external state or qualification
 evidence; a running container is not copied with its identity and live data.
-The reference itself contains the base functional units only: no runtime AI
-agent, Cognition Bridge or project-specific business function.
+The selected reference contains the four foundational units and the OpenCode
+Cognition Bridge by default, as directed in the
+[24 September decision](../../decisions/2026-09-24-REFERENCE-OPENCODE-BRIDGE.md).
+It does not contain a project-specific business agent or function.
 
 The goal is to start each project quickly from a dependable, reproducible base
 instead of rebuilding or inheriting an obsolete one. As construction agents
 improve, it is desirable to revisit this base periodically—for example after
 three or six months—by asking current agents to rebuild it, rerun the tests and
-recheck the applicable contracts. The comparison is against the qualified reference and
-observed results, not an assumption that a newer agent is automatically better.
+recheck the applicable contracts. The comparison is against the qualified
+reference and observed results, not an assumption that a newer agent is
+automatically better.
 Adopt a replacement only when it preserves existing commitments and passes its
 own qualification; keep the previous reference identifiable for recovery.
 
@@ -44,15 +47,17 @@ own qualification; keep the previous reference identifiable for recovery.
    permissions and startup/recovery contracts. Under the preserved
    [September container/MariaDB profile](../profiles/SEPTEMBER-CONTAINER-MARIADB.md),
    that means Vault, Logger, Queue and Maestro, each in its own runtime
-   container with its own private MariaDB and scoped identity. No agent or
-   Cognition Bridge is installed in this reference. A derived project may later
-   add them under its own declared contracts. Another profile needs
+   container with its own private MariaDB and scoped identity. Add the OpenCode
+   Cognition Bridge as the default fifth unit under the same isolation contract.
+   A derived project may later add its business agents. Another profile needs
    explicit approval and a mapped set of obligations; it is not inferred here.
 4. **Configure and test the composition.** Check bootstrap order and identity
    continuity, unit readiness, authorized exchanges, persistence, duplicate and
    retry behavior, degraded operation, evidence of real effects, backup and
-   proven restoration. Record observed results and failures against the
-   contracts. Resolve gaps before calling the reference qualified.
+   proven restoration. Qualify the installed bridge's declared behavior without
+   treating it as a grant of authority to run arbitrary jobs. Record observed
+   results and failures against the contracts. Resolve gaps before calling the
+   reference qualified.
 5. **Freeze a reproducible reference.** Record immutable image digests *and* the
    versioned composition, configuration schema, migrations, qualification
    evidence and provenance. An image alone cannot contain the proof of external

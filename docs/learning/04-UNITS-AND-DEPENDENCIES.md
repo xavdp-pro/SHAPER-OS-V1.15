@@ -49,6 +49,11 @@ optional when a declared job needs cognition; base units do not depend on it.
 It is not the general inter-universe data gateway. A door in the Protection
 Framework defines those exchanges.
 
+**[MANDATE: 24 September reference choice]** The selected
+[reference-universe composition](../procedures/01-REFERENCE-UNIVERSE.md)
+includes an OpenCode bridge by default. It adds a fifth unit to that reference,
+without making the four base responsibilities depend on cognition.
+
 Maestro submits to Queue; Queue's consumer performs the effect; state-owning
 units preserve evidence for Logger. Vault supplies scoped runtime identities.
 These sentences describe distinct exchanges, not a single total startup order.

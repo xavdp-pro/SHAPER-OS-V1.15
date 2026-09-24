@@ -41,6 +41,15 @@ bounded cognition jobs. No base unit depends on that adapter. Maestro remains
 idle when no schedule is declared. This is a property of **this target**, not a
 claim that every imaginable implementation must contain these four products.
 
+**[MANDATE: 24 September reference choice]** The
+[operator decision](../../decisions/2026-09-24-REFERENCE-OPENCODE-BRIDGE.md)
+and [Reference Universe Procedure](../procedures/01-REFERENCE-UNIVERSE.md) now
+select the OpenCode Cognition Bridge by default as a fifth unit in that
+reference composition. The four base responsibilities above remain independent
+of the bridge; an installed bridge may remain idle until authorized work is
+declared. This scoped choice does not turn OpenCode into a universal
+technology law or assert that a new reference has already been built.
+
 Each unit preserves a durable evidence outbox together with its state transition.
 Logger's receipt, Queue's responsibility and the consumer's real effect have
 different meanings. No cross-database atomic transaction is assumed. Active
