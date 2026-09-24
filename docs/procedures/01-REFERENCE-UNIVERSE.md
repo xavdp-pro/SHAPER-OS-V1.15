@@ -1,4 +1,6 @@
-# Procedure 01 — Deploy a tested generic base
+# Reference Universe Procedure
+
+Identifier: **Procedure 01**.
 
 Status: **[EDITORIAL]** proposed construction procedure for this V1.15
 documentation candidate. It records the operator's 24 September direction; it
@@ -13,12 +15,14 @@ working and tested against the applicable contracts. Its versioned composition
 is the reusable starting point that a project deploys before adding its own
 functions. A base image alone does not include external state or qualification
 evidence; a running container is not copied with its identity and live data.
+The reference itself contains the base functional units only: no runtime AI
+agent, Cognition Bridge or project-specific business function.
 
 The goal is to start each project quickly from a dependable, reproducible base
-instead of rebuilding or inheriting an obsolete one. As agents improve, it is
-desirable to revisit this base periodically—for example after three or six
-months—by asking current agents to rebuild it, rerun the tests and recheck the
-applicable contracts. The comparison is against the qualified reference and
+instead of rebuilding or inheriting an obsolete one. As construction agents
+improve, it is desirable to revisit this base periodically—for example after
+three or six months—by asking current agents to rebuild it, rerun the tests and
+recheck the applicable contracts. The comparison is against the qualified reference and
 observed results, not an assumption that a newer agent is automatically better.
 Adopt a replacement only when it preserves existing commitments and passes its
 own qualification; keep the previous reference identifiable for recovery.
@@ -40,8 +44,9 @@ own qualification; keep the previous reference identifiable for recovery.
    permissions and startup/recovery contracts. Under the preserved
    [September container/MariaDB profile](../profiles/SEPTEMBER-CONTAINER-MARIADB.md),
    that means Vault, Logger, Queue and Maestro, each in its own runtime
-   container with its own private MariaDB and scoped identity. Cognition Bridge
-   is optional only when the declared work requires it. Another profile needs
+   container with its own private MariaDB and scoped identity. No agent or
+   Cognition Bridge is installed in this reference. A derived project may later
+   add them under its own declared contracts. Another profile needs
    explicit approval and a mapped set of obligations; it is not inferred here.
 4. **Configure and test the composition.** Check bootstrap order and identity
    continuity, unit readiness, authorized exchanges, persistence, duplicate and
