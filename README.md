@@ -23,6 +23,7 @@ are unfinished. It is not a sealed release or a deployable runtime.
 - Meaning of package, brick and functional unit: [vocabulary boundary](docs/architecture/VOCABULARY-BOUNDARY.md).
 - What has actually been read: [reading and reconciliation ledger](review/READING-LEDGER.md).
 - Current operator direction: [23 September decision](decisions/2026-09-23-AGNOSTIC-NO-CODE.md).
+- Proposed construction sequence: [qualified reference universe](docs/procedures/01-REFERENCE-UNIVERSE.md).
 
 The shared learning path moves from intention and authority to layers/scopes,
 the three frameworks, functional units/dependencies, concrete materialization,

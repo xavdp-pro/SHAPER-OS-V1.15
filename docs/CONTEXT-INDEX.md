@@ -65,7 +65,9 @@ contracts that are still being reconciled.
 - A dependency or receipt question: [units](learning/04-UNITS-AND-DEPENDENCIES.md).
 - A concrete technology or deployment question:
   [materialization](learning/05-MATERIALIZATION.md), then the external realization's
-  own contract. This OS repository contains no executable runbook.
+  own contract. For a new universe, use the proposed
+  [reference-universe procedure](procedures/01-REFERENCE-UNIVERSE.md).
+  This OS repository contains no executable runbook.
 - A disagreement, missing observation or recurring failure:
   [self-checks](human/METACOGNITION.md) and [evidence](learning/06-EVIDENCE-RECOVERY-LEARNING.md).
 - A provenance or completeness question: [source map](../review/SOURCE-MAP.md)
