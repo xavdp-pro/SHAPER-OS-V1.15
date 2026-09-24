@@ -14,6 +14,15 @@ is the reusable starting point that a project deploys before adding its own
 functions. A base image alone does not include external state or qualification
 evidence; a running container is not copied with its identity and live data.
 
+The goal is to start each project quickly from a dependable, reproducible base
+instead of rebuilding or inheriting an obsolete one. As agents improve, it is
+desirable to revisit this base periodically—for example after three or six
+months—by asking current agents to rebuild it, rerun the tests and recheck the
+applicable contracts. The comparison is against the qualified reference and
+observed results, not an assumption that a newer agent is automatically better.
+Adopt a replacement only when it preserves existing commitments and passes its
+own qualification; keep the previous reference identifiable for recovery.
+
 ## Sequence
 
 1. **Resolve the governing target.** Record the requested realization, operator
