@@ -66,6 +66,8 @@ contracts that are still being reconciled.
 - A concrete technology or deployment question:
   [materialization](learning/05-MATERIALIZATION.md), then the external realization's
   own contract. This OS repository contains no executable runbook.
+- An optional **Meta Muse cognition bridge** (headless CLI adapter):
+  [realization intent](intents/cognition-bridge-meta-muse.md) — code lives outside OS.
 - A disagreement, missing observation or recurring failure:
   [self-checks](human/METACOGNITION.md) and [evidence](learning/06-EVIDENCE-RECOVERY-LEARNING.md).
 - A provenance or completeness question: [source map](../review/SOURCE-MAP.md)

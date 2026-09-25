@@ -26,6 +26,11 @@ or evidence of exhaustive whole-ecosystem reading.
 - WikiTal and WikiSHAPER: source inventories inspected; content review pending.
 - PodMesh: board context only; current contracts and evidence review pending.
 
+## Recent additions (documentation only)
+
+- Meta Muse cognition-bridge **realization intent** added under `docs/intents/`
+  (2026-09-25): declarative contract; no executable code in V1.15.
+
 ## Required successor work
 
 - F-01: complete source reading and preserve user/proposal/decision distinctions.

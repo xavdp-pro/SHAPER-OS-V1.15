@@ -37,7 +37,8 @@ database; administration uses a separate authorized path.
 
 In each minimal universe composition, Vault, Logger, Queue and Maestro are the
 four mandatory base units. Cognition Bridge is optional when a class declares
-bounded cognition jobs. No base unit depends on that adapter. Maestro remains
+bounded cognition jobs (see [Meta Muse bridge intent](../intents/cognition-bridge-meta-muse.md)
+as one external realization example). No base unit depends on that adapter. Maestro remains
 idle when no schedule is declared. This is a property of **this target**, not a
 claim that every imaginable implementation must contain these four products.
 
