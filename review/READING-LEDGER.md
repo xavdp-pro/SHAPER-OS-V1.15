@@ -17,9 +17,6 @@ or evidence of exhaustive whole-ecosystem reading.
   `abf8f191890e5efd75de59c612980e7af8299e11`; all three layer masters were read
   completely at local `f2710e75690a68f2dc68135f4555444032b59730`. Later changes
   and all detailed layer guides are not yet fully read.
-- P3 GPT dialogues 01–18: read completely from the exported text. References
-  to missing attachments do not establish attachment coverage.
-- P2 GPT 19: read completely; an edited synthesis, not a verbatim transcript.
 - 22 September frames/functional-unit design decision, interdependence overview
   and canonical reconciliation note: read. Individual unit contracts still unread.
 - Public site homepage: retrieved; deeper pages and editorial sources unread.

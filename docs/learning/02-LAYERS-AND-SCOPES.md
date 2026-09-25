@@ -20,7 +20,7 @@ proof obligations. Runtime performs effects, enforces current permissions and
 preserves state. Workspace makes work understandable and usable. A host operating
 system is another concern: SHAPER OS is not a mandatory Linux distribution.
 
-**[MANDATE S01-U1, explained here]** At the containing scope requested here, a space contains several universes. Each
+**[MANDATE: 23 September 2026, explained here]** At the containing scope requested here, a space contains several universes. Each
 universe has a declared purpose, boundary and relationships. Functional units
 serve bounded responsibilities within a declared composition. A repeated pattern
 of intention, boundary, action, evidence and correction is fractal; it need not

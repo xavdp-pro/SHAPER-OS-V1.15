@@ -47,17 +47,17 @@ The human requested these corrections after the independent Opus review.
 
 ## Verification boundary
 
-The operator evidence bundle for this checkpoint is stored outside the candidate
-under the originating task `01a0cb24-0910-7250-bcc7-f52b2c7a2cac`. It identifies
-the candidate snapshot and checker by SHA-256 and records the actual run output.
-This record describes changes; passing results must come from that evidence,
-not be inferred from the presence of this file.
+The independent evidence bundle for this checkpoint is not published in this
+candidate. It identifies the candidate snapshot and checker by SHA-256 and
+records the actual run output. This record describes changes; passing results
+must come from that evidence, not be inferred from the presence of this file.
 
 The initial independent report is the English artifact
-`CLAUDE-OPUS-COUNTER-REVIEW-2026-09-23.md` in that task. Its source-bundle scope was
-22 files before these corrections. Later review or test results have separate
-snapshot identities. The earlier [structure review](READING-STRUCTURE-REVIEW.md)
-remains historical evidence of that earlier state.
+`CLAUDE-OPUS-COUNTER-REVIEW-2026-09-23.md`, which is not published in this
+candidate. Its source-bundle scope was 22 files before these corrections. Later
+review or test results have separate snapshot identities. The earlier
+[structure review](READING-STRUCTURE-REVIEW.md) remains historical evidence of
+that earlier state.
 
 ## Still required before replacing V1.14
 

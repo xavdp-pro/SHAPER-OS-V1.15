@@ -1,24 +1,20 @@
 # Source map and authority boundaries
 
 Status: provenance for the reading structure and explanatory chapters, not a
-complete canonical crosswalk. Private originals remain in their owning workspace;
-generic documents do not embed their complete conversations or operational data.
+complete canonical crosswalk. Public records carry the reusable decision or
+design meaning without exposing private source locations or operational data.
 
 ## S01 — Current operator mandate, 23 September 2026
 
-The present conversation explicitly requests a generic, agnostic, clean,
+The recorded operator mandate requires a generic, agnostic, clean,
 implementation-code-free V1.15; five human reading depths; medium and strong
 agent routes; a complete principal-agent foundation; explicit relationships and
 examples; and organization for reading and understanding. “Briques” is retained.
 The same direction describes space containing several universes, fractal
-relationships, creation/execution/protection frameworks and functional units;
-the decision locates this in passage S01-U1.
+relationships, creation/execution/protection frameworks and functional units.
 See the [decision record](../decisions/2026-09-23-AGNOSTIC-NO-CODE.md).
 
-That record now identifies S01-U1 through S01-U6 by source conversation and
-human passage. It distinguishes explicit instructions from their English
-editorial restatement, including the later language confirmation and correction
-request. The [governing-corpus map](../docs/GOVERNING-CORPUS.md) defines the adopted
+The [governing-corpus map](../docs/GOVERNING-CORPUS.md) defines the adopted
 editorial set and explicitly preserves external operational authority.
 
 This direction authorizes preparing the successor. It does not establish that
@@ -50,27 +46,14 @@ Fetched later revision `abf8f191890e5efd75de59c612980e7af8299e11` is not fully
 reviewed. Full layer-specific guides and linked attachments are not covered by
 reading these masters alone.
 
-## S04 — Original exported GPT text
+## S04 — Historical design synthesis
 
-P3 `GPT/01` through `GPT/18` were read in full from the available Markdown
-exports. Important locators include:
-
-- `11-structurer-shaper-os.md`: intent, organizational graph, mandate and proof.
-- `12-leviers-de-controle.md`: layers, conceptual discoveries, provenance,
-  contextual use, operational examples and limits.
-- `13-metacognition-humaine-et-agents.md`: separate human and agent self-checks;
-  caution against deleting dependent concepts during a rename.
-- `14-tester-des-choses.md`: unknown versus forbidden; an objective does not
-  authorize every possible means.
-- `17-usage-quotidien-tensions-capteurs.md`: signal versus diagnosis and the
-  distinction between communication, agreement, action and result.
-
-The exports preserve both user speech and assistant proposals. Reading an export
-does not establish that every web answer inside it is accurate, adopted, current
-or implemented. Model, price, protocol and infrastructure comparisons are
-historical claims, not recommendations in this candidate. Missing attachments
-are not implicitly read. Original WikiTal Sunday dialogue remains unavailable;
-handoffs are not a recovered verbatim transcript.
+Historical design work contributed the distinctions between intent, mandate and
+proof; layers and contextual use; separate human and agent self-checks; unknown
+versus forbidden; capability versus authority; signal versus diagnosis; and
+communication versus agreement, action and result. These contributions remain
+design lineage, not evidence that every associated claim is accurate, adopted,
+current or implemented.
 
 ## S05 — Framework design decision, 22 September 2026
 
@@ -79,14 +62,12 @@ read fully. This is design input distinguishing creation, execution, protection
 and functional units. Its container and per-unit MariaDB targets must be preserved
 and scoped explicitly, not silently removed in the name of agnosticism.
 
-## S06 — Edited GPT 19 note
+## S06 — Enterprise piloting design synthesis
 
-P2 `CURRENT/CONVERSATIONS/GPT/19-voix-web-metacognition-et-pilotage-entreprise.md`:
-read fully. The source explicitly identifies itself as an edited synthesis of
-21 September discussions, not a verbatim transcript. It describes desired scenes,
-intention-to-result alignment, counter-effects, operational states and Enterprise
-piloting. Its closeout says documentation was published but the product loop
-was not yet implemented. That is a dated source claim, not a fresh runtime check.
+The 21 September design synthesis describes desired scenes, intention-to-result
+alignment, counter-effects, operational states and Enterprise piloting. Its
+closeout records that documentation was published but the product loop was not
+yet implemented. That is a dated source claim, not a fresh runtime check.
 
 ## S07 — Unit interdependence and reconciliation, 22 September 2026
 
@@ -102,8 +83,8 @@ unit target files remain unread; this overview is not a substitute for them.
 
 ## S08 — Scoped operator directions, 24 September 2026
 
-Two human–agent conversations on 24 September gave scoped directions, each
-restated in English in its own record with its provenance and scope: the
+Two operator directions issued on 24 September are stated in their public
+records with their scope: the
 [reference bridge decision](../decisions/2026-09-24-REFERENCE-OPENCODE-BRIDGE.md)
 selects the OpenCode Cognition Bridge by default in the reference composition,
 and the [functional-unit MariaDB decision](../decisions/2026-09-24-FUNCTIONAL-UNIT-MARIADB.md)

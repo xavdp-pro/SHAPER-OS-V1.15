@@ -45,6 +45,7 @@ rubrics, and [continuity](review/VERIFICATION-AND-CONTINUITY.md) makes reading
 coverage and external checks reproducible.
 
 The board is the navigation map. Intentions and adopted laws own their content;
-human and agent guides explain the same content at different depths. Conversation
-history preserves genesis and uncertainty. An example illustrates a contract;
-it neither silently changes that contract nor proves a running implementation.
+human and agent guides explain the same content at different depths. Dated
+decision and design records preserve genesis and uncertainty. An example
+illustrates a contract; it neither silently changes that contract nor proves a
+running implementation.

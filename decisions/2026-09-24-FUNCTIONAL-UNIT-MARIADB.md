@@ -1,7 +1,7 @@
 # Operator direction — a private MariaDB for every next functional unit
 
-Status: **[MANDATE]** scoped direction given in the 24 September 2026 human–agent
-conversation. It applies the preserved
+Status: **[MANDATE]** scoped operator direction issued on 24 September 2026. It
+applies the preserved
 [September container and MariaDB target](../docs/profiles/SEPTEMBER-CONTAINER-MARIADB.md);
 it does not seal V1.15 as successor runtime law, make MariaDB a universal
 requirement for every possible future realization, or certify a built image or
@@ -9,13 +9,12 @@ universe.
 
 ## Provenance
 
-Source: the operator, in French, in a Claude Code session on 24 September 2026.
-The sentences below restate the direction in English; they are not verbatim
-quotations. The operator asked for it to be noted "very strongly": the next
-pieces of work, Vox or other, follow the functional-unit standard as already
-specified, in which each functional Podman unit owns its own MariaDB. The same
-day the operator also directed that one running development instance keep its
-current SQLite storage for a walkthrough.
+Source: operator direction issued on 24 September 2026. The public record below
+states the direction in English. The operator asked for it to be noted "very
+strongly": the next pieces of work, Vox or other, follow the functional-unit
+standard as already specified, in which each functional Podman unit owns its
+own MariaDB. The same day the operator also directed that one running development
+instance keep its current SQLite storage for a walkthrough.
 
 ## Scope
 

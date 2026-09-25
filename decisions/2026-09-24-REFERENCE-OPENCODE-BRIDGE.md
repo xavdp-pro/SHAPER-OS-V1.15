@@ -1,7 +1,7 @@
 # Operator direction — OpenCode bridge in the reference universe
 
 Status: **[MANDATE]** scoped direction for the proposed reference-universe
-composition, given in the 24 September 2026 human–agent conversation. It does
+composition, issued by the operator on 24 September 2026. It does
 not seal V1.15 as successor runtime law or certify a built image.
 
 The operator selected the OpenCode Cognition Bridge as a **default component of

@@ -11,7 +11,7 @@ Keep what the system must mean separate from the code that makes it work today.
 A better implementation is welcome only if it preserves commitments and data,
 and proves the required behavior again.
 
-**[MANDATE S01-U2/U3]** Implementation stays outside SHAPER OS. The remaining
+**[MANDATE: 23 September 2026]** Implementation stays outside SHAPER OS. The remaining
 teaching prose is **[EXPLANATION S03: Runtime master sections 19–20 and 24–31]**,
 except the explicitly labeled September target below.
 

@@ -105,7 +105,7 @@ reading records, file digests and repeatable verification.
   idempotency, degraded behavior, cycles and restoration order.
 - Ecosystem: the public site and the two wiki audiences, Enterprise and Helm,
   PodMesh capabilities and evidence, operational realization profiles.
-- Lineage: original GPT discussions, earlier laws, adopted decisions, proposals,
+- Lineage: earlier laws, adopted decisions, proposals,
   open contradictions and evidence with date and revision.
 
 These topics are a completion checklist, not claims that their full successor
