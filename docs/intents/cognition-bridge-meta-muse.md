@@ -15,8 +15,9 @@ role described in the
 adapter for bounded cognition jobs. The base socle must remain runnable without it.
 
 SHAPER OS does **not** host the server code. A separate realization repository
-owns the bridge process, tests, container image and deploy hooks. Naming example:
-`muse-bridge` (GitHub or private), analogous to existing standalone
+owns the bridge process, tests, container image and deploy hooks:
+
+**https://github.com/xavdp-pro/muse-bridge** (public), analogous to
 `cursor-bridge` / `opencode-bridge` adapters outside the agnostic corpus.
 
 ## Function

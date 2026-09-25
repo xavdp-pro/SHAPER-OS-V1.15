@@ -22,7 +22,7 @@ that a replacement can be qualified against them.
 
 | Intent | Role |
 | :--- | :--- |
-| [Meta Muse cognition bridge](cognition-bridge-meta-muse.md) | Headless adapter for the Meta Muse CLI in a bounded universe |
+| [Meta Muse cognition bridge](cognition-bridge-meta-muse.md) | Headless adapter — implementation: [xavdp-pro/muse-bridge](https://github.com/xavdp-pro/muse-bridge) |
 
 Historical executable references (V1.14 `pkg-bridge-*`, external GitHub bridges)
 are **lineage and comparison material**, not imports into this repository.
