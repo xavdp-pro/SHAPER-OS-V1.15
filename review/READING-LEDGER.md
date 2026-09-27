@@ -1,10 +1,40 @@
 # Reading and reconciliation ledger
 
-Date: 24 September 2026. Overall state: **OPEN**. This candidate is a real
+Updated: 27 September 2026. Overall state: **OPEN**. This candidate is a real
 documentation candidate with a populated reading path, not a completed V1.15
 or evidence of exhaustive whole-ecosystem reading.
 
-## Current coverage
+## Operational-law reading — 27 September 2026
+
+Codex read the following files **in full** at the fixed V1.14 comparison
+revision `958e0b74e19af6ee833cba24fc31d1b866f6cf73`:
+
+- `AGENTS.md` — entry, reading routes and binding-text boundaries.
+- `LAW.md` — all 31 lines.
+- `software/RULES.md` — all 1559 lines, including the preamble and every rule.
+- `docs/agent/BOOT-CONTRACT.md` — all 229 lines.
+- `docs/agent/OPERATING-CONTRACT.md` — all 103 lines.
+- `software/docs/PERIMETERS.md` — all 192 lines.
+- `software/packages/pkg-governor/INTENT.md` — all 153 lines.
+- `doctrine/THE-KERNEL-IS-CONSULTED-NOT-CARRIED.md` — complete document.
+
+Source: [V1.14 at the fixed comparison revision](https://github.com/xavdp-pro/SHAPER-OS-V1.14/tree/958e0b74e19af6ee833cba24fc31d1b866f6cf73).
+The external reading record retains exact file digests and coverage. No source
+law was changed. This checkpoint supersedes the earlier unread status of LAW,
+RULES and the boot contract at that revision; it does not extend coverage to
+every linked doctrine file, unit contract, later revision or deployed realization.
+
+The reading establishes the distinction between mandatory law and explanatory
+guidance, private MariaDB per functional Podman (Rules 4 and 26), real-effect
+verification (Rules 0G and 20), external structural repair (Rules 23 and 24),
+and the Helm/Governor/Maker authority boundaries (Rules 0F, 36 and 37).
+Reading is not rule-by-rule reconciliation, independent qualification or runtime
+proof. F-02 and the remaining required successor work below stay **OPEN**.
+
+## Historical coverage — 24 September 2026
+
+The entries below preserve that checkpoint's coverage. Statements about the
+then-latest origin are dated observations, not a current remote-head check.
 
 - P3 workspace instructions, board and CURRENT entry: read.
 - P2 board: read; dated status statements remain source claims until verified.
@@ -72,9 +102,10 @@ the board, README, chapter 4 and September profile link them, and the
 list them. None of these post-closure edits has been independently reviewed;
 the Opus closure covers only `5bc22b3`.
 
-The V1.14 rules the MariaDB decision cites, Rules 4 and 26, exist under those
-titles at the fixed comparison reference `958e0b7`. That check located their
-headings; it is not the full RULES reading that F-02 requires.
+The earlier check of Rules 4 and 26 at `958e0b7` located their headings only.
+The 27 September checkpoint above now covers the full RULES text at that
+reference. F-02 still requires the rule-by-rule successor mapping and remaining
+governing-reference coverage.
 
 No source is marked read merely because a keyword search found a passage.
 Unresolved requirements remain open even when they have been documented here.

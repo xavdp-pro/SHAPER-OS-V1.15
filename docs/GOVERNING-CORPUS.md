@@ -51,8 +51,13 @@ owner. Reading and bounded documentation corrections may continue.
 
 For successor reconciliation, the fixed V1.14 comparison reference is
 `958e0b74e19af6ee833cba24fc31d1b866f6cf73`, including `LAW.md`,
-`software/RULES.md` and their required governing references. It has not yet been
-read and mapped in full. Earlier readings at
+`software/RULES.md` and their required governing references. On 27 September
+2026, Codex read `LAW.md`, all of `software/RULES.md` (lines 1–1559), and
+`docs/agent/BOOT-CONTRACT.md` in full at that exact reference. Supporting
+coverage and remaining sources are recorded in the
+[reading ledger](../review/READING-LEDGER.md#operational-law-reading--27-september-2026).
+The core operational texts have been read; complete coverage of their linked
+corpus and rule-by-rule successor mapping remain open. Earlier readings at
 `c88fd8742f5ed93a7fdcc3b342cf8580a4e37d17` are not equivalent coverage. Neither
 reference is asserted to describe every deployed artifact's governing revision.
 

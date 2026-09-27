@@ -28,8 +28,13 @@ The README supplies the five human depths and the argument for replaceable code.
 Artifact documents distinguish implementation packages and deployable bricks.
 
 Fetched reference: `958e0b74e19af6ee833cba24fc31d1b866f6cf73`. Its complete rules
-and later changes remain to be read and reconciled. Older composition and storage
-statements must not be presented as the latest canon without that check.
+were subsequently read in full by Codex on 27 September 2026, together with
+LAW, the boot and operating contracts, the perimeter taxonomy, the governor
+intent and the consulted-not-carried doctrine. Exact coverage is in the
+[operational-law reading checkpoint](READING-LEDGER.md#operational-law-reading--27-september-2026).
+Complete linked-corpus coverage and successor reconciliation remain open.
+Neither this fixed comparison reference nor older composition and storage
+statements are asserted to be the latest canon or every deployment's law.
 
 ## S03 — Three-layer architecture
 
