@@ -43,6 +43,9 @@ and [chapter 6](../learning/06-EVIDENCE-RECOVERY-LEARNING.md). Ask who notices
 silence, where evidence lives and how to stop or amend an existing mandate.
 Practice C2 and C7. Explain why “the service is up” does not establish that the
 price update worked. You need not learn the implementation language to do this.
+Then practice C9 and C11 with the [practical self-checks](METACOGNITION.md): when
+does an old failure still apply, and what evidence or restored condition lets an
+unfinished attempt resume safely? Compare the C9 worked answer at this depth.
 
 ## Level 3 — Engineer: understand realization obligations
 
@@ -84,6 +87,9 @@ unit, universe, containing space and affected humans. Ask whether a local gain
 damages the whole, and whether the mechanism intended to detect that damage is
 itself observable. Source provenance makes this reasoning inspectable, not
 infallible.
+Practice C10 and C12: explain why completing faster can violate the intention,
+and why a mechanism meant to correct errors also needs independent observation.
+Retain the facts while revising only conclusions supported by new evidence.
 
 ## Teaching method for every important concept
 

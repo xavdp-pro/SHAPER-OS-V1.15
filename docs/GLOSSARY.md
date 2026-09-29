@@ -32,6 +32,15 @@ Definitions are **EXPLANATION**, except terms explicitly labeled **TARGET**.
 - **Metacognition:** examining how one forms judgments and chooses actions.
 - **Meta-regulation:** examining and improving the sensors, review and correction
   mechanisms themselves through authorized change.
+- **Proportionate response:** selecting an allowed response using current evidence,
+  consequences of action/inaction and reversibility, without overreach or blanket
+  refusal. See the [practical self-checks](human/METACOGNITION.md), source S09.
+- **Work pacing:** adjusting the purpose and method of work to new information,
+  declared deadlines and handoff/resumption conditions; not a universal sequence
+  of Runtime states. See the practical self-checks, source S09.
+- **Context-qualified lesson:** a revisable conclusion with stated applicability
+  and review conditions, distinct from the observation it explains. See the
+  practical self-checks, source S09.
 
 ## Layers and scopes
 

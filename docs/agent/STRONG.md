@@ -41,6 +41,13 @@ affected human explanation, agent obligation, realization contract and evidence
 that could contradict the proposal. Strong synthesis must not compress away
 those links or silently decide unresolved source conflicts.
 
+For C9–C12, challenge both excessive initiative and unwarranted inhibition without
+turning uncertainty into permission. Check whether work pacing meets the role's
+deadline rather than rewarding fewer calls, whether a lesson transfers beyond its
+evidence, and whether the corrector hides or amplifies failure. Specify contrasting
+cases and independent observations that would refute the proposed improvement;
+do not infer runtime behavior from a good conceptual answer.
+
 For this candidate, explicitly carry forward the missing-law, unit-detail and
 ecosystem gaps in the [ledger](../../review/READING-LEDGER.md). Understanding the
 learning path is achievable now; certifying the complete V1.15 is not yet justified.

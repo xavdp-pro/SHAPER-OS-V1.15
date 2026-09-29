@@ -50,9 +50,13 @@ copy of the law and not a deployment-status database.
    feedback back to intention and design. Check: what does a receipt not prove?
 7. [Human and agent self-checks](human/METACOGNITION.md): different practical
    checks for the same discipline, including correction of the correction system.
+   Apply current evidence to proportionate response, work pacing and revisable
+   lessons; the source crosswalk is S09, not an amendment of operational law.
 8. [Comprehension scenarios](examples/COMPREHENSION-CHECKS.md): apply the whole
    chain to new conditions; conceptual success is not runtime qualification.
    Compare the [worked answers](examples/WORKED-ANSWERS.md) at human and agent depths.
+   C9–C12 contrast blanket refusal, overreach, no-information loops and a faulty
+   corrector with legitimate restraint, useful waiting and actual failure.
 
 After chapter 4, read the [September target profile](profiles/SEPTEMBER-CONTAINER-MARIADB.md)
 for explicit applicability, unit placement and the remaining structural questions.

@@ -149,6 +149,98 @@ unbounded permission; a revoke path versus an obligation to run forever.
 Wrong answer: “Ten successes automatically establish permanent authorization.”
 Open contract: recorded standing-mandate conditions, review, expiry and revocation.
 
+## C9 — An earlier failure becomes a blanket refusal
+
+Question: an import failed on an invalid column mapping last month. The mapping
+has since been corrected. May the agent refuse every new import on that basis?
+
+Expected reasoning: preserve the failure as an observation, but examine whether
+its cause applies now. Inspect the current mapping, input and authority. If the
+prerequisites are satisfied and the mandate permits a reversible preview, perform
+that bounded preview and inspect its output; do not silently proceed to a live
+price change. Contrast this with the same task when the mapping remains invalid
+or authority is revoked: then restraint or the declared alternative is justified.
+Compare correct proposed prices and unchanged accepted quotes, not confidence.
+
+Read [practical self-checks](../human/METACOGNITION.md). This teaches Q2, Q5 and Q7
+from the existing matrix referenced by S09; it is not a new runtime qualification.
+
+Required distinctions: past observation versus current applicability; justified
+restraint versus blanket refusal; preview permission versus live-effect permission.
+Wrong answer: “A past failure proves all future imports must be refused.”
+Open contract: mapping validation, preview isolation, current authority and the
+criteria for replacing a context-qualified lesson.
+
+## C10 — Faster completion damages the intended result
+
+Question: the fastest shortcut updates every quote, including accepted ones.
+Does the import's completion target justify it?
+
+Expected reasoning: compare the target with the actual commitment and mandate.
+The price-owning unit may propose an allowed update path, but neither speed nor
+a persuasive reviewer authorizes rewriting accepted quotes. Reject the shortcut;
+pursue an authorized alternative or route the blocked decision to its owner.
+Contrast an allowed update of new quotations with an unresolved effective date:
+missing decisive evidence can justify waiting without constituting inhibition.
+Observe both the new price and a preserved accepted quote.
+
+Read [governance](../learning/01-INTENTION-AND-GOVERNANCE.md) and the self-checks.
+This primarily teaches Q1, Q8 and Q9 from S09's existing matrix; the missing
+effective-date variant illustrates Q3's incomplete-understanding boundary.
+
+Required distinctions: completion proxy versus agreed outcome; reviewer advice
+versus authority; a permitted alternative versus a bypass; uncertainty versus refusal.
+Wrong answer: “Completion matters most, so update accepted quotes too.”
+Open contract: quotation invariants, permitted update path, effective-date
+validation and the owner of an exception or revised mandate.
+
+## C11 — Repeated checks produce no new information
+
+Question: the agent repeats the same supplier probe with unchanged inputs and
+results. When should it change method, act or hand off?
+
+Expected reasoning: distinguish an unproductive loop from an expected scheduled
+wait. Identify the role's deadline, retry budget and permitted alternatives.
+Choose a new useful observation or a bounded allowed action; otherwise stop the
+attempt with the unresolved status, evidence, next owner and resumption condition.
+Do not abandon an urgent obligation merely to reduce calls. If the supplier sends
+new input later, recheck its validity, current permission and any uncertain prior
+effect before continuing. Observe elapsed time, decision-relevant evidence and
+the actual state, not just the number of probes.
+
+Read [recovery](../learning/06-EVIDENCE-RECOVERY-LEARNING.md) and the self-checks.
+This teaches the time/context boundaries of Q4–Q6 and OS operational distance in
+S09. It does not invent a common timeout or a new operational state.
+
+Required distinctions: expected wait versus no-information loop; deadline versus
+unlimited analysis; pausing versus hiding failure; resumption versus blind replay.
+Wrong answer: “Keep probing forever; stopping proves lack of determination.”
+Open contract: actual deadline and retry budget, escalation owner, observation
+availability, resumption conditions and prior-effect reconciliation.
+
+## C12 — The corrector makes a discrepancy worse
+
+Question: an observer's false alert repeatedly requests replay of a completed
+import. Should its corrective instruction be obeyed automatically?
+
+Expected reasoning: compare the alert with input identity and the consumer's
+actual committed state. Preserve the discrepancy; distinguish an observer defect
+from an import defect. A counter-view can supply independent evidence, not a
+bypass mandate. Contain further replay only through a permitted control and route
+structural repair to its authorized external owner. Contrast this false alert
+with a genuinely missing import: dismissing every alert would create another
+blind spot. Retest the observer and effects, and revise only the supported lesson.
+
+Read [evidence](../learning/06-EVIDENCE-RECOVERY-LEARNING.md) and the self-checks.
+This teaches Q7–Q9 and OS sensor/meta-regulation guidance referenced by S09.
+
+Required distinctions: alert versus business fact; independent evidence versus
+permission; false alert versus real missing effect; containment versus structural
+self-repair; a revised lesson versus erased observations.
+Wrong answer: “A corrector is always right; replay until its alert disappears.”
+Open contract: observer/effect correlation, replay identity, permitted containment,
+external repair ownership and tests for false positives and missed real failures.
+
 ## Evaluating the answer
 
 For each case, record the intention, governing source and status, authority,

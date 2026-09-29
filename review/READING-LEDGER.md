@@ -1,8 +1,39 @@
 # Reading and reconciliation ledger
 
-Updated: 27 September 2026. Overall state: **OPEN**. This candidate is a real
+Updated: 29 September 2026. Overall state: **OPEN**. This candidate is a real
 documentation candidate with a populated reading path, not a completed V1.15
 or evidence of exhaustive whole-ecosystem reading.
+
+## Bounded explanatory addition — 29 September 2026
+
+The practical self-checks now explain proportionate response, work pacing and
+context-qualified learning. Four contrasting exercises, C9–C12, extend the
+existing eight; the glossary, board, human guide, both agent routes and worked
+answers carry the same meaning. These are **EXPLANATION** and teaching guidance,
+not changes to operational law, runtime implementation or deployment approval.
+
+Codex reread in full the V1.14 AGENTS, LAW, RULES, boot and operating contracts
+at `958e0b74e19af6ee833cba24fc31d1b866f6cf73`, and all three layer masters,
+the existing decision-hygiene qualification matrix and agnostic method translation
+at `a8eddf95b30a5952267990928e65c5e9c61131f8`. The candidate baseline was
+`c1e7e69c6d1def6ada18318d1258f1802b7deb03`. The full candidate study set was read
+before this bounded change; changed explanations and their reading routes were
+reread during editing. Exact source digests, checks, coverage limits and scoped
+review belong in the external reading record required by the continuity protocol.
+
+[S09](SOURCE-MAP.md#s09--decision-calibration-explanations-29-september-2026)
+maps these exercises to existing requirements rather than inventing new law.
+C9–C12 and the source matrix's Q1–Q9 are **NOT EXECUTED** here. Structural document
+checks are separate from independent comprehension, behavioral qualification,
+human acceptance and release readiness. F-01/F-02/F-05/F-07 remain OPEN.
+
+A bounded independent Cursor bridge counter-review of the supplied diff and
+source excerpts found no blocking issue. Its optional teaching findings led to
+a more precise C10/Q crosswalk and concise worked responses for C10–C12. It used
+no tools and did not check files, links, digests, the rest of the candidate or a
+runtime; local structural verification remains a separate check. This review does
+not extend the earlier Opus closure or independently attest the reading record.
+The external evidence record retains the input, result and review scope.
 
 ## Operational-law reading — 27 September 2026
 
@@ -69,11 +100,13 @@ then-latest origin are dated observations, not a current remote-head check.
 - F-05: complete unit interdependence, private data ownership, deployment and
   recovery contracts, including the MariaDB target at its proper scope.
 - F-06: reading organization populated: one board, six shared chapters, glossary,
-  five human depths, medium/strong agent routes, distinct self-checks and eight
+  five human depths, medium/strong agent routes, distinct self-checks and twelve
   comprehension scenarios. Complete routes through all successor laws remain
   dependent on F-02/F-05, not on an absence of navigation.
   Opus corrections add explicit human subsets, finite agent study obligations,
   worked answers and required distinctions/wrong answers for all eight scenarios.
+  The 29 September addition provides these rubrics for C9–C12 as well; it does
+  not extend the earlier Opus review to the new explanations.
 - F-07: reconcile site, both wiki audiences, PodMesh and Enterprise claims.
 - F-08: verify all links, repository boundary and scenario walkthroughs; perform
   three-pass review and report whether independent review occurred.

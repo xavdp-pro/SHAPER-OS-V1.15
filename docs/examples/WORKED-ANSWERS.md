@@ -2,7 +2,7 @@
 
 Status: EXPLANATION; fictional teaching examples, not executed tests, adopted
 business policy or a claim that the missing operational contracts exist.
-Prerequisites: [C4 and its rubric](COMPREHENSION-CHECKS.md),
+Prerequisites: [C4, C9 and their rubrics](COMPREHENSION-CHECKS.md),
 [governance](../learning/01-INTENTION-AND-GOVERNANCE.md) and
 [dependencies](../learning/04-UNITS-AND-DEPENDENCIES.md).
 
@@ -54,9 +54,75 @@ acknowledgment from proof, and reconciliation from blind replay. A real evaluato
 still asks the learner to explain another case; reading this model answer does
 not itself demonstrate independent understanding.
 
-## Transfer question
+## C9 at human Level 2
+
+Last month's failed import remains a fact. It does not tell me whether today's
+corrected input will fail. I would ask the responsible operator to show that the
+mapping is valid now and that the requested preview is permitted. If so, a
+bounded preview can show the proposed prices without changing accepted quotes.
+It is not permission to publish those prices. If the mapping is still invalid
+or permission was withdrawn, stopping remains appropriate. The lesson should say
+when it applies, rather than “never import prices again.”
+
+## C9 at medium-agent depth
+
+1. **Separate event and lesson.** Keep the permitted record of the earlier failed
+   mapping and its source. Treat the blanket ban as an interpretation, not law.
+2. **Inspect current prerequisites.** Verify the corrected mapping against this
+   input and locate the current mandate. A remembered fix is not fresh validation.
+3. **Keep ownership and scope.** The price-owning unit owns validation and effects;
+   a lesson or reviewer cannot grant live-update authority. Inspect the preview
+   contract before using it; this candidate does not provide that realization.
+4. **Choose a proportionate response.** With verified prerequisites and preview
+   authority, attempt the bounded preview. With an invalid mapping or revoked
+   permission, use the declared refusal/alternative and report the reason.
+5. **Compare outcomes.** Inspect proposed prices and preserved accepted quotes;
+   check that no live effect occurred. Compare the contrasting invalid-input case.
+   A successful preview does not prove a successful production import.
+6. **Revise only the supported lesson.** Qualify the lesson by mapping version,
+   validation and mandate conditions; retain the earlier observation under the
+   applicable retention rules. If these contracts or observations are absent,
+   state the gap instead of executing from this model answer.
+
+## C10–C12: concise worked responses
+
+**C10 — Purpose before completion.** My mandate covers new quotations, not
+rewriting accepted ones. The consumer's accepted-quote invariant takes precedence
+over the completion metric; reviewer support grants no exception. I would use
+the allowed update path, or ask the exception owner if none exists. Without the
+effective date I would not publish a guessed date; independent authorized work
+can continue. Proof needs both the new price and an unchanged accepted quote.
+The concrete update/exception contracts are still open. Transfer: a faster
+document import must not overwrite a retained signed version to improve its count.
+
+**C11 — Useful waiting versus repetition.** This latest identical probe tells me
+nothing new. First I check whether waiting is expected under the schedule and
+whether the declared deadline still allows it. Otherwise I choose a permitted
+new observation or hand off the unresolved input to the schedule/alert owner with
+the supplier's validated delivery as the resumption trigger. I would recheck
+permission and any uncertain prior effect when it arrives. The actual deadline,
+retry budget and responsible owner need the realization's contract; they cannot
+be guessed here. Transfer: an expected document upload delay differs from endlessly
+retrying an upload that may already have been stored.
+
+**C12 — Verify the corrector.** The consumer shows the expected price operation
+already committed, while the observer requests replay. I would correlate those
+records before calling either one wrong. With a verified false alert, I would
+contain further replay only through an authorized control and route structural
+repair to the external owner, keeping the discrepancy visible. New evidence can
+revise my diagnosis, not authorize a bypass. Retesting must also include a truly
+missing import, or suppressing false alerts could hide genuine failures. Correlation,
+containment and repair contracts remain open. Transfer: check a document indexer's
+alert against the stored version before reimporting or discarding all alerts.
+
+## Transfer questions
 
 A document upload was stored, but the client did not receive confirmation.
 Explain which distinctions remain the same and which new contracts are needed
 for document identity, versions and duplicate imports. Do not simply replace
 “price” with “document”: two uploads may intentionally create separate versions.
+
+For C9, an earlier document import failed on an unsupported encoding. A new
+decoder is available. Explain what must be checked before a permitted preview,
+how original documents remain preserved, and why decoder availability alone
+neither proves validity nor authorizes replacing stored versions.

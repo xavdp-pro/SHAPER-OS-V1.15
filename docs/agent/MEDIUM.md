@@ -38,13 +38,18 @@ For each answer, identify the source contract. If it does not exist, record a
 gap rather than inventing a rule. The current candidate is not yet complete
 enough to pass this exercise against a fully reconciled internal canon.
 
-Use all eight [scenario checks](../examples/COMPREHENSION-CHECKS.md), not only
+Use all twelve [scenario checks](../examples/COMPREHENSION-CHECKS.md), not only
 the happy path. For each, write a concise answer with intention, authority,
 owning state, affected dependency, permitted response, evidence and unknowns.
 Then apply the same method to a different feature such as a document import.
 Compare the [worked answers](../examples/WORKED-ANSWERS.md). Missing contracts
 remain gaps, but a gap-only answer does not pass the conceptual rubric. Record
 self-check versus evaluation by a human or separate agent explicitly.
+
+For C9–C12, contrast changed and unchanged prerequisites, permitted and forbidden
+actions, useful waits and unproductive loops, and correct versus faulty alerts.
+Record the decision-changing evidence, declared time limits, next owner and
+resumption condition. A revised lesson does not revise a mandate or erase facts.
 
 At restart, use the [reading contract](../READING-CONTRACT.md): resume exact
 coverage, reload changed or governing sources and reconstruct the links before

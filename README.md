@@ -32,7 +32,7 @@ The shared learning path moves from intention and authority to layers/scopes,
 the three frameworks, functional units/dependencies, concrete materialization,
 and evidence/recovery. It includes a [glossary](docs/GLOSSARY.md), distinct
 [human and agent self-checks](docs/human/METACOGNITION.md) and
-[eight comprehension exercises](docs/examples/COMPREHENSION-CHECKS.md).
+[twelve comprehension exercises](docs/examples/COMPREHENSION-CHECKS.md).
 See the [reading contract](docs/READING-CONTRACT.md) for how to maintain one
 meaning across these explanations, and the [source map](review/SOURCE-MAP.md)
 for provenance and unresolved authority boundaries.
@@ -49,3 +49,9 @@ human and agent guides explain the same content at different depths. Dated
 decision and design records preserve genesis and uncertainty. An example
 illustrates a contract; it neither silently changes that contract nor proves a
 running implementation.
+
+The 29 September explanatory addition links decision calibration to existing
+Rule 6 and three-layer qualification guidance: proportionate response, work
+pacing and context-qualified learning. C9–C12 are teaching exercises, not executed
+behavioral tests. See [S09](review/SOURCE-MAP.md#s09--decision-calibration-explanations-29-september-2026)
+and the current [reading ledger](review/READING-LEDGER.md) for coverage and limits.

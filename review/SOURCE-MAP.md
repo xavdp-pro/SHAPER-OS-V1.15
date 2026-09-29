@@ -99,6 +99,39 @@ image or universe. The profile and chapter 4 label the reference choice
 **[MANDATE: 24 September reference choice]**; the profile's applicability
 section links the MariaDB decision.
 
+## S09 — Decision calibration explanations, 29 September 2026
+
+The operator authorized a bounded explanatory improvement: make response balance,
+work pacing and revisable learning concrete in the existing teaching path, without
+changing operational laws. The owning explanation is the
+[practical self-checks](../docs/human/METACOGNITION.md); C9–C12 are fictional
+conceptual exercises, not new laws or executed runtime tests.
+
+Direct public sources read in full for this addition:
+
+- [V1.14 Rule 6](https://github.com/xavdp-pro/SHAPER-OS-V1.14/blob/958e0b74e19af6ee833cba24fc31d1b866f6cf73/software/RULES.md#rule-6-decision-hygiene),
+  within the full RULES file at that fixed revision. It already distinguishes
+  overreach, inhibition, incomplete understanding, current authority, context,
+  deadlines and revisable conclusions. This addition does not create that law.
+- [OS master](https://github.com/xavdp-pro/shaper-three-layers/blob/a8eddf95b30a5952267990928e65c5e9c61131f8/10-SHAPER-OS/00_MASTER.md),
+  especially sections 6, 8 and 21 and decision hygiene: operational distance,
+  observation of sensors, meta-regulation and context-qualified experience.
+  The Runtime and Workspace masters were also read fully at this revision.
+- [Existing qualification matrix](https://github.com/xavdp-pro/shaper-three-layers/blob/a8eddf95b30a5952267990928e65c5e9c61131f8/90-REVIEW/DECISION-HYGIENE-QUALIFICATION.md)
+  and [agnostic method translation](https://github.com/xavdp-pro/shaper-three-layers/blob/a8eddf95b30a5952267990928e65c5e9c61131f8/00-META/07_AGNOSTIC_METHOD_TRANSLATION.md).
+  These are architecture/qualification guidance, not an independent operational
+  authority. The matrix records Q1–Q9 as NOT EXECUTED in its change.
+
+Teaching crosswalk: C9 uses Q2/Q5/Q7; C10 primarily uses Q1/Q8/Q9, with its missing
+effective-date variant illustrating Q3; C11 uses the time/context boundaries of
+Q4–Q6 plus operational distance; C12 uses Q7–Q9 plus sensor and
+meta-regulation guidance. C11/C12 expand the teaching situation; they do not claim
+that the matrix supplies every missing retry, observer or repair contract.
+
+The bounded reading covers those exact files, not all their linked unit contracts,
+doctrine, audience guides or deployed realizations. No whole-ecosystem reading or
+successor reconciliation is inferred. No conceptual answer certifies a runtime.
+
 ## Still open
 
 The independent Claude Opus 5.5 review of the previous 22-file candidate is advice,
