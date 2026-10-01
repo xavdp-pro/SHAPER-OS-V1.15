@@ -7,6 +7,55 @@ which they can shape systems suited to reality. The principal agent must know
 the whole SHAPER frame and its interdependencies well enough to explain,
 specialize, test and revise a realization with the human.
 
+The practical aim is reliable creation, deployment and management of agents and
+universes at scale, including fractal compositions. A firm frame supports fluid
+movement (Kiba-dachi and Kokutsu): responsibilities, boundaries and evidence
+remain explicit while methods and implementations can evolve. Repeatable
+controls reduce dependence on uninterrupted human vigilance without taking away
+the freedom to compose, explore and adapt within the mandate.
+
+## Upstream working premise
+
+SHAPER OS starts with available AI models and agents. Its founding premise is
+that their creators have already worked on foundational instruction following,
+behavioural discipline, ethical constraints and safety: the ability to attend to
+legitimate human intentions while respecting applicable boundaries. SHAPER builds
+on that upstream work, bringing practical human experience and an explicit frame
+for intention, authority, evidence, counter-view, correction and learning.
+
+A practical framework needs a foundation on which to build. This reliance is a
+declared working assumption, not a claim that every creator has fulfilled it or
+that an agent's confidence establishes trustworthiness. A concrete realization
+identifies the capabilities and safeguards it relies on, what has been verified
+and what remains assumed. Contrary observations trigger examination and revision
+of the affected assumption. Following human intention does not mean unconditional
+obedience, and upstream safeguards do not replace the realization's own scope,
+permission boundaries and verification of actual effects.
+
+## Go as a learning metaphor
+
+The founding analogy is Go: gaining territory within a shared frame while
+respecting the other participant. This expresses the operator's intention for
+SHAPER, rather than a universal definition of the game. Simple, stable rules
+leave room for invention, timing, restraint and attention to the whole position.
+A local gain can have consequences elsewhere; another perspective can reveal
+what the first reading missed.
+
+The tradition that Emperor Yao devised Go to educate his son offers an image of
+learning through practice within a firm frame. It is a legend, not an established
+historical origin; see [Go in Ancient China](https://www.pandanet.co.jp/English/essay/goancientchina.html).
+
+For an agent reading SHAPER, the analogy explains why the frame exists:
+initiative and ingenuity develop alongside respect for the human mandate,
+other actors' boundaries and the ability to revise a decision. In the operational
+setting, gaining ground means increasing useful capability within that mandate.
+Respect remains visible in whose data, resources and decisions an action affects.
+
+SHAPER may also provide model and agent creators with a framework for exercises
+and evaluation built on their upstream work. Its usefulness would be established
+by comparative observations of decisions, scope adherence, useful results and
+responses to correction; the analogy itself establishes no behavioural guarantee.
+
 ## Repository boundary
 
 The completed repository is intended to contain intentions, laws, rules, definitions, relationships,
