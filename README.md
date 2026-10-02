@@ -1,57 +1,64 @@
-# SHAPER OS V1.15 — documentation candidate
+# SHAPER OS V1.15 — shape what comes next, with AI agents
 
-SHAPER OS is a generic, technology-agnostic framework of intentions, principles,
-laws and contracts for a human–AI-agent tandem. It explains how to understand a
-situation, decide within a mandate, materialize an intention, verify the result
-and learn without losing integrity.
+**SHAPER OS V1.15 is ready for use.** Its creator uses it every day to create,
+deploy and organize universes.
 
-**This repository contains no implementation code.** Concrete software belongs
-to separately owned realizations. Better agents can produce better realizations
-while preserving the agreed meaning, responsibilities and proof obligations.
+SHAPER OS gives humans and AI agents a shared framework for turning intentions
+into systems that fit real needs. It connects purpose, responsibilities,
+relationships, action and learning, while leaving room to improvise, explore
+and discover possibilities that have not yet been imagined.
 
-Status: **IN PREPARATION**, 24 September 2026. This is an isolated successor
-candidate. Source reading, canonical reconciliation and global coherence review
-are unfinished. It is not a sealed release or a deployable runtime.
+The human remains in command. Agents expand the ability to think, build and
+explore. Different perspectives reveal new possibilities and help improve the
+work. The framework grows through that practical experience.
 
-## Two entrances, one meaning
+## Discover the ideal scene
 
-- Start here: [the ordered internal reading board](docs/CONTEXT-INDEX.md).
-- Authority during preparation: [governing corpus](docs/GOVERNING-CORPUS.md).
-- Human readers: [the five reading levels](docs/human/READING-GUIDE.md).
-- AI agents: [the agent entrance](AGENTS.md), then [the internal board](docs/CONTEXT-INDEX.md).
-- Everyone: [intent and repository boundary](INTENT.md).
-- Meaning of package, brick and functional unit: [vocabulary boundary](docs/architecture/VOCABULARY-BOUNDARY.md).
-- What has actually been read: [reading and reconciliation ledger](review/READING-LEDGER.md).
-- Current operator direction: [23 September decision](decisions/2026-09-23-AGNOSTIC-NO-CODE.md),
-  then the scoped 24 September decisions on the
-  [reference bridge](decisions/2026-09-24-REFERENCE-OPENCODE-BRIDGE.md) and a
-  [private MariaDB per functional unit](decisions/2026-09-24-FUNCTIONAL-UNIT-MARIADB.md).
-- Proposed construction sequence: [qualified reference universe](docs/procedures/01-REFERENCE-UNIVERSE.md).
+An entity has an adaptable **space**, composed of **universes** suited to its
+activity. **Helm** lets the human pilot those universes within their jurisdiction.
+Governors coordinate creation work and makers carry it out. Functional units
+provide the capabilities of each universe, with clear responsibilities and
+relationships.
 
-The shared learning path moves from intention and authority to layers/scopes,
-the three frameworks, functional units/dependencies, concrete materialization,
-and evidence/recovery. It includes a [glossary](docs/GLOSSARY.md), distinct
-[human and agent self-checks](docs/human/METACOGNITION.md) and
-[twelve comprehension exercises](docs/examples/COMPREHENSION-CHECKS.md).
-See the [reading contract](docs/READING-CONTRACT.md) for how to maintain one
-meaning across these explanations, and the [source map](review/SOURCE-MAP.md)
-for provenance and unresolved authority boundaries.
+This pattern can recur at different scales: that is its **fractal** expression.
+Common principles support a diversity of compositions, activities and ways of
+working.
 
-The [Opus correction record](review/OPUS-CORRECTIONS-2026-09-23.md) tracks the
-independent review response. The [September profile](docs/profiles/SEPTEMBER-CONTAINER-MARIADB.md)
-preserves concrete target obligations without making them universal technology
-law. [Worked answers](docs/examples/WORKED-ANSWERS.md) show how to use the scenario
-rubrics, and [continuity](review/VERIFICATION-AND-CONTINUITY.md) makes reading
-coverage and external checks reproducible.
+Read [the ideal scene and first exercise](docs/IDEAL-SCENE.md), then try the
+method with an agent on a situation that matters to you.
 
-The board is the navigation map. Intentions and adopted laws own their content;
-human and agent guides explain the same content at different depths. Dated
-decision and design records preserve genesis and uncertainty. An example
-illustrates a contract; it neither silently changes that contract nor proves a
-running implementation.
+## Choose your entrance
 
-The 29 September explanatory addition links decision calibration to existing
-Rule 6 and three-layer qualification guidance: proportionate response, work
-pacing and context-qualified learning. C9–C12 are teaching exercises, not executed
-behavioral tests. See [S09](review/SOURCE-MAP.md#s09--decision-calibration-explanations-29-september-2026)
-and the current [reading ledger](review/READING-LEDGER.md) for coverage and limits.
+- Human readers: [five reading depths](docs/human/READING-GUIDE.md).
+- AI agents: [agent entrance](AGENTS.md) and [ordered reading board](docs/CONTEXT-INDEX.md).
+- Purpose and evolution: [intent](INTENT.md).
+- Words and relationships: [glossary](docs/GLOSSARY.md) and
+  [brick, package and functional unit](docs/architecture/VOCABULARY-BOUNDARY.md).
+- Learning through practice: [self-checks](docs/human/METACOGNITION.md),
+  [comprehension exercises](docs/examples/COMPREHENSION-CHECKS.md) and
+  [worked answers](docs/examples/WORKED-ANSWERS.md).
+- Building a reference universe: [construction procedure](docs/procedures/01-REFERENCE-UNIVERSE.md)
+  and [current realization profile](docs/profiles/SEPTEMBER-CONTAINER-MARIADB.md).
+
+## An enduring framework, evolving realizations
+
+This repository carries the framework in English: intentions, principles,
+contracts, explanations and examples. Concrete implementations live in their
+own repositories. As agents and tools improve, new realizations can preserve
+what matters while improving how it is achieved.
+
+V1.15 is usable today and remains open to improvement. The
+[governing corpus](docs/GOVERNING-CORPUS.md),
+[reading contract](docs/READING-CONTRACT.md),
+[source map](review/SOURCE-MAP.md) and
+[editorial ledger](review/READING-LEDGER.md) make its evolution traceable.
+The [practical-use direction](decisions/2026-10-02-PRACTICAL-USE-AND-REFERENCE-SCENE.md)
+records this presentation and daily use.
+
+## Explore the ecosystem
+
+- [SHAPER Three Layers](https://github.com/xavdp-pro/shaper-three-layers): OS,
+  Runtime and Workspace.
+- [PodMesh](https://github.com/xavdp-pro/podmesh): container management for concrete
+  realizations.
+- [Public site](https://xavdp.pro/en/): the products and their intended experience.

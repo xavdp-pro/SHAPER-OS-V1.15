@@ -132,6 +132,15 @@ The bounded reading covers those exact files, not all their linked unit contract
 doctrine, audience guides or deployed realizations. No whole-ecosystem reading or
 successor reconciliation is inferred. No conceptual answer certifies a runtime.
 
+## S10 — Practical use and open presentation, 2 October 2026
+
+The [operator direction](../decisions/2026-10-02-PRACTICAL-USE-AND-REFERENCE-SCENE.md)
+sets V1.15 as ready for use, used daily, and asks for an open, optimistic
+presentation of the ideal scene. The
+[ideal scene](../docs/IDEAL-SCENE.md) explains the experience and a first exercise;
+its illustration is explanatory. This is a presentation direction, not an
+independent audit of every deployment or a rewrite of operational law.
+
 ## Still open
 
 The independent Claude Opus 5.5 review of the previous 22-file candidate is advice,

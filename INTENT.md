@@ -8,11 +8,28 @@ the whole SHAPER frame and its interdependencies well enough to explain,
 specialize, test and revise a realization with the human.
 
 The practical aim is reliable creation, deployment and management of agents and
-universes at scale, including fractal compositions. A firm frame supports fluid
-movement (Kiba-dachi and Kokutsu): responsibilities, boundaries and evidence
-remain explicit while methods and implementations can evolve. Repeatable
+universes at scale, including fractal compositions. Shared principles support
+creative initiative: responsibilities and relationships stay understandable while
+methods and implementations evolve. Repeatable
 controls reduce dependence on uninterrupted human vigilance without taking away
 the freedom to compose, explore and adapt within the mandate.
+
+SHAPER OS is open to future models, tools, compositions and ideas. Practical
+experience and different perspectives help it evolve. The goal is to expand what
+humans and agents can achieve together while preserving the meaning of their work.
+
+## Practical use and reference scene
+
+SHAPER OS V1.15 is ready for use and is used daily by the operator for the
+creation, deployment and organization of universes. V1.15 documents the enduring
+framework and its reference architecture;
+its editorial reconciliation status is separate from the use of existing
+realizations. See the [practical-use decision](decisions/2026-10-02-PRACTICAL-USE-AND-REFERENCE-SCENE.md).
+
+The [ideal scene](docs/IDEAL-SCENE.md) explains the intended experience and gives
+readers a first exercise with an agent. It connects the architecture to a human
+need. Realization-specific capability and operating evidence remain with the
+realization that provides them.
 
 ## Upstream working premise
 
@@ -58,14 +75,15 @@ responses to correction; the analogy itself establishes no behavioural guarantee
 
 ## Repository boundary
 
-The completed repository is intended to contain intentions, laws, rules, definitions, relationships,
+This repository carries intentions, laws, rules, definitions, relationships,
 pedagogical explanations, declarative prose contracts, examples, source lineage
 and review records. It contains no executable implementation, application,
 library, installer, build script, dependency manifest, container recipe or
 embedded runtime. Tooling used to verify these documents lives outside it.
 
-Today this candidate contains the adopted editorial direction and explanatory
-material, not a fully migrated law corpus. The exact
+This ready-to-use documentation edition contains the adopted editorial direction
+and explanatory material. Its complete successor-law crosswalk remains separate
+editorial work. The exact
 [governing-corpus map](docs/GOVERNING-CORPUS.md) defines current authority and
 what remains binding for existing realizations. Missing successor text waives
 no existing operational protection.
@@ -110,9 +128,10 @@ what they control, what may fail and what proof to ask for. A medium or strong
 agent can reconstruct the frame, locate every governing source, explain the
 dependencies and produce an implementation plan without inventing missing law.
 
-## Completion boundary
+## Editorial reconciliation completion
 
-V1.15 is complete only when its declared corpus has been read and reconciled,
+The V1.15 editorial reconciliation is complete when its declared corpus has been
+read and reconciled,
 its essential concepts have human and agent explanations, its contracts survive
 scenario review, and remaining unknowns are visible. Documentation qualification
 does not claim runtime deployment or functional proof.

@@ -1,10 +1,14 @@
 # Internal reading board
 
-Status: reading structure populated; successor law reconciliation still open.
+Status: V1.15 is ready for use; successor-law crosswalk work is tracked separately.
 Read this map before narrowing to a component.
 The source coverage and open work are recorded in the
 [reading ledger](../review/READING-LEDGER.md). This board is a map, not a second
 copy of the law and not a deployment-status database.
+
+Start with [the ideal scene and first exercise](IDEAL-SCENE.md) for the intended
+experience, practical use and a bounded trial with an agent. V1.15 editorial
+reconciliation and the operating status of a realization are separate scopes.
 
 ## Orientation — shared by humans and agents
 

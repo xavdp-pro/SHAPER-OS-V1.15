@@ -1,8 +1,23 @@
 # Reading and reconciliation ledger
 
-Updated: 29 September 2026. Overall state: **OPEN**. This candidate is a real
-documentation candidate with a populated reading path, not a completed V1.15
-or evidence of exhaustive whole-ecosystem reading.
+Updated: 2 October 2026. Framework status: **READY FOR USE**, used daily by the
+operator. Editorial reconciliation: **OPEN**. This ledger tracks source coverage
+and the successor-law crosswalk; its open items are not the framework's usage
+status and do not establish exhaustive whole-ecosystem reading.
+
+## Practical-use presentation — 2 October 2026
+
+The [operator direction](../decisions/2026-10-02-PRACTICAL-USE-AND-REFERENCE-SCENE.md)
+distinguishes the practical use of SHAPER OS from V1.15 editorial reconciliation.
+V1.15 is ready for use and used daily by the operator; the README no longer
+applies “IN PREPARATION” to the whole framework. The
+[ideal scene](../docs/IDEAL-SCENE.md) explains the architecture and a first bounded
+exercise with an agent; intent, the board, human guide and governing map link it.
+
+This is a presentation correction. Existing operational laws and all open
+reconciliation items below retain their scope. The account of deployed universes
+comes from the operator; this change performs no independent deployment audit.
+Historical checkpoints below retain their dated wording and coverage.
 
 ## Bounded explanatory addition — 29 September 2026
 

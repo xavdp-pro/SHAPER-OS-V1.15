@@ -1,4 +1,4 @@
-# Governing corpus during V1.15 preparation
+# Governing corpus — V1.15 editorial and operational boundaries
 
 Status: editorial authority map for the candidate, authorized by the operator's
 request to correct the counter-review findings. This is not successor runtime law.
@@ -34,7 +34,13 @@ editorial foundation above, seal successor law or certify a built artifact. The
 [Reference Universe Procedure](procedures/01-REFERENCE-UNIVERSE.md) is a
 proposed editorial procedure that records those directions.
 
-## What governs operational work in the meantime?
+The [2 October presentation decision](../decisions/2026-10-02-PRACTICAL-USE-AND-REFERENCE-SCENE.md)
+establishes V1.15 as ready for use, with daily practical use by the operator. The
+[ideal scene](IDEAL-SCENE.md) is an explanatory entrance and first exercise;
+it does not extend operational authority. The remaining successor reconciliation
+is an editorial scope, not a blanket status for the whole framework.
+
+## What governs operational work?
 
 V1.15 is not a replacement for V1.14 yet. Existing realizations retain their
 own versioned governing corpus: their applicable LAW, RULES, intent, declared
@@ -73,7 +79,8 @@ required coverage, not a second reading order. Enter through the board and follo
 its navigation, including prerequisites and the common learning sequence:
 
 1. The five editorial-foundation documents listed above.
-2. The later scoped decisions listed above, the
+2. The [practical-use decision](../decisions/2026-10-02-PRACTICAL-USE-AND-REFERENCE-SCENE.md)
+   and [ideal scene](IDEAL-SCENE.md), then the later scoped decisions listed above, the
    [reference bridge](../decisions/2026-09-24-REFERENCE-OPENCODE-BRIDGE.md) and the
    [functional-unit MariaDB](../decisions/2026-09-24-FUNCTIONAL-UNIT-MARIADB.md),
    and the [Reference Universe Procedure](procedures/01-REFERENCE-UNIVERSE.md).

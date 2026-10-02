@@ -17,6 +17,10 @@ principal agents must read the complete study set. Each chapter starts with a
 short plain-language explanation so introductory readers can understand the
 whole shape without first reading every operational detail.
 
+Start with [the ideal scene and first exercise](../IDEAL-SCENE.md) for the intended
+experience, practical use and a bounded trial with an agent. V1.15 editorial
+reconciliation and the operating status of a realization are separate scopes.
+
 ## Level 1 — Owner: understand the purpose
 
 Start with a real situation: a supplier changes prices and old quotations must
