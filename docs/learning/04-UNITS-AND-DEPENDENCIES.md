@@ -1,7 +1,7 @@
 # 4. Functional units and explicit relationships
 
-Status: explanatory contracts plus a clearly scoped September target. This does
-not certify implementation or finalize its place in generic successor law.
+Purpose: explain functional units and their relationships, with the September
+construction profile as a concrete example.
 Prerequisite: [frameworks](03-CREATION-EXECUTION-PROTECTION.md).
 Sources: S02, S05 and S07 in the [source map](../../review/SOURCE-MAP.md).
 
@@ -69,10 +69,10 @@ that universe's declared evidence responsibility; one shared Logger must not
 silently replace two universes' separate units. Any permitted aggregation is a
 distinct function and data crossing with its own contract.
 
-**[OPEN F-03a/b/c]** Space-level base composition, exact door-ratification roles
-and allowed nesting limits are not yet reconciled. Their precise questions and
-current action boundaries live in the profile. Do not infer global privileges,
-unbounded recursion or mandatory units at every scale from the word fractal.
+**[OPEN F-03a/b/c]** The profile identifies design questions about space-level
+composition, door-ratification roles and nesting limits. Resolve the relevant
+question with the authorized owner when composing a realization. Fractal
+composition uses explicit local authority, resource limits and unit responsibilities.
 
 ## What can fail?
 

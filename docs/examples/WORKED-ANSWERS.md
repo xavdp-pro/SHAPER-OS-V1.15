@@ -1,7 +1,8 @@
 # Worked answers at two reading depths
 
-Status: EXPLANATION; fictional teaching examples, not executed tests, adopted
-business policy or a claim that the missing operational contracts exist.
+Purpose: **EXPLANATION** through fictional worked examples at two reading depths.
+Use them to connect the concepts to practical reasoning; the chosen realization
+supplies its business policy, operating contracts and execution evidence.
 Prerequisites: [C4, C9 and their rubrics](COMPREHENSION-CHECKS.md),
 [governance](../learning/01-INTENTION-AND-GOVERNANCE.md) and
 [dependencies](../learning/04-UNITS-AND-DEPENDENCIES.md).
@@ -44,10 +45,10 @@ passwords or all customer records to explain this single case.
    confirm an earlier accepted quote is unchanged, and correlate effect and
    work/evidence records. If a notification is a required external effect,
    reconcile its delivery separately rather than blindly sending it again.
-6. **Open contract.** This candidate does not yet supply operation-identity lookup,
-   safe settlement and revocation-race contracts. Those are F-05 gaps. The
-   conceptual response is valid, but operational recovery is not authorized by
-   this answer alone and cannot be certified from it.
+6. **Realization contract.** Locate operation-identity lookup, safe settlement
+   and revocation-race behavior in the chosen realization. The F-05 editorial
+   crosswalk tracks their mapping. Use the actual contract and recovery mandate
+   to turn this conceptual response into an operational action.
 
 This answer meets the conceptual rubric by distinguishing lease from effect,
 acknowledgment from proof, and reconciliation from blind replay. A real evaluator
@@ -72,7 +73,7 @@ when it applies, rather than “never import prices again.”
    input and locate the current mandate. A remembered fix is not fresh validation.
 3. **Keep ownership and scope.** The price-owning unit owns validation and effects;
    a lesson or reviewer cannot grant live-update authority. Inspect the preview
-   contract before using it; this candidate does not provide that realization.
+   contract in the chosen realization before using its preview capability.
 4. **Choose a proportionate response.** With verified prerequisites and preview
    authority, attempt the bounded preview. With an invalid mapping or revoked
    permission, use the declared refusal/alternative and report the reason.
@@ -92,7 +93,7 @@ over the completion metric; reviewer support grants no exception. I would use
 the allowed update path, or ask the exception owner if none exists. Without the
 effective date I would not publish a guessed date; independent authorized work
 can continue. Proof needs both the new price and an unchanged accepted quote.
-The concrete update/exception contracts are still open. Transfer: a faster
+Locate the update/exception contracts in the chosen realization. Transfer: a faster
 document import must not overwrite a retained signed version to improve its count.
 
 **C11 — Useful waiting versus repetition.** This latest identical probe tells me

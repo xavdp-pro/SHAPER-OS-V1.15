@@ -1,7 +1,8 @@
 # How to read and maintain this foundation
 
-Status: editorial contract for this documentation candidate. This is not a
-declaration that the earlier laws have been fully migrated.
+Purpose: keep the ready-to-use V1.15 framework understandable, consistent and
+easy to evolve. The editorial crosswalk is tracked in the
+[ledger](../review/READING-LEDGER.md).
 
 ## One meaning, several ways to understand it
 
@@ -16,14 +17,14 @@ Agents read the full finite study set in the
 use their guide's subset and plain-language summaries; its prerequisites help
 them when they choose greater depth. Human depth changes the amount of detail;
 medium and strong agent routes change the reasoning support.
-Neither changes permissions, evidence requirements or applicable law. There is
-no small-agent route in this candidate. Historical A1 references are lineage,
-not a hidden third entrance or permission to erase dependent requirements.
+Neither changes permissions, evidence requirements or applicable law. Choose
+the medium or strong route. Historical A1 references explain earlier reading
+arrangements; the current routes share the same foundation.
 
 ## Four distinctions before relying on a document
 
 - **Source:** what a participant actually said or a file actually contains.
-- **Proposal:** a possible interpretation or design, not yet adopted.
+- **Proposal:** an interpretation or design submitted for discussion and adoption.
 - **Decision or governing requirement:** an explicit direction with scope and
   authority; a later date alone does not make it override another rule.
 - **Evidence:** an observed result with conditions, date and limitations.
@@ -34,7 +35,7 @@ gap. Consult the [source map](../review/SOURCE-MAP.md) for these boundaries.
 
 Normative-sounding material carries an explicit status label at the sentence or
 owning section: **MANDATE** for direct operator direction, **EDITORIAL** for this
-candidate's reading/authoring procedure, **TARGET** for preserved scoped design,
+edition's reading/authoring procedure, **TARGET** for preserved scoped design,
 **EXPLANATION** for teaching synthesis, and **OPEN** for unresolved questions.
 A label applies from its position until the next heading or explicit label,
 whichever comes first. After that boundary, the file's stated default status
@@ -87,7 +88,8 @@ evidence and source. An unavailable contract is an explicit gap, not an invitati
 to invent one. “Contract missing” alone cannot pass the teaching check: explain
 the required conceptual distinctions as well. A human evaluator or separate
 agent assesses a declared qualification attempt; solitary study is a self-check.
-Understanding a draft does not certify a complete successor law.
+Use the exercises to develop understanding; track editorial crosswalk progress
+separately in the ledger.
 
 ## Maintenance and change impact
 

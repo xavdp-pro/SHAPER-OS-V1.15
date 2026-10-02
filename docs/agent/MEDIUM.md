@@ -34,9 +34,10 @@ Explain what happens when the input is received twice, when no input arrives,
 when permission is revoked, when the worker stops after changing state but
 before acknowledging, and when code is replaced while old quotations remain.
 
-For each answer, identify the source contract. If it does not exist, record a
-gap rather than inventing a rule. The current candidate is not yet complete
-enough to pass this exercise against a fully reconciled internal canon.
+For each answer, identify the source contract and connect the framework to the
+chosen realization. Where a contract needs clarification, name the question,
+its owner and the next useful step. The ledger tracks the editorial crosswalk.
+Use the exercise now to build shared understanding and a practical plan.
 
 Use all twelve [scenario checks](../examples/COMPREHENSION-CHECKS.md), not only
 the happy path. For each, write a concise answer with intention, authority,

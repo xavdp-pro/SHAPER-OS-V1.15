@@ -1,6 +1,6 @@
 # Practical use and the reference scene
 
-Status: **[MANDATE]** scoped operator direction, 2 October 2026, for the public
+Direction: **[MANDATE]** scoped operator direction, 2 October 2026, for the public
 presentation of SHAPER OS V1.15.
 
 ## Direction
@@ -32,6 +32,15 @@ not an independent deployment audit or a certification of all V1.15 contracts.
 Existing realizations retain their governing revisions, compositions and operating
 records. This direction changes editorial presentation; it does not replace
 operational law, finish the successor crosswalk or authorize deployment by a reader.
+
+## Explanatory wording throughout the repository
+
+Replace blanket maturity disclaimers in current reading material with the
+purpose of the document, the meaning of the concept and its practical use.
+Agent routes should invite application and identify the next useful step.
+The editorial ledger owns crosswalk progress; realization records own operating
+results. Dated review records preserve their observed findings and identify
+their historical scope at the entrance.
 
 ## Application
 

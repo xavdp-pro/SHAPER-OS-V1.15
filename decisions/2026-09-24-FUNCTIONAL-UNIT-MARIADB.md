@@ -1,6 +1,6 @@
 # Operator direction — a private MariaDB for every next functional unit
 
-Status: **[MANDATE]** scoped operator direction issued on 24 September 2026. It
+Direction: **[MANDATE]** scoped operator direction issued on 24 September 2026. It
 applies the preserved
 [September container and MariaDB target](../docs/profiles/SEPTEMBER-CONTAINER-MARIADB.md);
 it does not seal V1.15 as successor runtime law, make MariaDB a universal

@@ -1,6 +1,7 @@
 # Comprehension checks — from words to a new situation
 
-Status: documentation exercises, not executed runtime tests or deployment proof.
+Purpose: practise applying the framework to new situations and compare your
+reasoning with explicit criteria. Runtime tests belong to the chosen realization.
 Prerequisites: [common sequence](../CONTEXT-INDEX.md) and
 [self-checks](../human/METACOGNITION.md).
 Sources: explanatory derivations from the chapters linked below. These fictional

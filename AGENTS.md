@@ -48,5 +48,6 @@ in generic documents. Detailed source records stay in their appropriate private
 workspace; this repository carries reusable meanings and source locators.
 
 At handoff, state what was read, changed and verified, whether work is committed
-or published, and which required items remain open. Never claim V1.15 is complete
-while its reading or reconciliation ledger still has required gaps.
+or published, and the next useful steps. V1.15 is ready for use. Track the
+completion of editorial crosswalk work against its ledger and distinguish it
+from the framework's daily practical use.

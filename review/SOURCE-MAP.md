@@ -1,8 +1,8 @@
 # Source map and authority boundaries
 
-Status: provenance for the reading structure and explanatory chapters, not a
-complete canonical crosswalk. Public records carry the reusable decision or
-design meaning without exposing private source locations or operational data.
+Purpose: connect the reading structure and explanatory chapters to their sources.
+The ledger tracks the editorial crosswalk. Public records carry the reusable
+decision or design meaning without exposing private source locations or operational data.
 
 ## S01 — Current operator mandate, 23 September 2026
 

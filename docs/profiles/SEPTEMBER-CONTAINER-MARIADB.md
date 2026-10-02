@@ -1,8 +1,9 @@
 # September container and MariaDB target
 
 Profile identifier: **SEP22-CONTAINER-MARIADB**.
-Status: preservation of operator design input, not a sealed generic law,
-completed unit specification or installed qualification.
+Purpose: describe the Podman and private-MariaDB construction profile, including
+unit ownership, composition, bootstrap and recovery. **TARGET** statements
+apply within the declared profile; realization records describe actual operation.
 Sources: S05 “Functional Unit”, “Relationship with the current canon” and
 “Current maturity”; S07 “Mandatory construction invariants”, “Bootstrap boundary”
 and “Reconstruction order” in the [source map](../../review/SOURCE-MAP.md).
@@ -15,8 +16,8 @@ by those sources. “Existing work” means work governed by that model, not mer
 files created before a calendar date. Creating a new unit or a second universe
 under the same model does not exempt it from these obligations.
 
-**[EDITORIAL]** The candidate records this target; it does not grant the agent
-power to choose it away. For a new operational request, record the governing
+**[EDITORIAL]** This edition records the selected construction profile. Its
+applicable obligations guide realization choices. For a new operational request, record the governing
 realization and whether its declared construction model adopts this target.
 If scope is uncertain, resolve it with the authorized owner before selecting a
 conflicting storage or isolation mechanism. No alternate profile is adopted here.
@@ -73,9 +74,10 @@ composition for a containing space itself. Do not recursively manufacture one.
 **[OPEN F-03b]** Exact authority roles and approval records for ratifying doors
 across two jurisdictions still require the governing contracts. A sender's request
 or a UI declaration alone is not proof of the receiving side's authorization.
-**[OPEN F-03c]** Permitted nesting of spaces and any maximum recursion depth are
-not yet reconciled. No unbounded self-reproduction is implied. A realization must
-declare finite scope, resource limits and authority before any recursive creation.
+**[OPEN F-03c]** Define permitted space nesting and recursion depth for the
+chosen realization with the authorized owner. Its composition declares finite
+scope, resource limits and authority before recursive creation. The editorial
+crosswalk tracks the general mapping of these choices.
 
 ## Bootstrap and recovery direction
 

@@ -48,6 +48,8 @@ evidence, and whether the corrector hides or amplifies failure. Specify contrast
 cases and independent observations that would refute the proposed improvement;
 do not infer runtime behavior from a good conceptual answer.
 
-For this candidate, explicitly carry forward the missing-law, unit-detail and
-ecosystem gaps in the [ledger](../../review/READING-LEDGER.md). Understanding the
-learning path is achievable now; certifying the complete V1.15 is not yet justified.
+Apply V1.15 now to understand, compose and improve realizations with the human.
+Connect unit details and ecosystem questions to the
+[editorial ledger](../../review/READING-LEDGER.md), identifying their owners and
+next useful steps. Keep learning, editorial crosswalk progress and observed
+realization results traceable as the framework evolves.

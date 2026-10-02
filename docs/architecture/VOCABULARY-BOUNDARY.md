@@ -1,6 +1,7 @@
 # Vocabulary across intention and realization
 
-Status: explanatory reconciliation note, not a completed successor lexicon.
+Purpose: connect functional responsibility, reusable code and deployable
+artifacts, so readers can move clearly from intention to realization.
 
 ## What the existing definitions say
 
@@ -15,7 +16,7 @@ bounded responsibility, identity, private state, lifecycle and observable proof.
 Its concrete target uses an isolated service container and private MariaDB.
 Those concrete choices are not silently erased by V1.15's agnostic boundary.
 
-## Working distinction for the V1.15 review
+## Distinction used in V1.15
 
 SHAPER OS describes the meaning of a function and the obligations of its
 relationships. A realization chooses and documents how that function is built.
@@ -47,5 +48,5 @@ the contract. None of that implementation belongs in this SHAPER OS repository.
 - P2 design record: `operator-deliverables/SHAPER-FRAMES-AND-FUNCTIONAL-UNITS-DESIGN-DECISION-2026-09-22.md`.
 - Current operator clarification: [23 September decision](../../decisions/2026-09-23-AGNOSTIC-NO-CODE.md).
 
-Pending: confront the latest rules and all unit contracts before adopting the
-final lexicon and the precise scope of the MariaDB/container realization.
+Evolution: the editorial crosswalk tracks vocabulary alignment and the scope of
+the MariaDB/container realization alongside the applicable unit contracts.

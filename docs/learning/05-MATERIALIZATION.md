@@ -1,7 +1,7 @@
 # 5. From generic intention to concrete realization
 
-Status: candidate interpretation of the explicit code-free mandate. The precise
-scope of inherited technology requirements remains a reconciliation item.
+Purpose: turn a shared intention into a concrete realization while keeping the
+framework open to different implementations.
 Prerequisite: [units and dependencies](04-UNITS-AND-DEPENDENCIES.md).
 Sources: S01, S02, S03, S04, S05 and S07 in the [source map](../../review/SOURCE-MAP.md).
 

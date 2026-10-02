@@ -2,11 +2,11 @@
 
 Identifier: **Procedure 01**.
 
-Status: **[EDITORIAL]** proposed construction procedure for this V1.15
-documentation candidate. It records the operator's 24 September direction; it
-does not certify an existing image, amend an operational law, or provide an
-executable deployment recipe. Read the [governing-corpus map](../GOVERNING-CORPUS.md)
-and the target realization's exact governing revision before acting.
+Purpose: **[EDITORIAL]** guide the construction and renewal of a reusable
+reference universe, following the operator's 24 September direction.
+Use the [governing-corpus map](../GOVERNING-CORPUS.md) and the realization's
+versioned contracts to connect this sequence to its concrete deployment tools
+and operating evidence.
 
 ## Purpose
 

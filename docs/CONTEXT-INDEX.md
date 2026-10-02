@@ -1,6 +1,7 @@
 # Internal reading board
 
-Status: V1.15 is ready for use; successor-law crosswalk work is tracked separately.
+Framework: **V1.15 — ready for use**. This board helps you choose a reading path.
+The editorial ledger tracks the framework's ongoing documentary evolution.
 Read this map before narrowing to a component.
 The source coverage and open work are recorded in the
 [reading ledger](../review/READING-LEDGER.md). This board is a map, not a second
@@ -13,7 +14,7 @@ reconciliation and the operating status of a realization are separate scopes.
 ## Orientation — shared by humans and agents
 
 1. [Governing corpus](GOVERNING-CORPUS.md): the finite study set, editorial authority
-   and the operational laws that this candidate does not replace. Then
+   and the operational laws attached to existing realizations. Then
    [Intent](../INTENT.md): purpose, agnosticism, code-free boundary and completion.
 2. [Current decision](../decisions/2026-09-23-AGNOSTIC-NO-CODE.md): what the human
    has explicitly requested for the successor. The later
@@ -57,7 +58,7 @@ reconciliation and the operating status of a realization are separate scopes.
    Apply current evidence to proportionate response, work pacing and revisable
    lessons; the source crosswalk is S09, not an amendment of operational law.
 8. [Comprehension scenarios](examples/COMPREHENSION-CHECKS.md): apply the whole
-   chain to new conditions; conceptual success is not runtime qualification.
+   chain to new conditions; realization records track runtime qualification.
    Compare the [worked answers](examples/WORKED-ANSWERS.md) at human and agent depths.
    C9–C12 contrast blanket refusal, overreach, no-information loops and a faulty
    corrector with legitimate restraint, useful waiting and actual failure.

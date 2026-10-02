@@ -1,14 +1,14 @@
 # Governing corpus — V1.15 editorial and operational boundaries
 
-Status: editorial authority map for the candidate, authorized by the operator's
-request to correct the counter-review findings. This is not successor runtime law.
+Purpose: connect the ready-to-use V1.15 framework, its editorial directions and
+the versioned operational laws attached to concrete realizations.
 
-## Adopted candidate directions
+## Adopted editorial directions
 
 The [operator decision](../decisions/2026-09-23-AGNOSTIC-NO-CODE.md) records the
 explicit English, generic, agnostic, code-free and pedagogical mandate. Its
 source passages and interpretation limits are identified in that document.
-[INTENT](../INTENT.md) applies that mandate to this candidate's contents;
+[INTENT](../INTENT.md) applies that mandate to this edition's contents;
 [AGENTS](../AGENTS.md) and the [reading contract](READING-CONTRACT.md) govern
 work on these documents. This file defines their scope and precedence.
 
@@ -19,8 +19,8 @@ contract and this map organize work within it and cannot broaden its authority
 or waive its limits. Record and resolve any remaining material conflict before
 the affected action; no apparent precedence here overrides operational law.
 
-These five documents are the **adopted candidate editorial foundation**. This
-closed list does not mean that a complete operational foundation has been adopted.
+These five documents are the **adopted editorial foundation**. Operational
+realizations use their own identified governing corpus.
 The six learning chapters, glossary, profile preservation note and worked examples
 are explanatory or target-design documents with the status stated in each.
 They are mandatory study material for the principal agent, not new runtime laws.
@@ -32,7 +32,7 @@ Each applies within the scope it states and, like the original direction,
 controls conflicting editorial text within that scope. They do not enlarge the
 editorial foundation above, seal successor law or certify a built artifact. The
 [Reference Universe Procedure](procedures/01-REFERENCE-UNIVERSE.md) is a
-proposed editorial procedure that records those directions.
+editorial construction guide that records those directions.
 
 The [2 October presentation decision](../decisions/2026-10-02-PRACTICAL-USE-AND-REFERENCE-SCENE.md)
 establishes V1.15 as ready for use, with daily practical use by the operator. The
@@ -42,11 +42,11 @@ is an editorial scope, not a blanket status for the whole framework.
 
 ## What governs operational work?
 
-V1.15 is not a replacement for V1.14 yet. Existing realizations retain their
-own versioned governing corpus: their applicable LAW, RULES, intent, declared
-composition and ratified decisions. Missing text in this candidate waives none
-of those obligations. The code-free instruction governs this candidate, not a
-request to delete code from existing realizations or invalidate their contracts.
+V1.15 is ready for use as the shared framework. Existing realizations retain
+their versioned operational corpus: applicable LAW, RULES, intent, declared
+composition and ratified decisions. The editorial crosswalk connects these
+obligations across versions. This documentation edition carries the framework;
+realization repositories carry the implementation and its contracts.
 
 Before operational work, identify and record the target realization and the
 exact governing revision attached to it. Do not use a moving branch, an old
@@ -72,7 +72,7 @@ The preserved September target has its own
 prototype gaps are not exceptions that weaken the target, and a target note is
 not evidence that an old runtime has already been rebuilt.
 
-## Finite candidate reading set
+## Finite reading set
 
 For this correction checkpoint, these groups define the principal agent's
 required coverage, not a second reading order. Enter through the board and follow
@@ -104,8 +104,7 @@ a claim to have enumerated or reconciled every ecosystem source.
 
 ## Meaning of “complete foundation”
 
-Before release, that phrase means the finite candidate study set **plus the
-identified existing governing corpus for the contemplated operational work**.
-It never means “all laws have already been migrated.” After a successor is
-adopted, replace this preparation map with an explicit adopted-law index and
-rule-by-rule crosswalk. No missing rule may disappear through editorial omission.
+For practical work, that phrase means the finite study set **plus the identified
+operational corpus of the chosen realization**. The editorial crosswalk keeps
+obligation ownership visible across versions. Evolve this map into an explicit
+adopted-law index as that crosswalk progresses, preserving each obligation.

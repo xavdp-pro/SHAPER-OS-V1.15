@@ -1,6 +1,7 @@
 # Revision evidence and reading continuity
 
-Status: editorial procedure for this candidate; no runtime qualification.
+Purpose: keep document revisions, reading coverage and verification reproducible
+as V1.15 evolves. Realization records track runtime observations separately.
 
 ## Published candidate checkpoint
 

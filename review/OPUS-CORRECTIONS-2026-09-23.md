@@ -1,7 +1,9 @@
 # Claude Opus counter-review — correction record
 
 Checkpoint: V1.15-OPUS-CORRECTIONS-01, 23 September 2026.
-Status: historical correction checkpoint; complete successor release still OPEN.
+Record: historical correction checkpoint of 23 September 2026. Its findings
+and completion statements describe the reviewed snapshot. For current practical
+use, see the [README](../README.md).
 Later independent closure and publication are recorded below and in the
 [continuity protocol](VERIFICATION-AND-CONTINUITY.md).
 The human requested these corrections after the independent Opus review.

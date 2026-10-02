@@ -88,7 +88,7 @@ editorial work. The exact
 what remains binding for existing realizations. Missing successor text waives
 no existing operational protection.
 
-Do not copy V1.14's software directory or Git history into this candidate. Merely
+Do not copy V1.14's software directory or Git history into this documentation edition. Merely
 deleting today's code while carrying an implementation archive would blur the
 same boundary again. Preserve V1.14 separately as evidence and lineage.
 
@@ -107,7 +107,7 @@ to reality without making their incidental technologies universal law.
 The existing MariaDB/Podman decisions are preserved in the
 [September target profile](docs/profiles/SEPTEMBER-CONTAINER-MARIADB.md).
 Its applicability is explicit; it cannot be opted out of by an agent choosing
-another engine. Full successor-law mapping remains under review.
+another engine. The editorial crosswalk tracks its relationship to versioned operational laws.
 
 ## Why implementation remains replaceable
 

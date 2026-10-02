@@ -5,6 +5,16 @@ operator. Editorial reconciliation: **OPEN**. This ledger tracks source coverage
 and the successor-law crosswalk; its open items are not the framework's usage
 status and do not establish exhaustive whole-ecosystem reading.
 
+## Explanatory wording across reading material — 2 October 2026
+
+Current guides, learning chapters, glossary, profile, procedure, examples and
+agent routes now lead with purpose and practical application rather than blanket
+maturity disclaimers. They follow the
+[presentation direction](../decisions/2026-10-02-PRACTICAL-USE-AND-REFERENCE-SCENE.md).
+The operational contracts, source observations and dated test findings keep their
+meaning. Historical records identify their snapshot scope; the framework remains
+ready for daily use while this ledger tracks editorial crosswalk work.
+
 ## Practical-use presentation — 2 October 2026
 
 The [operator direction](../decisions/2026-10-02-PRACTICAL-USE-AND-REFERENCE-SCENE.md)

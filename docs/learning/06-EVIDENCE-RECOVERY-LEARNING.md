@@ -1,6 +1,6 @@
 # 6. Evidence, recovery and learning
 
-Status: explanatory synthesis; no installed qualification is claimed.
+Purpose: observe real results, practise recovery and learn from experience.
 Prerequisite: [materialization](05-MATERIALIZATION.md).
 Sources: S03, S04, S06 and S07 in the [source map](../../review/SOURCE-MAP.md).
 

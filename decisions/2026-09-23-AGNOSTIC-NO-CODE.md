@@ -1,6 +1,6 @@
 # Operator direction — 23 September 2026
 
-Status: direct current operator mandate. Historical rule reconciliation pending.
+Direction: direct current operator mandate. Historical rule reconciliation pending.
 Source: operator direction issued on 23 September 2026 for the preparation of
 V1.15.
 

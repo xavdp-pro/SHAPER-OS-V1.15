@@ -1,6 +1,6 @@
 # Operator direction — OpenCode bridge in the reference universe
 
-Status: **[MANDATE]** scoped direction for the proposed reference-universe
+Direction: **[MANDATE]** scoped direction for the proposed reference-universe
 composition, issued by the operator on 24 September 2026. It does
 not seal V1.15 as successor runtime law or certify a built image.
 

@@ -1,15 +1,15 @@
 # Human reading guide — five depths
 
-Status: **EDITORIAL** reading guidance; concept explanations and fictional
-examples are **EXPLANATION**. These routes confer no authority and do not
-complete the still-open successor-law reconciliation.
+Purpose: choose the depth that helps you understand and use SHAPER OS.
+Reading guidance is **EDITORIAL**; concept explanations and fictional examples
+are **EXPLANATION**. The [ledger](../../review/READING-LEDGER.md) tracks the
+separate editorial crosswalk.
 
 The five depths preserve V1.14's existing human route. They describe what a
 reader wants to understand, not their value, rank or permissions. A person may
 move between them. Begin with the [board's orientation](../CONTEXT-INDEX.md),
 then use the depth below that answers your question. The learning chapters are
-available now; detailed-law reconciliation remains open in the
-[ledger](../../review/READING-LEDGER.md).
+available now, with links to their sources and practical exercises.
 
 The inherited labels Owner, Operator, Engineer and Architect name reading
 perspectives, not appointments or permission grants. You may read a subset;

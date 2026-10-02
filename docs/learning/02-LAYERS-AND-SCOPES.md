@@ -1,6 +1,6 @@
 # 2. Layers, space, universes and fractal relationships
 
-Status: explanatory synthesis; exact historical naming remains under review.
+Purpose: explain layers, spaces, universes and their fractal relationships.
 Prerequisite: [intention and governance](01-INTENTION-AND-GOVERNANCE.md).
 Sources: S01, S03 and S04 in the [source map](../../review/SOURCE-MAP.md).
 

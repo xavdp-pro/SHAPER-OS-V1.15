@@ -1,8 +1,8 @@
 # Working glossary
 
-Status: explanatory vocabulary, not a completed amendment of V1.14 Rule 37.
-Definitions follow the [source map](../review/SOURCE-MAP.md). A conflicting
-source must be reconciled before these terms become a sealed successor lexicon.
+Purpose: explain the vocabulary used to understand and apply SHAPER OS.
+Definitions follow the [source map](../review/SOURCE-MAP.md); the editorial
+crosswalk connects them to the earlier versioned vocabulary.
 Definitions are **EXPLANATION**, except terms explicitly labeled **TARGET**.
 
 ## Understanding and authority
@@ -23,7 +23,7 @@ Definitions are **EXPLANATION**, except terms explicitly labeled **TARGET**.
 - **Principal agent:** the agent coordinating understanding with the human and
   connecting affected contracts; a responsibility, not an automatic root identity.
   See the [agent routes](agent/STRONG.md).
-- **Adopted candidate editorial foundation:** the five editorial documents
+- **Adopted editorial foundation:** the five editorial documents
   enumerated in the [governing corpus](GOVERNING-CORPUS.md), not all operational law.
 - **Finite study set:** the larger enumerated reading set in that map, including
   explanatory chapters, examples and reviews; inclusion does not confer law status.

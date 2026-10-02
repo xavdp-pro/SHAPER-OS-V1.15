@@ -1,7 +1,7 @@
 # 3. Creation, execution and protection
 
-Status: teaching of the 22 September design direction; terminology is not yet
-reconciled into successor law. Prerequisite: [layers and scopes](02-LAYERS-AND-SCOPES.md).
+Purpose: explain how creation, execution and protection work together.
+Prerequisite: [layers and scopes](02-LAYERS-AND-SCOPES.md).
 Sources: S05 and S07 in the [source map](../../review/SOURCE-MAP.md).
 
 ## In plain language

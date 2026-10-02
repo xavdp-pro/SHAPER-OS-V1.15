@@ -1,6 +1,8 @@
 # Reading-structure review — 23 September 2026
 
-Scope: organization and explanatory content of the V1.15 documentation candidate.
+Historical scope: organization and explanatory content of the original V1.15
+documentation snapshot. Its findings describe that checkpoint; the
+[README](../README.md) presents current practical use.
 Not a complete review of inherited law, all ecosystem sources or deployed systems.
 Historical snapshot: the original 22-file state, before the independent Opus
 review and [subsequent corrections](OPUS-CORRECTIONS-2026-09-23.md). Counts and

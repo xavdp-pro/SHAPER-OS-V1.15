@@ -1,6 +1,7 @@
 # Self-checks for the human–agent tandem
 
-Status: explanatory synthesis. Prerequisite: the
+Purpose: improve judgment, initiative and learning through practical self-checks.
+Prerequisite: the
 [common learning sequence](../CONTEXT-INDEX.md).
 Sources: S03, S04, S06 and S09 in the [source map](../../review/SOURCE-MAP.md).
 

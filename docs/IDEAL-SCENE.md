@@ -1,6 +1,6 @@
 # SHAPER OS in practice — the ideal scene
 
-Status: **EXPLANATION** of the reference architecture and intended experience,
+Purpose: **EXPLANATION** of the reference architecture and intended experience,
 following the [2 October presentation decision](../decisions/2026-10-02-PRACTICAL-USE-AND-REFERENCE-SCENE.md).
 SHAPER OS V1.15 is ready for use and is used daily to organize and deploy
 universes. This scene helps you

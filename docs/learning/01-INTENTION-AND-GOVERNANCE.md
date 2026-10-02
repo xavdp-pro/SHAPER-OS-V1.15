@@ -1,6 +1,6 @@
 # 1. From intention to authorized action
 
-Status: explanatory synthesis; not a replacement for unreconciled laws.
+Purpose: explain how human intentions guide useful, authorized action.
 Prerequisites: [intent](../../INTENT.md), [reading contract](../READING-CONTRACT.md).
 Sources: S01, S03, S04 and S06 in the [source map](../../review/SOURCE-MAP.md).
 
