@@ -82,6 +82,8 @@ contracts that are still being reconciled.
   own contract. For a new universe, use the proposed
   [reference-universe procedure](procedures/01-REFERENCE-UNIVERSE.md).
   This OS repository contains no executable runbook.
+- An optional **Meta Muse cognition bridge** (headless CLI adapter):
+  [realization intent](intents/cognition-bridge-meta-muse.md) — code lives outside OS.
 - A disagreement, missing observation or recurring failure:
   [self-checks](human/METACOGNITION.md) and [evidence](learning/06-EVIDENCE-RECOVERY-LEARNING.md).
 - A provenance or completeness question: [source map](../review/SOURCE-MAP.md)

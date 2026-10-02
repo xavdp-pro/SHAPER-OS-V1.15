@@ -87,6 +87,20 @@ and the Helm/Governor/Maker authority boundaries (Rules 0F, 36 and 37).
 Reading is not rule-by-rule reconciliation, independent qualification or runtime
 proof. F-02 and the remaining required successor work below stay **OPEN**.
 
+## Meta Muse realization intent — 25 September 2026
+
+The [realization intents index](../docs/intents/README.md) gained its first
+entry: the [Meta Muse cognition bridge](../docs/intents/cognition-bridge-meta-muse.md)
+intent (`REALIZATION-BRIDGE-META-MUSE`). It states what an external realization
+must provide to expose the Meta Muse CLI as an optional cognition adapter —
+interface obligations, unattended CLI behavior, measured configuration,
+deployability evidence and comprehension questions — ready to be implemented and
+qualified against. The board and the September profile link it; executable code
+lives in the public [muse-bridge](https://github.com/xavdp-pro/muse-bridge)
+repository, outside V1.15. The two commits were integrated into `main` on
+2 October 2026 alongside the presentation direction above, keeping the board's
+procedure and bridge entries side by side.
+
 ## Historical coverage — 24 September 2026
 
 The entries below preserve that checkpoint's coverage. Statements about the
@@ -157,8 +171,12 @@ scoped operator decisions, the
 and the [Reference Universe Procedure](../docs/procedures/01-REFERENCE-UNIVERSE.md);
 the board, README, chapter 4 and September profile link them, and the
 [governing-corpus](../docs/GOVERNING-CORPUS.md) study set and agent entrance now
-list them. None of these post-closure edits has been independently reviewed;
-the Opus closure covers only `5bc22b3`.
+list them. On 25 September the
+[Meta Muse cognition-bridge intent](../docs/intents/cognition-bridge-meta-muse.md)
+and its index were added under `docs/intents/`, linked from the board and the
+September profile; they were merged into `main` on 2 October and their ledger
+entry was repositioned here. None of these post-closure edits has been
+independently reviewed; the Opus closure covers only `5bc22b3`.
 
 The earlier check of Rules 4 and 26 at `958e0b7` located their headings only.
 The 27 September checkpoint above now covers the full RULES text at that

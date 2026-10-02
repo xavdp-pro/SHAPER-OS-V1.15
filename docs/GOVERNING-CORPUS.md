@@ -87,7 +87,9 @@ its navigation, including prerequisites and the common learning sequence:
 3. [Board](CONTEXT-INDEX.md), [glossary](GLOSSARY.md) and
    [artifact vocabulary](architecture/VOCABULARY-BOUNDARY.md).
 4. All six numbered learning chapters linked by the board, in order.
-5. [September target profile](profiles/SEPTEMBER-CONTAINER-MARIADB.md).
+5. [September target profile](profiles/SEPTEMBER-CONTAINER-MARIADB.md) and the
+   [realization intents](intents/README.md) it references, currently the
+   [Meta Muse cognition bridge](intents/cognition-bridge-meta-muse.md).
 6. [Human guide](human/READING-GUIDE.md), [self-checks](human/METACOGNITION.md),
    [medium route](agent/MEDIUM.md) and [strong route](agent/STRONG.md).
 7. [Scenario checks](examples/COMPREHENSION-CHECKS.md) and
