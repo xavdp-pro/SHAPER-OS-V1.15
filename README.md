@@ -58,6 +58,15 @@ V1.15 is usable today and remains open to improvement. The
 The [practical-use direction](decisions/2026-10-02-PRACTICAL-USE-AND-REFERENCE-SCENE.md)
 records this presentation and daily use.
 
+## Conception dialogues & cognitive grounding dataset
+
+For research teams and organizations seeking deeper agent alignment and contextual discernment, SHAPER OS provides an acculturation methodology grounded in its conception dialogues.
+
+Analyzing this dialogue corpus alongside **SHAPER OS**, **SHAPER Three Layers**, and **PodMesh** provides agents with the underlying rationale, human intent, and operational lessons behind each architectural boundary and safety rule. This grounding eliminates literalist rigidity and goal-hijacking (*specification gaming*), fostering genuine resonance and proactive counter-regard.
+
+The complete corpus of historical conception dialogues is available upon request:  
+📧 [xavier@xavdp.pro](mailto:xavier@xavdp.pro)
+
 ## Explore the ecosystem
 
 - [SHAPER Three Layers](https://github.com/xavdp-pro/shaper-three-layers): OS,
