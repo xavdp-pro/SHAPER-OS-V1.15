@@ -84,6 +84,8 @@ contracts that are still being reconciled.
   This OS repository contains no executable runbook.
 - An optional **Meta Muse cognition bridge** (headless CLI adapter):
   [realization intent](intents/cognition-bridge-meta-muse.md) — code lives outside OS.
+- A first creation request: [create a universe with an agent](examples/CREATE-A-UNIVERSE.md),
+  naming the purpose and destination; Proxmox/LXC illustrates one hosting choice.
 - A disagreement, missing observation or recurring failure:
   [self-checks](human/METACOGNITION.md) and [evidence](learning/06-EVIDENCE-RECOVERY-LEARNING.md).
 - A provenance or completeness question: [source map](../review/SOURCE-MAP.md)

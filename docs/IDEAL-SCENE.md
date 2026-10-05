@@ -82,6 +82,9 @@ its own tools, contracts and operating conditions.
 
 ## Go further
 
+- [Create a universe with an agent](examples/CREATE-A-UNIVERSE.md): a concrete
+  request naming the destination, purpose and hosting choice, with Proxmox/LXC
+  as one example.
 - [Human reading guide](human/READING-GUIDE.md): choose your depth of explanation.
 - [Shared learning sequence](CONTEXT-INDEX.md#common-learning-sequence): connect
   intention, architecture, functional units, realization and learning.

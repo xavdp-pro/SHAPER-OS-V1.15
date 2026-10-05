@@ -39,6 +39,9 @@ method with an agent on a situation that matters to you.
   [worked answers](docs/examples/WORKED-ANSWERS.md).
 - Building a reference universe: [construction procedure](docs/procedures/01-REFERENCE-UNIVERSE.md)
   and [current realization profile](docs/profiles/SEPTEMBER-CONTAINER-MARIADB.md).
+- Asking an agent to create a universe on your machine:
+  [a concrete starting request](docs/examples/CREATE-A-UNIVERSE.md), with
+  Proxmox/LXC as one hosting example.
 
 ## An enduring framework, evolving realizations
 
