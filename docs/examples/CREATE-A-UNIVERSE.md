@@ -24,6 +24,11 @@ The human names the universe, destination and preferred environment. The agent
 organizes the construction there. The human does not need to write a deployment
 specification before starting the conversation.
 
+**The agent creates the implementation from SHAPER OS.** It can start with an
+empty realization workspace: it writes the unit code, concrete contracts, build
+material and tests there, outside this documentation repository. An existing
+codebase, prebuilt reference or registry is optional reuse, not an entry ticket.
+
 ## Add the functions you already have in mind
 
 Use the [glossary](../GLOSSARY.md) to name what you want to create: a space,
@@ -53,10 +58,25 @@ then builds and verifies the additional units within the agreed scope.
 
 ## What needs to be available
 
-The hosting prerequisite is Podman or LXC, with the permissions and resources
+The hosting prerequisite is **Podman or LXC**, with the permissions and resources
 needed to create the requested environment. LXC may be managed directly on a
 Debian host or through Proxmox. For the Debian 13 example, Debian 13 is the
 requested LXC guest system; the agent checks the host and guest separately.
+
+| Available to start | What the agent checks or prepares |
+| :--- | :--- |
+| A capable coding agent with this repository and authorized tools | Read the frame, create files, run commands, build and observe results. Prior SHAPER history is unnecessary. |
+| The named local machine or an SSH destination, with creation rights | Confirm the target, existing workloads, available CPU, memory, storage and network access. |
+| Suitable Podman or LXC hosting | Prove that the chosen outer universe environment can run its inner Podman functional units; an installed binary alone is insufficient. |
+| A separate writable realization workspace | Generate and retain code, tests, versioned composition and evidence. Prepare build dependencies from available sources within the mandate. |
+
+Any credentials or external services needed by the requested functions are
+checked before those functions are exercised. The default OpenCode bridge needs
+a usable, authorized cognition engine for a real cognition test; the agent
+implements its [adapter contract](../intents/cognition-bridge-opencode.md) and
+[common continuity/execution intent](../intents/cognition-bridge.md). Missing engine
+access is a precise dependency to resolve; the four base responsibilities remain
+independent of cognition. The agent reports their results separately.
 
 On the local machine, the agent works directly through its authorized local
 access; SSH is not required. For a remote machine, the agent needs authorized
@@ -81,13 +101,20 @@ choice becomes a focused question, rather than a long questionnaire upfront.
 ## What the agent organizes
 
 The agent reads SHAPER OS through its [entrance](../../AGENTS.md) and
-[reading board](../CONTEXT-INDEX.md), identifies the applicable realization and
-governing revision, and follows the
+[reading board](../CONTEXT-INDEX.md), records the new realization's applicable
+governing sources and profile, and follows the
 [reference universe procedure](../procedures/01-REFERENCE-UNIVERSE.md).
 It preserves existing workloads while creating the new environment, constructs
-or reuses the appropriate verified reference, and gives the new universe its
+and verifies the first reference, or reuses a suitable verified one when available.
+It gives the new universe its
 own identity, credentials and persistent state. Implementation and operating
 records belong in a separate realization workspace.
+
+For these starter requests, use the reference composition selected by
+Procedure 01: Vault, Logger, Queue, Maestro and the OpenCode bridge. This makes
+the starting composition explicit; it does not make that adapter mandatory for
+every possible profile. Report missing engine access separately from the
+construction and operation of the four base units.
 
 Proxmox and LXC are example hosting choices. The LXC container hosts the
 universe's environment; it does not replace the functional units or their
@@ -96,6 +123,22 @@ isolation and storage contracts. Under the
 functional units run in their own Podman containers, each with its private
 MariaDB. Check the selected host's ability to support that composition before
 building it; do not silently change the profile to work around a hosting issue.
+
+With Podman hosting under the current model, the universe is an outer system
+container carrying its own Podman functional units. With LXC hosting, the LXC
+guest supplies that outer boundary. The agent checks the nesting, storage,
+network and privilege requirements on the actual host before claiming it is fit.
+The operator reports repeated deployment and daily use of this nested model;
+those practical results and qualification of the new candidate have their own
+evidence scopes, as the [crosswalk](../GOVERNING-CORPUS.md#current-construction-crosswalk) explains.
+
+The first agent response should briefly restate the destination and result,
+then begin the authorized prerequisite checks. It explains the composition and
+first proof, and proceeds to construction when the required access and mandate
+are available. Missing code is work to perform. A choice of internal schema or
+implementation method is for the agent to make within the contracts. A missing
+business intention, access right or conflicting requirement calls for a focused
+question about that point, while independent authorized work continues.
 
 ## What to ask for at completion
 
@@ -107,6 +150,16 @@ operation and human acceptance distinguishable.
 This request starts a human–agent construction process. It does not imply that
 a prebuilt image or a complete automated deployment is supplied by this
 documentation repository.
+
+## Reuse after the first success
+
+Once there are verified units or universes worth duplicating, it is recommended
+to put their reusable artifacts in a registry, with immutable identifiers and
+links to the composition and proof. The
+[reference procedure](../procedures/01-REFERENCE-UNIVERSE.md#registry-after-verification)
+explains what to retain. Each duplicate receives its own identity and state;
+secrets and live business data are not a reusable template. A registry can be
+organized later and is not needed to start the first construction.
 
 Continue with the [reference universe procedure](../procedures/01-REFERENCE-UNIVERSE.md)
 and the [ideal scene](../IDEAL-SCENE.md).

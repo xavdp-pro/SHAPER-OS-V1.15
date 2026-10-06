@@ -21,6 +21,11 @@ Start with [the ideal scene and first exercise](../IDEAL-SCENE.md) for the inten
 experience, practical use and a bounded trial with an agent. V1.15 editorial
 reconciliation and the operating status of a realization are separate scopes.
 
+To ask for construction now, use [the short creation requests](../examples/CREATE-A-UNIVERSE.md).
+The agent writes the implementation from the frame, checks the available host
+and shows the results. You do not need to provide an existing code repository
+or registry before beginning.
+
 ## Level 1 — Owner: understand the purpose
 
 Start with a real situation: a supplier changes prices and old quotations must

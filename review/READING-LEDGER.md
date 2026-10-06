@@ -1,9 +1,59 @@
 # Reading and reconciliation ledger
 
-Updated: 2 October 2026. Framework status: **READY FOR USE**, used daily by the
+Updated: 6 October 2026. Framework status: **READY FOR USE**, used daily by the
 operator. Editorial reconciliation: **OPEN**. This ledger tracks source coverage
 and the successor-law crosswalk; its open items are not the framework's usage
 status and do not establish exhaustive whole-ecosystem reading.
+
+## First-use correction and shared bridge intent — 6 October 2026
+
+The [operator clarification](../decisions/2026-10-06-PRACTICAL-DEPLOYMENT-AND-BRIDGE-CONTINUITY.md)
+records repeated practical deployment, including nested Podman, and extensive
+daily use. The [construction crosswalk](../docs/GOVERNING-CORPUS.md#current-construction-crosswalk)
+resolves registry sequencing, dated nested-recipe status, scoped OpenCode selection,
+private MariaDB and dependency-specific stops for new construction.
+
+The [common bridge intent](../docs/intents/cognition-bridge.md) now owns mission,
+role/jurisdiction, context preparation, session continuity/reconstruction,
+precise actions, durable action/check records and the mandated full
+noninteractive DEV execution policy, followed by tandem-defined production
+permissions per action or action type. The
+[OpenCode contract](../docs/intents/cognition-bridge-opencode.md) fills the detailed
+reference-adapter gap; the
+[Muse profile](../docs/intents/cognition-bridge-meta-muse.md) distinguishes API
+history replay from CLI execution and removes implementation repository links.
+Navigation, glossary, reading routes and Procedure 01 point to these owners.
+
+An independent fresh-reader review of the preceding candidate found useful
+first-use ambiguities. Its suggestions to flatten the universe, share MariaDB
+or substitute simulated cognition were not adopted because they conflict with
+the current architecture and operator mandate. The review is evidence of reader
+understanding, not authority to change those choices. This correction has its own
+structural checks; it does not inherit the earlier review's coverage.
+
+A bounded read-only comparison of four local adapters and the older remote
+adapter generation identified different session/context, capability and storage
+semantics. The detailed revision/file inventory and implementation gaps remain
+in external task evidence. Similar routes and a protocol label do not establish
+full common-contract compliance. No bridge implementation was changed, no engine
+run or email action was invoked, and no deployment was qualified by this pass.
+
+## First construction without an existing implementation — 5 October 2026
+
+The [operator clarification](../decisions/2026-10-05-FIRST-CONSTRUCTION-AND-REUSE.md)
+and [source entry S11](SOURCE-MAP.md#s11--first-construction-and-later-reuse-5-october-2026)
+make code generation from the framework explicit. Entry points now connect a
+short request to local/SSH prerequisites and construction of the first reference
+in a separate workspace. Procedure 01 distinguishes generating concrete contracts
+from inventing authority, adds a worked proof design and recommends registry
+distribution after verified realizations exist.
+
+This is a documentation change. The worked runtime scenario has not been run;
+new generated implementations still need their own qualification. F-03 and F-05
+retain their unresolved scope; an isolated first universe does not silently
+settle cross-jurisdiction roles, space composition or all recovery contracts.
+Fresh-reader evaluation and structural checks of this change are recorded in
+the external task evidence, separately from earlier reviews.
 
 ## Explanatory wording across reading material — 2 October 2026
 
@@ -96,8 +146,8 @@ must provide to expose the Meta Muse CLI as an optional cognition adapter —
 interface obligations, unattended CLI behavior, measured configuration,
 deployability evidence and comprehension questions — ready to be implemented and
 qualified against. The board and the September profile link it; executable code
-lives in the public [muse-bridge](https://github.com/xavdp-pro/muse-bridge)
-repository, outside V1.15. The two commits were integrated into `main` on
+lives outside V1.15. The 6 October correction below separates the shared
+contract and API/CLI variants; this entry records the earlier document scope. The two commits were integrated into `main` on
 2 October 2026 alongside the presentation direction above, keeping the board's
 procedure and bridge entries side by side.
 

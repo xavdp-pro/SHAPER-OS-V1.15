@@ -22,6 +22,12 @@ The principal human-paired agent takes this systemic responsibility even when
 using the medium route's explicit steps. It must know where every obligation
 lives and understand the whole foundation before directing a realization.
 
+For cognition, read the [common bridge intent](../intents/cognition-bridge.md)
+before a provider profile. Prepare the bounded mission and context, resume the
+identified session, refresh current instructions and prior action/check records,
+and reconstruct continuity before further effects when it is lost. Apply the
+human-mandated DEV execution policy through the adapter's actual capabilities.
+
 ## Comprehension exercise
 
 Complete the [medium route's scenarios](MEDIUM.md). Then explain which principles
@@ -49,6 +55,12 @@ cases and independent observations that would refute the proposed improvement;
 do not infer runtime behavior from a good conceptual answer.
 
 Apply V1.15 now to understand, compose and improve realizations with the human.
+For construction from zero, follow the
+[creation example](../examples/CREATE-A-UNIVERSE.md) and reference procedure:
+derive and implement the concrete contracts, then prove their behavior. Check
+that no dependency on an existing implementation or registry has been assumed.
+Distinguish choices you can make within the mandate from an actual missing
+governing decision; scope any pause to its dependent work.
 Connect unit details and ecosystem questions to the
 [editorial ledger](../../review/READING-LEDGER.md), identifying their owners and
 next useful steps. Keep learning, editorial crosswalk progress and observed

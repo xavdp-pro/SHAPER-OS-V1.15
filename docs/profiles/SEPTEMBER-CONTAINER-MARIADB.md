@@ -31,6 +31,21 @@ applicability question: see the
 The exact generalization of this target into successor law remains F-02/F-05.
 See [interim authority](../GOVERNING-CORPUS.md) for existing operational versions.
 
+## Practical topology
+
+**[MANDATE: 6 October clarification]** The operator reports repeated deployment
+and extensive daily use of this universe model, including nested Podman.
+Podman hosting retains an outer system-container universe running its inner
+Podman functional units; LXC hosting supplies that outer system boundary.
+An isolated host application network does not replace the universe container.
+Each unit has its own MariaDB server instance, not merely a separate database
+on a shared server. Docker and a shared development database are not adopted
+alternatives here.
+
+The [current construction crosswalk](../GOVERNING-CORPUS.md#current-construction-crosswalk)
+resolves older dated “unproven” wording. Qualify the newly generated candidate
+and chosen host while preserving the operator-attested record of practical use.
+
 ## Preserved choices
 
 **[TARGET S05/S07]** Each functional unit has one responsibility, one isolated
@@ -41,15 +56,16 @@ database; administration uses a separate authorized path.
 
 In each minimal universe composition, Vault, Logger, Queue and Maestro are the
 four mandatory base units. Cognition Bridge is optional when a class declares
-bounded cognition jobs (see [Meta Muse bridge intent](../intents/cognition-bridge-meta-muse.md)
-as one external realization example). No base unit depends on that adapter. Maestro remains
+bounded cognition jobs (see the
+[generic bridge intent](../intents/cognition-bridge.md) and its scoped adapters). No base unit depends on that adapter. Maestro remains
 idle when no schedule is declared. This is a property of **this target**, not a
 claim that every imaginable implementation must contain these four products.
 
 **[MANDATE: 24 September reference choice]** The
 [operator decision](../../decisions/2026-09-24-REFERENCE-OPENCODE-BRIDGE.md)
 and [Reference Universe Procedure](../procedures/01-REFERENCE-UNIVERSE.md) now
-select the OpenCode Cognition Bridge by default as a fifth unit in that
+select the [OpenCode Cognition Bridge](../intents/cognition-bridge-opencode.md)
+by default as a fifth unit in that
 reference composition. The four base responsibilities above remain independent
 of the bridge; an installed bridge may remain idle until authorized work is
 declared. This scoped choice does not turn OpenCode into a universal

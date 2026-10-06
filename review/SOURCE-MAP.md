@@ -141,6 +141,39 @@ presentation of the ideal scene. The
 its illustration is explanatory. This is a presentation direction, not an
 independent audit of every deployment or a rewrite of operational law.
 
+## S11 — First construction and later reuse, 5 October 2026
+
+The [operator clarification](../decisions/2026-10-05-FIRST-CONSTRUCTION-AND-REUSE.md)
+makes the construction agent's responsibility explicit: generate implementation
+from intentions and contracts, with local access or SSH and suitable Podman/LXC
+hosting. Existing code and references are optional reuse. A registry is
+recommended after verified realizations are useful to duplicate. The direction
+states the boundary with earlier registry requirements and existing deployments.
+
+The [creation example](../docs/examples/CREATE-A-UNIVERSE.md) owns first-use
+prerequisites; [Procedure 01](../docs/procedures/01-REFERENCE-UNIVERSE.md) connects
+construction from zero, a worked proof design and later reuse. The proof example
+is explanatory and has not been executed by this documentation change.
+
+## S12 — Practical deployment and shared bridge continuity, 6 October 2026
+
+The [operator clarification](../decisions/2026-10-06-PRACTICAL-DEPLOYMENT-AND-BRIDGE-CONTINUITY.md)
+records repeated deployment and daily use, including nested Podman, and resolves
+the new-construction scope through the
+[governing crosswalk](../docs/GOVERNING-CORPUS.md#current-construction-crosswalk).
+The human-bounded mission/context/session/action lifecycle and full
+noninteractive DEV execution policy and subsequent production permissions per
+action or action type are explicit operator directions. The
+[common bridge intent](../docs/intents/cognition-bridge.md) owns their shared
+meaning; scoped profiles own adapter requirements.
+
+A read-only source comparison informs the adapter profiles' stated gaps. Exact
+source revisions, inspected sections and limitations are retained outside this
+public corpus. The old provider-neutral `pkg-bridge-contract` intent supplies
+transport lineage; it did not already implement the expanded continuity contract.
+The independent fresh-reader findings prompted corrections but did not authorize
+architecture changes or establish runtime proof.
+
 ## Still open
 
 The independent Claude Opus 5.5 review of the previous 22-file candidate is advice,

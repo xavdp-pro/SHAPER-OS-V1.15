@@ -81,6 +81,14 @@ and review records. It contains no executable implementation, application,
 library, installer, build script, dependency manifest, container recipe or
 embedded runtime. Tooling used to verify these documents lives outside it.
 
+The absence of implementation is intentional: **the agent produces it from
+the documented intentions and contracts for the requested situation**. A
+realization repository is where that generated work is kept; it need not exist
+before the request. Reusing existing code or a verified reference is possible,
+but is not required to begin. Once useful realizations exist, a registry is
+recommended for their reproducible duplication. See the
+[first-construction direction](decisions/2026-10-05-FIRST-CONSTRUCTION-AND-REUSE.md).
+
 This ready-to-use documentation edition contains the adopted editorial direction
 and explanatory material. Its complete successor-law crosswalk remains separate
 editorial work. The exact
@@ -126,7 +134,10 @@ through an explicit human decision and recorded consequences.
 A human can choose a reading depth and understand what the system does for them,
 what they control, what may fail and what proof to ask for. A medium or strong
 agent can reconstruct the frame, locate every governing source, explain the
-dependencies and produce an implementation plan without inventing missing law.
+dependencies, produce the implementation in a separate workspace and verify
+its behavior without inventing missing law. The
+[creation example](docs/examples/CREATE-A-UNIVERSE.md) connects a simple request
+to prerequisites, construction and proof.
 
 ## Editorial reconciliation completion
 

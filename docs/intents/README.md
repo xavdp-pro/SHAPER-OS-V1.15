@@ -1,28 +1,26 @@
 # Realization intents — ready-to-implement contracts
 
-A **realization intent** states what an external realization must provide so it
-can be built, qualified and replaced against a stable meaning. SHAPER OS V1.15
-carries the **intentions, obligations and verification questions** for that
-purpose; packages, bricks, container recipes and bridge server code live in
-their own repositories — see [repository boundary](../../INTENT.md) and the
-[23 September decision](../../decisions/2026-09-23-AGNOSTIC-NO-CODE.md).
+A realization intent states what an external implementation must provide so it
+can be built, qualified and replaced against a stable meaning. The construction
+agent can generate that implementation in a new separate workspace. SHAPER OS
+contains intentions, obligations and verification questions; executable material
+stays outside it. See the [repository boundary](../../INTENT.md).
 
-Each intent here describes:
+## Read the shared contract before the adapter
 
-- what function the realization must provide;
-- how it relates to generic cognition-bridge obligations (optional adapter);
-- what must never block unattended operation when the human is absent;
-- what evidence proves the realization is working;
-- where executable artifacts are expected to live (separate repositories).
-
-Implementations may change every month; these documents must remain stable enough
-that a replacement can be qualified against them.
-
-## Index
-
-| Intent | Role |
+| Intent | Role and authority |
 | :--- | :--- |
-| [Meta Muse cognition bridge](cognition-bridge-meta-muse.md) | Headless adapter — implementation: [xavdp-pro/muse-bridge](https://github.com/xavdp-pro/muse-bridge) |
+| [Generic cognition bridge](cognition-bridge.md) | Shared mission, human-bounded jurisdiction, prepared context, session continuity, precise actions and independently checked evidence. |
+| [OpenCode cognition bridge](cognition-bridge-opencode.md) | Scoped adapter selected by default for the reference universe; native session and tool integration qualified against the shared contract. |
+| [Meta Muse cognition bridge](cognition-bridge-meta-muse.md) | Optional scoped adapter; distinguish API history replay from a CLI/tool realization. |
 
-Historical executable references (V1.14 `pkg-bridge-*`, external GitHub bridges)
-are **lineage and comparison material**, not imports into this repository.
+Other providers implement the same shared intent through their own declared
+capabilities. Similar HTTP routes or a shared protocol name do not establish
+identical context, tool, persistence or recovery semantics. Record source-observed
+capabilities and missing obligations separately from executed qualification.
+
+The [6 October direction](../../decisions/2026-10-06-PRACTICAL-DEPLOYMENT-AND-BRIDGE-CONTINUITY.md)
+owns the common continuity requirement. Provider commands, exact wire schemas,
+ports and model settings belong to the adapter realization; they never redefine
+the generic contract. Historical implementations remain comparison or reuse
+material, not code imported into this repository.

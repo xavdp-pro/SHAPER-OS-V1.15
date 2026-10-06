@@ -84,8 +84,14 @@ Definitions are **EXPLANATION**, except terms explicitly labeled **TARGET**.
   deployment choices satisfying the generic contracts; not a loophole for
   weakening them. See [materialization](learning/05-MATERIALIZATION.md).
 - **Realization repository:** the separately governed home of concrete code,
-  executable artifacts, deployment recipes and their tests. Linking its obligations
-  here does not import its implementation into OS. See materialization.
+  executable artifacts, deployment recipes and their tests. The construction
+  agent creates it when starting from zero; it is an output of the work, not a
+  required pre-existing codebase. See [the creation example](examples/CREATE-A-UNIVERSE.md).
+- **Registry:** a service for retaining and distributing versioned reusable
+  artifacts. For a universe, image digests remain linked to its composition and
+  qualification records. Recommended once verified realizations are worth
+  duplicating; not required for first construction. See the
+  [reference procedure](procedures/01-REFERENCE-UNIVERSE.md#registry-after-verification).
 
 ## Work and evidence
 
@@ -112,3 +118,26 @@ Definitions are **EXPLANATION**, except terms explicitly labeled **TARGET**.
 For package/brick/unit lineage, read the
 [vocabulary boundary](architecture/VOCABULARY-BOUNDARY.md). No obligatory
 “packages then bricks” conceptual sequence is inferred from the user's wording.
+
+## Cognition and continuity
+
+- **Jurisdiction:** the scope of responsibility and permitted action assigned by
+  the human; a tool credential or shared host does not enlarge it.
+- **Context package:** the relevant universe, mission, role, resources,
+  relationships, rules, current state, prior actions and expected evidence,
+  identified by revision and prepared by the tandem.
+- **Logical session:** the stable work context identified by SHAPER, mapped to a
+  provider session or explicitly reconstructed conversation.
+- **Native session:** a provider-owned conversation identifier and state; it may
+  disappear or lose relevant context independently of SHAPER's records.
+- **Rehydration:** reloading authoritative current context and action/check
+  records before continuing work; not an assumption of perfect model memory.
+- **Action record:** durable operational history of intended, pending, completed
+  and uncertain effects and their checks, owned by the responsible Runtime unit.
+  It is distinct from a conversation transcript.
+- **Operation versus run:** one business operation keeps its identity across
+  retries; each bridge attempt has its own run identity.
+- **Adapter capability:** behavior actually supplied and qualified by a concrete
+  bridge, including context delivery, tools, execution policy and recovery.
+
+These meanings are explained in the [generic bridge intent](intents/cognition-bridge.md).

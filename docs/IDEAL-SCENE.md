@@ -42,9 +42,10 @@ coordinates the creation work; one or more **makers** carry it out within their
 mandates and report the result. Helm lets the client pilot the resulting universe
 within their jurisdiction.
 
-Makers can operate on the selected infrastructure. In a container realization,
-**PodMesh** supplies the container-management foundation; its own contracts and
-version describe placement, migration and recovery behavior. A governor, maker
+Makers can operate on the selected infrastructure. **PodMesh** is an optional
+container-management tool; its own contracts and version describe supported
+placement, migration and recovery behavior. The agent can also use the host's
+available Podman or LXC tools directly. A governor, maker
 and PodMesh manager have different responsibilities.
 
 The same pattern can recur at different scales: intention, scope, coordinated
@@ -76,7 +77,11 @@ You can begin by asking:
 > identify what needs clarification and propose a first useful step within
 > our agreed scope. Help me improve the plan as we learn from practice.
 
-The first useful result is a shared, inspectable plan. Reading this repository
+The first useful result of this exploration exercise is a shared, inspectable
+plan. For a creation request, continue with the
+[creation example and prerequisites](examples/CREATE-A-UNIVERSE.md): the agent
+writes and verifies the implementation in a separate workspace, starting from
+zero when needed. Reading this repository
 requires no particular model provider or hosting service. Implementation uses
 its own tools, contracts and operating conditions.
 

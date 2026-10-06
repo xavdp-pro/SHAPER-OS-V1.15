@@ -1,7 +1,9 @@
 # SHAPER OS V1.15 — shape what comes next, with AI agents
 
 **SHAPER OS V1.15 is ready for use.** Its creator uses it every day to create,
-deploy and organize universes.
+deploy and organize universes, including nested Podman deployments.
+The [6 October clarification](decisions/2026-10-06-PRACTICAL-DEPLOYMENT-AND-BRIDGE-CONTINUITY.md)
+records that practical experience and the scope of new-candidate qualification.
 
 SHAPER OS gives humans and AI agents a shared framework for turning intentions
 into systems that fit real needs. It connects purpose, responsibilities,
@@ -29,6 +31,15 @@ method with an agent on a situation that matters to you.
 
 ## Choose your entrance
 
+To begin building, give a capable agent this repository and a simple request:
+
+> Create a SHAPER OS universe called univ-example locally using Podman.
+
+**The agent writes the implementation from the documented intentions and
+contracts.** This repository is deliberately code-free; you do not need to find
+an existing SHAPER implementation first. See the
+[starting requests and prerequisites](docs/examples/CREATE-A-UNIVERSE.md).
+
 - Human readers: [five reading depths](docs/human/READING-GUIDE.md).
 - AI agents: [agent entrance](AGENTS.md) and [ordered reading board](docs/CONTEXT-INDEX.md).
 - Purpose and evolution: [intent](INTENT.md).
@@ -40,15 +51,20 @@ method with an agent on a situation that matters to you.
 - Building a reference universe: [construction procedure](docs/procedures/01-REFERENCE-UNIVERSE.md)
   and [current realization profile](docs/profiles/SEPTEMBER-CONTAINER-MARIADB.md).
 - Asking an agent to create a universe on your machine:
-  [a concrete starting request](docs/examples/CREATE-A-UNIVERSE.md), with
-  Proxmox/LXC as one hosting example.
+  [a concrete starting request](docs/examples/CREATE-A-UNIVERSE.md), locally or
+  over SSH, with Podman or LXC hosting.
 
 ## An enduring framework, evolving realizations
 
 This repository carries the framework in English: intentions, principles,
-contracts, explanations and examples. Concrete implementations live in their
-own repositories. As agents and tools improve, new realizations can preserve
-what matters while improving how it is achieved.
+contracts, explanations and examples. The agent creates concrete code, tests
+and deployment material in a separate realization workspace. Existing code can
+be reused when appropriate; it is optional. As agents and tools improve, new
+realizations can preserve what matters while improving how it is achieved.
+
+After a universe or its units have been built and verified, a registry is
+recommended for reproducible reuse and duplication. It can come later; see the
+[first-construction direction](decisions/2026-10-05-FIRST-CONSTRUCTION-AND-REUSE.md).
 
 V1.15 is usable today and remains open to improvement. The
 [governing corpus](docs/GOVERNING-CORPUS.md),

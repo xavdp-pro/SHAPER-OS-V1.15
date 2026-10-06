@@ -23,6 +23,14 @@ and evidence. A separate realization repository owns implementation packages,
 brick artifacts, executable schemas, migrations, manifests, tests and deployment
 recipes. No implementation language or database engine is necessary to read OS.
 
+The construction agent produces these artifacts from the intentions and
+contracts. That repository may begin empty; an older implementation is optional
+reuse. The [creation example](../examples/CREATE-A-UNIVERSE.md) owns the practical
+prerequisites and the reference procedure explains building the first reference.
+After verification, a registry is recommended when artifacts are useful to
+duplicate, following the
+[5 October direction](../../decisions/2026-10-05-FIRST-CONSTRUCTION-AND-REUSE.md).
+
 ## Why does it exist?
 
 Today's implementation is not the ceiling of tomorrow's agents. The human wants
@@ -49,6 +57,22 @@ Creating another unit or universe under that model retains its obligations.
 An agent cannot choose an alternate engine because the OS is agnostic. A future
 profile requires explicit approval and an obligation-by-obligation mapping;
 none is adopted here. The successor's generic-law mapping remains F-02/F-05.
+
+## Example: one bridge meaning, several adapters
+
+The [generic cognition bridge intent](../intents/cognition-bridge.md) describes
+what persists across providers: a human-bounded mission, prepared context,
+identified session, precise next task and recorded effects/checks reloaded on
+resumption. A native provider session or explicit replay may realize continuity;
+neither substitutes for the owning unit's durable action record.
+
+The [OpenCode profile](../intents/cognition-bridge-opencode.md) applies that meaning
+to the chosen reference adapter. The
+[Meta Muse profile](../intents/cognition-bridge-meta-muse.md) distinguishes API
+history replay from a CLI capable of tools. A shared endpoint name does not
+prove identical behavior. The constructor implements the required contract in
+its own workspace and qualifies actual capabilities, including the mandated
+DEV execution policy, rather than waiting for a pre-existing perfect adapter.
 
 ## What can fail?
 

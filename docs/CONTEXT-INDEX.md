@@ -11,6 +11,10 @@ Start with [the ideal scene and first exercise](IDEAL-SCENE.md) for the intended
 experience, practical use and a bounded trial with an agent. V1.15 editorial
 reconciliation and the operating status of a realization are separate scopes.
 
+For a first build, use [the creation example](examples/CREATE-A-UNIVERSE.md):
+one sentence from the human, checked prerequisites, then agent-produced code
+and observed results. The example owns the first-use prerequisite checklist.
+
 ## Orientation — shared by humans and agents
 
 1. [Governing corpus](GOVERNING-CORPUS.md): the finite study set, editorial authority
@@ -23,6 +27,12 @@ reconciliation and the operating status of a realization are separate scopes.
    [functional-unit MariaDB decision](../decisions/2026-09-24-FUNCTIONAL-UNIT-MARIADB.md)
    states that every next unit under the current model owns a private MariaDB,
    with existing SQLite prototypes kept as separate, declared debt.
+   The [first-construction direction](../decisions/2026-10-05-FIRST-CONSTRUCTION-AND-REUSE.md)
+   makes code generation explicit and recommends a registry after reusable
+   realizations exist. The
+   [6 October clarification](../decisions/2026-10-06-PRACTICAL-DEPLOYMENT-AND-BRIDGE-CONTINUITY.md)
+   records practical nested deployment, the current construction crosswalk and
+   the common bridge continuity and DEV execution mandate.
 3. [Reading contract](READING-CONTRACT.md): document authority, comprehension
    and continuity after context loss.
 4. [Glossary](GLOSSARY.md): first meanings, then the
@@ -78,12 +88,16 @@ contracts that are still being reconciled.
   and [protection](learning/03-CREATION-EXECUTION-PROTECTION.md).
 - A dependency or receipt question: [units](learning/04-UNITS-AND-DEPENDENCIES.md).
 - A concrete technology or deployment question:
-  [materialization](learning/05-MATERIALIZATION.md), then the external realization's
-  own contract. For a new universe, use the proposed
+  [materialization](learning/05-MATERIALIZATION.md), then the realization's
+  own contract, which the agent creates for new work. For a new universe, use the
   [reference-universe procedure](procedures/01-REFERENCE-UNIVERSE.md).
-  This OS repository contains no executable runbook.
-- An optional **Meta Muse cognition bridge** (headless CLI adapter):
-  [realization intent](intents/cognition-bridge-meta-muse.md) — code lives outside OS.
+  It covers building the first reference as well as reusing one; the agent writes
+  the executable material outside this OS repository.
+- A cognition/session question: [generic bridge intent](intents/cognition-bridge.md),
+  then the [OpenCode reference adapter](intents/cognition-bridge-opencode.md) or
+  [Meta Muse adapter](intents/cognition-bridge-meta-muse.md). The common contract
+  owns bounded context, session recovery, action records and execution policy;
+  provider mechanisms and implementation live outside the generic core.
 - A first creation request: [create a universe with an agent](examples/CREATE-A-UNIVERSE.md),
   naming the purpose and destination; Proxmox/LXC illustrates one hosting choice.
 - A disagreement, missing observation or recurring failure:

@@ -27,6 +27,18 @@ model credentials or reading obligations. No route selection grants deployment.
    evidence, handoff and learning. Keep explanation, implementation and proof
    statuses distinct.
 
+For a first universe, use the [creation example](../examples/CREATE-A-UNIVERSE.md)
+and its prerequisite checklist, then the reference procedure. You generate the
+implementation in a separate workspace; an existing codebase or registry is not
+required. Explain the next observable action, and continue beyond a plan when
+the human has requested construction and the prerequisites permit it.
+
+For cognition, read the [common bridge intent](../intents/cognition-bridge.md)
+before a provider profile. Prepare the bounded mission and context, resume the
+identified session, refresh current instructions and prior action/check records,
+and reconstruct continuity before further effects when it is lost. Apply the
+human-mandated DEV execution policy through the adapter's actual capabilities.
+
 ## Comprehension exercise
 
 Use the supplier-price example from the [human guide](../human/READING-GUIDE.md).

@@ -5,6 +5,12 @@ Read [the board](docs/CONTEXT-INDEX.md), then the
 [23 September decision](decisions/2026-09-23-AGNOSTIC-NO-CODE.md) and the later
 scoped decisions the governing corpus lists, including the
 [practical-use direction](decisions/2026-10-02-PRACTICAL-USE-AND-REFERENCE-SCENE.md).
+The [first-construction direction](decisions/2026-10-05-FIRST-CONSTRUCTION-AND-REUSE.md)
+clarifies that the agent generates the implementation; no pre-existing SHAPER
+code, qualified reference or registry is required to begin a new construction.
+Read the [6 October clarification](decisions/2026-10-06-PRACTICAL-DEPLOYMENT-AND-BRIDGE-CONTINUITY.md)
+and the governing map's current-construction crosswalk for practical deployment,
+common bridge continuity, full DEV execution and production action policies.
 This ready-to-use documentation edition preserves the operational laws attached
 to existing realizations. Use their governing revisions for concrete work.
 
@@ -37,6 +43,13 @@ The human's mandate determines action scope. Knowing SHAPER does not grant
 production access. Describe the requested result, authority, affected systems,
 dependencies, observable success and recovery before materializing it in a
 separate realization repository.
+
+For a new universe, follow the
+[starting request and prerequisites](docs/examples/CREATE-A-UNIVERSE.md), then
+the reference procedure's construction path. Create the realization records and
+implementation yourself when none exists. Resolve ordinary implementation
+choices within the mandate; distinguish them from a missing human decision or
+an unresolved governing obligation, which affects only the work that depends on it.
 
 Keep user decisions, assistant proposals, historical wording, adopted laws and
 observed evidence distinguishable. Resolve conflicting requirements explicitly.
