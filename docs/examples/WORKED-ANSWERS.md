@@ -46,8 +46,9 @@ passwords or all customer records to explain this single case.
    work/evidence records. If a notification is a required external effect,
    reconcile its delivery separately rather than blindly sending it again.
 6. **Realization contract.** Locate operation-identity lookup, safe settlement
-   and revocation-race behavior in the chosen realization. The F-05 editorial
-   crosswalk tracks their mapping. Use the actual contract and recovery mandate
+   and revocation-race behavior in the chosen realization, applying the local
+   [Queue contract](../contracts/queue.md) and [lifecycle](../agent/LIFECYCLE.md).
+   Use the actual contract and recovery mandate
    to turn this conceptual response into an operational action.
 
 This answer meets the conceptual rubric by distinguishing lease from effect,

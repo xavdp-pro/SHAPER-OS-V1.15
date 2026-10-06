@@ -7,6 +7,12 @@ which they can shape systems suited to reality. The principal agent must know
 the whole SHAPER frame and its interdependencies well enough to explain,
 specialize, test and revise a realization with the human.
 
+This foundation serves both construction of universes and their units and ongoing
+development in an existing project that explicitly adopts it as a governing
+standard. [LAW owns adoption and scope](LAW.md#two-uses-and-explicit-adoption):
+applicable obligations are binding, while adoption alone does not authorize a
+project-wide architectural transformation.
+
 The practical aim is reliable creation, deployment and management of agents and
 universes at scale, including fractal compositions. Shared principles support
 creative initiative: responsibilities and relationships stay understandable while
@@ -21,10 +27,9 @@ humans and agents can achieve together while preserving the meaning of their wor
 ## Practical use and reference scene
 
 SHAPER OS V1.15 is ready for use and is used daily by the operator for the
-creation, deployment and organization of universes. V1.15 documents the enduring
-framework and its reference architecture;
-its editorial reconciliation status is separate from the use of existing
-realizations. See the [practical-use decision](decisions/2026-10-02-PRACTICAL-USE-AND-REFERENCE-SCENE.md).
+creation, deployment and organization of universes. V1.15 carries the enduring framework, its local operational laws and reference
+contracts. Its documentary verification is separate from the operating evidence
+of each realization. See the [practical-use decision](decisions/2026-10-02-PRACTICAL-USE-AND-REFERENCE-SCENE.md).
 
 The [ideal scene](docs/IDEAL-SCENE.md) explains the intended experience and gives
 readers a first exercise with an agent. It connects the architecture to a human
@@ -89,16 +94,12 @@ but is not required to begin. Once useful realizations exist, a registry is
 recommended for their reproducible duplication. See the
 [first-construction direction](decisions/2026-10-05-FIRST-CONSTRUCTION-AND-REUSE.md).
 
-This ready-to-use documentation edition contains the adopted editorial direction
-and explanatory material. Its complete successor-law crosswalk remains separate
-editorial work. The exact
-[governing-corpus map](docs/GOVERNING-CORPUS.md) defines current authority and
-what remains binding for existing realizations. Missing successor text waives
-no existing operational protection.
-
-Do not copy V1.14's software directory or Git history into this documentation edition. Merely
-deleting today's code while carrying an implementation archive would blur the
-same boundary again. Preserve V1.14 separately as evidence and lineage.
+The [self-contained corpus direction](decisions/2026-10-06-SELF-CONTAINED-CORPUS.md)
+adopts the local [LAW](LAW.md), [RULES](RULES.md), boot and detailed unit contracts.
+The [governing map](docs/GOVERNING-CORPUS.md) lists the full reading obligations
+and current owners. No earlier SHAPER OS edition or unpublished source is needed.
+Implementation and historical source archives stay outside this framework;
+copying them here would blur its deliberately code-free boundary.
 
 ## Generic and agnostic
 
@@ -115,7 +116,7 @@ to reality without making their incidental technologies universal law.
 The existing MariaDB/Podman decisions are preserved in the
 [September target profile](docs/profiles/SEPTEMBER-CONTAINER-MARIADB.md).
 Its applicability is explicit; it cannot be opted out of by an agent choosing
-another engine. The editorial crosswalk tracks its relationship to versioned operational laws.
+another engine. The local laws and contracts state its current obligations.
 
 ## Why implementation remains replaceable
 

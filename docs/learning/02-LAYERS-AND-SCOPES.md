@@ -10,7 +10,7 @@ The rules explain what matters, the running system does the work, and the
 interface helps people understand and control it. Two universes sharing a place
 do not automatically share their data or permissions.
 
-**[EXPLANATION S03: OS master sections 12–14 and 23; Runtime master sections 2–5]**
+**[EXPLANATION S03]**
 The layer and boundary explanations below do not define new jurisdiction rights.
 
 ## What is it?
@@ -59,8 +59,10 @@ unit must not be the sole judge of its own recovery.
 
 Read the [profile's scope-placement section](../profiles/SEPTEMBER-CONTAINER-MARIADB.md)
 to connect universes to the four base units. Mandatory units at space level,
-door-ratification roles and permitted space nesting remain explicitly open as
-F-03a/b/c; this chapter does not invent those answers through a fractal analogy.
+actual door-ratification roles and permitted space nesting are declared by the
+realization under the local [perimeters](../architecture/PERIMETERS.md) and
+[topology](../architecture/TOPOLOGY.md) contracts. This chapter does not invent
+a business hierarchy through a fractal analogy.
 
 ## How do we verify understanding?
 

@@ -1,8 +1,7 @@
 # Working glossary
 
 Purpose: explain the vocabulary used to understand and apply SHAPER OS.
-Definitions follow the [source map](../review/SOURCE-MAP.md); the editorial
-crosswalk connects them to the earlier versioned vocabulary.
+Definitions follow the local [source and owner map](../review/SOURCE-MAP.md).
 Definitions are **EXPLANATION**, except terms explicitly labeled **TARGET**.
 
 ## Understanding and authority
@@ -19,7 +18,8 @@ Definitions are **EXPLANATION**, except terms explicitly labeled **TARGET**.
   [governance](learning/01-INTENTION-AND-GOVERNANCE.md).
 - **START / CHANGE / STOP:** begin an action, change the method or end the activity
   according to evidence and authority; stopping does not necessarily undo an
-  already completed effect. See governance, source S03 OS master section 5.
+  already completed effect. See [governance](learning/01-INTENTION-AND-GOVERNANCE.md)
+  and the [operating contract](agent/OPERATING-CONTRACT.md).
 - **Principal agent:** the agent coordinating understanding with the human and
   connecting affected contracts; a responsibility, not an automatic root identity.
   See the [agent routes](agent/STRONG.md).
@@ -60,7 +60,8 @@ Definitions are **EXPLANATION**, except terms explicitly labeled **TARGET**.
 - **Door:** a declared controlled crossing with callers, purpose, permitted data,
   receiving authorization, refusal and evidence semantics. It is not merely a
   network port or a Cognition Bridge. See [scopes](learning/02-LAYERS-AND-SCOPES.md)
-  and the profile's open question F-03b about exact ratification roles.
+  and the local [perimeter contract](architecture/PERIMETERS.md). The realization
+  identifies the actual authorized roles and approval evidence.
 
 ## Construction and realization
 
@@ -76,7 +77,8 @@ Definitions are **EXPLANATION**, except terms explicitly labeled **TARGET**.
   image/container with a declared function.
   The OS describes the contract, not the image or its implementation code.
 - **Implementation package:** reusable source used to build a realization,
-  without its own independent deployment lifecycle in V1.14's definition.
+  without its own independent deployment lifecycle. See the local
+  [naming contract](architecture/NAMING.md).
 - **Organizational pack:** an initial domain composition of concepts, workflows
   and policies. Some older Runtime documents also call this a package. Always
   qualify which sense is intended; do not equate it to an implementation package.

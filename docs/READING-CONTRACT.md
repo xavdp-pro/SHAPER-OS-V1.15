@@ -18,8 +18,8 @@ use their guide's subset and plain-language summaries; its prerequisites help
 them when they choose greater depth. Human depth changes the amount of detail;
 medium and strong agent routes change the reasoning support.
 Neither changes permissions, evidence requirements or applicable law. Choose
-the medium or strong route. Historical A1 references explain earlier reading
-arrangements; the current routes share the same foundation.
+the medium or strong route; both share the same local foundation.
+No earlier edition or historical review is needed to begin.
 
 ## Four distinctions before relying on a document
 
@@ -33,8 +33,10 @@ A source citation proves provenance, not truth. An example proves neither
 deployment nor compliance. A well-written chapter does not close a missing-law
 gap. Consult the [source map](../review/SOURCE-MAP.md) for these boundaries.
 
-Normative-sounding material carries an explicit status label at the sentence or
-owning section: **MANDATE** for direct operator direction, **EDITORIAL** for this
+The root [LAW](../LAW.md) and [RULES](../RULES.md), and the local operational
+contracts identified in the [governing corpus](GOVERNING-CORPUS.md), own their
+stated obligations. Explanatory and decision material carries an explicit status
+label at the sentence or owning section: **MANDATE** for direct operator direction, **EDITORIAL** for this
 edition's reading/authoring procedure, **TARGET** for preserved scoped design,
 **EXPLANATION** for teaching synthesis, and **OPEN** for unresolved questions.
 A label applies from its position until the next heading or explicit label,

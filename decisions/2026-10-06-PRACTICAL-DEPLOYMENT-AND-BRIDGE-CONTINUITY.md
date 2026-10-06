@@ -32,7 +32,7 @@ substitute Docker or simulate cognition to declare the reference qualified.
 These suggestions are not adopted alternatives for this construction model.
 
 The [governing crosswalk](../docs/GOVERNING-CORPUS.md#current-construction-crosswalk)
-identifies how these current scoped directions apply when reading older law.
+identifies the current scoped directions and their local contract owners.
 Existing deployed realizations retain their recorded operational contracts;
 changing them requires the applicable migration mandate and proof.
 

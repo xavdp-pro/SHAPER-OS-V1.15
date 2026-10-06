@@ -36,8 +36,11 @@ To begin building, give a capable agent this repository and a simple request:
 > Create a SHAPER OS universe called univ-example locally using Podman.
 
 **The agent writes the implementation from the documented intentions and
-contracts.** This repository is deliberately code-free; you do not need to find
-an existing SHAPER implementation first. See the
+contracts.** This repository is self-contained and deliberately code-free: its
+[LAW](LAW.md), [RULES](RULES.md), boot and unit contracts are all present here.
+You need neither another SHAPER OS edition nor an existing implementation.
+Read the [local operational corpus](docs/GOVERNING-CORPUS.md#mandatory-local-operational-corpus).
+See the
 [starting requests and prerequisites](docs/examples/CREATE-A-UNIVERSE.md).
 
 - Human readers: [five reading depths](docs/human/READING-GUIDE.md).

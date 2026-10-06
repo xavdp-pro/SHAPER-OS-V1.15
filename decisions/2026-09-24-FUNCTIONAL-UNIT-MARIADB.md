@@ -3,9 +3,9 @@
 Direction: **[MANDATE]** scoped operator direction issued on 24 September 2026. It
 applies the preserved
 [September container and MariaDB target](../docs/profiles/SEPTEMBER-CONTAINER-MARIADB.md);
-it does not seal V1.15 as successor runtime law, make MariaDB a universal
-requirement for every possible future realization, or certify a built image or
-universe.
+The [self-contained corpus decision](2026-10-06-SELF-CONTAINED-CORPUS.md)
+carries the governing rules locally. This direction does not certify a built
+image or universe, or make MariaDB mandatory for every possible future profile.
 
 ## Provenance
 
@@ -19,7 +19,7 @@ instance keep its current SQLite storage for a walkthrough.
 ## Scope
 
 - **Which work:** every new piece of work under the current SHAPER construction
-  model, that is the Podman realization governed by V1.14 and preserved by
+  model, that is the Podman realization governed by the local [rules](../RULES.md) and
   profile SEP22-CONTAINER-MARIADB: new functional units, new universes, and new
   durable stores added to existing units, whatever the class (Vox or other).
 - **What it settles:** the profile asks, for a new operational request, whether
@@ -29,9 +29,9 @@ instance keep its current SQLite storage for a walkthrough.
   choosing it away.
 - **What it cites, not replaces:** the profile's "Preserved choices" (one
   responsibility, one isolated runtime, its own identity and its own private
-  MariaDB, the functional slug naming unit, account and database); V1.14
-  `software/RULES.md` Rule 4, "Mandatory Functional-Podman Database Convention",
-  including "Born With the Function"; and V1.14 Rule 26, "Complete Database
+  MariaDB, the functional slug naming unit, account and database); local
+  [RULES.md](../RULES.md) Rule 4, "Mandatory Functional-Podman Database Convention",
+  including "Born With the Function"; and Rule 26, "Complete Database
   Isolation (MariaDB per Functional Podman)".
 
 ## What an agent does
@@ -39,7 +39,7 @@ instance keep its current SQLite storage for a walkthrough.
 - A new durable store is created in the owning unit's private MariaDB, born with
   the unit. SQLite, CSV, JSONL or another engine is not chosen instead, and the
   word "agnostic" is not read as permission to do so.
-- As in V1.14 Rule 4, SQLite, CSV and JSONL may exist only as declared,
+- As in local Rule 4, SQLite, CSV and JSONL may exist only as declared,
   disposable development scaffolding. They never count as the unit's database,
   as evidence of conformity, or as a promotion gate.
 - A work brief that stores anything says so explicitly, in the same way it

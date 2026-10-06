@@ -132,6 +132,15 @@ The operator reports repeated deployment and daily use of this nested model;
 those practical results and qualification of the new candidate have their own
 evidence scopes, as the [crosswalk](../GOVERNING-CORPUS.md#current-construction-crosswalk) explains.
 
+Reuse the mandate, hosting choice and parameters already supplied. A Podman
+hosting request follows the nested form described above; it does not require
+asking the human to select LXC again. Existing authorization covers ordinary
+DEV construction choices. Apply the declared cognition policy (its documented
+default when no override is supplied), and request credentials only if the
+selected engine actually needs them and they are unavailable through authorized
+references. A public domain, paid API key or renewed DEV approval is not a
+universal prerequisite for the first local construction.
+
 The first agent response should briefly restate the destination and result,
 then begin the authorized prerequisite checks. It explains the composition and
 first proof, and proceeds to construction when the required access and mandate

@@ -41,8 +41,10 @@ own qualification; keep the previous reference identifiable for recovery.
 ## Sequence
 
 1. **Resolve the governing target.** Create the new realization record with its
-   requested result, operator mandate, exact governing revision, adopted
-   decisions, profile, unit contracts
+   requested result, operator mandate, exact governing revision, local
+   [LAW](../../LAW.md), [RULES](../../RULES.md),
+   [boot](../agent/BOOT-CONTRACT.md), [operating contract](../agent/OPERATING-CONTRACT.md),
+   adopted decisions, profile, detailed unit contracts
    and the source revision/digests of any artifacts proposed for reuse. For an
    existing realization, read its records before changing it. Use the
    [new-realization guidance](../GOVERNING-CORPUS.md#starting-a-new-realization)
@@ -79,8 +81,10 @@ own qualification; keep the previous reference identifiable for recovery.
    operation, evidence of real effects, backup and restoration. When the tandem
    accepts the assembled functionality and interactions, perform the dedicated
    [hardening phase](../intents/cognition-bridge.md#security-by-design-followed-by-a-dedicated-hardening-phase):
-   establish roles and jurisdictions, implement action/type permissions and the
-   required production controls, and verify permitted and refused operations.
+   finalize and enforce the roles and jurisdictions designed during DEV,
+   implement action/type permissions and the required production controls,
+   verify permitted and refused operations, and rerun the accepted integrated
+   workflows under that production policy.
    Qualify the installed bridge's actual behavior under the intended execution
    policy. Record results and remaining work; functional acceptance alone does
    not qualify the reference for production.
@@ -109,13 +113,13 @@ These are the responsibilities already described in
 [units and dependencies](../learning/04-UNITS-AND-DEPENDENCIES.md) and the
 [profile](../profiles/SEPTEMBER-CONTAINER-MARIADB.md), applied to first construction:
 
-| Unit | Implement and verify |
-| :--- | :--- |
-| Vault | Protect secrets and deliver them only to authorized unit identities. Bootstrap from the external construction path; preserve key and identity continuity after restart and restoration. |
-| Logger | Accept authenticated evidence, preserve its ordering and integrity, and issue receipts with an explicit meaning. A receipt does not certify the producer's actual effect. |
-| Queue | Persist accepted work, lease it to authorized consumers and reconcile terminal acknowledgment. A lost acknowledgment or expired lease does not prove the effect is absent. |
-| Maestro | Turn declared schedules into idempotent due occurrences submitted to Queue. Persist scheduling responsibility; without a schedule, create no work. |
-| OpenCode bridge | Apply the [common session/context contract](../intents/cognition-bridge.md) through the [OpenCode profile](../intents/cognition-bridge-opencode.md): prepare context, resume/reconstruct sessions, refresh actions and checks, provide the mandated execution policy and observable outcomes. The four base units continue without cognition. |
+| Unit | Perimeter | Implement and verify |
+| :--- | :--- | :--- |
+| Vault | P1 | Protect secrets and deliver them only to authorized unit identities. Bootstrap from the external construction path; preserve key and identity continuity after restart and restoration. |
+| Logger | P1 | Accept authenticated evidence, preserve its ordering and integrity, and issue receipts with an explicit meaning. A receipt does not certify the producer's actual effect. |
+| Queue | P1 | Persist accepted work, lease it to authorized consumers and reconcile terminal acknowledgment. A lost acknowledgment or expired lease does not prove the effect is absent. |
+| Maestro | P2 | Turn declared schedules into idempotent due occurrences submitted to Queue. Persist scheduling responsibility; without a schedule, create no work. |
+| OpenCode bridge | P2 | Apply the [common session/context contract](../intents/cognition-bridge.md) through the [OpenCode profile](../intents/cognition-bridge-opencode.md): prepare context, resume/reconstruct sessions, refresh actions and checks, provide the mandated execution policy and observable outcomes. The four base units continue without cognition. |
 
 For each unit, the agent writes the realization's specific contract: accepted
 inputs and outputs, identity and permissions, private MariaDB state, dependency

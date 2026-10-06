@@ -9,7 +9,7 @@ Sources: S05 and S07 in the [source map](../../review/SOURCE-MAP.md).
 Describe what should exist, what lets it run, and what controls its interactions.
 These are three questions about the same system, not three new products to buy.
 
-**[TARGET S05: The four terms; S07: Terms, explanatory versus binding]** The
+**[TARGET S05]** The
 framework vocabulary below is preserved design input pending canonical mapping.
 The price-import illustration is explanatory, not an adopted business policy.
 

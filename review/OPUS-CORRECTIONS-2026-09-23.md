@@ -12,9 +12,9 @@ The human requested these corrections after the independent Opus review.
 
 - **P1-1 — Undefined foundation/interim authority:**
   [Governing corpus](../docs/GOVERNING-CORPUS.md) enumerates the adopted editorial
-  set and finite study set, retains the target realization's governing revision
-  for operational work, and distinguishes it from the fixed V1.14 comparison
-  reference. Intent no longer claims the migrated laws already exist here.
+  set and finite study set. The current [self-contained direction](../decisions/2026-10-06-SELF-CONTAINED-CORPUS.md)
+  now supplies local laws and contracts; the historical checkpoint is not a
+  requirement to obtain any external framework edition.
 - **P1-2 — Profile applicability:** the
   [September profile](../docs/profiles/SEPTEMBER-CONTAINER-MARIADB.md) preserves
   the Podman/MariaDB target for its construction model, including newly created
@@ -61,7 +61,7 @@ review or test results have separate snapshot identities. The earlier
 [structure review](READING-STRUCTURE-REVIEW.md) remains historical evidence of
 that earlier state.
 
-## Still required before replacing V1.14
+## Historical follow-up and current scope
 
 An independent Opus follow-up reviewed the 27-file corrected snapshot. It marked
 seven original findings addressed and provenance partially addressed, then
@@ -80,12 +80,8 @@ SHA-256 is `7ba4393ad0d67eb9f50f187f5aec7f2baf8b8d9692761acf7cec4cb055a3de66`.
 Reports and execution receipts remain in the originating task. This does not
 extend Opus's verdict to later edits or certify full successor readiness.
 
-Complete the external source inventory, rule-by-rule mapping, individual unit
-contracts, scope questions and ecosystem reconciliation in the
-[ledger](READING-LEDGER.md). Complete independent comprehension evaluation and a
-human trial, establish a release revision and demonstrate the required operational
-proof separately. No tool check or reviewer opinion can waive those obligations.
-
-No code, executable recipe or manifest was added to SHAPER OS. No V1.14 source,
-private archive, credential, production database or deployment was changed by
-this correction pass.
+The current [governing corpus](../docs/GOVERNING-CORPUS.md) and
+[ledger](READING-LEDGER.md) replace this checkpoint's obsolete source-reading
+inventory with local contract owners. Runtime qualification and human acceptance
+still belong to each realization. This historical record is optional context,
+not a first-use prerequisite. No deployment was changed by the original pass.

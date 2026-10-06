@@ -1,187 +1,114 @@
-# Source map and authority boundaries
+# Current source and contract ownership map
 
-Purpose: connect the reading structure and explanatory chapters to their sources.
-The ledger tracks the editorial crosswalk. Public records carry the reusable
-decision or design meaning without exposing private source locations or operational data.
+Purpose: locate the local source of each meaning and obligation. This is an
+index, not another law or a requirement to obtain historical research material.
+The [governing corpus](../docs/GOVERNING-CORPUS.md) owns reading and authority.
 
 ## S01 — Current operator mandate, 23 September 2026
 
-The recorded operator mandate requires a generic, agnostic, clean,
-implementation-code-free V1.15; five human reading depths; medium and strong
-agent routes; a complete principal-agent foundation; explicit relationships and
-examples; and organization for reading and understanding. “Briques” is retained.
-The same direction describes space containing several universes, fractal
-relationships, creation/execution/protection frameworks and functional units.
-See the [decision record](../decisions/2026-09-23-AGNOSTIC-NO-CODE.md).
+The [framework direction](../decisions/2026-09-23-AGNOSTIC-NO-CODE.md) establishes
+English technical content, a code-free frame, five human depths, medium/strong
+agent routes, clear responsibilities, fractal relationships and pedagogy.
+The [self-contained direction](../decisions/2026-10-06-SELF-CONTAINED-CORPUS.md)
+requires every governing framework document to be available locally.
 
-The [governing-corpus map](../docs/GOVERNING-CORPUS.md) defines the adopted
-editorial set and explicitly preserves external operational authority.
+## S02 — Artifact and reading vocabulary
 
-This direction authorizes preparing the successor. It does not establish that
-every inherited law has been reconciled or that any runtime has been rebuilt.
-
-## S02 — V1.14 artifact and reading vocabulary
-
-Read at local revision `c88fd87`: `AGENTS.md`, `LAW.md`, agent `BOOT-CONTRACT.md`,
-architecture `ARTIFACT-BOUNDARY.md`, `BRICKS.md`, README through line 165.
-The README supplies the five human depths and the argument for replaceable code.
-Artifact documents distinguish implementation packages and deployable bricks.
-
-Fetched reference: `958e0b74e19af6ee833cba24fc31d1b866f6cf73`. Its complete rules
-were subsequently read in full by Codex on 27 September 2026, together with
-LAW, the boot and operating contracts, the perimeter taxonomy, the governor
-intent and the consulted-not-carried doctrine. Exact coverage is in the
-[operational-law reading checkpoint](READING-LEDGER.md#operational-law-reading--27-september-2026).
-Complete linked-corpus coverage and successor reconciliation remain open.
-Neither this fixed comparison reference nor older composition and storage
-statements are asserted to be the latest canon or every deployment's law.
+Local owners: [LAW](../LAW.md), [RULES](../RULES.md),
+[artifact vocabulary](../docs/architecture/VOCABULARY-BOUNDARY.md),
+[naming](../docs/architecture/NAMING.md), [lexicon](../docs/architecture/LEXICON.md)
+and the [reading contract](../docs/READING-CONTRACT.md). A functional unit,
+implementation package, deployable brick and running instance remain distinct.
 
 ## S03 — Three-layer architecture
 
-Read at `f2710e75690a68f2dc68135f4555444032b59730`:
-`00-META/01_PEDAGOGICAL_MODEL.md`, `00-META/06_AGENT_ROUTES.md` and the full
-`00_MASTER.md` in `10-SHAPER-OS`, `20-SHAPER-RUNTIME`, `30-SHAPER-WORKSPACE`.
-The three-pass closeout and documentation handoff guidance were also read.
+[Layers and scopes](../docs/learning/02-LAYERS-AND-SCOPES.md) explains OS,
+Runtime, Workspace, spaces and universes. [Perimeters](../docs/architecture/PERIMETERS.md)
+and [cognition](../docs/architecture/COGNITION.md) state their operating boundaries.
+Readers need no separate architecture repository to understand these obligations.
 
-These sources explain conceptual OS, operational Runtime, human Workspace,
-words/gradient/reality, five concept questions, cognitive depth versus authority,
-and observable recovery. Historical A1 routes, technology defaults, “package”
-overloads and older role names need explicit successor mapping, not copy-paste.
-Fetched later revision `abf8f191890e5efd75de59c612980e7af8299e11` is not fully
-reviewed. Full layer-specific guides and linked attachments are not covered by
-reading these masters alone.
+## S04 — Intention, mandate, evidence and correction
 
-## S04 — Historical design synthesis
+[Intention and governance](../docs/learning/01-INTENTION-AND-GOVERNANCE.md),
+[LAW](../LAW.md), [RULES](../RULES.md) and
+[evidence, recovery and learning](../docs/learning/06-EVIDENCE-RECOVERY-LEARNING.md)
+distinguish information, interpretation, authority, action and result.
+Examples are explanations, not runtime evidence.
 
-Historical design work contributed the distinctions between intent, mandate and
-proof; layers and contextual use; separate human and agent self-checks; unknown
-versus forbidden; capability versus authority; signal versus diagnosis; and
-communication versus agreement, action and result. These contributions remain
-design lineage, not evidence that every associated claim is accurate, adopted,
-current or implemented.
+## S05 — Creation, execution and protection
 
-## S05 — Framework design decision, 22 September 2026
+[Creation, execution and protection](../docs/learning/03-CREATION-EXECUTION-PROTECTION.md)
+explains the three questions. [Topology](../docs/architecture/TOPOLOGY.md),
+[boot](../docs/agent/BOOT-CONTRACT.md), [lifecycle](../docs/agent/LIFECYCLE.md) and
+[operating contract](../docs/agent/OPERATING-CONTRACT.md) make them concrete.
+The [bridge security lifecycle](../docs/intents/cognition-bridge.md#security-by-design-followed-by-a-dedicated-hardening-phase)
+connects security-informed design, fluid DEV and production hardening.
 
-P2 `operator-deliverables/SHAPER-FRAMES-AND-FUNCTIONAL-UNITS-DESIGN-DECISION-2026-09-22.md`:
-read fully. This is design input distinguishing creation, execution, protection
-and functional units. Its container and per-unit MariaDB targets must be preserved
-and scoped explicitly, not silently removed in the name of agnosticism.
+## S06 — Human piloting
 
-## S06 — Enterprise piloting design synthesis
+[Ideal scene](../docs/IDEAL-SCENE.md), [glossary](../docs/GLOSSARY.md),
+[perimeters](../docs/architecture/PERIMETERS.md) and
+[cognition](../docs/architecture/COGNITION.md) distinguish Helm's piloting surface,
+the human mandate and the Runtime's actual authority. Product-specific capability
+still requires the product realization's own evidence.
 
-The 21 September design synthesis describes desired scenes, intention-to-result
-alignment, counter-effects, operational states and Enterprise piloting. Its
-closeout records that documentation was published but the product loop was not
-yet implemented. That is a dated source claim, not a fresh runtime check.
+## S07 — Functional units and interdependence
 
-## S07 — Unit interdependence and reconciliation, 22 September 2026
-
-P2 operator deliverables read fully:
-
-- `FOUNDATIONAL-FUNCTIONAL-UNITS-INTERDEPENDENCE-2026-09-22.md`.
-- `FOUNDATIONAL-FUNCTIONAL-UNITS-CANONICAL-RECONCILIATION-2026-09-22.md`.
-
-They specify four base units, optional cognition, precise receipt meanings,
-bootstrap continuity, private MariaDB per unit and reconstruction proof. They
-explicitly remain target design, not canon changes or implementation. Individual
-unit target files remain unread; this overview is not a substitute for them.
+[Units and dependencies](../docs/learning/04-UNITS-AND-DEPENDENCIES.md) and the
+[current profile](../docs/profiles/SEPTEMBER-CONTAINER-MARIADB.md) introduce
+composition. Detailed local owners:
+[Vault](../docs/contracts/vault.md), [Logger](../docs/contracts/logger.md),
+[Queue](../docs/contracts/queue.md), [Maestro](../docs/contracts/maestro.md),
+[governor](../docs/contracts/governor.md), [maker](../docs/contracts/maker.md) and
+[maker recipes](../docs/contracts/maker-recipes.md). State, exchanges, failure,
+restoration and proof cannot be inferred solely from a diagram.
 
 ## S08 — Scoped operator directions, 24 September 2026
 
-Two operator directions issued on 24 September are stated in their public
-records with their scope: the
-[reference bridge decision](../decisions/2026-09-24-REFERENCE-OPENCODE-BRIDGE.md)
-selects the OpenCode Cognition Bridge by default in the reference composition,
-and the [functional-unit MariaDB decision](../decisions/2026-09-24-FUNCTIONAL-UNIT-MARIADB.md)
-answers the September profile's applicability question for new work under the
-current construction model. Neither seals successor law or certifies a built
-image or universe. The profile and chapter 4 label the reference choice
-**[MANDATE: 24 September reference choice]**; the profile's applicability
-section links the MariaDB decision.
+The [OpenCode reference choice](../decisions/2026-09-24-REFERENCE-OPENCODE-BRIDGE.md)
+and [private MariaDB direction](../decisions/2026-09-24-FUNCTIONAL-UNIT-MARIADB.md)
+apply to the declared current construction model. The [local rules](../RULES.md)
+and scoped profile incorporate them; they do not certify an existing image.
 
 ## S09 — Decision calibration explanations, 29 September 2026
 
-The operator authorized a bounded explanatory improvement: make response balance,
-work pacing and revisable learning concrete in the existing teaching path, without
-changing operational laws. The owning explanation is the
-[practical self-checks](../docs/human/METACOGNITION.md); C9–C12 are fictional
-conceptual exercises, not new laws or executed runtime tests.
-
-Direct public sources read in full for this addition:
-
-- [V1.14 Rule 6](https://github.com/xavdp-pro/SHAPER-OS-V1.14/blob/958e0b74e19af6ee833cba24fc31d1b866f6cf73/software/RULES.md#rule-6-decision-hygiene),
-  within the full RULES file at that fixed revision. It already distinguishes
-  overreach, inhibition, incomplete understanding, current authority, context,
-  deadlines and revisable conclusions. This addition does not create that law.
-- [OS master](https://github.com/xavdp-pro/shaper-three-layers/blob/a8eddf95b30a5952267990928e65c5e9c61131f8/10-SHAPER-OS/00_MASTER.md),
-  especially sections 6, 8 and 21 and decision hygiene: operational distance,
-  observation of sensors, meta-regulation and context-qualified experience.
-  The Runtime and Workspace masters were also read fully at this revision.
-- [Existing qualification matrix](https://github.com/xavdp-pro/shaper-three-layers/blob/a8eddf95b30a5952267990928e65c5e9c61131f8/90-REVIEW/DECISION-HYGIENE-QUALIFICATION.md)
-  and [agnostic method translation](https://github.com/xavdp-pro/shaper-three-layers/blob/a8eddf95b30a5952267990928e65c5e9c61131f8/00-META/07_AGNOSTIC_METHOD_TRANSLATION.md).
-  These are architecture/qualification guidance, not an independent operational
-  authority. The matrix records Q1–Q9 as NOT EXECUTED in its change.
-
-Teaching crosswalk: C9 uses Q2/Q5/Q7; C10 primarily uses Q1/Q8/Q9, with its missing
-effective-date variant illustrating Q3; C11 uses the time/context boundaries of
-Q4–Q6 plus operational distance; C12 uses Q7–Q9 plus sensor and
-meta-regulation guidance. C11/C12 expand the teaching situation; they do not claim
-that the matrix supplies every missing retry, observer or repair contract.
-
-The bounded reading covers those exact files, not all their linked unit contracts,
-doctrine, audience guides or deployed realizations. No whole-ecosystem reading or
-successor reconciliation is inferred. No conceptual answer certifies a runtime.
+[Practical self-checks](../docs/human/METACOGNITION.md),
+[consulted context](../docs/design/CONSULTED-CONTEXT.md),
+[cooperative ecology](../docs/design/COOPERATIVE-ECOLOGY.md) and [RULES](../RULES.md)
+explain initiative, restraint, pacing, current authority and revisable lessons.
+C9–C12 in the [scenario checks](../docs/examples/COMPREHENSION-CHECKS.md) and
+[worked answers](../docs/examples/WORKED-ANSWERS.md) are conceptual exercises;
+answering them is not a deployed behavioural test.
 
 ## S10 — Practical use and open presentation, 2 October 2026
 
-The [operator direction](../decisions/2026-10-02-PRACTICAL-USE-AND-REFERENCE-SCENE.md)
-sets V1.15 as ready for use, used daily, and asks for an open, optimistic
-presentation of the ideal scene. The
-[ideal scene](../docs/IDEAL-SCENE.md) explains the experience and a first exercise;
-its illustration is explanatory. This is a presentation direction, not an
-independent audit of every deployment or a rewrite of operational law.
+The [presentation direction](../decisions/2026-10-02-PRACTICAL-USE-AND-REFERENCE-SCENE.md)
+records daily practical use and an open ideal-scene presentation. A usable
+framework and a particular runtime's qualification are distinct.
 
 ## S11 — First construction and later reuse, 5 October 2026
 
-The [operator clarification](../decisions/2026-10-05-FIRST-CONSTRUCTION-AND-REUSE.md)
-makes the construction agent's responsibility explicit: generate implementation
-from intentions and contracts, with local access or SSH and suitable Podman/LXC
-hosting. Existing code and references are optional reuse. A registry is
-recommended after verified realizations are useful to duplicate. The direction
-states the boundary with earlier registry requirements and existing deployments.
-
-The [creation example](../docs/examples/CREATE-A-UNIVERSE.md) owns first-use
-prerequisites; [Procedure 01](../docs/procedures/01-REFERENCE-UNIVERSE.md) connects
-construction from zero, a worked proof design and later reuse. The proof example
-is explanatory and has not been executed by this documentation change.
+The [construction direction](../decisions/2026-10-05-FIRST-CONSTRUCTION-AND-REUSE.md),
+[creation example](../docs/examples/CREATE-A-UNIVERSE.md) and
+[reference procedure](../docs/procedures/01-REFERENCE-UNIVERSE.md) connect a simple
+human request to code generated by the agent, actual prerequisites and proof.
+A registry follows useful verified artifacts; no existing implementation is required.
 
 ## S12 — Practical deployment and shared bridge continuity, 6 October 2026
 
-The [operator clarification](../decisions/2026-10-06-PRACTICAL-DEPLOYMENT-AND-BRIDGE-CONTINUITY.md)
-records repeated deployment and daily use, including nested Podman, and resolves
-the new-construction scope through the
-[governing crosswalk](../docs/GOVERNING-CORPUS.md#current-construction-crosswalk).
-The human-bounded mission/context/session/action lifecycle and full
-noninteractive DEV execution policy and subsequent production permissions per
-action or action type are explicit operator directions. The
-[common bridge intent](../docs/intents/cognition-bridge.md) owns their shared
-meaning; scoped profiles own adapter requirements.
+The [practical clarification](../decisions/2026-10-06-PRACTICAL-DEPLOYMENT-AND-BRIDGE-CONTINUITY.md)
+records repeated nested deployment, human-bounded DEV and per-action production
+policy. The [common cognition intent](../docs/intents/cognition-bridge.md),
+[local transport/status contract](../docs/contracts/bridge-status.md),
+[OpenCode](../docs/intents/cognition-bridge-opencode.md) and
+[Muse](../docs/intents/cognition-bridge-meta-muse.md) own context, session,
+capabilities and evidence. Inspected adapter gaps are separate from requirements
+for a newly generated conforming implementation.
 
-A read-only source comparison informs the adapter profiles' stated gaps. Exact
-source revisions, inspected sections and limitations are retained outside this
-public corpus. The old provider-neutral `pkg-bridge-contract` intent supplies
-transport lineage; it did not already implement the expanded continuity contract.
-The independent fresh-reader findings prompted corrections but did not authorize
-architecture changes or establish runtime proof.
+## S13 — Self-contained operational corpus, 6 October 2026
 
-## Still open
-
-The independent Claude Opus 5.5 review of the previous 22-file candidate is advice,
-not new law. Its eight findings and the operator-authorized response are recorded
-in the [correction record](OPUS-CORRECTIONS-2026-09-23.md). The source report and
-snapshot evidence remain outside the candidate in the originating task.
-
-Full law-by-law successor mapping, individual unit contracts, latest architecture
-changes, remaining doctrine and audience guides, site/wiki/PodMesh coherence,
-and the final scope of concrete realization obligations. Follow the
-[ledger](READING-LEDGER.md); do not convert this source map into a release claim.
+The [adoption decision](../decisions/2026-10-06-SELF-CONTAINED-CORPUS.md) brings the
+full operational meaning and local contract dependencies into this edition.
+Historical provenance, exact source comparisons and review inputs remain external
+maintenance evidence; none is a prerequisite for a reader or constructor.
+The [ledger](READING-LEDGER.md) distinguishes current verification from runtime proof.

@@ -37,7 +37,7 @@ the agent can also build a fresh realization from the contracts.
 
 This direction concerns new construction from zero. It explicitly removes a
 pre-existing registry as an entry requirement for that work, including when
-reading V1.14 Rule 3's registry prerequisite. Existing deployed realizations
+applying local [RULES.md](../RULES.md) Rule 3's distribution obligations. Existing deployed realizations
 retain their identified distribution and promotion contracts; this clarification
 does not authorize changing their operating arrangements. Identity isolation,
 private data ownership, restoration and qualification obligations still apply.
@@ -46,9 +46,10 @@ private data ownership, restoration and qualification obligations still apply.
 
 First-use documentation must explain the prerequisites, the agent's construction
 responsibility and the route from a short request to observed results without
-depending on private conversations or an existing implementation. Named external
-law remains reading material where applicable; reading it does not require
-installing its historical code.
+depending on private conversations, an earlier edition or an existing implementation.
+The [governing corpus](../docs/GOVERNING-CORPUS.md) lists the complete local
+foundation and applicable specialist contracts. Read those documents themselves;
+a navigation table or summary does not replace them.
 
 Documentation clarity and generated code do not establish runtime success.
 Record what was built, tested, installed, observed and accepted separately.

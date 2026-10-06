@@ -2,8 +2,9 @@
 
 Purpose: reconstruct the system from principles and test its coherence across
 scales. Start with the [board](../CONTEXT-INDEX.md). Read the same complete
-foundation as the [medium agent](MEDIUM.md), plus the source
-lineage and unresolved alternatives needed for systemic decisions.
+foundation as the [medium agent](MEDIUM.md), plus the current local contract
+relationships and unresolved alternatives needed for systemic decisions.
+No earlier edition is a prerequisite.
 
 **[EDITORIAL]** Follow the route-selection rule in the medium guide. Strong is
 appropriate when scope or consequences are systemic; if needed sources are

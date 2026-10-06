@@ -11,7 +11,7 @@ Give each part a clear job and state exactly what it promises to other parts.
 Accepting a request, recording an event and doing the actual work are different
 jobs; one success must not be mistaken for another.
 
-**[EXPLANATION S05: Single-function test and The relationship]** The general
+**[EXPLANATION S05]** The general
 unit explanation below does not extend the target profile to every technology.
 
 ## What is it?
@@ -34,15 +34,19 @@ neither owning it. An acknowledgment must say precisely what it acknowledges.
 
 ## In practice: the September target
 
-**[TARGET S07: Base units and Result]** Four base responsibilities are mandatory
+**[TARGET S07]** Four base responsibilities are mandatory
 in the [September target profile](../profiles/SEPTEMBER-CONTAINER-MARIADB.md),
 per minimal universe composition, not universally for every possible profile:
 
-- Vault protects secrets and delivers them to authorized unit incarnations.
-- Logger records authenticated events and proves their ordering and integrity.
-- Queue holds deferred work durably and leases it until terminal acknowledgment.
-- Maestro determines when declared recurring work is due and submits an
+- Vault (P1) protects secrets and delivers them to authorized unit incarnations.
+- Logger (P1) records authenticated events and proves their ordering and integrity.
+- Generic Queue (P1) holds deferred work durably and leases it until terminal acknowledgment.
+- Maestro (P2) determines when declared recurring work is due and submits an
   idempotent occurrence. With no schedule it creates no work.
+
+“Base” describes this required composition, while P1/P2 describe each unit’s
+[architectural perimeter](../architecture/PERIMETERS.md). A deterministic scheduler
+can belong to P2 and remain independent of cognition.
 
 A responsible consumer performs the requested effect. A Cognition Bridge is
 optional when a declared job needs cognition; base units do not depend on it.
@@ -63,15 +67,15 @@ construction path, not invented by an already running Vault.
 
 ## Scope placement
 
-**[TARGET S05: The relationship; S07: Result]** The profile places the units
+**[TARGET S05]** The profile places the units
 inside the Execution Framework of one running universe. Its base Logger owns
 that universe's declared evidence responsibility; one shared Logger must not
 silently replace two universes' separate units. Any permitted aggregation is a
 distinct function and data crossing with its own contract.
 
-**[OPEN F-03a/b/c]** The profile identifies design questions about space-level
-composition, door-ratification roles and nesting limits. Resolve the relevant
-question with the authorized owner when composing a realization. Fractal
+**[EXPLANATION]** The realization declares its space-level composition, actual
+door-ratification roles and nesting limits under the local perimeter and topology
+contracts. Resolve a business-specific choice with the authorized owner when needed. Fractal
 composition uses explicit local authority, resource limits and unit responsibilities.
 
 ## What can fail?
@@ -81,14 +85,15 @@ for proof that a business effect happened; Maestro becomes a general orchestrato
 or Bridge is made a mandatory source of authority. A dependency failure must
 produce a declared unavailable/degraded state, not fabricated success.
 
-**[TARGET S07: Mandatory construction invariants 2, 5 and 7]** Within this profile,
+**[TARGET S07]** Within this profile,
 each functional unit has its own MariaDB and identity, with an
 unprivileged application account. State transitions and pending evidence are
 recorded together locally; cross-unit atomic transactions are not assumed. Active
 obligations are not expired into history merely because a calendar period ends.
 These concrete target obligations remain intact; the
 [profile](../profiles/SEPTEMBER-CONTAINER-MARIADB.md) fixes the applicability
-boundary, while successor-law generalization remains open.
+boundary. Read the local [rules](../../RULES.md) and detailed
+[unit contracts](../GOVERNING-CORPUS.md) for the complete obligations.
 
 ## How do we verify understanding?
 
@@ -97,7 +102,8 @@ boundary, while successor-law generalization remains open.
 Explain a worker failure after a committed effect but before acknowledgment.
 Who owns the effect, deduplication, lease, retry and evidence? Then explain why
 the absence of a cognition provider cannot disable the four base responsibilities.
-Where the detailed contract is unread or missing, record the gap instead of
-claiming an end-to-end proof.
+Read the detailed local Queue, Logger and lifecycle contracts before answering.
+If a requested business behavior has not been specified or tested, record that
+precise gap instead of claiming an end-to-end proof.
 
 Next: [from contracts to materialization](05-MATERIALIZATION.md).

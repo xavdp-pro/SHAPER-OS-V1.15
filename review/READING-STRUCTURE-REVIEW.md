@@ -16,8 +16,7 @@ The README and agent entrance converge on one board. The board orders shared
 prerequisites and links to each concept's explanation. Intent, adopted direction,
 historical source, explanatory proposal and evidence are distinguished. Concrete
 storage requirements are preserved as target obligations with an explicitly open
-scope decision; they are not silently relaxed. No source archive or V1.14 law
-was modified.
+scope decision; they are not silently relaxed. No running system was modified by that historical pass.
 
 Remaining: full rule-by-rule reconciliation, including closed vocabulary and
 the exact scope of realization profiles. Verdict for the complete successor: OPEN.
@@ -64,11 +63,11 @@ are not applicable to this documentation-only change and were not run.
 
 These are three perspectives of one agent's self-review, not independent reviews.
 No second reviewer was used. The reading organization is populated and usable;
-the whole V1.15 remains in preparation. Follow the
+that historical checkpoint did not include the complete local operational corpus.
+The current edition supplies it under the [self-contained direction](../decisions/2026-10-06-SELF-CONTAINED-CORPUS.md). Follow the
 [ledger](READING-LEDGER.md) and [source map](SOURCE-MAP.md).
 
 At this original 22-file checkpoint, the candidate was local and had not yet
 been initialized, committed or published. That historical state was superseded
-by the published checkpoint recorded in the continuity protocol. Existing V1.14
-and three-layer working copies were unchanged by this organization pass.
+by the published checkpoint recorded in the continuity protocol. Existing working copies were unchanged by this organization pass.
 No production behavior was altered.

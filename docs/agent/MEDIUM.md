@@ -13,7 +13,9 @@ model credentials or reading obligations. No route selection grants deployment.
 1. Read the [internal board](../CONTEXT-INDEX.md), all six learning chapters,
    the glossary, human/agent self-checks and the finite
    [study set](../GOVERNING-CORPUS.md). Before operational work, identify and read
-   the target's external governing corpus as well. Keep exact
+   the applicable local [LAW](../../LAW.md), [RULES](../../RULES.md),
+   [boot](BOOT-CONTRACT.md), [operating contract](OPERATING-CONTRACT.md) and
+   detailed unit contracts as well. Keep exact
    coverage and revision; report gaps before claiming complete understanding.
 2. Restate the human's intention with outcome, scope, constraints and unknowns.
 3. Identify the owning layer, universe, functional responsibility and authority.

@@ -5,7 +5,7 @@ Reading guidance is **EDITORIAL**; concept explanations and fictional examples
 are **EXPLANATION**. The [ledger](../../review/READING-LEDGER.md) tracks the
 separate editorial crosswalk.
 
-The five depths preserve V1.14's existing human route. They describe what a
+The five depths organize this edition's human reading route. They describe what a
 reader wants to understand, not their value, rank or permissions. A person may
 move between them. Begin with the [board's orientation](../CONTEXT-INDEX.md),
 then use the depth below that answers your question. The learning chapters are

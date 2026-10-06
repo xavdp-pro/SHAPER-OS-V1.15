@@ -9,7 +9,7 @@ Sources: S01, S03, S04 and S06 in the [source map](../../review/SOURCE-MAP.md).
 Agree what should improve and what must be preserved before acting. Then check
 what really happened. Being able to do something is not permission to do it.
 
-**[EXPLANATION S03: OS master sections 1, 5, 19 and 22]** The following teaching
+**[EXPLANATION S03]** The following teaching
 prose explains those distinctions; it does not independently adopt runtime law.
 
 ## What is it?
@@ -48,7 +48,7 @@ records; or an agent continues after it lacks authority or decisive information.
 Distinguish unknown, unavailable, forbidden, infeasible and failed. “I cannot
 observe it” does not mean “I know it but cannot disclose it.”
 
-**[EXPLANATION S03: OS master section 5]** START, CHANGE and STOP are all legitimate choices. A safe stop, bounded test or
+**[EXPLANATION S03]** START, CHANGE and STOP are all legitimate choices. A safe stop, bounded test or
 honest blocked result can be preferable to falsely declaring success. Urgency
 does not grant new rights; endless analysis is not automatically responsible.
 

@@ -31,7 +31,9 @@ not an independent deployment audit or a certification of all V1.15 contracts.
 
 Existing realizations retain their governing revisions, compositions and operating
 records. This direction changes editorial presentation; it does not replace
-operational law, finish the successor crosswalk or authorize deployment by a reader.
+operational law or authorize deployment by a reader. The later
+[self-contained corpus decision](2026-10-06-SELF-CONTAINED-CORPUS.md) adopts
+the complete local operating foundation for new construction.
 
 ## Explanatory wording throughout the repository
 

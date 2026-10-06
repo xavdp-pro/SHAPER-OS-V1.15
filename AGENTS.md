@@ -1,7 +1,9 @@
 # Agent entrance
 
 Read [the board](docs/CONTEXT-INDEX.md), then the
-[governing corpus](docs/GOVERNING-CORPUS.md), [intent](INTENT.md), the
+[governing corpus](docs/GOVERNING-CORPUS.md), local [LAW](LAW.md),
+[RULES](RULES.md), [boot](docs/agent/BOOT-CONTRACT.md) and
+[operating contract](docs/agent/OPERATING-CONTRACT.md), [intent](INTENT.md), the
 [23 September decision](decisions/2026-09-23-AGNOSTIC-NO-CODE.md) and the later
 scoped decisions the governing corpus lists, including the
 [practical-use direction](decisions/2026-10-02-PRACTICAL-USE-AND-REFERENCE-SCENE.md).
@@ -11,8 +13,11 @@ code, qualified reference or registry is required to begin a new construction.
 Read the [6 October clarification](decisions/2026-10-06-PRACTICAL-DEPLOYMENT-AND-BRIDGE-CONTINUITY.md)
 and the governing map's current-construction crosswalk for practical deployment,
 common bridge continuity, full DEV execution and production action policies.
-This ready-to-use documentation edition preserves the operational laws attached
-to existing realizations. Use their governing revisions for concrete work.
+This edition carries the full local operational frame under the
+[self-contained corpus direction](decisions/2026-10-06-SELF-CONTAINED-CORPUS.md).
+No other SHAPER OS edition or private conversation is required. Read the required
+local documents in full and follow their applicable contract dependencies;
+a summary or navigation table cannot replace that reading.
 
 Dialogue with the operator is French. Technical repository content is English.
 
@@ -27,7 +32,7 @@ V1.15 has two agent routes: [medium](docs/agent/MEDIUM.md) and
 routes change explanatory depth, not the applicable obligations or authority.
 
 The principal agent reads the finite study set in the governing-corpus map and
-the applicable external operational corpus before operational work. It follows
+the applicable detailed local operational contracts before operational work. It follows
 the dependency map before specializing a task. It must be able to explain the
 whole frame and locate each detailed contract. A statement that a file exists,
 a search match, or a previous summary does not establish full reading.
@@ -41,8 +46,16 @@ with understanding; complete the route's comprehension checks.
 
 The human's mandate determines action scope. Knowing SHAPER does not grant
 production access. Describe the requested result, authority, affected systems,
-dependencies, observable success and recovery before materializing it in a
-separate realization repository.
+dependencies, observable success and recovery before acting in the separate
+realization or existing project workspace.
+
+When the human adopts SHAPER OS for an existing project, apply
+[LAW's adoption and scope contract](LAW.md#two-uses-and-explicit-adoption) as a
+binding development standard. Record its revision, declared scope, applicable
+roles/profiles and existing gaps; the [project adoption example](docs/examples/PROJECT-STANDARD-ADOPTION.md)
+shows a reusable entrance. Reuse the current mandate for ordinary development,
+preserve existing state, and follow the same full-reading obligations. Adoption
+alone does not require restarting construction or authorize a migration.
 
 For a new universe, follow the
 [starting request and prerequisites](docs/examples/CREATE-A-UNIVERSE.md), then

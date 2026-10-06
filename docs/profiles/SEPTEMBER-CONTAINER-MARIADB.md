@@ -4,9 +4,9 @@ Profile identifier: **SEP22-CONTAINER-MARIADB**.
 Purpose: describe the Podman and private-MariaDB construction profile, including
 unit ownership, composition, bootstrap and recovery. **TARGET** statements
 apply within the declared profile; realization records describe actual operation.
-Sources: S05 “Functional Unit”, “Relationship with the current canon” and
-“Current maturity”; S07 “Mandatory construction invariants”, “Bootstrap boundary”
-and “Reconstruction order” in the [source map](../../review/SOURCE-MAP.md).
+Owners: local [RULES](../../RULES.md), [topology](../architecture/TOPOLOGY.md),
+[unit contracts](../GOVERNING-CORPUS.md) and the scoped decisions below.
+The [source map](../../review/SOURCE-MAP.md) connects their local meanings.
 
 ## Applicability
 
@@ -28,8 +28,9 @@ It is not a choice an implementation agent may infer from the word agnostic.
 For new work under the current construction model, the owner has answered the
 applicability question: see the
 [24 September functional-unit MariaDB decision](../../decisions/2026-09-24-FUNCTIONAL-UNIT-MARIADB.md).
-The exact generalization of this target into successor law remains F-02/F-05.
-See [interim authority](../GOVERNING-CORPUS.md) for existing operational versions.
+The local [rules](../../RULES.md), [topology](../architecture/TOPOLOGY.md)
+and [perimeters](../architecture/PERIMETERS.md) carry these obligations in
+this edition. See the [governing corpus](../GOVERNING-CORPUS.md) for their owners.
 
 ## Practical topology
 
@@ -43,7 +44,7 @@ on a shared server. Docker and a shared development database are not adopted
 alternatives here.
 
 The [current construction crosswalk](../GOVERNING-CORPUS.md#current-construction-crosswalk)
-resolves older dated “unproven” wording. Qualify the newly generated candidate
+identifies the current local requirements. Qualify the newly generated candidate
 and chosen host while preserving the operator-attested record of practical use.
 
 ## Preserved choices
@@ -55,7 +56,9 @@ database account and database. Application permissions are limited to that
 database; administration uses a separate authorized path.
 
 In each minimal universe composition, Vault, Logger, Queue and Maestro are the
-four mandatory base units. Cognition Bridge is optional when a class declares
+four mandatory base units. Under the [perimeter taxonomy](../architecture/PERIMETERS.md),
+Vault, Logger and generic Queue are P1; Maestro is P2. “Base” names the composition,
+not a single perimeter. Cognition Bridge is optional when a class declares
 bounded cognition jobs (see the
 [generic bridge intent](../intents/cognition-bridge.md) and its scoped adapters). No base unit depends on that adapter. Maestro remains
 idle when no schedule is declared. This is a property of **this target**, not a
@@ -88,9 +91,10 @@ implicit merge of their authoritative histories.
 
 **[OPEN F-03a]** The sources reviewed here do not specify a mandatory base-unit
 composition for a containing space itself. Do not recursively manufacture one.
-**[OPEN F-03b]** Exact authority roles and approval records for ratifying doors
-across two jurisdictions still require the governing contracts. A sender's request
-or a UI declaration alone is not proof of the receiving side's authorization.
+**[TARGET]** Use the local [perimeter contract](../architecture/PERIMETERS.md)
+for doors across jurisdictions. The realization identifies its actual authority
+roles and approval records. A sender's request or a UI declaration alone is not
+proof of the receiving side's authorization.
 **[OPEN F-03c]** Define permitted space nesting and recursion depth for the
 chosen realization with the authorized owner. Its composition declares finite
 scope, resource limits and authority before recursive creation. The editorial
@@ -109,6 +113,10 @@ Before data-bearing migration, prove restoration of the owning unit's database
 and persistent volumes, then qualify a bounded rollout. Rebuilding an image must
 not silently create an empty database or a new Vault cryptographic identity.
 
-**[OPEN F-05]** Detailed startup and recovery contracts, coherent cross-unit
-recovery points and each unit's acceptance tests remain to be reconciled. This
-document intentionally contains no executable configuration, schema or recipe.
+Read the detailed local [Vault](../contracts/vault.md),
+[Logger](../contracts/logger.md), [Queue](../contracts/queue.md),
+[Maestro](../contracts/maestro.md), [bridge](../intents/cognition-bridge.md)
+and [lifecycle](../agent/LIFECYCLE.md) contracts before deriving startup,
+recovery and acceptance tests. The realization defines and verifies its actual
+coherent recovery points. This profile contains no executable configuration,
+schema or implementation recipe.

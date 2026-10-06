@@ -18,10 +18,10 @@ and observed results. The example owns the first-use prerequisite checklist.
 ## Orientation — shared by humans and agents
 
 1. [Governing corpus](GOVERNING-CORPUS.md): the finite study set, editorial authority
-   and the operational laws attached to existing realizations. Then
+   and this edition's local operational laws and contracts. Then
    [Intent](../INTENT.md): purpose, agnosticism, code-free boundary and completion.
 2. [Current decision](../decisions/2026-09-23-AGNOSTIC-NO-CODE.md): what the human
-   has explicitly requested for the successor. The later
+   has explicitly requested for this edition. The later
    [reference bridge decision](../decisions/2026-09-24-REFERENCE-OPENCODE-BRIDGE.md)
    selects OpenCode for the proposed reference composition. The
    [functional-unit MariaDB decision](../decisions/2026-09-24-FUNCTIONAL-UNIT-MARIADB.md)
@@ -41,6 +41,17 @@ and observed results. The example owns the first-use prerequisite checklist.
    [medium agent route](agent/MEDIUM.md) or [strong agent route](agent/STRONG.md).
    Human depths select an appropriate subset from the shared material. Agents
    read the complete finite study set; they do not skip its foundation.
+
+## Local operational foundation
+
+Read [LAW](../LAW.md), [RULES](../RULES.md), the
+[boot contract](agent/BOOT-CONTRACT.md), [operating contract](agent/OPERATING-CONTRACT.md),
+[proof contract](agent/PROOF.md) and [lifecycle](agent/LIFECYCLE.md).
+The [governing corpus](GOVERNING-CORPUS.md) lists the architecture, unit,
+bridge, fleet and design contracts and when each applies. It carries all local
+owners; follow its links rather than consulting an earlier edition.
+The [self-contained corpus decision](../decisions/2026-10-06-SELF-CONTAINED-CORPUS.md)
+sets this reading boundary.
 
 ## Common learning sequence
 
@@ -78,7 +89,7 @@ for explicit applicability, unit placement and the remaining structural question
 
 Each chapter answers what, why, practice, failure and verification. The sequence
 teaches the frame; it does not substitute for the detailed adopted laws and unit
-contracts that are still being reconciled.
+contracts listed in the governing corpus. Read those documents in full.
 
 ## Use the board during work
 
@@ -110,11 +121,10 @@ contracts that are still being reconciled.
 Human readers explain the example at the depth they need. Principal agents
 record exact reading coverage, answer all scenarios, locate the governing
 requirements and list unresolved gaps before directing a concrete realization.
-Use [review results](../review/READING-STRUCTURE-REVIEW.md) to distinguish checks
-already performed from work that remains open.
-The [Opus correction record](../review/OPUS-CORRECTIONS-2026-09-23.md) is the later
-checkpoint; [continuity](../review/VERIFICATION-AND-CONTINUITY.md) specifies external
-reading records, file digests and repeatable verification.
+Use [continuity](../review/VERIFICATION-AND-CONTINUITY.md) to record exact
+reading coverage, file digests and repeatable verification. Historical review
+records are optional context, not a prerequisite or a substitute for the current
+local laws and contracts.
 
 ## Topics that must be covered by the completed board
 
@@ -132,9 +142,8 @@ reading records, file digests and repeatable verification.
   idempotency, degraded behavior, cycles and restoration order.
 - Ecosystem: the public site and the two wiki audiences, Enterprise and Helm,
   PodMesh capabilities and evidence, operational realization profiles.
-- Lineage: earlier laws, adopted decisions, proposals,
+- Authority: local laws, adopted decisions, proposals,
   open contradictions and evidence with date and revision.
 
-These topics are a completion checklist, not claims that their full successor
-contracts already exist. Future board entries must link the owning documents,
+These topics are a coverage checklist. Future board entries must link the owning documents,
 prerequisites, affected neighbors and the scenario proving understanding.

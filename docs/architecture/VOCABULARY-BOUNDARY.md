@@ -3,18 +3,16 @@
 Purpose: connect functional responsibility, reusable code and deployable
 artifacts, so readers can move clearly from intention to realization.
 
-## What the existing definitions say
+## Current definitions
 
-V1.14's artifact-boundary document distinguishes a **package**, reusable source
-code without an independent deployment lifecycle, from a **brick**, a deployable
-image/container with one declared responsibility. Its brick taxonomy also
-contains older formulations whose relationship to the 22 September decisions
-must be reconciled.
-
-The 22 September design decision defines a **functional unit** by one purpose,
-bounded responsibility, identity, private state, lifecycle and observable proof.
-Its concrete target uses an isolated service container and private MariaDB.
-Those concrete choices are not silently erased by V1.15's agnostic boundary.
+A **package** is reusable implementation material without an independent
+runtime lifecycle. A **brick** is a deployable artifact with one declared
+responsibility. A **functional unit** is defined by its purpose, bounded
+responsibility, identity, private state, lifecycle and observable proof.
+The current container profile realizes each unit in an isolated Podman container
+with private MariaDB. These obligations are carried in the local
+[rules](../../RULES.md), [naming contract](NAMING.md) and
+[container profile](../profiles/SEPTEMBER-CONTAINER-MARIADB.md).
 
 ## Distinction used in V1.15
 
@@ -42,11 +40,13 @@ brick delivers it with the required runtime and private storage arrangements.
 A future implementation can replace the package while preserving and proving
 the contract. None of that implementation belongs in this SHAPER OS repository.
 
-## Source locators
+## Local owners
 
-- V1.14 at `c88fd87`: `docs/architecture/ARTIFACT-BOUNDARY.md` and `BRICKS.md`.
-- P2 design record: `operator-deliverables/SHAPER-FRAMES-AND-FUNCTIONAL-UNITS-DESIGN-DECISION-2026-09-22.md`.
-- Current operator clarification: [23 September decision](../../decisions/2026-09-23-AGNOSTIC-NO-CODE.md).
+- [Naming and artifact vocabulary](NAMING.md).
+- [Functional-unit rules](../../RULES.md).
+- [Container and MariaDB profile](../profiles/SEPTEMBER-CONTAINER-MARIADB.md).
+- [Code-free framework direction](../../decisions/2026-09-23-AGNOSTIC-NO-CODE.md).
 
-Evolution: the editorial crosswalk tracks vocabulary alignment and the scope of
-the MariaDB/container realization alongside the applicable unit contracts.
+The applicable contracts define the obligation; the realization records its
+concrete composition and observed results. No historical repository is needed
+to understand these distinctions.

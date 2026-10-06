@@ -10,8 +10,7 @@ A green status or an acknowledgment does not prove the promised result happened.
 Check the real effect and practise recovery. Also check that the mechanisms
 watching for failures can notice their own failures.
 
-**[EXPLANATION S03: OS master sections 8 and 14–21; Runtime master sections 12,
-19–20 and 27]** This chapter teaches evidence and recovery distinctions, not a
+**[EXPLANATION S03]** This chapter teaches evidence and recovery distinctions, not a
 claim of qualified runtime behavior.
 
 ## What is it?
@@ -46,7 +45,7 @@ One sensor certifies itself; evidence is missing but success is declared; a
 restored unit replays an external effect twice; or local recovery damages another
 universe. Preserve evidence, contain the fault and name the required intervention:
 
-**[EXPLANATION S03: OS master section 15]** The four intervention names mean:
+**[EXPLANATION S03]** The four intervention names mean:
 
 - CORRECT changes a known faulty rule, configuration or implementation.
 - REPAIR restores valuable state that cannot simply be regenerated.

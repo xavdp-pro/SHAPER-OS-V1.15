@@ -115,7 +115,8 @@ Read [scopes](../learning/02-LAYERS-AND-SCOPES.md).
 Required distinctions: shared containment/hosting versus data authority;
 sender intent versus receiving authorization; permitted subset versus all data.
 Wrong answer: “Same space means unrestricted cross-universe database access.”
-Open contract: exact door-ratification roles (F-03b), schema and permitted retention.
+Realization-specific contract: actual door-ratification roles, schema and permitted
+retention, under the local [perimeter rules](../architecture/PERIMETERS.md).
 
 ## C7 — The log is green, but an old quote changed
 
@@ -163,8 +164,9 @@ price change. Contrast this with the same task when the mapping remains invalid
 or authority is revoked: then restraint or the declared alternative is justified.
 Compare correct proposed prices and unchanged accepted quotes, not confidence.
 
-Read [practical self-checks](../human/METACOGNITION.md). This teaches Q2, Q5 and Q7
-from the existing matrix referenced by S09; it is not a new runtime qualification.
+Read [practical self-checks](../human/METACOGNITION.md). This teaches inhibition, changed-context and urgent-event checks
+from the local [decision-hygiene matrix](../agent/OPERATING-CONTRACT.md#decision-hygiene-qualification);
+it is not a runtime qualification.
 
 Required distinctions: past observation versus current applicability; justified
 restraint versus blanket refusal; preview permission versus live-effect permission.
@@ -186,8 +188,9 @@ missing decisive evidence can justify waiting without constituting inhibition.
 Observe both the new price and a preserved accepted quote.
 
 Read [governance](../learning/01-INTENTION-AND-GOVERNANCE.md) and the self-checks.
-This primarily teaches Q1, Q8 and Q9 from S09's existing matrix; the missing
-effective-date variant illustrates Q3's incomplete-understanding boundary.
+This teaches changed-context, retrospective-learning and blind-spot checks
+from the local operating contract; the missing
+effective-date variant illustrates a missing-decisive-information boundary.
 
 Required distinctions: completion proxy versus agreed outcome; reviewer advice
 versus authority; a permitted alternative versus a bypass; uncertainty versus refusal.
@@ -210,8 +213,8 @@ effect before continuing. Observe elapsed time, decision-relevant evidence and
 the actual state, not just the number of probes.
 
 Read [recovery](../learning/06-EVIDENCE-RECOVERY-LEARNING.md) and the self-checks.
-This teaches the time/context boundaries of Q4–Q6 and OS operational distance in
-S09. It does not invent a common timeout or a new operational state.
+This teaches blind-spot, changed-context and urgent-event checks in the local
+operating contract. It does not invent a common timeout or a new operational state.
 
 Required distinctions: expected wait versus no-information loop; deadline versus
 unlimited analysis; pausing versus hiding failure; resumption versus blind replay.
@@ -233,7 +236,8 @@ with a genuinely missing import: dismissing every alert would create another
 blind spot. Retest the observer and effects, and revise only the supported lesson.
 
 Read [evidence](../learning/06-EVIDENCE-RECOVERY-LEARNING.md) and the self-checks.
-This teaches Q7–Q9 and OS sensor/meta-regulation guidance referenced by S09.
+This teaches urgent-event, retrospective-learning and counter-view checks
+from the local operating contract, using the practical self-check guidance.
 
 Required distinctions: alert versus business fact; independent evidence versus
 permission; false alert versus real missing effect; containment versus structural
@@ -258,6 +262,7 @@ not an independent qualification. A gap-only answer fails the teaching check.
 
 Conceptual PASS requires all listed distinctions and honest unknowns; REVISE
 means a distinction or transfer failed. Operational readiness is a separate
-assessment and remains OPEN while governing contracts are missing. A conceptual
+assessment requiring the concrete realization's tests, installed behavior and
+acceptance against the applicable local contracts. A conceptual
 PASS therefore cannot be used as a deployment approval. See the
 [worked answers](WORKED-ANSWERS.md) for the expected level of specificity.

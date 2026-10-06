@@ -23,7 +23,8 @@ and is not a newly ratified universal technology requirement.
    implementation must not constrain the enduring framework.
 5. The principal agent working with the human must know SHAPER OS thoroughly.
 6. Preserve five human reading levels and two agent routes, medium and strong.
-7. Preserve examples, original dialogue lineage and global coherence with the
+7. Preserve examples, the adopted meaning of the operator's directions and global
+   coherence with the
    site, wikis, PodMesh and the related architecture.
 8. Keep all SHAPER OS repository content in English, including human/agent guides.
 
@@ -34,9 +35,10 @@ latest exchange does not authorize replacing that word with **packages** or
 merging the two meanings. Check existing definitions and explain their relation
 before changing the vocabulary.
 
-## Reconciliation still required
+## Current local ownership
 
-The older mixed repository places rules and code together. V1.15 must make their
-successor ownership explicit. Existing operational choices, especially private
-MariaDB per functional unit, require a scoped realization contract. Their
-placement must preserve the target while keeping the generic core agnostic.
+The [self-contained corpus decision](2026-10-06-SELF-CONTAINED-CORPUS.md)
+carries the operational laws and their contract dependencies inside V1.15.
+Implementation remains in a separate realization workspace. The current
+container profile preserves private MariaDB per functional unit while keeping
+the provider-neutral meaning distinct from a concrete adapter.

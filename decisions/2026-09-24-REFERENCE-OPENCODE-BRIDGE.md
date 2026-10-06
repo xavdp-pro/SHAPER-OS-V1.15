@@ -2,7 +2,8 @@
 
 Direction: **[MANDATE]** scoped direction for the proposed reference-universe
 composition, issued by the operator on 24 September 2026. It does
-not seal V1.15 as successor runtime law or certify a built image.
+not certify a built image. The [self-contained corpus decision](2026-10-06-SELF-CONTAINED-CORPUS.md)
+later adopts the local operational foundation for this edition.
 
 The operator selected the OpenCode Cognition Bridge as a **default component of
 the reference universe**. This supersedes the earlier 24 September description

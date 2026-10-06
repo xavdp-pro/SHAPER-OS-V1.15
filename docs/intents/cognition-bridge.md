@@ -173,8 +173,9 @@ uncertain effects. A replayed or duplicated event must not repeat a settled acti
 ## Adapter interface and capability declaration
 
 **[TARGET]** The existing `shaper-bridge/v1` transport is the comparison baseline
-for concrete adapters. Its lineage is the provider-neutral
-[pkg-bridge-contract intent](https://github.com/xavdp-pro/SHAPER-OS-V1.14/blob/958e0b74e19af6ee833cba24fc31d1b866f6cf73/software/packages/pkg-bridge-contract/INTENT.md).
+for concrete adapters. The local provider-neutral
+[bridge interface contract](../contracts/bridge-status.md) owns its surfaces
+and status meanings.
 The session obligations above extend the semantic qualification expected here;
 claiming that protocol string alone does not prove them.
 

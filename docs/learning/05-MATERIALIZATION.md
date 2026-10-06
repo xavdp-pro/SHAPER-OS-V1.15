@@ -12,7 +12,7 @@ A better implementation is welcome only if it preserves commitments and data,
 and proves the required behavior again.
 
 **[MANDATE: 23 September 2026]** Implementation stays outside SHAPER OS. The remaining
-teaching prose is **[EXPLANATION S03: Runtime master sections 19–20 and 24–31]**,
+teaching prose is **[EXPLANATION S03]**,
 except the explicitly labeled September target below.
 
 ## What is it?
@@ -56,7 +56,8 @@ preserves the Podman/container construction model and private MariaDB per unit.
 Creating another unit or universe under that model retains its obligations.
 An agent cannot choose an alternate engine because the OS is agnostic. A future
 profile requires explicit approval and an obligation-by-obligation mapping;
-none is adopted here. The successor's generic-law mapping remains F-02/F-05.
+none is adopted here. The local [rules](../../RULES.md) and
+[governing corpus](../GOVERNING-CORPUS.md) carry the applicable requirements.
 
 ## Example: one bridge meaning, several adapters
 
@@ -76,7 +77,7 @@ DEV execution policy, rather than waiting for a pre-existing perfect adapter.
 
 ## What can fail?
 
-**[EXPLANATION S03: Runtime master sections 19–20 and 24–27]** These general
+**[EXPLANATION S03]** These general
 failure distinctions are not confined to the September target.
 
 “Generic” removes all detail; “better code” overwrites production data; a new model
@@ -87,7 +88,7 @@ rollback, such as unsending an already delivered message.
 
 ## How do we verify understanding?
 
-**[EXPLANATION S03: Runtime master sections 24–31]** These are general realization
+**[EXPLANATION S03]** These are general realization
 obligations to explain and reconcile, not a claim that the September profile is
 the only possible implementation.
 

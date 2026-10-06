@@ -12,7 +12,8 @@ The initial published commit on `main` is
 It contains the 27-document snapshot checked by the final Opus closure review.
 Local HEAD and remote main were verified equal at publication. This is a dated
 checkpoint, not a claim that a moving branch or later local edits remain equal.
-Public availability does not finish the law crosswalk or adopt successor law.
+That checkpoint predates the [self-contained corpus adoption](../decisions/2026-10-06-SELF-CONTAINED-CORPUS.md).
+It is optional historical evidence, not a required source of current obligations.
 
 For subsequent work, record the actual full commit ID, branch and clean/dirty
 state. Identify unpublished edits by a content manifest relative to their base
@@ -54,9 +55,11 @@ must be re-established rather than silently assumed.
 
 ## External checker and replay
 
-Checker identity: **SHAPER-READING-CHECKER-v2**. The current operator evidence
-record, attached to the task that produced this checkpoint, carries the exact
-script path and content digest. Preserve it with the manifest and output.
+Historical checker identity: **SHAPER-READING-CHECKER-v2**. Its original evidence
+record retains its script and digest outside the OS. That historical tool is
+not a prerequisite for construction or current verification. A constructor can
+produce its own checker in the separate realization/evidence workspace against
+the checks specified below, naming its revision and retaining the output.
 
 The checker checks local Markdown links, README reachability, document-only
 files, chapter prerequisites and pedagogy, provenance labels, profile/corpus

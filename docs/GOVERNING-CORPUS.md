@@ -1,182 +1,144 @@
-# Governing corpus — V1.15 editorial and operational boundaries
+# Governing corpus — self-contained SHAPER OS V1.15
 
-Purpose: connect the ready-to-use V1.15 framework, its editorial directions and
-the versioned operational laws attached to concrete realizations.
+Purpose: identify the complete local framework, its authority, reading sequence
+and contract owners. No other SHAPER OS edition is required.
 
-## Adopted editorial directions
+## Authority and ownership
 
-The [operator decision](../decisions/2026-09-23-AGNOSTIC-NO-CODE.md) records the
-explicit English, generic, agnostic, code-free and pedagogical mandate. Its
-source passages and interpretation limits are identified in that document.
-[INTENT](../INTENT.md) applies that mandate to this edition's contents;
-[AGENTS](../AGENTS.md) and the [reading contract](READING-CONTRACT.md) govern
-work on these documents. This file defines their scope and precedence.
+The [human direction adopting this corpus](../decisions/2026-10-06-SELF-CONTAINED-CORPUS.md)
+makes the local [LAW](../LAW.md), [RULES](../RULES.md) and their contract dependencies
+the operational frame of this edition. Rule identifiers remain stable. Laws state
+obligations; contracts make their state, interfaces, lifecycle and evidence precise.
+Learning chapters and examples explain them without replacing or waiving them.
 
-If editorial documents conflict, the operator's explicit instructions control;
-their recorded decision is a restatement, not authority to alter the original.
-INTENT applies that direction to the repository boundary. AGENTS, the reading
-contract and this map organize work within it and cannot broaden its authority
-or waive its limits. Record and resolve any remaining material conflict before
-the affected action. Navigation and explanations do not override operational law;
-current explicit operator decisions apply within their recorded construction
-scope, as mapped below, without rewriting existing deployments.
+The human controls the mandate and changes of direction. [INTENT](../INTENT.md)
+owns the repository boundary; [AGENTS](../AGENTS.md) and the
+[reading contract](READING-CONTRACT.md) organize work within it. A later date or
+an assistant proposal alone cannot alter a rule. A scoped explicit human decision
+applies only to its recorded subject. Resolve a real conflict at its owner and
+record the result before the action that depends on it.
 
-These five documents are the **adopted editorial foundation**. Operational
-realizations use their own identified governing corpus.
-The six learning chapters, glossary, profile preservation note and worked examples
-are explanatory or target-design documents with the status stated in each.
-They are mandatory study material for the principal agent, not new runtime laws.
+The current construction directions are local:
 
-Later dated operator decisions record further scoped directions: the
-[reference bridge decision](../decisions/2026-09-24-REFERENCE-OPENCODE-BRIDGE.md)
-and the [functional-unit MariaDB decision](../decisions/2026-09-24-FUNCTIONAL-UNIT-MARIADB.md).
-Each applies within the scope it states and, like the original direction,
-controls conflicting editorial text within that scope. They do not enlarge the
-editorial foundation above, seal successor law or certify a built artifact. The
-[Reference Universe Procedure](procedures/01-REFERENCE-UNIVERSE.md) is an
-editorial construction guide that records those directions.
+- [Code-free, generic framework](../decisions/2026-09-23-AGNOSTIC-NO-CODE.md).
+- [OpenCode reference composition](../decisions/2026-09-24-REFERENCE-OPENCODE-BRIDGE.md).
+- [Private MariaDB per functional unit](../decisions/2026-09-24-FUNCTIONAL-UNIT-MARIADB.md).
+- [Practical use and ideal scene](../decisions/2026-10-02-PRACTICAL-USE-AND-REFERENCE-SCENE.md).
+- [First construction and later registry reuse](../decisions/2026-10-05-FIRST-CONSTRUCTION-AND-REUSE.md).
+- [Practical deployment, bridge continuity and DEV/production policy](../decisions/2026-10-06-PRACTICAL-DEPLOYMENT-AND-BRIDGE-CONTINUITY.md).
+- [Self-contained local corpus](../decisions/2026-10-06-SELF-CONTAINED-CORPUS.md).
 
-The [2 October presentation decision](../decisions/2026-10-02-PRACTICAL-USE-AND-REFERENCE-SCENE.md)
-establishes V1.15 as ready for use, with daily practical use by the operator. The
-[ideal scene](IDEAL-SCENE.md) is an explanatory entrance and first exercise;
-it does not extend operational authority. The remaining successor reconciliation
-is an editorial scope, not a blanket status for the whole framework.
+## Mandatory local operational corpus
 
-The [5 October first-construction decision](../decisions/2026-10-05-FIRST-CONSTRUCTION-AND-REUSE.md)
-clarifies that the agent generates implementation from the frame and that a
-registry is recommended after reusable realizations exist. It applies to new
-construction from zero and states its relationship to earlier registry wording.
+Read [LAW](../LAW.md) and [RULES](../RULES.md) in full, including the preamble and
+all rule sections. Also read the [boot contract](agent/BOOT-CONTRACT.md),
+[operating contract](agent/OPERATING-CONTRACT.md),
+[proof contract](agent/PROOF.md) and [lifecycle contract](agent/LIFECYCLE.md).
+Then follow their local contract dependencies for the intended composition.
+A reading board, crosswalk, summary or earlier review is not a substitute.
 
-## What governs operational work?
+The architecture is defined locally by [perimeters](architecture/PERIMETERS.md),
+[topology](architecture/TOPOLOGY.md), [cognition](architecture/COGNITION.md),
+[naming](architecture/NAMING.md), [lexicon](architecture/LEXICON.md) and
+[fleet](architecture/FLEET.md). These explain authority, placement and relations,
+not a pre-existing infrastructure the reader must find.
 
-V1.15 is ready for use as the shared framework. Existing realizations retain
-their versioned operational corpus: applicable LAW, RULES, intent, declared
-composition and ratified decisions. The editorial crosswalk connects these
-obligations across versions. This documentation edition carries the framework;
-realization repositories carry the implementation and its contracts.
+For the reference universe, read each unit's contract:
+[Vault](contracts/vault.md), [Logger](contracts/logger.md),
+[Queue](contracts/queue.md), [Maestro](contracts/maestro.md), the
+[generic cognition bridge](intents/cognition-bridge.md), its
+[transport/status contract](contracts/bridge-status.md) and the
+[OpenCode profile](intents/cognition-bridge-opencode.md).
+For fractal deployment work, read [governor](contracts/governor.md),
+[maker](contracts/maker.md) and [maker recipes](contracts/maker-recipes.md).
+They are local meanings and obligations from which an agent generates code.
 
-Before operational work, identify and record the target realization and the
-exact governing revision attached to it. Do not use a moving branch, an old
-local checkout or a newer explanatory chapter as silent replacement authority.
-If the applicable revision or a material conflict cannot be resolved from the
-target's records, pause the affected operational action and ask its authorized
-owner. Reading and bounded documentation corrections may continue.
+The supporting design contracts are [consulted context](design/CONSULTED-CONTEXT.md),
+[document pipeline](design/DOCUMENT-PIPELINE.md) and
+[cooperative ecology](design/COOPERATIVE-ECOLOGY.md). Consult the relevant owners
+before delegating cognition or processing documents; full rule reading remains
+mandatory even when a specialist contract is irrelevant to the current task.
 
-### Starting a new realization
+## Adoption in an existing project
 
-When nothing exists yet, the agent creates the realization record instead of
-waiting to find one. Record the human's intention and mandate, the V1.15 revision,
-applicable dated decisions, the selected construction profile and the versioned
-operating obligations used for this work. Follow the
-[creation example](examples/CREATE-A-UNIVERSE.md) and
-[reference procedure](procedures/01-REFERENCE-UNIVERSE.md) to generate and qualify
-the implementation. A realization workspace can start empty.
+[LAW owns the two uses, explicit adoption and binding scope](../LAW.md#two-uses-and-explicit-adoption).
+The [agent entrance](../AGENTS.md) and [boot contract](agent/BOOT-CONTRACT.md#2-establish-the-mandate-and-work-perimeter)
+apply that contract to ongoing development without imposing a new construction.
+Use the [project adoption example](examples/PROJECT-STANDARD-ADOPTION.md) to
+record the selected corpus, actual scope and existing gaps in project instructions.
+The mandatory reading above still applies; this route is not a reduced rulebook.
 
-Reading an external operational contract is distinct from importing or installing
-the code beside it. For the current model, the preserved V1.14 sources can be
-read at the fixed comparison revision below:
-[LAW](https://github.com/xavdp-pro/SHAPER-OS-V1.14/blob/958e0b74e19af6ee833cba24fc31d1b866f6cf73/LAW.md),
-[RULES](https://github.com/xavdp-pro/SHAPER-OS-V1.14/blob/958e0b74e19af6ee833cba24fc31d1b866f6cf73/software/RULES.md)
-and [boot contract](https://github.com/xavdp-pro/SHAPER-OS-V1.14/blob/958e0b74e19af6ee833cba24fc31d1b866f6cf73/docs/agent/BOOT-CONTRACT.md).
-If the repository preview truncates a document, read its complete plain-text
-version: [LAW text](https://raw.githubusercontent.com/xavdp-pro/SHAPER-OS-V1.14/958e0b74e19af6ee833cba24fc31d1b866f6cf73/LAW.md),
-[RULES text](https://raw.githubusercontent.com/xavdp-pro/SHAPER-OS-V1.14/958e0b74e19af6ee833cba24fc31d1b866f6cf73/software/RULES.md)
-and [boot-contract text](https://raw.githubusercontent.com/xavdp-pro/SHAPER-OS-V1.14/958e0b74e19af6ee833cba24fc31d1b866f6cf73/docs/agent/BOOT-CONTRACT.md).
-Follow their applicable references, compare the later scoped decisions, and
-record the obligations used; a comparison revision is not automatically every
-existing deployment's revision.
+## Starting a new realization
 
-The agent fills in implementation details and writes concrete unit contracts
-that satisfy the known obligations. An absent schema, internal API or build
-recipe is implementation work. An unknown authority, contradictory requirement
-or undecided business policy is a specific decision gap. Identify and resolve
-that gap before its dependent action while continuing independent authorized
-work. Do not turn all open editorial items into a prerequisite for every build;
-for example, an isolated single-universe exercise need not decide doors between
-two jurisdictions or recursive space composition.
+An empty workspace is a valid starting point. Record the human's intention,
+mandate, this repository revision, selected profile, applicable decisions and
+required evidence in the new realization. Use the
+[creation request and prerequisites](examples/CREATE-A-UNIVERSE.md) and
+[reference procedure](procedures/01-REFERENCE-UNIVERSE.md) to produce the
+implementation in a separate workspace. Neither an existing SHAPER executable,
+image, realization repository nor registry is needed to begin.
 
-### Current construction crosswalk
+The constructor fills in implementation details and writes concrete contracts
+that satisfy the local obligations. An absent build recipe, internal schema or
+implementation is work to do. An unknown authority or business policy is a
+specific decision gap; resolve it before its dependent action while continuing
+independent authorized work. Do not demand unrelated production credentials for
+a DEV build or decide cross-jurisdiction policy for an isolated base universe.
 
-**[MANDATE: scoped operator directions]** For a new construction requested under
-this model, apply the decisions below when reading the older comparison corpus.
-This resolves the stated differences; it does not give explanatory chapters
-permission to waive unrelated obligations.
+Existing realizations carry their own versioned composition, implementation and
+operating records. Inspect those when acting on such a system. Documentation
+consolidation does not migrate a deployment or prove that its configuration changed.
 
-| Older comparison wording | Meaning for this new construction | Owning direction |
+## Current construction crosswalk
+
+This table connects current choices to their local owners. It does not replace
+reading those owners and is not a licence to waive unrelated obligations.
+
+| Subject | Current obligation | Owning documents |
 | :--- | :--- | :--- |
-| Rule 3 makes the machine registry a prerequisite. | Generate and verify the first implementation without a pre-existing registry; recommend it later for repeatable distribution. | [5 October construction decision](../decisions/2026-10-05-FIRST-CONSTRUCTION-AND-REUSE.md) |
-| Rule 11 records nested recipes as unproven in that tree. | Retain the nested system-container universe. The operator reports repeated practical deployment, including nested Podman; qualify this new candidate on its selected host. The old dated observation is not a present prohibition. | [6 October clarification](../decisions/2026-10-06-PRACTICAL-DEPLOYMENT-AND-BRIDGE-CONTINUITY.md) |
-| Rules 0H/7 keep the cognition core provider-neutral. | Keep the shared bridge intent generic and use OpenCode in this selected reference composition. A scoped adapter choice is not a universal provider law. | [24 September reference decision](../decisions/2026-09-24-REFERENCE-OPENCODE-BRIDGE.md) and [common bridge intent](intents/cognition-bridge.md) |
-| Rules 4/26 require private MariaDB per functional unit. | Preserve separate MariaDB instances from first construction; no shared development database or substitute engine. | [24 September storage decision](../decisions/2026-09-24-FUNCTIONAL-UNIT-MARIADB.md) |
-| The boot contract stops work on missing required secrets or blocked authority. | Generate implementation and prepare independent units within the existing mandate. Resolve a genuinely missing dependency before exercising its dependent action; do not demand unrelated production credentials for a local build. | [5 October construction decision](../decisions/2026-10-05-FIRST-CONSTRUCTION-AND-REUSE.md) |
-| A CLI may impose its own interactive approval or sandbox default. | In mandated DEV, implement full noninteractive execution without CLI sandbox or repeated approval questions; report a concrete adapter gap if that mode is unavailable. | [6 October execution direction](../decisions/2026-10-06-PRACTICAL-DEPLOYMENT-AND-BRIDGE-CONTINUITY.md#mandated-development-execution) |
-
-The construction agent records this applied crosswalk in the new realization
-and writes its concrete contracts. A missing recipe is construction work. An
-unresolved business policy or authority conflict is a different, specific gap.
-Existing deployments retain their governing records and require their own
-migration scope; this table does not claim that they were rewritten or retested.
-
-### Fixed comparison reference
-
-For successor reconciliation, the fixed V1.14 comparison reference is
-`958e0b74e19af6ee833cba24fc31d1b866f6cf73`, including `LAW.md`,
-`software/RULES.md` and their required governing references. On 27 September
-2026, Codex read `LAW.md`, all of `software/RULES.md` (lines 1–1559), and
-`docs/agent/BOOT-CONTRACT.md` in full at that exact reference. Supporting
-coverage and remaining sources are recorded in the
-[reading ledger](../review/READING-LEDGER.md#operational-law-reading--27-september-2026).
-The core operational texts have been read; complete coverage of their linked
-corpus and rule-by-rule successor mapping remain open. Earlier readings at
-`c88fd8742f5ed93a7fdcc3b342cf8580a4e37d17` are not equivalent coverage. Neither
-reference is asserted to describe every deployed artifact's governing revision.
-
-The preserved September target has its own
-[applicability boundary](profiles/SEPTEMBER-CONTAINER-MARIADB.md). Existing
-prototype gaps are not exceptions that weaken the target, and a target note is
-not evidence that an old runtime has already been rebuilt.
+| First implementation | The agent generates code from intentions; registry reuse follows verified construction. | [Rules](../RULES.md), [construction direction](../decisions/2026-10-05-FIRST-CONSTRUCTION-AND-REUSE.md) |
+| Containment | An outer system-container universe contains its Podman functional units; a flat host network is not an alternative to this model. | [Rules](../RULES.md), [current profile](profiles/SEPTEMBER-CONTAINER-MARIADB.md) |
+| State | Each functional unit owns a private MariaDB instance and its own durable state. | [Rules](../RULES.md), [storage direction](../decisions/2026-09-24-FUNCTIONAL-UNIT-MARIADB.md) |
+| Cognition | Shared context/session/action obligations are provider-neutral; the reference selects OpenCode. | [Common bridge](intents/cognition-bridge.md), [OpenCode](intents/cognition-bridge-opencode.md) |
+| DEV execution | Full noninteractive execution within the human mandate, without obstructive CLI sandbox or repeated approvals. | [Execution and security direction](../decisions/2026-10-06-PRACTICAL-DEPLOYMENT-AND-BRIDGE-CONTINUITY.md) |
+| Production | The tandem implements proportionate action/type permissions after functional integration and rechecks the accepted workflows. | [Shared security lifecycle](intents/cognition-bridge.md#security-by-design-followed-by-a-dedicated-hardening-phase) |
+| Qualification | Observe real effects, persistence, recovery and refusal boundaries; a transcript or health endpoint is not business proof. | [Proof](agent/PROOF.md), [unit contracts](contracts/queue.md) |
 
 ## Finite reading set
 
-For this correction checkpoint, these groups define the principal agent's
-required coverage, not a second reading order. Enter through the board and follow
-its navigation, including prerequisites and the common learning sequence:
+Enter through the [board](CONTEXT-INDEX.md). Principal agents share the same
+foundation; medium and strong routes differ in reasoning support, not permissions.
+The complete local foundation comprises:
 
-1. The five editorial-foundation documents listed above.
-2. The [practical-use decision](../decisions/2026-10-02-PRACTICAL-USE-AND-REFERENCE-SCENE.md)
-   and [ideal scene](IDEAL-SCENE.md), then the later scoped decisions listed above, the
-   [reference bridge](../decisions/2026-09-24-REFERENCE-OPENCODE-BRIDGE.md) and the
-   [functional-unit MariaDB](../decisions/2026-09-24-FUNCTIONAL-UNIT-MARIADB.md),
-   the [first-construction decision](../decisions/2026-10-05-FIRST-CONSTRUCTION-AND-REUSE.md),
-   the [deployment and continuity clarification](../decisions/2026-10-06-PRACTICAL-DEPLOYMENT-AND-BRIDGE-CONTINUITY.md),
-   the [creation example and prerequisites](examples/CREATE-A-UNIVERSE.md),
-   and the [Reference Universe Procedure](procedures/01-REFERENCE-UNIVERSE.md).
-3. [Board](CONTEXT-INDEX.md), [glossary](GLOSSARY.md) and
-   [artifact vocabulary](architecture/VOCABULARY-BOUNDARY.md).
-4. All six numbered learning chapters linked by the board, in order.
-5. [September target profile](profiles/SEPTEMBER-CONTAINER-MARIADB.md) and the
-   [realization intents](intents/README.md): the
-   [generic cognition bridge](intents/cognition-bridge.md),
-   [OpenCode profile](intents/cognition-bridge-opencode.md) and
-   [Meta Muse profile](intents/cognition-bridge-meta-muse.md).
-6. [Human guide](human/READING-GUIDE.md), [self-checks](human/METACOGNITION.md),
-   [medium route](agent/MEDIUM.md) and [strong route](agent/STRONG.md).
-7. [Scenario checks](examples/COMPREHENSION-CHECKS.md) and
+1. [INTENT](../INTENT.md), [AGENTS](../AGENTS.md), this map, the
+   [reading contract](READING-CONTRACT.md), and the scoped decisions listed above.
+2. The mandatory local operational corpus and its architecture/contracts listed above.
+3. [Ideal scene](IDEAL-SCENE.md), [glossary](GLOSSARY.md),
+   [artifact vocabulary](architecture/VOCABULARY-BOUNDARY.md), and the six learning
+   chapters linked by the board, in order.
+4. [Current profile](profiles/SEPTEMBER-CONTAINER-MARIADB.md),
+   [creation example](examples/CREATE-A-UNIVERSE.md),
+   [reference procedure](procedures/01-REFERENCE-UNIVERSE.md), and relevant
+   [adapter profiles](intents/README.md).
+5. [Human guide](human/READING-GUIDE.md), [self-checks](human/METACOGNITION.md),
+   [medium route](agent/MEDIUM.md), [strong route](agent/STRONG.md),
+   [scenario checks](examples/COMPREHENSION-CHECKS.md) and
    [worked answers](examples/WORKED-ANSWERS.md).
-8. [Source map](../review/SOURCE-MAP.md), [ledger](../review/READING-LEDGER.md),
-   [continuity protocol](../review/VERIFICATION-AND-CONTINUITY.md) and the
-   [correction record](../review/OPUS-CORRECTIONS-2026-09-23.md).
 
-The README is an entrance; the earlier reading-structure review is historical
-evidence, not an additional law. Operational tasks additionally require the
-exact external governing corpus and affected unit contracts. The unresolved
-external reading inventory is tracked separately; this finite study set is not
-a claim to have enumerated or reconciled every ecosystem source.
+Before concrete work, follow and read the detailed local dependencies applicable
+to it, record exact coverage and explain the meaningful contract. Unread material
+is not silently treated as known. Runtime configuration, vendor manuals and the
+human's business-specific intentions are supplied by the chosen realization;
+they are not missing SHAPER editions.
 
-## Meaning of “complete foundation”
+## Maintenance and review records
 
-For practical work, that phrase means the finite study set **plus the identified
-operational corpus of the chosen realization**, recorded by the agent when it
-creates a new one. The editorial crosswalk keeps
-obligation ownership visible across versions. Evolve this map into an explicit
-adopted-law index as that crosswalk progresses, preserving each obligation.
+The [current source/owner map](../review/SOURCE-MAP.md) and
+[ledger](../review/READING-LEDGER.md) track this corpus. The
+[continuity protocol](../review/VERIFICATION-AND-CONTINUITY.md) defines reading and
+verification records. Historical [structure review](../review/READING-STRUCTURE-REVIEW.md)
+and [correction checkpoint](../review/OPUS-CORRECTIONS-2026-09-23.md) are optional
+maintenance context, never governing prerequisites or substitutes for current law.
+
+Being self-contained is a documentary property. Each constructed realization
+still proves its actual source, configuration, effects, restoration and acceptance.
