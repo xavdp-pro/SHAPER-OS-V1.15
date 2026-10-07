@@ -64,8 +64,9 @@ mandatory even when a specialist contract is irrelevant to the current task.
 [LAW owns the two uses, explicit adoption and binding scope](../LAW.md#two-uses-and-explicit-adoption).
 The [agent entrance](../AGENTS.md) and [boot contract](agent/BOOT-CONTRACT.md#2-establish-the-mandate-and-work-perimeter)
 apply that contract to ongoing development without imposing a new construction.
-Use the [project adoption example](examples/PROJECT-STANDARD-ADOPTION.md) to
-record the selected corpus, actual scope and existing gaps in project instructions.
+Use the [ongoing-project alignment prompt](examples/PROJECT-STANDARD-ADOPTION.md#prompt-align-an-ongoing-project)
+to begin adoption, then the same example's record to identify the selected corpus,
+actual scope and existing gaps in project instructions.
 The mandatory reading above still applies; this route is not a reduced rulebook.
 
 ## Starting a new realization

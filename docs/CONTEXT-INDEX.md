@@ -109,6 +109,9 @@ contracts listed in the governing corpus. Read those documents in full.
   [Meta Muse adapter](intents/cognition-bridge-meta-muse.md). The common contract
   owns bounded context, session recovery, action records and execution policy;
   provider mechanisms and implementation live outside the generic core.
+- Aligning an ongoing project: [the project-adoption prompt](examples/PROJECT-STANDARD-ADOPTION.md#prompt-align-an-ongoing-project),
+  then record the selected revision, actual scope, evidence and conformity gaps
+  in that project's agent instructions. This route preserves existing work.
 - A first creation request: [create a universe with an agent](examples/CREATE-A-UNIVERSE.md),
   naming the purpose and destination; Proxmox/LXC illustrates one hosting choice.
 - A disagreement, missing observation or recurring failure:

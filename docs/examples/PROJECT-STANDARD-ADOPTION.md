@@ -6,6 +6,69 @@ It is a project entrance, not a replacement for the
 [full reading required by AGENTS](../../AGENTS.md). A human instruction establishes
 the adoption; writing the record does not require a second approval.
 
+## Prompt: align an ongoing project
+
+Use this prompt when the human wants an existing project to adopt SHAPER OS
+as its development standard. It starts from the project's actual architecture,
+working paths and current mandate; it does not request a new universe or a
+wholesale rewrite. The prompt selects a published revision when it is used,
+then pins that revision for an inspectable assessment. No particular commit,
+model provider, agent tool or project technology is assumed.
+
+```text
+Adopt SHAPER OS V1.15 as the governing development standard for this project,
+within the current human–agent mandate.
+
+Repository:
+https://github.com/xavdp-pro/SHAPER-OS-V1.15
+
+Resolve the repository's published default branch at the start of adoption.
+Record its full commit SHA and verify that the corpus you read matches that
+exact revision. Use that pinned revision throughout the adoption assessment.
+Do not silently switch revisions during the work.
+
+Follow its AGENTS.md, LAW.md, governing map and reading contract. Complete the
+required reading and applicable contract dependencies before making changes.
+
+Treat applicable SHAPER OS obligations as binding requirements, not optional
+background context. This adoption covers ongoing development; it does not
+require rebuilding the project or creating a new universe.
+
+Identify the project's actual architectural roles, components and applicable
+profiles. A component already declared as a SHAPER universe or functional unit
+retains all its applicable obligations.
+
+Preserve existing implementations, data, configuration and verified working
+paths. Reuse valid evidence where the implementation and conditions remain
+unchanged.
+
+Report:
+1. Your understanding of SHAPER OS and its application to this project.
+2. Obligations already satisfied, with inspectable evidence.
+3. Confirmed conformity gaps, their consequences and affected components.
+4. A proportionate correction plan within the current mandate.
+
+Distinguish an unverified condition from an observed defect. A documented gap
+does not waive an applicable obligation. Do not introduce an unrelated
+migration or wholesale rewrite.
+
+Record the repository URL, adopted full commit SHA and project scope in the
+project's agent instructions. If adoption is already recorded, assess the
+revision change and preserve the existing scope unless the human mandate
+changes it.
+
+Continue ordinary authorized development without requesting approvals already
+covered by the mandate. Resolve genuinely missing decisions before their
+dependent actions.
+
+Keep implementation, tests, deployment, live operation and human acceptance
+clearly distinguished.
+
+Communicate with me in French; write technical artifacts in English.
+```
+
+## Record the adoption in project instructions
+
 Place the following section in the project's agent instructions. Replace every
 placeholder with actual facts and accessible references; do not infer an adoption,
 a conformity claim or an exception from this template. The corpus stays code-free;
