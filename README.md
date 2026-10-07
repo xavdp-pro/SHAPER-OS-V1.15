@@ -94,7 +94,7 @@ The complete corpus of historical conception dialogues is available upon request
   realizations.
 - [RARMURE](https://github.com/xavdp-pro/RARMURE): Real-Time Fractal Vibe Coding,
   currently in concept formalization and proof-of-concept preparation.
-- [Public site](https://xavdp.pro/en/): the products and their intended experience.
+- [Public site](https://xavdp.pro/en/shaper-os): SHAPER OS and its intended experience.
 
 ### RARMURE proof of concept preparation
 
