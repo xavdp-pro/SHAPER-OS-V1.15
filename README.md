@@ -92,4 +92,26 @@ The complete corpus of historical conception dialogues is available upon request
   Runtime and Workspace.
 - [PodMesh](https://github.com/xavdp-pro/podmesh): container management for concrete
   realizations.
+- [RARMURE](https://github.com/xavdp-pro/RARMURE): Real-Time Fractal Vibe Coding,
+  currently in concept formalization and proof-of-concept preparation.
 - [Public site](https://xavdp.pro/en/): the products and their intended experience.
+
+### RARMURE proof of concept preparation
+
+**Project status as of 7 October 2026: concept formalization and preparation of a proof of concept.**
+RARMURE proposes parallel software exploration through separate virtual working
+views, semantic references, multiple model/provider routes, complementary
+counter-reviews, and evidence-based master selection. Its
+[short and detailed explanation](https://github.com/xavdp-pro/RARMURE/blob/main/PROJECT-EXPLANATION.md)
+preserves the design and its open questions.
+
+The specifications and illustrations are published. No RARMURE application,
+working plugin, runtime qualification, or measured speed gain is established.
+The proposed first proof of concept is a bounded case with two workers on one
+interacting behavior, fixed candidates, counter-review, and combined validation.
+
+SHAPER inspires the treatment of intention, authority, evidence, correction,
+and learning. RARMURE can function independently: no SHAPER installation or
+service is a prerequisite. This ecosystem entry records an exploratory project,
+not a required SHAPER component, a formal adoption of this corpus, or a change
+to SHAPER OS V1.15's **ready-for-use** status.
