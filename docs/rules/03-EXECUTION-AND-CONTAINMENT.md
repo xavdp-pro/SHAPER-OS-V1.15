@@ -158,6 +158,8 @@ Security is designed from the outset; implement functional/perimeter necessities
 
 <a id="rule-11-nftables-inside-the-universe"></a>
 * Inner Podman networking requires its firewall dependencies, including `nftables` for netavark. Install and prove them inside the universe rather than relying on a host inventory.
+<a id="rule-11-declared-outbound-connectivity"></a>
+* Required network connectivity is part of universe construction. The constructor declares each functional unit's network dependencies and establishes the name resolution and outbound connectivity they require, across both containment levels. The mechanism belongs to the substrate-specific recipe; no particular routing, translation or proxy mechanism is universally required. Record the configuration in the versioned recipe and manifest so it is reproduced without manual steps on creation, recreation and restoration. Verify actual dependency access from inside each dependent functional unit at those stages; a successful host-level check or temporary diagnostic path does not qualify the delivered path. A scope without external dependencies requires no outgoing Internet access. Resolve ordinary network implementation choices within the existing human mandate; identify host, hypervisor or site network changes outside that mandate before acting, without requesting approval again for already authorized work.
 <a id="rule-11-read-profiles-with-config-show"></a>
 * Read actual applied LXC configuration (`lxc config show`, profile configuration or `pct config`); an information command that omits the profile cannot validate it.
 <a id="rule-11-nesting-needs-a-restart"></a>
