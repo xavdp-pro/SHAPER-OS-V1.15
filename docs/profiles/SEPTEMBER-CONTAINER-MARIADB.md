@@ -100,6 +100,29 @@ chosen realization with the authorized owner. Its composition declares finite
 scope, resource limits and authority before recursive creation. The editorial
 crosswalk tracks the general mapping of these choices.
 
+## Realization record for a containing space
+
+**[EXPLANATION]** F-03a/c leave no universal space composition, named authority
+role or maximum depth to infer. They identify choices to declare for the actual
+realization; they do not suspend the unit, jurisdiction or containment contracts.
+The constructor records the following before the dependent crossing or recursive
+creation, using the existing mandate where it already determines the choice:
+
+| Record | Concrete decision and evidence |
+| :--- | :--- |
+| Space and composition | Identify the containing space, its parent and contained universes; list any space-owned functions and their state owners, or state that none are declared. Each universe retains its own required base units. |
+| Doors and authority | For each crossing, identify sending and receiving jurisdictions, purpose, data/actions, authorized roles on both sides and the receiving side's authorization record. A standing authorization may cover matching exchanges; a sender cannot ratify access for the receiver. |
+| Finite nesting | Declare the permitted parent/child relationships, a finite depth bound with its counting convention, and resource/creation limits. Identify who enforces them before creating a child and who owns its recovery and retirement. |
+| Unresolved choices | Name the missing decision, its authorized owner and the dependent operation held pending it. Continue independent authorized construction. |
+
+This record belongs with the realization's versioned intent and
+[topology](../architecture/TOPOLOGY.md). Use existing role names and authority;
+do not create a new global approver or request the same approval again. An
+isolated universe without inter-universe crossings need not invent a surrounding
+space infrastructure. A declared finite hierarchy qualifies that realization;
+it neither settles a universal depth nor closes the historical F-03 questions
+for every composition.
+
 ## Bootstrap and recovery direction
 
 **[TARGET S07]** The parent construction path supplies initial Vault identity,

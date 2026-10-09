@@ -160,6 +160,42 @@ Eliminate engines that fail the capability contract, then engines dominated on b
 
 The horizon must actually be supplied through authorized context; declaring `H3` does not grant access to private histories or promise model memory. Unavailable requirements follow the declared degradation policy and remain visible.
 
+## Worked example of measured selection
+
+**[EXPLANATION — fictitious measurements]** A realization needs `infra-ops`,
+`D2`, `T2`, `H2`, with `degraded: queue`. Its bounded probe performs an authorized
+tool operation on controlled test input and verifies the resulting artifact.
+Before measuring, it declares correctness checks, supplied context, throughput
+floor, timeout, repeated-trial conditions and the performance statistic used
+for this task: lower median end-to-end completion time among qualifying engines.
+The following invented values illustrate the selection procedure only; they
+are neither provider benchmarks nor evidence that any engine meets a depth class.
+
+| Candidate configuration | Applicable task checks | Median task time | Comparable cost per task |
+| :--- | :--- | :--- | :--- |
+| A | Pass in the hypothetical probe | 12 s | 0.00 cost units |
+| B | Pass in the hypothetical probe | 8 s | 0.00 cost units |
+| C | Pass in the hypothetical probe | 4 s | 0.03 cost units |
+| D | Pass in the hypothetical probe | 6 s | 0.05 cost units |
+| E | Required tool unavailable | Unqualified | 0.00 cost units |
+
+All passing rows are assumed to meet the declared throughput and context
+requirements. E is excluded before price comparison. D is dominated by C on
+both cost and performance. A loses the equal-cost speed tie to B. The remaining
+choices are B and C: `frugal` selects B; `swift` selects C. If the human's ceiling
+is 0.02 of the same cost units per task, `budget` selects B; at 0.04 it selects C.
+No hidden weighting is needed. If no candidate satisfies the requirements and
+applicable ceiling, retain the declared capacity wait and report its reason;
+do not silently lower the requirements or exceed the ceiling.
+
+A real record replaces every invented value with dated target-host observations,
+engine/harness/configuration identifiers, sample counts, variability and failures,
+actual task/throughput results, cost basis and evidence references. Use one
+comparable billing basis, identifying estimates, retries and free-tier limits;
+zero price grants neither availability nor capability. A median is not a deadline
+guarantee. Re-measure at deployment and on relevant changes; this example supplies
+no permanent engine default or universal latency/cost threshold.
+
 ## Concrete engines and versions
 
 Generic requirements never pin a model as universal law. A specific adapter profile may name its selected provider and dependency versions; measured runtime matrices and dated proof record actual engine/model/harness versions. A source-controlled proof is descriptive, not authority to reuse a stale measurement. Re-measure the candidate deployment and preserve its result with the realization.

@@ -202,6 +202,37 @@ limits, supported versions and tests. Existing adapters need not already expose
 a common context field or registration endpoint. Record any missing capability
 as an implementation gap, then implement it outside OS when authorized.
 
+## Realization capability evidence matrix
+
+**[EXPLANATION]** Keep the matrix in the realization repository, for the exact
+adapter variant, source revision, engine/harness version, configuration and
+environment examined. This is a reusable record format, not a matrix of current
+provider capabilities or certification supplied by SHAPER OS.
+
+For each row, record the declared capability and applicable contract, the dated
+observation with its evidence pointer, the qualification outcome and limitations.
+Use explicit outcomes such as **verified in the stated conditions**, **not
+verified**, **confirmed gap**, or **outside the declared variant's scope**.
+A declaration without observation remains unverified; an absent required
+capability is a gap, not an optional omission. Source inspection, a unit fixture,
+a real engine run and an independently checked effect are different evidence.
+
+| Capability row | Observation to record for the chosen realization |
+| :--- | :--- |
+| Execution mode and tools | API-only or tool-capable path; actual executor; DEV noninteractive behavior and applicable production permissions. Text generation alone does not prove execution. |
+| Context and continuity | First delivery, changed context on resume, native session or explicit replay, loss/reconstruction and reconciliation of uncertain effects. |
+| Durable ownership | Private MariaDB metadata and declared engine stores; restart/restore observations for the exact configuration. |
+| Run and event lifecycle | Correlation, concurrency, unavailable dependencies, cancellation and terminal ownership, including interrupted attempts. |
+| Effects and authority | An authorized real action, its independent effect check and relevant refusal boundaries; identify which Runtime enforces them. |
+
+Compare adapters only on matching tasks, authority and evidence conditions.
+Retain dated findings instead of treating an old source comparison as today's
+runtime state. Requalify affected rows when the implementation, engine, tools,
+configuration or target environment changes. A gap in a selected reference
+blocks its dependent qualification, while unrelated base construction proceeds.
+The [OpenCode](cognition-bridge-opencode.md) and [Meta Muse](cognition-bridge-meta-muse.md)
+profiles supply their scoped requirements and historical source observations.
+
 ## Example: an email-monitoring unit
 
 **[EXPLANATION]** A human asks a unit to monitor a specified mailbox and handle
