@@ -2,6 +2,10 @@
 
 This repository contains the complete governing documentation for constructing V1.15 realizations and for continuing development in projects that explicitly adopt its standard. Read [RULES](RULES.md) in full, the [boot contract](docs/agent/BOOT-CONTRACT.md), and the affected contracts in the [governing map](docs/GOVERNING-CORPUS.md). No separate SHAPER release is needed.
 
+The rulebook consists of the [rule index and all seven canonical parts](RULES.md#complete-rulebook).
+Reading the index alone does not satisfy full rule reading; the complete rule
+bodies in every part retain their binding force.
+
 ## Two uses and explicit adoption
 
 SHAPER OS supports both constructing universes and their units, and governing

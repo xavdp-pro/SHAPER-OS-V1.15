@@ -30,6 +30,9 @@ Definitions are **EXPLANATION**, except terms explicitly labeled **TARGET**.
   neither a reading summary nor an example replaces or waives them.
 - **Finite study set:** the larger enumerated reading set in that map, including
   explanatory chapters, examples and reviews; inclusion does not confer law status.
+- **Complete rulebook:** the [root index and seven canonical rule files](../RULES.md#complete-rulebook).
+  The index locates each rule; the linked owner contains its full binding text.
+  Dividing files does not divide authority or make any rule optional.
 - **Proof:** evidence sufficient for a specific claim under declared conditions,
   not a claim of absolute certainty or of unrelated capabilities.
 - **Metacognition:** examining how one forms judgments and chooses actions.

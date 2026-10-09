@@ -53,6 +53,12 @@ owners; follow its links rather than consulting an earlier edition.
 The [self-contained corpus decision](../decisions/2026-10-06-SELF-CONTAINED-CORPUS.md)
 sets this reading boundary.
 
+The [complete rulebook](../RULES.md#complete-rulebook) is the root index plus
+seven ordered canonical parts. Follow the index to read every part in full;
+the split prevents large-file read caps from hiding rules, without reducing
+the foundation. Record actual coverage through the
+[bounded-output procedure](READING-CONTRACT.md#complete-reading-through-bounded-outputs).
+
 ## Common learning sequence
 
 1. [Intention and governance](learning/01-INTENTION-AND-GOVERNANCE.md): distinguish

@@ -40,6 +40,8 @@ contracts.** This repository is self-contained and deliberately code-free: its
 [LAW](LAW.md), [RULES](RULES.md), boot and unit contracts are all present here.
 You need neither another SHAPER OS edition nor an existing implementation.
 Read the [local operational corpus](docs/GOVERNING-CORPUS.md#mandatory-local-operational-corpus).
+The [rulebook](RULES.md#complete-rulebook) has seven shorter canonical parts
+to support complete reading through bounded agent tools; all parts remain required.
 See the
 [starting requests and prerequisites](docs/examples/CREATE-A-UNIVERSE.md).
 

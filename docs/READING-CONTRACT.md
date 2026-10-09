@@ -82,6 +82,39 @@ assuming the old understanding remains valid.
 Use the external record format, snapshot identity and replay procedure in
 [verification and continuity](../review/VERIFICATION-AND-CONTINUITY.md).
 
+## Complete reading through bounded outputs
+
+**[EDITORIAL] Reading procedure:** tools can cap output by bytes or tokens even
+when a requested line limit appears sufficient. The
+[rulebook](../RULES.md#complete-rulebook) is split into seven smaller canonical
+files so their complete bodies are easier to deliver and verify. This is a
+structural reading aid, not a shorter law or a guarantee of retained context.
+
+1. Identify the actual revision or dirty-state content manifest, the required
+   documents and their canonical owners. Read the rule index's preamble and
+   every one of its seven parts in order, plus the governing map's other
+   required documents and applicable dependencies.
+2. Inspect each delivered output for a truncation notice, missing tail or
+   incomplete requested range. A search result, file name, requested limit,
+   tool invocation or the agent's own assurance is not proof of full delivery.
+3. If output is capped, resume at the next actually delivered line or section,
+   using a smaller range. Repeat until the verified end of that file; then
+   continue to the next canonical owner. Do not skip an unread middle range.
+4. Record the file path, exact digest/revision, covered ranges and remaining
+   gaps in the external reading record. Claim complete reading only when
+   the recorded delivered ranges cover all required text at that checkpoint.
+   Distinguish automatically supplied instructions from explicit file reads;
+   if their completeness is uncertain, read the owning file explicitly.
+5. After context compaction or session resumption, use that record to locate
+   obligations and reload the exact rules and contracts affected by the next
+   action. A coverage record proves delivery, not continuing understanding.
+
+Keep ordinary rule files around 10–20 KB and below 25 KB where practical;
+these are editorial size targets, not assumptions about any provider's limit.
+Read in smaller ranges whenever the actual tool requires it. If a rule owner
+grows, divide it at meaningful boundaries without dropping obligations,
+duplicating their authoritative bodies or changing stable identifiers.
+
 ## Comprehension gate
 
 Complete the [scenario checks](examples/COMPREHENSION-CHECKS.md). An acceptable

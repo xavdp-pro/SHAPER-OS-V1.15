@@ -6,6 +6,11 @@
 
 Enter through the [board](../CONTEXT-INDEX.md). Read the complete local [LAW](../../LAW.md), [RULES](../../RULES.md), this contract, the [operating contract](OPERATING-CONTRACT.md), and the finite foundation in the [governing map](../GOVERNING-CORPUS.md). Follow applicable specialist dependencies. Keep an external record of revision, exact read coverage, unknowns and conflicts; truncated output is not full reading. A summary is not a replacement.
 
+Full rule reading includes the [index and all seven canonical parts](../../RULES.md#complete-rulebook).
+Use the [bounded-output procedure](../READING-CONTRACT.md#complete-reading-through-bounded-outputs)
+before claiming coverage; resume a capped file from the next actually delivered
+line and keep unread ranges explicit.
+
 ## 2. Establish the mandate and work perimeter
 
 For an existing project, verify the adopted corpus revision, project mandate,

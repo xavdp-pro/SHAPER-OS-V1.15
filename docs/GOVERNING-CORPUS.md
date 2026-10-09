@@ -31,7 +31,12 @@ The current construction directions are local:
 ## Mandatory local operational corpus
 
 Read [LAW](../LAW.md) and [RULES](../RULES.md) in full, including the preamble and
-all rule sections. Also read the [boot contract](agent/BOOT-CONTRACT.md),
+all rule sections in the [seven canonical rule files](../RULES.md#complete-rulebook).
+The root rule index owns navigation and stable locators; each linked part owns
+its full rule bodies. Read all seven parts in their declared order, not only
+the index or rules selected by a task. Use the reading contract's
+[bounded-output procedure](READING-CONTRACT.md#complete-reading-through-bounded-outputs)
+to establish actual coverage. Also read the [boot contract](agent/BOOT-CONTRACT.md),
 [operating contract](agent/OPERATING-CONTRACT.md),
 [proof contract](agent/PROOF.md) and [lifecycle contract](agent/LIFECYCLE.md).
 Then follow their local contract dependencies for the intended composition.

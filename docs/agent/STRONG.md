@@ -6,6 +6,10 @@ foundation as the [medium agent](MEDIUM.md), plus the current local contract
 relationships and unresolved alternatives needed for systemic decisions.
 No earlier edition is a prerequisite.
 
+The shared foundation includes the [rule index and all seven canonical parts](../../RULES.md#complete-rulebook).
+Complete the same [bounded-output reading procedure](../READING-CONTRACT.md#complete-reading-through-bounded-outputs)
+as the medium route; systemic synthesis never replaces missing rule coverage.
+
 **[EDITORIAL]** Follow the route-selection rule in the medium guide. Strong is
 appropriate when scope or consequences are systemic; if needed sources are
 missing, selecting strong does not make them known. Preserve the explicit gaps.

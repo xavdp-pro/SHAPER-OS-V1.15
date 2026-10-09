@@ -19,6 +19,11 @@ No other SHAPER OS edition or private conversation is required. Read the require
 local documents in full and follow their applicable contract dependencies;
 a summary or navigation table cannot replace that reading.
 
+[RULES](RULES.md#complete-rulebook) is now the rule index: read its preamble
+and all seven canonical rule files in order. Follow the
+[bounded-output reading procedure](docs/READING-CONTRACT.md#complete-reading-through-bounded-outputs)
+to detect truncation and record actual coverage; an index read is not a rule read.
+
 Dialogue with the operator is French. Technical repository content is English.
 
 Use the [reading contract](docs/READING-CONTRACT.md) for coverage, context recovery,
