@@ -34,7 +34,7 @@ judgement rather than convention:
 | building or changing a brick | 0A, 0B, 0C, 0D, 0E, 32, 33 |
 | deploying or operating | 3, 10, 11, 12, 13, 16, 25, 27, 30 |
 | working on agents, bridges, delegation | 0F, 0H, 0K, 6, 7, 8, 19, 21, 23, 24 |
-| handling documents or data | 20, 22, 26, 31, and `docs/design/DOCUMENT-PIPELINE.md` |
+| handling documents or data | 20, 22, 26, 31; `docs/design/DOCUMENT-PIPELINE.md` is an illustrative example |
 | shipping to a client | 0G, 0J, 10, 18, 19, 25, 31, 33 |
 
 ---
@@ -352,8 +352,9 @@ Read [the complete rule](docs/rules/04-SERVICES-AND-QUALITY.md#rule-20).
 
 Read [the complete rule](docs/rules/04-SERVICES-AND-QUALITY.md#rule-21).
 
+<a id="rule-22-automatic-semantic-memory-ingestion--multi-tenant-vector-isolation-rag"></a>
 <a id="rule-22"></a>
-### Rule 22: Automatic Semantic Memory Ingestion & Multi-Tenant Vector Isolation (RAG)
+### Rule 22: Authorized Semantic Memory and Isolated Derived Indexes
 
 Read [the complete rule](docs/rules/04-SERVICES-AND-QUALITY.md#rule-22).
 

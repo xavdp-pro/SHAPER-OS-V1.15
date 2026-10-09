@@ -20,6 +20,7 @@ record the result before the action that depends on it.
 
 The current construction directions are local:
 
+- [Intentional recipes and ideal scenes](../decisions/2026-10-07-INTENTIONAL-RECIPES.md).
 - [Code-free, generic framework](../decisions/2026-09-23-AGNOSTIC-NO-CODE.md).
 - [OpenCode reference composition](../decisions/2026-09-24-REFERENCE-OPENCODE-BRIDGE.md).
 - [Private MariaDB per functional unit](../decisions/2026-09-24-FUNCTIONAL-UNIT-MARIADB.md).
@@ -58,11 +59,12 @@ For fractal deployment work, read [governor](contracts/governor.md),
 [maker](contracts/maker.md) and [maker recipes](contracts/maker-recipes.md).
 They are local meanings and obligations from which an agent generates code.
 
-The supporting design contracts are [consulted context](design/CONSULTED-CONTEXT.md),
-[document pipeline](design/DOCUMENT-PIPELINE.md) and
-[cooperative ecology](design/COOPERATIVE-ECOLOGY.md). Consult the relevant owners
-before delegating cognition or processing documents; full rule reading remains
-mandatory even when a specialist contract is irrelevant to the current task.
+The supporting design contracts are [consulted context](design/CONSULTED-CONTEXT.md)
+and [cooperative ecology](design/COOPERATIVE-ECOLOGY.md). The
+[document example](design/DOCUMENT-PIPELINE.md) illustrates a specialized recipe;
+it is not a mandatory pipeline for every adopter. Detailed product recipes live
+with their owners outside this generic framework. Consult the relevant contracts
+before acting; full rule reading remains mandatory.
 
 ## Adoption in an existing project
 

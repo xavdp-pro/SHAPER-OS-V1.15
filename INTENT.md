@@ -2,6 +2,20 @@
 
 > **Intent Classification**: GENERIC INTENT (Universal / Parameterized Blueprint)
 
+## Organized thought, realized by agents
+
+**SHAPER OS supplies an ideal scene, intentions, laws and ordered logical
+recipes. It is not a Debian package, executable or code distribution.** Agents
+are its primary readers; human explanations make the same frame accessible.
+As agents become more capable, they can construct and maintain better
+realizations and larger abstractions from this enduring material.
+
+The [recipe direction](decisions/2026-10-07-INTENTIONAL-RECIPES.md) owns this
+boundary: judge the recipe by its clarity and coherence; test the code when
+constructing its realization. Specialized product recipes live with their
+owners, while this framework can explain them through non-binding examples.
+
+
 ## Purpose
 
 Give a human and a capable AI agent a shared, understandable foundation from
@@ -25,6 +39,20 @@ the freedom to compose, explore and adapt within the mandate.
 SHAPER OS is open to future models, tools, compositions and ideas. Practical
 experience and different perspectives help it evolve. The goal is to expand what
 humans and agents can achieve together while preserving the meaning of their work.
+
+## A human-led tandem starts from a map
+
+The human brings and steers the map of the intended whole. The agent helps expose
+its purposes, relationships, boundaries and priorities, then derives ideal scenes,
+intentions, laws and ordered construction recipes. The map may start as a sketch
+or conversation; it is neither a required software tool nor the fleet ledger.
+
+SHAPER presupposes a capable, well-educated agent: instruction understanding,
+context continuity, reasoning across abstractions, appropriate tool use, honest
+uncertainty and receptiveness to correction. The framework organizes that ability
+for the tandem. It does not replace foundational agent competence with a prompt.
+The [recipe direction](decisions/2026-10-07-INTENTIONAL-RECIPES.md) defines this
+starting point and how experience returns to the map.
 
 ## Practical use and reference scene
 

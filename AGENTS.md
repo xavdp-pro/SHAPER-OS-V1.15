@@ -1,5 +1,16 @@
 # Agent entrance
 
+Start with the [shared working method](README.md#shared-working-method):
+understand together, give form, put it to use, learn. Keep explanations proportionate
+and use concrete examples before unfamiliar vocabulary.
+
+Read this as construction material: an ideal scene, intentions, laws and
+ordered recipes, primarily addressed to capable AI agents. Do not treat the
+absence of supplied code as an implementation defect in this framework.
+[Recipe meaning and realization evidence](decisions/2026-10-07-INTENTIONAL-RECIPES.md)
+are distinct; build and test concrete implementations in their owning workspace.
+
+
 Read [the board](docs/CONTEXT-INDEX.md), then the
 [governing corpus](docs/GOVERNING-CORPUS.md), local [LAW](LAW.md),
 [RULES](RULES.md), [boot](docs/agent/BOOT-CONTRACT.md) and

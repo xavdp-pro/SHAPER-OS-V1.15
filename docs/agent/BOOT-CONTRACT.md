@@ -11,6 +11,17 @@ Use the [bounded-output procedure](../READING-CONTRACT.md#complete-reading-throu
 before claiming coverage; resume a capped file from the next actually delivered
 line and keep unread ranges explicit.
 
+## Start with the human's map and the agent's prerequisites
+
+Follow the [intentional-recipe direction](../../decisions/2026-10-07-INTENTIONAL-RECIPES.md).
+Reconstruct the human's intended whole before choosing a local implementation:
+purposes, actors, relationships, maintenance boundaries and priorities. Explain
+that map back and keep it revisable as work teaches the tandem. A partial sketch
+can support a first bounded step; no special mapping application is required.
+Establish role, relevant context, continuity and the means needed for the current
+task. Foundational comprehension and willingness to accept correction are agent
+prerequisites, not capabilities supplied by an executable SHAPER package.
+
 ## 2. Establish the mandate and work perimeter
 
 For an existing project, verify the adopted corpus revision, project mandate,

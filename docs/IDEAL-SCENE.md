@@ -17,6 +17,19 @@ turning that intention into a system, checking its effects and improving it.
 The human remains in command. Shared responsibilities and ethical principles support
 initiative, improvisation and invention in how the work is achieved.
 
+## Start from your map, with a capable agent
+
+Bring your view of the whole: what you want to achieve, who participates, what
+belongs together and what must remain separate. A sketch, mind map or explanation
+is enough to begin. The agent makes the relationships explicit with you and derives
+ordered recipes. You pilot the intention; the agent reasons, constructs and helps
+maintain the result. Observations refine the map and recipes together.
+
+This assumes an agent able to understand instructions and abstractions, retain
+relevant context, use its tools and accept correction. SHAPER gives that tandem a
+coherent frame; it is not a substitute for the agent's foundational education.
+See the [founding recipe direction](../decisions/2026-10-07-INTENTIONAL-RECIPES.md).
+
 ## An adaptable space of universes
 
 An entity's **space** brings together its **universes**, each with a purpose,

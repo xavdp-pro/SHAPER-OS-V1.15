@@ -1,5 +1,14 @@
 # How to read and maintain this foundation
 
+## Recipes are judged as recipes
+
+The [7 October direction](../decisions/2026-10-07-INTENTIONAL-RECIPES.md)
+separates the ideal scene and construction recipe from its concrete realization.
+Assess intention, laws, functionality, boundaries and ordered dependencies here.
+Do not attach "not implemented" to a recipe merely because it provides no code.
+Implementation status and runtime tests belong to the realization's records.
+
+
 Purpose: keep the ready-to-use V1.15 framework understandable, consistent and
 easy to evolve. The editorial crosswalk is tracked in the
 [ledger](../review/READING-LEDGER.md).

@@ -1,5 +1,11 @@
 # Internal reading board
 
+Read the [intentional-recipe direction](../decisions/2026-10-07-INTENTIONAL-RECIPES.md)
+with the repository intent. This board organizes meaning for agents, not a list
+of executables waiting to exist. Specialized product examples illustrate the
+frame without becoming universal implementation requirements.
+
+
 Framework: **V1.15 — ready for use**. This board helps you choose a reading path.
 The editorial ledger tracks the framework's ongoing documentary evolution.
 Read this map before narrowing to a component.

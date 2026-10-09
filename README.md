@@ -1,5 +1,13 @@
 # SHAPER OS V1.15 — shape what comes next, with AI agents
 
+**This is organized thought for AI agents: an ideal scene, intentions, laws
+and logical recipes to materialize in an orderly way. It is not a `.deb`, an
+executable or a code distribution.** Human guides explain the same material at
+several depths. Increasingly capable agents can produce better realizations
+without making today's code the limit of tomorrow's design.
+See the [recipe direction](decisions/2026-10-07-INTENTIONAL-RECIPES.md).
+
+
 **SHAPER OS V1.15 is ready for use.** Its creator uses it every day to create,
 deploy and organize universes, including nested Podman deployments.
 The [6 October clarification](decisions/2026-10-06-PRACTICAL-DEPLOYMENT-AND-BRIDGE-CONTINUITY.md)
@@ -13,6 +21,37 @@ and discover possibilities that have not yet been imagined.
 The human remains in command. Agents expand the ability to think, build and
 explore. Different perspectives reveal new possibilities and help improve the
 work. The framework grows through that practical experience.
+
+## Shared working method
+
+**Understand together. Give form. Put it to use. Learn.**
+
+1. **Understand:** start with the human's idea and a concrete example. Share
+   enough context to explain the desired result in simple words.
+2. **Shape:** agree on the intention, essential rules and what success looks
+   like. Leave room for the agent to choose suitable means.
+3. **Realize:** build or adapt within the mandate, then check the actual result
+   and its usefulness with the human.
+4. **Learn:** compare expectations with experience, challenge each other's
+   interpretation and improve the recipe. Seek another perspective when useful.
+
+**Elaboration makes an idea transferable. Realization gives it a useful form.**
+The human keeps direction; the agent contributes initiative and counter-review.
+Neither agreement nor confidence removes every blind spot. Constructive integrity
+means preserving the intention, reporting reality honestly and making useful
+corrections.
+
+Use this method at the scale needed: a simple change needs a simple explanation.
+Each project keeps its own intent and rules and links here rather than copying
+another manifesto. This guide explains how to work; it grants no new authority.
+See the [recipe direction](decisions/2026-10-07-INTENTIONAL-RECIPES.md) for detail.
+
+## The human pilots from a map
+
+The starting point is the human's map of needs, actors, relationships and desired
+outcomes. A capable, well-educated agent helps clarify that map and turns it into
+ordered recipes and realizations. The tandem learns from the result and improves
+the map. No special mapping tool or pre-existing SHAPER executable is required.
 
 ## Discover the ideal scene
 

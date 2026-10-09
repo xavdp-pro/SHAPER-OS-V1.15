@@ -1,5 +1,10 @@
 # Medium agent route
 
+Start with the human-led map and capable-agent prerequisites in the
+[recipe direction](../../decisions/2026-10-07-INTENTIONAL-RECIPES.md).
+Interpret the ideal scene before deriving ordered construction; current code
+does not define the limits of the intended whole.
+
 Purpose: explicit reasoning steps for a capable operational agent. This route
 has the same governing foundation and obligations as the strong route. It is
 not a reduced-law or small-agent mode.

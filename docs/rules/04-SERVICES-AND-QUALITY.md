@@ -164,14 +164,27 @@ Rule 12 (archive hygiene: no autoindex, basic auth, TLS) applies to any `tar.bz2
 
 ---
 
+<a id="rule-22-automatic-semantic-memory-ingestion--multi-tenant-vector-isolation-rag"></a>
 <a id="rule-22"></a>
-### Rule 22: Automatic Semantic Memory Ingestion & Multi-Tenant Vector Isolation (RAG)
-* **Continuous Passive Knowledge Capitalization**:
-  * Any validated file deposited in `/data/ged` emits an asynchronous event that triggers automatic chunking and vector embedding into Qdrant using a sovereign local embedding model qualified and recorded by the realization; an ONNX runtime is a possible implementation.
-  * **No silent degradation**: if the sovereign embedding model is unavailable, ingestion fails loudly and the document is queued as `PENDING_EMBED`. A lexical or hash-based placeholder vector MUST NEVER be written into a semantic collection (Rule 0G).
-* **Strict Multi-Tenant Isolation**:
-  * <a id="rule-22-isolated-qdrant-collection"></a>Each Universe owns its isolated Qdrant collection. An agent can only query its own vector namespace.
-  * Parent Supervisor universes only consume aggregated metrics and structured summaries; they NEVER access raw child vector collections directly.
+### Rule 22: Authorized Semantic Memory and Isolated Derived Indexes
+
+* A composition selecting semantic retrieval declares its source owner,
+  validation event, analysis, chunking, embedding and index responsibilities.
+  This does not require every universe to host a GED or vector engine.
+* Only validated, authorized content enters derived indexes. Preserve source
+  version, chunk location, transformation versions and access scope; retrieved
+  content is evidence, never permission or an instruction to change authority.
+<a id="rule-22-isolated-qdrant-collection"></a>
+
+* A query cannot cross its authorized universe/tenant scope. Parents consume
+  authorized service responses, never raw child collections by implicit privilege.
+* Unavailable embedding capability produces an explicit pending/failure state;
+  do not insert placeholder vectors or silently mix incompatible vector spaces.
+* Revocation, erasure and retention cover source access and derived retrieval.
+  The owning recipe declares rebuild and recovery from the authoritative source.
+* Concrete engines and composition belong to the specialized recipe. The
+  [document example](../../docs/design/DOCUMENT-PIPELINE.md) illustrates this rule;
+  it does not mandate its product choices for all SHAPER adopters.
 
 ---
 

@@ -1,5 +1,10 @@
 # Strong agent route
 
+Start with the human-led map and capable-agent prerequisites in the
+[recipe direction](../../decisions/2026-10-07-INTENTIONAL-RECIPES.md).
+Interpret the ideal scene before deriving ordered construction; current code
+does not define the limits of the intended whole.
+
 Purpose: reconstruct the system from principles and test its coherence across
 scales. Start with the [board](../CONTEXT-INDEX.md). Read the same complete
 foundation as the [medium agent](MEDIUM.md), plus the current local contract
