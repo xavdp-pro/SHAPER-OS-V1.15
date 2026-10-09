@@ -1,5 +1,7 @@
 # Intent
 
+> **Intent Classification**: GENERIC INTENT (Universal / Parameterized Blueprint)
+
 ## Purpose
 
 Give a human and a capable AI agent a shared, understandable foundation from

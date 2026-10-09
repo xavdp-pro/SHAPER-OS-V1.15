@@ -1,5 +1,7 @@
 # Generic cognition bridge intent
 
+> **Intent Classification**: GENERIC INTENT (Universal / Parameterized Blueprint)
+
 Identifier: **COGNITION-BRIDGE-CONTINUITY**.
 Status: **[MANDATE]** shared semantic obligations from the
 [6 October direction](../../decisions/2026-10-06-PRACTICAL-DEPLOYMENT-AND-BRIDGE-CONTINUITY.md).

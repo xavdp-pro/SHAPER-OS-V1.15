@@ -21,23 +21,42 @@ The governor owns a durable desired-state ledger in its own private MariaDB. It 
 
 Each instance row contains `id`, `account`, `klass`, `matrix`, `digest`, `machine`, `env`, `state`, `params`, `deadlineAt`, `createdAt`, `updatedAt`, `events[]`. `env` is `dev`, `test`, `demo` or `prod`; absent means `demo`, never production. Artifact digest and params remain immutable on a live row. The backup bucket is derivable, not an alternate instance store.
 
-The states are exactly `DESIRED`, `RECONCILING`, `PURRING`, `DEGRADED`, `REAPED`. Unknown event names are retained for audit but cause no transition. Every report records event, data, maker host and timestamp; unmet required facts are recorded explicitly and override the claimed healthy transition to `DEGRADED`.
+The states are exactly `DESIRED`, `RECONCILING`, `PURRING`, `DEGRADED`, `REAPED`. Unknown event names are retained for audit but cause no transition. Every report records event, data, maker host and timestamp. Apply a transition only to the current authorized work kind and correlated claim/attempt, from an eligible source state below. Stale, mismatched or ineligible reports remain audit evidence without changing state; duplicate reports cannot repeat a settled transition. The realization declares and persists the attempt correlation and transition guards.
 
-| Event | Next state |
-| :--- | :--- |
-| `STAMPING` | `RECONCILING` |
-| `STAMPED` | `PURRING`, only with required running facts |
-| `STAMP_FAILED` | `DEGRADED` |
-| `REAPING` | `RECONCILING` |
-| `REAPED` | `REAPED`, after verified absence |
-| `REAP_FAILED` | `DEGRADED`, bounded retry policy applies |
-| `REAP_REFUSED` | `DEGRADED`, no automatic reap re-offer |
-| `VALIDATING` | `PURRING` (a validation in progress does not itself assert failure) |
-| `VALIDATED` | `PURRING` |
-| `VALIDATION_FAILED` | `DEGRADED` |
-| `ADOPTING` | `RECONCILING` |
-| `ADOPTED` | `PURRING`, only with running and legacy facts |
-| `ADOPT_FAILED` | `DEGRADED` |
+| Event | Eligible source state and work | Next state |
+| :--- | :--- | :--- |
+| `STAMPING` | `DESIRED`; current stamp claim | `RECONCILING` |
+| `STAMPED` | `DESIRED` or `RECONCILING`; current stamp attempt | `PURRING`, only with required running facts |
+| `STAMP_FAILED` | `DESIRED` or `RECONCILING`; current stamp attempt | `DEGRADED` |
+| `REAPING` | Nonterminal row eligible for authorized reap under the deadline/recovery policy | `RECONCILING` |
+| `REAPED` | Current authorized reap attempt on a nonterminal row | `REAPED`, after verified absence |
+| `REAP_FAILED` | Current reap attempt on a nonterminal row | `DEGRADED`, bounded retry policy applies |
+| `REAP_REFUSED` | Current reap attempt on a nonterminal row | `DEGRADED`, no automatic reap re-offer |
+| `VALIDATING` | `PURRING`; current validation attempt | `PURRING` (progress alone does not assert success or failure) |
+| `VALIDATED` | `PURRING`; same validation attempt | `PURRING` |
+| `VALIDATION_FAILED` | `PURRING`; current validation attempt | `DEGRADED` |
+| `ADOPTING` | `DESIRED`; current adoption claim | `RECONCILING` |
+| `ADOPTED` | `DESIRED` or `RECONCILING`; current adoption attempt | `PURRING`, only with running and legacy facts |
+| `ADOPT_FAILED` | `DESIRED` or `RECONCILING`; current adoption attempt | `DEGRADED` |
+
+A correlated terminal birth report does not require prior delivery of its
+progress event; required running/legacy facts still apply. For an eligible birth
+report, unmet required facts override the claimed healthy
+transition to `DEGRADED`. `REAPED` is terminal: late progress, validation or birth
+reports never resurrect its row. Authorized human/root termination follows its
+declared administrative contract and the same independently verified absence.
+
+Distinguish an explicitly permitted bounded recovery from a resting
+`DEGRADED` row. Persist the cause, current recovery phase, attempt count and
+eligibility. Admission of an authorized bounded retry explicitly records
+`RECONCILING` before execution; a report alone cannot admit a retry from rest.
+In particular, a failed reap may be re-offered under the existing
+backoff and remaining budget; an exhausted budget or `REAP_REFUSED` does not
+become eligible merely because another poll or report arrives. A diagnostic
+validation of a resting row is evidence only: it neither clears `DEGRADED`
+nor starts another repair budget. Leaving rest requires the documented re-ask
+where permitted or authorized human/root action under
+[Rule 27](../../RULES.md#rule-27); the event table grants no additional recovery authority.
 
 `PURRING` is dated; the canonical instance `status.json` exposes state, `lastPurr` and `lastBackup`. Staleness triggers observation. A DEGRADED row does not silently self-clear; only the documented bounded recovery, explicit re-ask where permitted or authorized human/root action can change it.
 

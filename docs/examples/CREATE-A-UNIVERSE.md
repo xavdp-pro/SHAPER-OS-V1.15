@@ -24,6 +24,16 @@ The human names the universe, destination and preferred environment. The agent
 organizes the construction there. The human does not need to write a deployment
 specification before starting the conversation.
 
+Distinguish that requested logical name from the identifiers of the realization.
+For example, retain `univ-example` as the human's name and record its mapping to
+a single-class repository `univ-example-core`, whose manifest's `universe`
+field matches that class name, and the runtime instance `univ-example-core-dev`.
+When a realization workspace becomes a class implementation repository, it follows
+the [class repository grammar](../../RULES.md#rule-1); it is not a new repository
+kind. The [short-slug exception](../architecture/NAMING.md#the-universe-field-and-the-repo-name)
+for universes inside the base still applies. Record the chosen mapping without
+renaming unrelated existing projects or requiring a registry before construction.
+
 **The agent creates the implementation from SHAPER OS.** It can start with an
 empty realization workspace: it writes the unit code, concrete contracts, build
 material and tests there, outside this documentation repository. An existing

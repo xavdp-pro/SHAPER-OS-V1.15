@@ -22,10 +22,11 @@ within the current human–agent mandate.
 Repository:
 https://github.com/xavdp-pro/SHAPER-OS-V1.15
 
-Resolve the repository's published default branch at the start of adoption.
-Record its full commit SHA and verify that the corpus you read matches that
-exact revision. Use that pinned revision throughout the adoption assessment.
-Do not silently switch revisions during the work.
+Use the immutable revision explicitly selected by the human when one is supplied.
+Otherwise, resolve the repository's published default branch once at the start
+of adoption. Record the full commit SHA and verify that the corpus you read
+matches that exact revision. Use that pinned revision throughout the adoption
+assessment. Do not silently switch revisions during the work.
 
 Follow its AGENTS.md, LAW.md, governing map and reading contract. Complete the
 required reading and applicable contract dependencies before making changes.
@@ -53,9 +54,14 @@ does not waive an applicable obligation. Do not introduce an unrelated
 migration or wholesale rewrite.
 
 Record the repository URL, adopted full commit SHA and project scope in the
-project's agent instructions. If adoption is already recorded, assess the
-revision change and preserve the existing scope unless the human mandate
-changes it.
+project's agent instructions. If adoption is already recorded, compare the old
+and selected revisions, assess the changed obligations and their impact, then
+record the deliberate pin update and any gaps within this adoption mandate.
+The human's instruction to adopt the selected revision can itself authorize
+that update; do not request a second approval for the same decision. Preserve
+the existing scope unless the human mandate changes it, and resolve any
+genuinely uncovered conflict before its dependent action. Later upstream
+changes alone do not advance the project's recorded pin.
 
 Continue ordinary authorized development without requesting approvals already
 covered by the mandate. Resolve genuinely missing decisions before their

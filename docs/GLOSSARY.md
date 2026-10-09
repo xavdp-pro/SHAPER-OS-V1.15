@@ -23,8 +23,11 @@ Definitions are **EXPLANATION**, except terms explicitly labeled **TARGET**.
 - **Principal agent:** the agent coordinating understanding with the human and
   connecting affected contracts; a responsibility, not an automatic root identity.
   See the [agent routes](agent/STRONG.md).
-- **Adopted editorial foundation:** the five editorial documents
-  enumerated in the [governing corpus](GOVERNING-CORPUS.md), not all operational law.
+- **Adopted editorial foundation:** the guidance for reading, explaining and
+  maintaining the framework, with its owners identified in the
+  [governing corpus](GOVERNING-CORPUS.md#authority-and-ownership).
+  Distinguish this guidance from the operational laws and unit contracts;
+  neither a reading summary nor an example replaces or waives them.
 - **Finite study set:** the larger enumerated reading set in that map, including
   explanatory chapters, examples and reviews; inclusion does not confer law status.
 - **Proof:** evidence sufficient for a specific claim under declared conditions,

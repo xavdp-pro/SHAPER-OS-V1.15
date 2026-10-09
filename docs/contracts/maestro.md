@@ -11,4 +11,16 @@ Maestro belongs to **P2**, the agentic perimeter, and is a deterministic schedul
 * A scheduled task remains within the human mandate and current per-action/type policy. A cadence cannot widen permissions. The executing unit reloads current context/deltas and prior effects before action, even when the creation snapshot exists.
 * Keep runtime state local to its owning unit, call Queue/bridge through declared interfaces, and prove the real beat → job → effect → evidence loop. Scheduling does not authorize sending email or any other external act absent the task's mandate.
 
+## Interactive work
+
+Under [Rule 21](../../RULES.md#rule-21), Maestro records interactive work as
+`AWAITING_HUMAN` in its own durable dispatch state and notifies the operator.
+Retain the operation, input/context revision, reason and any correlated Queue job.
+The realization declares that handoff explicitly: parked work occupies no
+execution lane and is not an automatically runnable job after restart.
+An operator taking up the work initiates the interactive path under current
+authority; a beat or available slot never makes the class auto-dispatchable.
+Record cancellation, expiry and completion, and reconcile prior effects before
+any retry. Follow [Queue's generic parking and claim contract](queue.md#deferred-prerequisites-and-consumer-claims).
+
 See [Queue](queue.md), [common bridge](../intents/cognition-bridge.md) and [naming](../architecture/NAMING.md).

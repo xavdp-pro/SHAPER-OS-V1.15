@@ -1,5 +1,8 @@
 # Realization intent — Meta Muse cognition bridge
 
+> **Intent Classification**: GENERIC INTENT (Universal / Parameterized Blueprint)
+> **Scope**: Reusable Meta Muse adapter profile; concrete universe bindings belong to its realization.
+
 Identifier: **REALIZATION-BRIDGE-META-MUSE**.
 Status: **[TARGET]** optional adapter profile applying the
 [generic bridge intent](cognition-bridge.md), under the

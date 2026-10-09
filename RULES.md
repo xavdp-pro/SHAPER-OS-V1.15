@@ -255,7 +255,7 @@ The common [cognition-bridge intent](docs/intents/cognition-bridge.md) owns sess
   * Installation is a 100% **IA-Driven Process**: the autonomous AI agent  reads the declarative intent, probes the physical host and runtime limits (`cgroups`, RAM, disk, kernel version, existing packages), and **synthesizes, provisions, and configures the environment on the fly**.
 * **Dynamic Synthesis Over Fragile Scripts**:
   * If a dependency is missing, the AI agent resolves and installs the exact right package for that specific OS runtime (`apt`, `apk`, `pip`, `npm`).
-  * If an environment configuration or port needs adjustment, the AI agent adapts dynamically without failing compile-time checks.
+  * If an environment configuration or port needs adjustment, the AI agent adapts dynamically within the declared parameters and mandate. Apply [Rule 11's port-conflict contract](#rule-11-declared-ports-are-free): identify the holder and record the resolution; do not silently substitute a declared port or stop an unrelated service. Ordinary choices already covered by the mandate require no repeated approval.
   * **Summary**: The human sets the *What* and the *Why* (Intent); the AI agent dynamically constructs and validates the *How* (Materialization).
 
 ---
@@ -714,7 +714,8 @@ Rule 12 (archive hygiene: no autoindex, basic auth, TLS) applies to any `tar.bz2
 
 <a id="rule-18"></a>
 ### Rule 18: Primary Admin Account Onboarding Protocol (Zero Unsolicited Dummy Users)
-* **Explicit Human Prompting Upon Setup Completion**: Whenever an AI agent or deployer completes the bootstrap and health checks of a new SHAPER OS / Helm universe:
+* **Primary Admin for a Human Login Surface**: When the declared composition provides a human login/admin surface, such as Helm, complete its primary-admin onboarding after bootstrap and health checks. A headless reference without that surface does not require adding Helm, a human account or a login URL merely to satisfy this rule. Functional-unit identities and their credential requirements still apply.
+* **Reuse Authorized Choices**: For that human login surface:
   1. Obtain the human’s chosen primary Admin identity and secure credential through the authorized channel. Reuse values already supplied; ask only for genuinely missing choices:
      * Preferred **Email address** (e.g. `<operator-email>` or custom).
      * **First Name / Display Name**.

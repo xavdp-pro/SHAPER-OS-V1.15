@@ -81,7 +81,7 @@ records this presentation and daily use.
 
 For research teams and organizations seeking deeper agent alignment and contextual discernment, SHAPER OS provides an acculturation methodology grounded in its conception dialogues.
 
-Analyzing this dialogue corpus alongside **SHAPER OS**, **SHAPER Three Layers**, and **PodMesh** provides agents with the underlying rationale, human intent, and operational lessons behind each architectural boundary and safety rule. This grounding eliminates literalist rigidity and goal-hijacking (*specification gaming*), fostering genuine resonance and proactive counter-regard.
+Analyzing this dialogue corpus alongside **SHAPER OS**, **SHAPER Three Layers**, and **PodMesh** makes the underlying rationale, human intent, and operational lessons available to agents. This grounding aims to reduce literalist rigidity and goal-hijacking (*specification gaming*) and support informed counter-review. Its effect must be evaluated for the actual agent and context; it is not a behavioral guarantee. These optional research materials are not prerequisites for using the self-contained SHAPER OS corpus.
 
 The complete corpus of historical conception dialogues is available upon request:  
 📧 [xavier@xavdp.pro](mailto:xavier@xavdp.pro)

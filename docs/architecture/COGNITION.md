@@ -40,7 +40,7 @@ and is never auto-dispatched (Rule 21).
 | `D1` | Literal transformation: extract, classify, format, follow an unambiguous step | Log tagging, field extraction, acknowledgment text |
 | `D2` | Procedural work: multi-step tool use, follow a written runbook, fix a failure whose cause is already stated, write a test from a template | Standard deployment, routine brick operation |
 | `D3` | Derivation: infer the action from principles, resolve conflicting evidence, plan across a whole universe, decide what proof is sufficient | Clean-sheet TEST, incident diagnosis, parent-side repair |
-| `D4` | Architecture: change the law or the intent, design taxonomy, decide cross-universe promotion | Doctrine work — **human co-signature required** (Rule 24) |
+| `D4` | Architecture: change the law or the intent, design taxonomy, decide cross-universe promotion | Doctrine work — **human co-signature required**, under the [governing authority and scope contract](../GOVERNING-CORPUS.md#authority-and-ownership) |
 
 `D4` is never dispatched autonomously, whatever the engine's capability.
 
@@ -99,6 +99,16 @@ decision**, not an accident:
 
 A brick that runs degraded **silently** is a Rule 0G violation: the output looks
 like nominal output and nothing in the record says otherwise.
+
+For `AWAITING_CAPACITY`, the realization identifies the cognition selection or
+dispatch unit that owns the durable waiting record and its Queue integration.
+Retain the required capabilities, input/context revision, operation identity,
+reason and notification. Park the work without holding an execution lane.
+A qualifying capability becoming available triggers a fresh capability and
+authority check before dispatch; it is not permission to repeat an uncertain
+effect. Reconcile prior attempts first. Declared cancellation, expiry and business
+deadlines still apply. The [Queue contract](../contracts/queue.md#deferred-prerequisites-and-consumer-claims)
+owns the generic claim and handoff requirements; cognition owns this waiting reason.
 
 ---
 
