@@ -116,6 +116,33 @@ Build locally for the first construction. A registry is recommended for repeated
     materialised when the functional Podman is born, even before the function
     has durable rows. SQLite, CSV and JSONL may be declared as disposable DEV
     scaffolding only; they never satisfy the database or promotion gate.
+  * **The Turbinobash Method, One Account per Server**: this convention is the
+    one of Turbinobash (`tb`, [turbinobash-web](https://github.com/xavdp-pro/turbinobash-web)),
+    where one host serves many applications and each application is one Linux
+    account, one MariaDB account and one database, all carrying the
+    application's name, with the password in the account's own
+    `etc/mysql/localhost/passwd`. A functional Podman is one such application,
+    with a MariaDB server of its own that serves it alone:
+    1. **One system account**, named by the functional slug, whose home is
+       `/apps/<functional-slug>/` and which owns it. The application process
+       runs as that account, never as root.
+    2. **One MariaDB server, in the same container as the application.** It
+       runs as the server's own `mysql` account, listens only on a local Unix
+       socket (no TCP port) and keeps its data in the unit's persistent volume.
+       A database container placed beside the application is not this method
+       and does not satisfy "inside that Podman's security and lifecycle
+       boundary".
+    3. **One MariaDB account and one database with the same name**:
+       `'<functional-slug>'@'localhost'` and `<functional-slug>`. The account's
+       privileges stop at that database.
+    4. **One password file**, generated at birth and written to
+       `/apps/<functional-slug>/etc/mysql/localhost/passwd`, mode `0600`, owned
+       by the functional account. The application reads its password there and
+       takes its database user and database name from its own account name.
+    5. **Root administers through its own path**: the local root command line on
+       the socket, with a credential the application never receives.
+    6. **One dump per unit**: the unit's recovery point is one `mariadb-dump` of
+       that database, taken beside its `sav/` volumes.
 * **Continuous Architectural Traceability**: Document every architectural choice with *What* (concise description) and *Why* (business rationale).
 
 ---

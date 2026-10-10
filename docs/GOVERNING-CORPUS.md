@@ -24,6 +24,7 @@ The current construction directions are local:
 - [Code-free, generic framework](../decisions/2026-09-23-AGNOSTIC-NO-CODE.md).
 - [OpenCode reference composition](../decisions/2026-09-24-REFERENCE-OPENCODE-BRIDGE.md).
 - [Private MariaDB per functional unit](../decisions/2026-09-24-FUNCTIONAL-UNIT-MARIADB.md).
+- [The unit database follows the Turbinobash method](../decisions/2026-10-10-UNIT-DATABASE-TURBINOBASH-METHOD.md).
 - [Practical use and ideal scene](../decisions/2026-10-02-PRACTICAL-USE-AND-REFERENCE-SCENE.md).
 - [First construction and later registry reuse](../decisions/2026-10-05-FIRST-CONSTRUCTION-AND-REUSE.md).
 - [Practical deployment, bridge continuity and DEV/production policy](../decisions/2026-10-06-PRACTICAL-DEPLOYMENT-AND-BRIDGE-CONTINUITY.md).

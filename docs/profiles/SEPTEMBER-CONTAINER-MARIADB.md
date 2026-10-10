@@ -53,7 +53,10 @@ and chosen host while preserving the operator-attested record of practical use.
 runtime container in the Podman realization, its own system identity and its own
 private MariaDB. Its functional slug identifies the unit, system account,
 database account and database. Application permissions are limited to that
-database; administration uses a separate authorized path.
+database; administration uses a separate authorized path. The MariaDB server
+runs in the same container as the application, by the Turbinobash method of
+[Rule 4](../rules/02-CONSTRUCTION.md#rule-4) and the
+[10 October direction](../../decisions/2026-10-10-UNIT-DATABASE-TURBINOBASH-METHOD.md).
 
 In each minimal universe composition, Vault, Logger, Queue and Maestro are the
 four mandatory base units. Under the [perimeter taxonomy](../architecture/PERIMETERS.md),
