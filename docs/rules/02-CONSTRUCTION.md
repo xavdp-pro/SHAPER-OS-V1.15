@@ -116,33 +116,47 @@ Build locally for the first construction. A registry is recommended for repeated
     materialised when the functional Podman is born, even before the function
     has durable rows. SQLite, CSV and JSONL may be declared as disposable DEV
     scaffolding only; they never satisfy the database or promotion gate.
-  * **The Turbinobash Method, One Account per Server**: this convention is the
-    one of Turbinobash (`tb`, [turbinobash-web](https://github.com/xavdp-pro/turbinobash-web)),
-    where one host serves many applications and each application is one Linux
-    account, one MariaDB account and one database, all carrying the
-    application's name, with the password in the account's own
-    `etc/mysql/localhost/passwd`. A functional Podman is one such application,
-    with a MariaDB server of its own that serves it alone:
-    1. **One system account**, named by the functional slug, whose home is
-       `/apps/<functional-slug>/` and which owns it. The application process
-       runs as that account, never as root.
-    2. **One MariaDB server, in the same container as the application.** It
-       runs as the server's own `mysql` account, listens only on a local Unix
-       socket (no TCP port) and keeps its data in the unit's persistent volume.
-       A database container placed beside the application is not this method
-       and does not satisfy "inside that Podman's security and lifecycle
-       boundary".
-    3. **One MariaDB account and one database with the same name**:
-       `'<functional-slug>'@'localhost'` and `<functional-slug>`. The account's
-       privileges stop at that database.
-    4. **One password file**, generated at birth and written to
-       `/apps/<functional-slug>/etc/mysql/localhost/passwd`, mode `0600`, owned
-       by the functional account. The application reads its password there and
-       takes its database user and database name from its own account name.
-    5. **Root administers through its own path**: the local root command line on
-       the socket, with a credential the application never receives.
-    6. **One dump per unit**: the unit's recovery point is one `mariadb-dump` of
-       that database, taken beside its `sav/` volumes.
+  * **The Turbinobash Method: One Application Account per Server**: the clauses
+    above form one method, the one to apply whenever an application is built. It
+    comes from Turbinobash (`tb`, [turbinobash-web](https://github.com/xavdp-pro/turbinobash-web)):
+    on a Turbinobash host each application is one Linux account, one MariaDB
+    account and one database carrying the application's name, with its password
+    in its own `etc/mysql/localhost/passwd`. Under SEP22-CONTAINER-MARIADB a
+    functional unit is one such application, with a MariaDB server of its own
+    that serves it alone. SHAPER inherits the method, not Turbinobash's scripts:
+    their grants, password handling and ownership changes are not a qualified
+    realization of this profile.
+    1. **One application account.** One declared functional identity names the
+       application's Linux account, its MariaDB account and its database. Its
+       home is `/apps/<functional-slug>/` as seen inside the container. An
+       upstream application account may be that identity when it is declared
+       consistently everywhere; the database engine's `mysql` account and root
+       stay distinct and keep their qualified internal identities (Rule 11). The
+       application never runs as root, and owning its home never justifies a
+       recursive ownership change over the MariaDB data or administrative files.
+    2. **One MariaDB server in the same container.** The application and its
+       private MariaDB server run as separate processes in the same functional
+       application container. The server listens only on a private local Unix
+       socket, never on TCP, and that socket is not exposed to other functional
+       units. A separate database container does not satisfy this requirement,
+       including one in the same Podman pod.
+    3. **The same name for the account and the database**, with privileges that
+       stop at that database: no administrative privilege and no grant option.
+    4. **One password file.** The password is generated on first initialization
+       into `/apps/<functional-slug>/etc/mysql/localhost/passwd` (mode `0600`,
+       owned by the application account) and never passed on a command line.
+       The application reads it there and takes its database user and database
+       name from its declared identity. Recreation preserves and validates the
+       existing database and credential continuity; rotation follows an
+       explicit, recovery-safe procedure.
+    5. **Root administers through its own path**: the local root command line
+       through its declared authentication mechanism, Unix-socket
+       authentication included. The application receives neither administrative
+       credentials nor administrative privileges.
+    6. **Recovery point.** Each unit's recovery point includes a consistent
+       logical dump of its application database, coordinated with its declared
+       non-reproducible volumes and versioned reconstruction records. Rules 12,
+       16 and 30 govern protection, completeness and restore proof.
 * **Continuous Architectural Traceability**: Document every architectural choice with *What* (concise description) and *Why* (business rationale).
 
 ---

@@ -52,6 +52,15 @@ The original rule identifiers, scope and binding force are unchanged.
     slug, the password is read from
     `/apps/<functional-slug>/etc/mysql/localhost/passwd` with mode `0600`, and
     credentials belonging to another functional Podman are refused.
+  * **Inventory before qualification**: qualification inventories every
+    selected functional unit and its authoritative durable stores, and verifies
+    the actual selected entrypoints, identities, grants, mounts and persistence
+    paths. For the database it observes the application and MariaDB processes
+    in the same running container, the private socket, the absence of a TCP
+    listener, readiness gated on MariaDB and a coordinated stop; a container
+    name or a diagram is not that observation. An empty MariaDB beside
+    authoritative file-based application state does not satisfy the storage
+    obligation, and a new artefact never inherits a legacy gap.
   * Database administration proof uses the local MariaDB root CLI path; application
     behavior proof uses only the confined functional account. Passing one path does
     not prove the other.
