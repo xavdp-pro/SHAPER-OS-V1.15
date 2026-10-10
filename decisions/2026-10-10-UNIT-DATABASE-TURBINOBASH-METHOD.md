@@ -17,18 +17,21 @@ single user", asked that the method be written out — one system user, one
 database user, the database named like the application, the password in `etc` —
 and that it be remembered as the rule to apply whenever an application is built.
 
-Turbinobash is the origin of the method, not a reference realization. Its
-scripts grant every privilege with the grant option, pass the password on a
-command line and change ownership recursively; none of that is carried over.
+Turbinobash is the origin of the method, not a reference realization. The
+inspected application-creation path selects grants with the grant option; the
+inspected credential and ownership paths also use command-line passwords and
+recursive ownership changes. These implementation choices are not inherited.
 
 ## Why it is written now
 
 Facts found on 10 October 2026, bounded to the sources and revisions inspected:
 
-- The per-functional-Podman convention entered the rules on 22 September 2026.
-  A universe inspected that day had been built earlier, under the previous rule
-  of one MariaDB per universe, on demand. The base bricks on the examined main
-  line of the brick catalogue had not been converted since.
+- The per-functional-Podman convention entered the V1.14 rules on
+  22 September 2026 (SHAPER-OS-V1.14 commit `883343e`). Before it, Rule 4 read
+  "On-Demand Database Isolation" and Rule 26 "MariaDB per Universe". A universe
+  inspected on 10 October had been built earlier, under that previous rule. On
+  the V1.14 main line examined (`958e0b7`), the Vault, Logger, Queue and Maestro
+  bricks had not been converted since.
 - A conversion of the four base units placed each MariaDB in a separate
   container beside its application. The words "inside that Podman's security and
   lifecycle boundary" allowed that reading.

@@ -58,7 +58,10 @@ The original rule identifiers, scope and binding force are unchanged.
     paths. For the database it observes the application and MariaDB processes
     in the same running container, the private socket, the absence of a TCP
     listener, readiness gated on MariaDB and a coordinated stop; a container
-    name or a diagram is not that observation. An empty MariaDB beside
+    name or a diagram is not that observation. It verifies the operations the
+    application account may perform and its refusal of schema changes, and the
+    effective filesystem rights over the data directory, socket directory and
+    administrative configuration, at creation and at recreation. An empty MariaDB beside
     authoritative file-based application state does not satisfy the storage
     obligation, and a new artefact never inherits a legacy gap.
   * Database administration proof uses the local MariaDB root CLI path; application

@@ -125,7 +125,8 @@ Build locally for the first construction. A registry is recommended for repeated
     functional unit is one such application, with a MariaDB server of its own
     that serves it alone. SHAPER inherits the method, not Turbinobash's scripts:
     their grants, password handling and ownership changes are not a qualified
-    realization of this profile.
+    realization of this profile. The points below present the clauses above in
+    the order a unit is built, and add what those clauses leave implicit.
     1. **One application account.** One declared functional identity names the
        application's Linux account, its MariaDB account and its database. Its
        home is `/apps/<functional-slug>/` as seen inside the container. An
@@ -134,14 +135,28 @@ Build locally for the first construction. A registry is recommended for repeated
        stay distinct and keep their qualified internal identities (Rule 11). The
        application never runs as root, and owning its home never justifies a
        recursive ownership change over the MariaDB data or administrative files.
+       Choosing an upstream account name does not waive Rule 11's fixed numeric
+       UID above 1000 for own application code; documented upstream service
+       identities keep their separately applicable Rule 11 treatment.
+       Qualification records the actual process identities and the ownership of
+       the persistent volumes.
     2. **One MariaDB server in the same container.** The application and its
        private MariaDB server run as separate processes in the same functional
-       application container. The server listens only on a private local Unix
+       application container. The server runs under its distinct, qualified,
+       non-root engine account (`mysql`). It listens only on a private local Unix
        socket, never on TCP, and that socket is not exposed to other functional
        units. A separate database container does not satisfy this requirement,
-       including one in the same Podman pod.
-    3. **The same name for the account and the database**, with privileges that
-       stop at that database: no administrative privilege and no grant option.
+       including one in the same Podman pod. The data directory, socket
+       directory and administrative configuration are protected against
+       modification or replacement by the application account, including
+       through writable ancestor directories; the application receives only the
+       filesystem access required to connect to the private socket.
+    3. **The same name for the account and the database.** The application
+       account receives only the runtime data privileges its contract declares,
+       confined to its application database: no administrative privilege, no
+       grant option and no schema-management privilege. Schema initialization
+       and migrations use the separate authorized local administrative path,
+       with Rule 30 protection before data-bearing changes.
     4. **One password file.** The password is generated on first initialization
        into `/apps/<functional-slug>/etc/mysql/localhost/passwd` (mode `0600`,
        owned by the application account) and never passed on a command line.
