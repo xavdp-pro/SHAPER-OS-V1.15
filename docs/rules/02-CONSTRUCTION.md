@@ -129,12 +129,17 @@ Build locally for the first construction. A registry is recommended for repeated
     the order a unit is built, and add what those clauses leave implicit.
     1. **One application account.** One declared functional identity names the
        application's Linux account, its MariaDB account and its database. Its
-       home is `/apps/<functional-slug>/` as seen inside the container. An
-       upstream application account may be that identity when it is declared
+       home is `/apps/<functional-slug>/` as seen inside the container. That
+       directory and the database, socket and administrative paths beneath it
+       are owned by root or by the engine account, never by the application
+       account: an owner could rename `sav/` aside and plant its own data
+       directory. The application account owns only what it writes — its
+       password file and its declared application data paths. An upstream
+       application account may be that identity when it is declared
        consistently everywhere; the database engine's `mysql` account and root
        stay distinct and keep their qualified internal identities (Rule 11). The
-       application never runs as root, and owning its home never justifies a
-       recursive ownership change over the MariaDB data or administrative files.
+       application never runs as root, and no ownership change over the MariaDB
+       data or administrative files is ever recursive.
        Choosing an upstream account name does not waive Rule 11's fixed numeric
        UID above 1000 for own application code; documented upstream service
        identities keep their separately applicable Rule 11 treatment.

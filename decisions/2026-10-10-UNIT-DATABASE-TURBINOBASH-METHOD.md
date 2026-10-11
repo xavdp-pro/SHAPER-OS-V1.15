@@ -70,6 +70,14 @@ Facts found on 10 October 2026, bounded to the sources and revisions inspected:
    birth gate remains unqualified; recording a gap does not authorize takeover
    or promotion.
 
+## Amendment, 11 October 2026 — who owns the home
+
+A container proof on a disposable host showed that an application account owning
+`/apps/<functional-slug>/` can rename `sav/` and so replace its own database directory, which
+point 2 of the method forbids. The operator decided that the home stays the account's home but is
+owned by root; the account owns only what it writes (its password file and its declared
+application data paths). Rule 4 point 1 says so.
+
 ## What it does not do
 
 Existing deployed universes do not change by this document. Their governing
