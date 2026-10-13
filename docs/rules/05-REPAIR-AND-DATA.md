@@ -64,6 +64,14 @@ The original rule identifiers, scope and binding force are unchanged.
     administrative configuration, at creation and at recreation. An empty MariaDB beside
     authoritative file-based application state does not satisfy the storage
     obligation, and a new artefact never inherits a legacy gap.
+  * **Partition inventory**: for histories and call-detail records, qualification
+    observes the actual SQL monthly partitions required by Rule 4, their UTC
+    timestamp/month boundaries and any declared archive or future catch-all.
+    It verifies that current writes have a valid destination, the administrative
+    calendar-maintenance path remains private, and recreation and a successful
+    restore retain the partition definitions and data. Table names or an
+    unexecuted schema declaration do not establish partitioning. No separate
+    workload or repeated qualification loop is required solely for this inventory.
   * Database administration proof uses the local MariaDB root CLI path; application
     behavior proof uses only the confined functional account. Passing one path does
     not prove the other.

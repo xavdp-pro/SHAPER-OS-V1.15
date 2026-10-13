@@ -58,6 +58,12 @@ runs in the same container as the application, by the Turbinobash method of
 [Rule 4](../rules/02-CONSTRUCTION.md#rule-4) and the
 [10 October direction](../../decisions/2026-10-10-UNIT-DATABASE-TURBINOBASH-METHOD.md).
 
+Under the [13 October partition direction](../../decisions/2026-10-13-MONTHLY-SQL-PARTITIONS.md),
+time-series histories and call-detail records use monthly SQL partitions in each
+owning private MariaDB. Current mutable state and pending work may remain
+ordinary tables. Rule 4 owns construction and Rule 26 owns the bounded inventory
+and persistence/recovery evidence; retention remains a separate declared choice.
+
 In each minimal universe composition, Vault, Logger, Queue and Maestro are the
 four mandatory base units. Under the [perimeter taxonomy](../architecture/PERIMETERS.md),
 Vault, Logger and generic Queue are P1; Maestro is P2. “Base” names the composition,

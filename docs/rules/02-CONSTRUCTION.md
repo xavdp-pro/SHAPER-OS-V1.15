@@ -172,6 +172,19 @@ Build locally for the first construction. A registry is recommended for repeated
        logical dump of its application database, coordinated with its declared
        non-reproducible volumes and versioned reconstruction records. Rules 12,
        16 and 30 govern protection, completeness and restore proof.
+* **Monthly SQL Partitions for Histories and Call Records**: In each functional
+  unit's private MariaDB, append-only time-series histories and call-detail
+  records use SQL partitions by UTC calendar month. This means physical SQL
+  table partitioning, not separate technical/business tables or separate unit
+  databases. Current mutable state and pending work may use ordinary tables.
+  The unit declares its timestamp key, month boundaries, indexes and any
+  explicitly bounded legacy-archive and future catch-all partitions. Its
+  authorized local administrative path creates and extends the forward calendar;
+  the application account never receives partition or schema DDL privileges.
+  A month ending does not authorize deletion: retention and any destructive
+  pruning require the owning data contract and applicable recovery mandate.
+  Dump/restore and recreation preserve partition definitions and retained rows.
+  See the [13 October partition direction](../../decisions/2026-10-13-MONTHLY-SQL-PARTITIONS.md).
 * **Continuous Architectural Traceability**: Document every architectural choice with *What* (concise description) and *Why* (business rationale).
 
 ---
