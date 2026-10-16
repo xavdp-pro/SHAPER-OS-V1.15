@@ -17,7 +17,19 @@ The original rule identifiers, scope and binding force are unchanged.
 * **Applies to every agent working on this repository.** Delivering a working specific feature by contaminating a generic brick is a regression, not a delivery, however green the tests are.
 * **The total vision is what dictates the steps on the base bricks.** A brick is never perfected in the abstract, against an imagined future — it is perfected **against the whole picture of where the project is going**. Holding the complete vision is what tells us which capability the base must carry, which one it must not, and in what order to build them. This is why the doctrine is written before the code: not as ceremony, but because the map is what turns "make it generic" into a list of concrete steps. An agent that has not read the vision cannot decide what belongs in a base.
 * **A stray specific bit is not a catastrophe.** If something slightly specific slips into a brick, the sky does not fall: the day a *more* specific need arrives, we meet that same code again and generalise it then. What must hold is that **the broad lines cover a good part of the perimeter** — enough that we can walk into a client situation and discover the rest from a working base, not from nothing. Perfectionism that blocks delivery is not this rule.
+See [Prevention of Agentic Overzealousness](../human/PREVENTION-OF-AGENTIC-OVERZEALOUSNESS.md)
+for human context and contrasting applications of this stage-dependent exigence.
+
 * **The level of exigence is set per thing and per moment.** Not everything deserves the same rigour at the same time, and pretending otherwise stalls the work. Each brick is made robust *at its own level of exigence*, decided by the human. The declared requirement for the current component and stage governs.
+* **Prevent agentic overzealousness.** Build a coherent whole early and let actual
+  use and human feedback inform the next increment. Progressive satisfaction
+  recognizes that the assembled result seems to work well in observed use;
+  it does not certify unexercised behaviour. Time, credits, attention and delivery
+  deadlines count alongside the consequences of acting. The agent assesses the
+  actual use when the human has not declared its current exigence, exposes that
+  assessment for correction and never lowers a declared or applicable requirement.
+  More confidence alone does not justify another assurance cycle. Deliver the
+  achieved scope with honest limits and continue independent authorized work.
 * **Why full conformity matters where it does**: it is what guarantees that the bases we already have are conform, functional, and **deploy at will**. Conformity is not decoration, it is what makes redeployment boring.
 * **Current sequencing**: security boundaries and necessary functional protections are designed and implemented during DEV. After the tandem accepts integrated functions, perform dedicated hardening using the complete view and verify the accepted paths under production permissions. Decisions about data governance, economics and any use-case constraints remain explicit tandem-owned declarations; no unseen doctrine page is a prerequisite.
 

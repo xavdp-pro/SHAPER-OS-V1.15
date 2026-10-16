@@ -20,6 +20,7 @@ record the result before the action that depends on it.
 
 The current construction directions are local:
 
+- [Prevention of agentic overzealousness](../decisions/2026-10-16-PREVENTION-OF-AGENTIC-OVERZEALOUSNESS.md).
 - [Intentional recipes and ideal scenes](../decisions/2026-10-07-INTENTIONAL-RECIPES.md).
 - [Code-free, generic framework](../decisions/2026-09-23-AGNOSTIC-NO-CODE.md).
 - [OpenCode reference composition](../decisions/2026-09-24-REFERENCE-OPENCODE-BRIDGE.md).
@@ -131,6 +132,7 @@ The complete local foundation comprises:
    [reference procedure](procedures/01-REFERENCE-UNIVERSE.md), and relevant
    [adapter profiles](intents/README.md).
 5. [Human guide](human/READING-GUIDE.md), [self-checks](human/METACOGNITION.md),
+   [Prevention of Agentic Overzealousness](human/PREVENTION-OF-AGENTIC-OVERZEALOUSNESS.md),
    [medium route](agent/MEDIUM.md), [strong route](agent/STRONG.md),
    [scenario checks](examples/COMPREHENSION-CHECKS.md) and
    [worked answers](examples/WORKED-ANSWERS.md).

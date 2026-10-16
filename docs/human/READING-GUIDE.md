@@ -26,6 +26,11 @@ The agent writes the implementation from the frame, checks the available host
 and shows the results. You do not need to provide an existing code repository
 or registry before beginning.
 
+For the human experience of early usable delivery and its agent counterpart,
+read [Prevention of Agentic Overzealousness](PREVENTION-OF-AGENTIC-OVERZEALOUSNESS.md).
+It explains why an assembled result may be worth showing before deeper
+qualification, and when real consequences require that qualification first.
+
 ## Level 1 — Owner: understand the purpose
 
 Start with a real situation: a supplier changes prices and old quotations must

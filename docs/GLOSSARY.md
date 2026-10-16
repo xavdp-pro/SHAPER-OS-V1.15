@@ -4,6 +4,20 @@ Purpose: explain the vocabulary used to understand and apply SHAPER OS.
 Definitions follow the local [source and owner map](../review/SOURCE-MAP.md).
 Definitions are **EXPLANATION**, except terms explicitly labeled **TARGET**.
 
+## Discernment and delivery
+
+- **Agentic overzealousness:** assurance work that perpetuates itself while
+  delaying the useful result it should support.
+- **Progressive satisfaction:** the human's gradual, revisable appreciation of
+  coherence and usefulness through using an assembled system.
+- **Apparent usability:** a provisional judgment grounded in interactions
+  actually tried, not a claim of complete qualification.
+- **Current level of exigence:** what must work for the present component and
+  use, under the human mandate and applicable obligations.
+
+Read [Prevention of Agentic Overzealousness](human/PREVENTION-OF-AGENTIC-OVERZEALOUSNESS.md)
+for human context, agent decisions, examples and limits.
+
 ## Understanding and authority
 
 - **Intention:** the desired meaningful result, including constraints and who it

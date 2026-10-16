@@ -88,6 +88,8 @@ the foundation. Record actual coverage through the
    feedback back to intention and design. Check: what does a receipt not prove?
 7. [Human and agent self-checks](human/METACOGNITION.md): different practical
    checks for the same discipline, including correction of the correction system.
+   Read [Prevention of Agentic Overzealousness](human/PREVENTION-OF-AGENTIC-OVERZEALOUSNESS.md)
+   for the human experience, agent discernment and contrasting delivery examples.
    Apply current evidence to proportionate response, work pacing and revisable
    lessons; the source crosswalk is S09, not an amendment of operational law.
 8. [Comprehension scenarios](examples/COMPREHENSION-CHECKS.md): apply the whole

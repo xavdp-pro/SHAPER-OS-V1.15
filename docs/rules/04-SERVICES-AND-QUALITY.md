@@ -106,6 +106,26 @@ Rule 12 (archive hygiene: no autoindex, basic auth, TLS) applies to any `tar.bz2
 <a id="rule-20"></a>
 ### Rule 20: Typed Closed-Loop Quality Gate (Verification Before Delivery)
 
+* **Declare the scope of the present handover.** Distinguish handing a constructed
+  result to the human for demonstration or a bounded use from closing a runtime
+  job through its typed gate or promoting a candidate. The functional inventory
+  covers the declared delivered scope and its necessary inherited dependencies;
+  it does not silently expand to every future feature in the roadmap. Report
+  excluded capabilities as not delivered or NOT VERIFIED. A scope label cannot
+  exclude an obligation that actually applies to the delivered use.
+* **Verification serves that use.** Exercise its promised interactions and correct
+  observed blockers. Deepen checks for relevant changes, applicable unmet
+  obligations or uncertainties that can change the usage decision. Do not hold
+  a permitted early handover for unrelated future qualification or automatically
+  renew assurance campaigns after the agreed result is achieved. Deferred work
+  blocks this handover only through a concrete dependency or applicable obligation.
+  Reuse valid evidence without replacing a re-execution required for promotion.
+
+For the distinction between early human handover and deeper qualification, see
+[Prevention of Agentic Overzealousness](../human/PREVENTION-OF-AGENTIC-OVERZEALOUSNESS.md).
+That explanation does not replace the scoped functional or typed verification
+contracts below.
+
 <a id="rule-20-functional-test-means"></a>
 * **Construction includes functional verification.** Before building, the
   constructing agent in the human-agent tandem inventories the scoped features

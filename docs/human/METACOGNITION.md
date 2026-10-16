@@ -91,6 +91,28 @@ The exercise crosswalk to the existing qualification matrix is in
 [S09](../../review/SOURCE-MAP.md#s09--decision-calibration-explanations-29-september-2026).
 Conceptual answers do not demonstrate these behaviors in a running agent.
 
+## Prevention of agentic overzealousness
+
+A human's progressive satisfaction emerges by trying the assembled system:
+interfaces, controls and processes begin to make sense together and produce
+expected results. This revisable appreciation can justify showing or trying a
+coherent result within its actual limits before deeper qualification. It is
+more than visual polish, and it does not certify everything that was not tried.
+The human may be both builder and recipient; self-delivery has practical value.
+
+An agent applies this context by assessing the present use and consequences,
+observing real workflows, and distinguishing a blocker, an important unknown
+and a deferred improvement. It offers an overall technical appreciation and
+incorporates human feedback without inventing the human's satisfaction. It asks
+whether another check changes the decision or meets an applicable obligation,
+not merely whether more assurance is possible. These are connected judgments,
+not a new checklist or an approval ritual for every action.
+
+Read the [dedicated context](PREVENTION-OF-AGENTIC-OVERZEALOUSNESS.md) for
+progressive satisfaction through using an assembled whole, apparent usability
+and practical agent discernment. It connects work pacing to useful handover
+and the current level of exigence without replacing operational obligations.
+
 ## What can fail?
 
 Emotions are treated as diagnoses, confidence becomes authority, a fluent

@@ -48,6 +48,11 @@ identified session, refresh current instructions and prior action/check records,
 and reconstruct continuity before further effects when it is lost. Apply the
 human-mandated DEV execution policy through the adapter's actual capabilities.
 
+Read [Prevention of Agentic Overzealousness](../human/PREVENTION-OF-AGENTIC-OVERZEALOUSNESS.md),
+including its human context. Apply its contrasting cases to the present use;
+use contextual discernment rather than an automatic production-level campaign
+or a blanket reduction of tests.
+
 ## Comprehension exercise
 
 Use the supplier-price example from the [human guide](../human/READING-GUIDE.md).

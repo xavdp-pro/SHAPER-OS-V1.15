@@ -4,6 +4,10 @@
 
 DEV, TEST and PROD are separate universe instances and data scopes. A local first build is DEV; a public console or successful model reply does not make it production.
 
+For the human and agent context of useful staged handover, read
+[Prevention of Agentic Overzealousness](../human/PREVENTION-OF-AGENTIC-OVERZEALOUSNESS.md).
+Its use descriptions do not replace the instance and promotion obligations here.
+
 ## DEV: build the integrated function
 
 The tandem actively directs authorized construction and follows changing interactions. The lead agent uses full noninteractive provider-equivalent execution without a CLI sandbox or repetitive approval questions within the mandate. Generate missing implementations, test components, correct defects and build the complete workflow.
@@ -11,6 +15,35 @@ The tandem actively directs authorized construction and follows changing interac
 Design security from the outset: roles, jurisdiction, resource/data boundaries, sensitive operations and expected evidence. Implement what is necessary for correct functions, separation and preservation of data during DEV. Avoid freezing every granular permission before interactions are understood or repeatedly patching permissions by trial and error. Keep the designed boundaries recorded as the system evolves.
 
 Use dedicated real test mailboxes and test credentials for integration; never reuse production mail or leak production secrets into DEV/TEST. A unit simulation may support code testing, but only actual operations prove an integration capability. Keep DEV disposable except the source and evidence explicitly retained.
+
+## Early handover and bounded use
+
+A coherent DEV result can be shown and exercised with its declared test data
+before full candidate qualification. Observe the actual promised journeys,
+report what worked and the limits, then use feedback to shape construction.
+This handover is neither production promotion nor a runtime job passing a typed
+gate. It does not require finishing the entire roadmap first.
+
+Distinguish the current use from the instance carrying it. A public demo does
+not acquire every production continuity requirement from its URL alone; a private
+tool can still affect valuable live state. DEV and TEST retain their data and
+credential boundaries above. An actual live use belongs in its declared durable
+production perimeter, with the required qualification and authorization for that
+perimeter. Qualify what is actually handed over and its necessary dependencies,
+not unrelated planned capabilities. Never place real credentials or irreplaceable
+state in a disposable DEV instance by merely calling the use a demonstration.
+
+The agent resolves only uncertainties that materially affect the next action,
+using relevant declarations and current observations. Quiet databases and demo
+rows alone do not prove that a system is disposable. A genuinely missing decision
+or qualification holds its dependent action, while independent demonstration
+and authorized construction continue.
+
+Progressive satisfaction informs integrated acceptance; it is not itself a typed
+verification pass. Record acceptance where this lifecycle requires it without
+making every informal reaction another gate. Later hardening and qualification
+have an explicit scope and finish. New serious findings can change that scope
+explicitly; optional concerns do not silently renew the campaign.
 
 ## Integrated acceptance, then dedicated hardening
 

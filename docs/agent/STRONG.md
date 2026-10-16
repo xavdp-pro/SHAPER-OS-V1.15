@@ -38,6 +38,11 @@ identified session, refresh current instructions and prior action/check records,
 and reconstruct continuity before further effects when it is lost. Apply the
 human-mandated DEV execution policy through the adapter's actual capabilities.
 
+Read [Prevention of Agentic Overzealousness](../human/PREVENTION-OF-AGENTIC-OVERZEALOUSNESS.md),
+including the human experience. Examine whether assurance work serves the
+intended whole or delays its useful handover; retain the actual governing
+obligations and distinguish handover from production promotion.
+
 ## Comprehension exercise
 
 Complete the [medium route's scenarios](MEDIUM.md). Then explain which principles
