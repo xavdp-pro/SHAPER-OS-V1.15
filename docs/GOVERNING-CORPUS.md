@@ -1,5 +1,10 @@
 # Governing corpus — self-contained SHAPER OS V1.15
 
+Current scoped direction: [25 October composition, ownership and continuity](../decisions/2026-10-25-COMPOSITION-OWNERSHIP-AND-CONTINUITY.md).
+Task navigation and source custody: [source roles](architecture/SOURCE-ROLES.md);
+scale relationships: [composition](architecture/COMPOSITION.md).
+These pages join the finite foundation; existing adopted revisions remain explicit.
+
 Purpose: identify the complete local framework, its authority, reading sequence
 and contract owners. No other SHAPER OS edition is required.
 
@@ -108,7 +113,7 @@ reading those owners and is not a licence to waive unrelated obligations.
 | Subject | Current obligation | Owning documents |
 | :--- | :--- | :--- |
 | First implementation | The agent generates code from intentions; registry reuse follows verified construction. | [Rules](../RULES.md), [construction direction](../decisions/2026-10-05-FIRST-CONSTRUCTION-AND-REUSE.md) |
-| Containment | An outer system-container universe contains its Podman functional units; a flat host network is not an alternative to this model. | [Rules](../RULES.md), [current profile](profiles/SEPTEMBER-CONTAINER-MARIADB.md) |
+| Containment | Logical composition is distinct from placement. Select direct, LXC or nested hosting; preserve private functional Podman/MariaDB boundaries. | [Rules](../RULES.md), [current profile](profiles/SEPTEMBER-CONTAINER-MARIADB.md) |
 | State | Each functional unit owns a private MariaDB instance and its own durable state. | [Rules](../RULES.md), [storage direction](../decisions/2026-09-24-FUNCTIONAL-UNIT-MARIADB.md) |
 | Cognition | Shared context/session/action obligations are provider-neutral; the reference selects OpenCode. | [Common bridge](intents/cognition-bridge.md), [OpenCode](intents/cognition-bridge-opencode.md) |
 | DEV execution | Full noninteractive execution within the human mandate, without obstructive CLI sandbox or repeated approvals. | [Execution and security direction](../decisions/2026-10-06-PRACTICAL-DEPLOYMENT-AND-BRIDGE-CONTINUITY.md) |

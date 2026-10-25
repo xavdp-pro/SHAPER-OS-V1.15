@@ -100,7 +100,7 @@ to watch and to report anomalies — that agent has **no** hand on the host.
 
 ## 4. Realization and dependencies
 
-The constructor generates the maker implementation, manifest and frozen recipes in the separate realization. Its manifest declares mandatory alerting: silence must be heard. Recipes are selected by the class's shape and enrolled machine's host family (`proxmox`, `lxd`, `liblxc`, `nested`); a machine can offer several families, at most one per shape. No existing recipe or registry is a prerequisite to author one.
+The constructor generates the maker implementation, manifest and frozen recipes in the separate realization. Its manifest declares mandatory alerting: silence must be heard. Recipes are selected by the class's shape and enrolled machine's host family (`direct`, `proxmox`, `lxd`, `liblxc`, `nested`, as supported by the selected versioned profile); a machine can offer several families, at most one per shape. No existing recipe or registry is a prerequisite to author one.
 
 A frozen recipe may be a script in any suitable language or a compiled executable. The `.sh` naming convention applies only to the shell realization. Every realization preserves the same six positional arguments, fresh allow-listed environment, observed facts and exit-code meanings; language choice does not relax that protocol.
 

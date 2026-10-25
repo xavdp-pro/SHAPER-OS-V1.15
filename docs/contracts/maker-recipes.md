@@ -8,7 +8,7 @@ The constructor authors a recipe for the selected host family and work kind in t
 
 Pass six separate positional arguments, in order: **rowId, class, matrix, digest, account, env**. Never concatenate form/ledger data into a command string. The row's optional typed params travel only as `SHAPER_PARAM_<KEY>` in the fresh environment built by the maker: required PATH, HOME and locale, the operator's declared `SHAPER_*` configuration, and allowed row keys. Reject invalid keys/types rather than silently removing them. Do not inherit arbitrary `LD_PRELOAD`, `BASH_ENV` or other process state.
 
-A recipe is frozen and idempotent. It verifies the actual artifact digest and target identity. Each family declares its required host capabilities and is qualified using actual inner Podman containers/builds. Installed binary names are insufficient.
+A recipe is frozen and idempotent. It verifies the actual artifact digest and target identity. Each family declares its required host capabilities and is qualified using actual functional Podman containers/builds in the selected direct or nested boundary. Installed binary names are insufficient.
 
 ## Stamp
 

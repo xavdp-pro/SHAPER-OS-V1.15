@@ -2,7 +2,8 @@
 
 This file is a canonical part of the [complete rulebook](../../RULES.md#complete-rulebook).
 Read all seven parts in order. The index is navigation, not a substitute for the rule bodies.
-The original rule identifiers, scope and binding force are unchanged.
+Original rule identifiers remain stable. Current scope follows the explicit
+[25 October direction](../../decisions/2026-10-25-COMPOSITION-OWNERSHIP-AND-CONTINUITY.md); earlier adopted revisions retain their recorded boundaries.
 
 <a id="rule-6"></a>
 ### Rule 6: Targeted Agent Bootstrapping (Token Optimization & Zero Idle Waste)
@@ -53,7 +54,7 @@ The original rule identifiers, scope and binding force are unchanged.
   aged with them. A default that must be edited when a vendor ships a new version
   is not a rule, it is a cache.
 * **What is binding instead**:
-  * Each brick declares the cognition its work requires — capacity class, depth
+  * Each component declares the cognition its work requires — capacity class, depth
     `D0`–`D4`, throughput `T0`–`T3`, degradation policy — in its `INTENT.md`
     ([`docs/architecture/COGNITION.md`](../../docs/architecture/COGNITION.md)).
   * At every deployment the agent enumerates the engines actually reachable from
@@ -129,7 +130,7 @@ A cognition bridge additionally obeys [bridge status](../../docs/contracts/bridg
 Every universe keeps three decoupled lifecycle environments:
 
 1. `<slug>-dev`: authorized construction and prompt tuning, in its separate workspace and data scope.
-2. `<slug>-test`: a blank system-container universe, actual internal Podman units, appropriate mesh attachment when distributed, Vault injection and the full applicable test suite. Rebuild all images from source without inherited cache; pulling an existing image cannot prove a clean build.
+2. `<slug>-test`: a blank isolated instance under its selected hosting profile, actual functional Podman units, appropriate mesh attachment when distributed, Vault injection and the full applicable test suite. Rebuild all images from source without inherited cache; pulling an existing image cannot prove a clean build.
 <a id="rule-10-destroy-after-test"></a>
    After verified testing and retaining the necessary evidence, destroy the ephemeral test container and its declared disposable volumes. This proves reproducibility without leaving residue.
 3. `<slug>-prod`: durable state, promoted immutable revisions, controlled atomic updates and verified continuity. Preserve production data and use the canary and migration rules.
@@ -144,35 +145,54 @@ Security is designed from the outset; implement functional/perimeter necessities
 ---
 
 <a id="rule-11"></a>
-### Rule 11: Two Levels of Containment and Recovery Integrity
+### Rule 11: Declared Containment and Recovery Integrity
 
-* A universe is a system container with its own init, filesystem and packages. A brick is an application container built from an immutable image and **always runs under Podman**. Depth comes from nesting universes, never from a brick containing another container. No Docker runtime, installer or shared Docker image/network/store path is permitted.
-* A class declares `shape: lxc` (default) or `shape: nested`. `lxc` uses a Debian LXC in the `lxd`, `liblxc` or `proxmox` host family. `nested` uses a rootful outer Podman universe holding its own Podman, image store and functional bricks. Do not flatten the universe into host-level application containers.
-* A machine may offer several host families, at most one per shape. Declare those families in the fleet map. The maker chooses its qualified recipe by the class's shape and the machine's family; shape and family are different fields. `liblxc` is the family token, not `lxc`; `nested` is the family token, not `podman`.
+* A logical space/universe organizes services. Existing `univ-*` profiles retain
+  their declared operational-composition role through an explicit compatibility
+  mapping; neither usage requires an outer physical container. Each functional
+  component runs in its own Podman application boundary with its private MariaDB.
+  No Docker runtime, installer or shared Docker image/network/store path is adopted.
+* A class declares its hosting profile: `shape: direct` uses functional Podman
+  containers on an authorized Linux runtime host; `shape: lxc` uses a system
+  container; `shape: nested` uses an outer Podman system container hosting inner
+  functional containers. Existing profile versions retain their `lxc` default;
+  new selections declare shape explicitly. A component does not recursively
+  contain another runtime merely because the business organization is fractal.
+* Host family describes the means of realizing that shape: `direct`, `proxmox`,
+  `lxd`, `liblxc` or `nested`. Declare one selected family per shape on a machine,
+  with qualified capabilities and matching maker recipes. A logical membership
+  change does not change placement or grant host access.
+
 * For Proxmox, the realization verifies Debian compatibility and enables the required nesting/keyctl settings. LXD uses an applied nesting-capable profile. Raw liblxc declares its nesting, cgroup, network and device requirements. A nested realization determines and proves its storage driver, user/cgroup namespaces, delegation, capabilities, device access and network configuration on the selected host. No historical laboratory flag set is a universal recipe.
 * Local construction requires an authorized Podman or LXC-capable host; remote construction requires authorized SSH. If no suitable substrate is available, identify the architecture choice and its impact before changing host storage, hypervisor or network configuration. Existing human authorization suffices; an ordinary package dependency is construction work.
-* The operator attests repeated practical deployments, including nested Podman. A new candidate still qualifies its own build, inner containers and recovery on its selected host. Live migration, checkpoint/restore, high availability and host-loss survival each require their own proof and are not implied by nesting.
-* Presence of a binary is not capability proof: launch a disposable universe, run a real Podman container inside it and execute an actual image build step. Record what was observed.
+* Verify the selected host's actual capabilities with a disposable construction,
+  real functional Podman container and image build. For nested profiles, perform
+  these checks inside the declared outer boundary. Live migration, checkpointing
+  and availability are separate declared service/infrastructure capabilities.
+* Linux, macOS and Windows development profiles specify their compatible Linux
+  runtime backend, mounts, networking and private environment configuration.
+  They retain the same class, application-state and production-promotion contracts.
+
 * A universe-management tool such as PodMesh is optional and grants no authority. If selected, the maker's typed recipe invokes its declared operations and verifies effects from outside. Its per-host node and active manager are distinct from the governor and maker; the active manager holds a current externally issued activation lease/epoch. Qualify only the operations actually used.
-* First boot updates the selected system-container OS and installs the declared packages, shell configuration and host modules. The realization supplies this recipe; no skeleton files are assumed to ship with the OS documentation.
+* First boot prepares the selected Linux runtime boundary and, where present, updates its system-container OS and installs the declared packages, shell configuration and host modules. The realization supplies this recipe; no skeleton files are assumed to ship with the OS documentation.
 
 <a id="rule-11-nftables-inside-the-universe"></a>
 * Inner Podman networking requires its firewall dependencies, including `nftables` for netavark. Install and prove them inside the universe rather than relying on a host inventory.
 <a id="rule-11-declared-outbound-connectivity"></a>
-* Required network connectivity is part of universe construction. The constructor declares each functional unit's network dependencies and establishes the name resolution and outbound connectivity they require, across both containment levels. The mechanism belongs to the substrate-specific recipe; no particular routing, translation or proxy mechanism is universally required. Record the configuration in the versioned recipe and manifest so it is reproduced without manual steps on creation, recreation and restoration. Verify actual dependency access from inside each dependent functional unit at those stages; a successful host-level check or temporary diagnostic path does not qualify the delivered path. A scope without external dependencies requires no outgoing Internet access. Resolve ordinary network implementation choices within the existing human mandate; identify host, hypervisor or site network changes outside that mandate before acting, without requesting approval again for already authorized work.
+* Required network connectivity is part of universe construction. The constructor declares each functional unit's network dependencies and establishes the name resolution and outbound connectivity they require, across the selected containment boundaries. The mechanism belongs to the substrate-specific recipe; no particular routing, translation or proxy mechanism is universally required. Record the configuration in the versioned recipe and manifest so it is reproduced without manual steps on creation, recreation and restoration. Verify actual dependency access from inside each dependent functional unit at those stages; a successful host-level check or temporary diagnostic path does not qualify the delivered path. A scope without external dependencies requires no outgoing Internet access. Resolve ordinary network implementation choices within the existing human mandate; identify host, hypervisor or site network changes outside that mandate before acting, without requesting approval again for already authorized work.
 <a id="rule-11-read-profiles-with-config-show"></a>
 * Read actual applied LXC configuration (`lxc config show`, profile configuration or `pct config`); an information command that omits the profile cannot validate it.
 <a id="rule-11-nesting-needs-a-restart"></a>
 * A nesting change on an existing LXC requires the corresponding authorized restart before validation. Prefer declaring it at launch. Nested Podman namespaces/delegation are established when the outer container is created.
 <a id="rule-11-declared-ports-are-free"></a>
-* Compare declared listening ports with actual sockets before deployment. Distinguish the owned brick being replaced from a foreign holder. Identify a conflict and its owner; do not silently pick another port or stop an unrelated service. A shared network namespace, if chosen, is confined to the universe and never flattens the two containment levels. Every functional unit's MariaDB remains private, using its own socket/network boundary; do not expose several databases on one shared localhost port.
+* Compare declared listening ports with actual sockets before deployment. Distinguish the owned component being replaced from a foreign holder. Identify a conflict and its owner; do not silently pick another port or stop an unrelated service. A shared network namespace, if chosen, is confined to the declared composition and preserves its functional isolation and authorized crossings. Every functional unit's MariaDB remains private, using its own socket/network boundary; do not expose several databases on one shared localhost port.
 
 <a id="rule-11-what-is-restored"></a>
 * Restorable identity consists of `manifest.json`, `cfg-image-lock.json` and declared volumes. Images are rebuilt from pinned source or pulled by digest, never treated as backup state. Complete restoration with the universe's own acceptance proof.
 <a id="rule-11-a-brick-is-rebuilt-not-repaired"></a>
 * Four operations remain distinct: **CORRECT** fixes a known error in controlled source; **REPAIR** restores non-reproducible database/volume state; **REBUILD** recreates reproducible runtime from a known-good image; **QUARANTINE** removes suspect runtime from service while retaining evidence. An in-place cleanup does not re-establish trust.
 * Close the cause before rebuilding a compromised component. Incident order is: notice suspicion, reduce/freeze privileges, capture evidence, quarantine, identify cause, correct source, rebuild, test, obtain a counter-view, restore service, observe, deliberately retire/archive the old instance. This is distinct from DEV → TEST → PROD. Quarantine is a trust condition, not a fourth environment; a suspect instance never returns unchanged.
-* A service start recreates the complete application container from its known image. Its declared non-reproducible volumes survive. A class may add bricks but may not invent an in-place patch as a fifth recovery operation. The [consulted-context doctrine](../../docs/design/CONSULTED-CONTEXT.md) explains the design/acting boundary.
+* A service start recreates the complete application container from its known image. Its declared non-reproducible volumes survive. A class may add components but may not invent an in-place patch as a fifth recovery operation. The [consulted-context doctrine](../../docs/design/CONSULTED-CONTEXT.md) explains the design/acting boundary.
 <a id="rule-11-a-brick-runs-as-its-own-class-not-root"></a>
 * Own application code runs as the unit's declared system user, with the same slug for system user, database and database user. Use a fixed numeric UID above 1000, build-time ownership and the correct runtime user. Scope ownership changes to files that process actually owns; never recursively chown another unit's database volume. Grant the specific low-port bind capability if needed instead of running the application as root. Upstream images retain their documented internal service identities; administrative root/Podman provisioning is a separate authorized path. Full DEV lead-agent execution does not make every application service root.
 

@@ -18,8 +18,8 @@ unit explanation below does not extend the target profile to every technology.
 
 A functional unit owns one bounded responsibility, identity, state, lifecycle
 and observable proof. Its relationships explain what it needs and promises.
-Its [brick and implementation package](../architecture/VOCABULARY-BOUNDARY.md)
-are realization concerns, not synonyms for its meaning.
+The preferred term [component](../architecture/VOCABULARY-BOUNDARY.md) names
+that bounded part; implementation packages and deployable images realize it.
 
 For every relationship identify producer and consumer, purpose, authority,
 accepted inputs, outputs, compatibility, persistence, startup needs, refusal,

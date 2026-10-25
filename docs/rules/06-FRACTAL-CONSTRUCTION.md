@@ -2,25 +2,26 @@
 
 This file is a canonical part of the [complete rulebook](../../RULES.md#complete-rulebook).
 Read all seven parts in order. The index is navigation, not a substitute for the rule bodies.
-The original rule identifiers, scope and binding force are unchanged.
+Original rule identifiers remain stable. Current scope follows the explicit
+[25 October direction](../../decisions/2026-10-25-COMPOSITION-OWNERSHIP-AND-CONTINUITY.md); earlier adopted revisions retain their recorded boundaries.
 
 <a id="rule-32"></a>
 ### Rule 32: The Perfected Generic Base Comes Before Any Specialisation (Founding Method)
 * **How work is framed here, and it is not negotiable**: for each thing we build, we first **delimit a perimeter**, then we make what sits inside it **excellent, generic, extensible and open to what comes next** — a base that will interact with other systems we have not met yet. Business specifics are built *on top of it*, never *into it*.
-* **Why it is the founding logic, not a preference**: this is what makes the four promised properties true rather than claimed. A base that is perfected once is **adaptable** (bricks swap instead of being rebuilt), **scalable** (behaviour does not change with volume), **alive** (it improves without a new project), and **multidimensional** (several things advance in parallel). And it is what makes the architecture genuinely **fractal**: the pattern is only worth repeating if the pattern is good.
+* **Why it is the founding logic, not a preference**: this is what makes the four promised properties true rather than claimed. A versioned base is **adaptable** through compatible component replacement, **scalable** within its declared resource and workload envelope, **evolving** through owned corrections, and **composable** through explicit parallel responsibilities. And it is what makes the architecture genuinely **fractal**: the pattern is only worth repeating if the pattern is good.
 * **The economic argument is explicit**: time spent perfecting the base is not time lost, it is time bought back on every project that follows. A specific requirement then costs an adaptation, not a rebuild — and often costs nothing at all because the base already covers it.
 * **Binding consequences**:
-  1. **No client requirement is ever written into a generic brick.** It goes into a P3 application or a declared handler. A brick that carries one client's particularity has stopped being a base.
+  1. **No client requirement is ever written into a generic component.** It goes into a P3 application or a declared handler. A component that carries one client's particularity has stopped being a base.
   2. **A base is finished when it is boring** — when the next specific need is met by configuration and a handler, not by editing it.
-  3. **Elasticity is part of "generic"**: the same brick must run modestly on a small VPS and hold up on a large server, by parameter and never by fork. A brick that only works at one scale is not a base.
+  3. **Elasticity is part of "generic"**: the same component must run modestly on a small VPS and hold up on a large server, by parameter and never by fork. A component that only works at one scale is not a base.
   4. **When a specialisation forces a change to the base**, that change must be made *generic* before being merged — the particular case reveals a missing capability, it does not authorise a special case.
-* **Applies to every agent working on this repository.** Delivering a working specific feature by contaminating a generic brick is a regression, not a delivery, however green the tests are.
-* **The total vision is what dictates the steps on the base bricks.** A brick is never perfected in the abstract, against an imagined future — it is perfected **against the whole picture of where the project is going**. Holding the complete vision is what tells us which capability the base must carry, which one it must not, and in what order to build them. This is why the doctrine is written before the code: not as ceremony, but because the map is what turns "make it generic" into a list of concrete steps. An agent that has not read the vision cannot decide what belongs in a base.
-* **A stray specific bit is not a catastrophe.** If something slightly specific slips into a brick, the sky does not fall: the day a *more* specific need arrives, we meet that same code again and generalise it then. What must hold is that **the broad lines cover a good part of the perimeter** — enough that we can walk into a client situation and discover the rest from a working base, not from nothing. Perfectionism that blocks delivery is not this rule.
+* **Applies to every agent working on this repository.** Delivering a working specific feature by contaminating a generic component is a regression, not a delivery, however green the tests are.
+* **The total vision is what dictates the steps on the base components.** A component is never perfected in the abstract, against an imagined future — it is perfected **against the whole picture of where the project is going**. Holding the complete vision is what tells us which capability the base must carry, which one it must not, and in what order to build them. This is why the doctrine is written before the code: not as ceremony, but because the map is what turns "make it generic" into a list of concrete steps. An agent that has not read the vision cannot decide what belongs in a base.
+* **A stray specific bit is not a catastrophe.** If something slightly specific slips into a component, the sky does not fall: the day a *more* specific need arrives, we meet that same code again and generalise it then. What must hold is that **the broad lines cover a good part of the perimeter** — enough that we can walk into a client situation and discover the rest from a working base, not from nothing. Perfectionism that blocks delivery is not this rule.
 See [Prevention of Agentic Overzealousness](../human/PREVENTION-OF-AGENTIC-OVERZEALOUSNESS.md)
 for human context and contrasting applications of this stage-dependent exigence.
 
-* **The level of exigence is set per thing and per moment.** Not everything deserves the same rigour at the same time, and pretending otherwise stalls the work. Each brick is made robust *at its own level of exigence*, decided by the human. The declared requirement for the current component and stage governs.
+* **The level of exigence is set per thing and per moment.** Not everything deserves the same rigour at the same time, and pretending otherwise stalls the work. Each component is made robust *at its own level of exigence*, decided by the human. The declared requirement for the current component and stage governs.
 * **Prevent agentic overzealousness.** Build a coherent whole early and let actual
   use and human feedback inform the next increment. Progressive satisfaction
   recognizes that the assembled result seems to work well in observed use;
@@ -30,7 +31,7 @@ for human context and contrasting applications of this stage-dependent exigence.
   assessment for correction and never lowers a declared or applicable requirement.
   More confidence alone does not justify another assurance cycle. Deliver the
   achieved scope with honest limits and continue independent authorized work.
-* **Why full conformity matters where it does**: it is what guarantees that the bases we already have are conform, functional, and **deploy at will**. Conformity is not decoration, it is what makes redeployment boring.
+* **Why full conformity matters where it does**: it preserves the declared behavior, reconstruction inputs and compatibility needed for repeatable deployment. Conformity is not decoration, it is what makes redeployment boring.
 * **Current sequencing**: security boundaries and necessary functional protections are designed and implemented during DEV. After the tandem accepts integrated functions, perform dedicated hardening using the complete view and verify the accepted paths under production permissions. Decisions about data governance, economics and any use-case constraints remain explicit tandem-owned declarations; no unseen doctrine page is a prerequisite.
 
 ---
@@ -40,10 +41,10 @@ Security boundaries are designed during DEV and necessary functional protections
 
 <a id="rule-33"></a>
 ### Rule 33: The Client Fractal Fork (Assumed Divergence, Never Contamination)
-* **The mechanism**: when a client's needs require it, we take the base bricks and **fork the whole solution fractally** for that client. The fork diverges from the original creation, and **that divergence is assumed** — it is the fruit of shaping something for a real need, not an accident to be repaired.
-* **Why this does not contradict Rule 32**: Rule 32 forbids putting a client's particularity **inside a shared generic brick**. Rule 33 authorises **a separate branch of the tree** for that client. The base stays clean for everyone; the client gets exactly what they need. This is precisely what the fractal architecture exists to make possible — a branch has the shape of the tree without being the tree.
+* **The mechanism**: when a client's needs require it, we take the base components and **fork the whole solution fractally** for that client. The fork diverges from the original creation, and **that divergence is assumed** — it is the fruit of shaping something for a real need, not an accident to be repaired.
+* **Why this does not contradict Rule 32**: Rule 32 forbids putting a client's particularity **inside a shared generic component**. Rule 33 authorises **a separate branch of the tree** for that client. The base stays clean for everyone; the client gets exactly what they need. This is precisely what the fractal architecture exists to make possible — a branch has the shape of the tree without being the tree.
 * **When to fork, and when not to**:
-  * **Do not fork** for a small business need. An artisan's CRM is met with base bricks, a P3 application and declared handlers. Forking there would be paying a permanent cost for a temporary difference.
+  * **Do not fork** for a small business need. An artisan's CRM is met with base components, a P3 application and declared handlers. Forking there would be paying a permanent cost for a temporary difference.
   * **Fork** when a client imposes requirements that reach into the socle itself — strict security posture, role systems, information compartmentation, regulatory constraints. Those cannot live as a configuration flag on everyone else's base.
 * **Obligations of a fork**:
   1. It states **what it diverged from** — the base version it was cut at — and **why**. A fork whose origin is unknown cannot be maintained.
@@ -58,9 +59,9 @@ Security boundaries are designed during DEV and necessary functional protections
 
 A CLI bridge exists to run a command-line agent; a declared API adapter states its equivalent runtime dependencies. A bridge whose CLI **cannot start** answers `ok` on `/api/health` and does nothing — the most expensive failure shape there is, because everything downstream believes it.
 
-* **The image carries the prerequisites, not the operator's memory.** Every runtime dependency of the CLI — interpreter, shell, fonts, language data, system libraries — belongs in the brick's image and is **pinned**. If a CLI needs something absent, it is the brick's duty to install it, declared in its `INTENT.md`. An operator who must remember to install something by hand has been handed a landmine.
+* **The image carries the prerequisites, not the operator's memory.** Every runtime dependency of the CLI — interpreter, shell, fonts, language data, system libraries — belongs in the component's image and is **pinned**. If a CLI needs something absent, it is the component's duty to install it, declared in its `INTENT.md`. An operator who must remember to install something by hand has been handed a landmine.
 
-* **A prerequisite is proven, never assumed.** The brick's health must establish that the CLI is **executable**, by running its own version command, not that a path was configured. `which` proves a string; running proves a binary. An image that only builds or only runs on some machines is not an artefact you can tag (Rule 0E).
+* **A prerequisite is proven, never assumed.** The component's health must establish that the CLI is **executable**, by running its own version command, not that a path was configured. `which` proves a string; running proves a binary. An image that only builds or only runs on some machines is not an artefact you can tag (Rule 0E).
 
 * **Three traps that cost a session each, and are now law:**
   1. **Never mount a symlink into a container.** It arrives pointing at a path that does not exist there. Mount the resolved target.
@@ -82,7 +83,7 @@ The adapter declares its actual noninteractive approval/sandbox modes. Mandated 
 
 Rule 29 requires that every bug resolved gives birth to a regression test. That protects the code. It does not protect the **next universe**, which is built from `INTENT.md` and not from our test suite.
 
-* **A problem experienced updates the brick's `INTENT.md`.** Not a changelog of incidents — the *invariant the incident revealed*, stated as the brick's intent so anyone materialising it again starts from what we learned. A fix that lives only in code is a lesson one refactor away from being lost.
+* **A problem experienced updates the component's `INTENT.md`.** Not a changelog of incidents — the *invariant the incident revealed*, stated as the component's intent so anyone materialising it again starts from what we learned. A fix that lives only in code is a lesson one refactor away from being lost.
 
 * **Write the constraint, not the anecdote.** "A missing CLI is a state, not a crash" belongs in the intent. "On 23 August the cursor bridge died" does not; it belongs in the commit that fixed it.
 
@@ -96,7 +97,11 @@ Rule 29 requires that every bug resolved gives birth to a regression test. That 
 ### Rule 36: Fractal SSH Authority & Ephemeral Sandbox Access Law (Clean-Sheet Dev/Test Promotion)
 
 * **Parent Authority Over Child Lifecycle**: To supervise, develop, and test improvements on a child universe without risking production, the Parent Universe ($K+1$) has the explicit authority to instantiate, access, and destroy child environments ($K$). An agent never mutates its own vital organs in-flight (Rule 23); its supervisor operates the lifecycle.
-* **Cryptographic SSH Asymmetry**:
+* **Selected hosting boundary**: lifecycle authority is held by the authorized
+  parent/maker even for a direct profile; logical parentage does not require a
+  nested container. Host-local container operations or the selected SSH path
+  implement that authority with separate credentials and observation.
+* **Cryptographic SSH Asymmetry** (when a child SSH boundary is selected):
   * The Parent generates an **Ed25519 SSH authority key pair** stored in its Vault or `sav/ssh/id_ed25519`. The private key **never** leaves the Parent.
   * When an ephemeral child container is provisioned, the bootstrap mechanism automatically appends the Parent's public key (`id_ed25519.pub`) into `/root/.ssh/authorized_keys`.
 * **Dynamic Suffix & Environment Separation**:
@@ -106,7 +111,7 @@ Rule 29 requires that every bug resolved gives birth to a regression test. That 
 * **Canary Promotion & Garbage Collection**:
   * Once the clean-sheet `-test` container passes 100% green, production hardening is verified and promotion is authorized, the git commit/tag is promoted to production via the canary protocol (Rule 25).
   * After retaining necessary evidence and state, the Parent executes scoped destruction of disposable environments (`podman rm -f` / `lxc delete`) of the `-dev` and `-test` containers, releasing all ports, memory, and scratch volumes (Universe Garbage Collector).
-* **The maker is the Parent's hand** : in the fractal of Rule 11, the level $K+1$ of an instance is its **governor and the makers that governor enrolled** — the tandem, root from underneath, brought each maker into being and declared it (the maker template's invariant 7). The authority this rule grants — to instantiate, access and destroy a child — is held by the **maker organ of that level**, in its vault, on the one machine it acts on: never by the governor, which writes rows and holds no key to any host, and **it never leaves the level** — no private key crosses down into a child, none climbs up into a ledger. The Parent's public key reaches a child through the stamp recipe, as a file, never as a command built from the row. Birth and end (`lxc launch` / `lxc delete`, `pct create` / `pct destroy`, and for the `nested` shape `podman run` / `podman rm` — or the PodMesh operations that wrap them where PodMesh is installed) are the maker's gestures on a ledger row; the garbage collection above is the same gesture, driven by the row's deadline. The host's own SSH door is the tandem's, from underneath; it is not the maker's, and the maker holds no inbound door of its own.
+* **The maker is the Parent's hand** : in the fractal of Rule 11, the level $K+1$ of an instance is its **governor and the makers that governor enrolled** — the tandem, root from underneath, brought each maker into being and declared it (the maker template's invariant 7). The authority this rule grants — to instantiate, access and destroy a child — is held by the **maker organ of that level**, in its vault, on the one machine it acts on: never by the governor, which writes rows and holds no key to any host, and **it never leaves the level** — no private key crosses down into a child, none climbs up into a ledger. The Parent's public key reaches a child through the stamp recipe, as a file, never as a command built from the row. Birth and end (`lxc launch` / `lxc delete`, `pct create` / `pct destroy`, and for `direct` or `nested` shapes the appropriately scoped `podman run` / `podman rm` — or the PodMesh operations that wrap them where PodMesh is installed) are the maker's gestures on a ledger row; the garbage collection above is the same gesture, driven by the row's deadline. The host's own SSH door is the tandem's, from underneath; it is not the maker's, and the maker holds no inbound door of its own.
 
 
 ---

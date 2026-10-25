@@ -238,14 +238,11 @@ whole by the acting agent.
 If a proposed capability cannot answer these questions, it is not yet ready to
 be called a SHAPER capability.
 
-## Honesty about the present
+## Durable source and learning
 
-Cooperative Intelligence Ecology is a direction being formalized through
-SHAPER OS, PodMesh, Helm, Enterprise, Vox, and related work. It is not a claim
-that all of these products are complete, that production high availability is
-already qualified, or that the social effects of an automated system can be
-guaranteed by architecture alone.
-
-The promise is methodological: make purpose explicit, make authority bounded,
-make outcomes provable, preserve recovery, and improve the pattern when reality
-teaches a better one.
+The human–AI tandem maintains reusable intentions and bounded laws as public
+mental sources. Private implementations, operational observations and working
+discussions retain their own custody under the [source-role contract](../architecture/SOURCE-ROLES.md).
+Versioned meaning, independent recovery and deliberate compatibility let the
+system evolve across people, tools and environments. Purpose remains explicit,
+authority bounded, outcomes inspectable and correction attached to its owner.

@@ -1,5 +1,15 @@
 # Naming Contract
 
+## Current vocabulary and source identity
+
+Use **component** for the functional part and retain `brick-*` as a compatible
+artifact prefix. [Composition](COMPOSITION.md) separates class, specialization
+and instance; [source roles](SOURCE-ROLES.md) separates mental/product/lab custody.
+The historical universe grammar below applies to that identifier lineage.
+New source roles are not forced into `univ-*`; renames preserve explicit link,
+submodule, import and image mappings. Repository names never grant runtime identity.
+
+
 > **Intent Classification**: GENERIC INTENT (Universal / Parameterized Blueprint)
 
 Every identifier states its layer. Do not infer a layer from context.
@@ -35,7 +45,7 @@ and to the universe that declares the related `task-*`.
 
 ## Where a universe states origin
 
-A universe manifest declares each brick’s `source`: `base`, `catalogue`, `fork` or `native`; `perimeter`: `P1`, `P2` or `P3`; and `forkedFrom` only for a fork. For example:
+A universe manifest declares each component’s `source`: `base`, `catalogue`, `fork` or `native`; `perimeter`: `P1`, `P2` or `P3`; and `forkedFrom` only for a fork. For example:
 
 ```json
 "brick-vault": { "source": "base", "package": "@shaper/pkg-vault", "image": "img-vault", ... }
@@ -45,11 +55,11 @@ Nothing is inferred from a path. The realization validates every declared source
 
 ## The universe field and the repo name
 
-For a **class repo**, the manifest's `universe` field IS the class name and
+For a **class repo using the compatible `univ-*` profile**, the manifest's `universe` field IS the class name and
 matches the repository name exactly (`univ-mailo-core` in the repo
 `univ-mailo-core`). Universes living **inside the base** (`univ-base`, the
 `_template`, test universes) are not class repos — they keep their short
 slugs and are exempt from the `univ-<projet>-<classe>` grammar, which binds
 repositories, not in-base folders (Rule 1).
 
-[Rule 1](../../RULES.md) owns the five repository kinds, immutable release slices and fork mirror grammar. [Rule 37](../../RULES.md#rule-37) and the [lexicon](LEXICON.md) own lifecycle and lineage vocabulary.
+[Rule 1](../../RULES.md) owns source roles, compatible naming, immutable release slices and scoped fork mirror grammar. [Rule 37](../../RULES.md#rule-37) and the [lexicon](LEXICON.md) own lifecycle and lineage vocabulary.

@@ -1,5 +1,10 @@
 # Agent entrance
 
+Current scoped direction: [25 October composition, ownership and continuity](decisions/2026-10-25-COMPOSITION-OWNERSHIP-AND-CONTINUITY.md).
+Task navigation and source custody: [source roles](docs/architecture/SOURCE-ROLES.md);
+scale relationships: [composition](docs/architecture/COMPOSITION.md).
+These pages join the finite foundation; existing adopted revisions remain explicit.
+
 Start with the [shared working method](README.md#shared-working-method):
 understand together, give form, put it to use, learn. Keep explanations proportionate
 and use concrete examples before unfamiliar vocabulary.
@@ -90,6 +95,6 @@ in generic documents. Detailed source records stay in their appropriate private
 workspace; this repository carries reusable meanings and source locators.
 
 At handoff, state what was read, changed and verified, whether work is committed
-or published, and the next useful steps. V1.15 is ready for use. Track the
-completion of editorial crosswalk work against its ledger and distinguish it
-from the framework's daily practical use.
+or published, and the next useful steps. Keep source coverage and execution
+evidence in the private project `-lab`; preserve original discussions under
+private custody without copying or linking them from public product sources.

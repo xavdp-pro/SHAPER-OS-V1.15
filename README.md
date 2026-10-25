@@ -1,5 +1,10 @@
 # SHAPER OS V1.15 — shape what comes next, with AI agents
 
+Current scoped direction: [25 October composition, ownership and continuity](decisions/2026-10-25-COMPOSITION-OWNERSHIP-AND-CONTINUITY.md).
+Task navigation and source custody: [source roles](docs/architecture/SOURCE-ROLES.md);
+scale relationships: [composition](docs/architecture/COMPOSITION.md).
+These pages join the finite foundation; existing adopted revisions remain explicit.
+
 **This is organized thought for AI agents: an ideal scene, intentions, laws
 and logical recipes to materialize in an orderly way. It is not a `.deb`, an
 executable or a code distribution.** Human guides explain the same material at
@@ -7,11 +12,6 @@ several depths. Increasingly capable agents can produce better realizations
 without making today's code the limit of tomorrow's design.
 See the [recipe direction](decisions/2026-10-07-INTENTIONAL-RECIPES.md).
 
-
-**SHAPER OS V1.15 is ready for use.** Its creator uses it every day to create,
-deploy and organize universes, including nested Podman deployments.
-The [6 October clarification](decisions/2026-10-06-PRACTICAL-DEPLOYMENT-AND-BRIDGE-CONTINUITY.md)
-records that practical experience and the scope of new-candidate qualification.
 
 SHAPER OS gives humans and AI agents a shared framework for turning intentions
 into systems that fit real needs. It connects purpose, responsibilities,
@@ -55,8 +55,8 @@ the map. No special mapping tool or pre-existing SHAPER executable is required.
 
 ## Discover the ideal scene
 
-An entity has an adaptable **space**, composed of **universes** suited to its
-activity. **Helm** lets the human pilot those universes within their jurisdiction.
+An entity has a logical **space/universe**, composed of service instances suited
+to its activity. **Helm** lets the human pilot that scope within their jurisdiction.
 Governors coordinate creation work and makers carry it out. Functional units
 provide the capabilities of each universe, with clear responsibilities and
 relationships.
@@ -88,7 +88,7 @@ See the
 - AI agents: [agent entrance](AGENTS.md) and [ordered reading board](docs/CONTEXT-INDEX.md).
 - Purpose and evolution: [intent](INTENT.md).
 - Words and relationships: [glossary](docs/GLOSSARY.md) and
-  [brick, package and functional unit](docs/architecture/VOCABULARY-BOUNDARY.md).
+  [component, package and functional unit](docs/architecture/VOCABULARY-BOUNDARY.md).
 - Learning through practice: [self-checks](docs/human/METACOGNITION.md),
   [comprehension exercises](docs/examples/COMPREHENSION-CHECKS.md) and
   [worked answers](docs/examples/WORKED-ANSWERS.md).
@@ -110,7 +110,7 @@ After a universe or its units have been built and verified, a registry is
 recommended for reproducible reuse and duplication. It can come later; see the
 [first-construction direction](decisions/2026-10-05-FIRST-CONSTRUCTION-AND-REUSE.md).
 
-V1.15 is usable today and remains open to improvement. The
+Versioned source ownership makes continued improvement explicit. The
 [governing corpus](docs/GOVERNING-CORPUS.md),
 [reading contract](docs/READING-CONTRACT.md),
 [source map](review/SOURCE-MAP.md) and
@@ -118,14 +118,13 @@ V1.15 is usable today and remains open to improvement. The
 The [practical-use direction](decisions/2026-10-02-PRACTICAL-USE-AND-REFERENCE-SCENE.md)
 records this presentation and daily use.
 
-## Conception dialogues & cognitive grounding dataset
+## Shared meaning and private discussions
 
-For research teams and organizations seeking deeper agent alignment and contextual discernment, SHAPER OS provides an acculturation methodology grounded in its conception dialogues.
-
-Analyzing this dialogue corpus alongside **SHAPER OS**, **SHAPER Three Layers**, and **PodMesh** makes the underlying rationale, human intent, and operational lessons available to agents. This grounding aims to reduce literalist rigidity and goal-hijacking (*specification gaming*) and support informed counter-review. Its effect must be evaluated for the actual agent and context; it is not a behavioral guarantee. These optional research materials are not prerequisites for using the self-contained SHAPER OS corpus.
-
-The complete corpus of historical conception dialogues is available upon request:  
-📧 [xavier@xavdp.pro](mailto:xavier@xavdp.pro)
+Public sources carry reusable intentions, laws and explanatory meaning. The
+human–AI working discussions and original conception conversations remain
+private, under separate custody. They are not a public dataset or a prerequisite
+for using this corpus. Source attribution identifies adopted reusable direction
+without reproducing private dialogue or linking private archives.
 
 ## Explore the ecosystem
 
@@ -134,25 +133,8 @@ The complete corpus of historical conception dialogues is available upon request
 - [PodMesh](https://github.com/xavdp-pro/podmesh): container management for concrete
   realizations.
 - [RARMURE](https://github.com/xavdp-pro/RARMURE): Real-Time Fractal Vibe Coding,
-  currently in concept formalization and proof-of-concept preparation.
+  an independently owned exploration of parallel software construction.
 - [Public site](https://xavdp.pro/en/shaper-os): SHAPER OS and its intended experience.
 
-### RARMURE proof of concept preparation
-
-**Project status as of 7 October 2026: concept formalization and preparation of a proof of concept.**
-RARMURE proposes parallel software exploration through separate virtual working
-views, semantic references, multiple model/provider routes, complementary
-counter-reviews, and evidence-based master selection. Its
-[short and detailed explanation](https://github.com/xavdp-pro/RARMURE/blob/main/PROJECT-EXPLANATION.md)
-preserves the design and its open questions.
-
-The specifications and illustrations are published. No RARMURE application,
-working plugin, runtime qualification, or measured speed gain is established.
-The proposed first proof of concept is a bounded case with two workers on one
-interacting behavior, fixed candidates, counter-review, and combined validation.
-
-SHAPER inspires the treatment of intention, authority, evidence, correction,
-and learning. RARMURE can function independently: no SHAPER installation or
-service is a prerequisite. This ecosystem entry records an exploratory project,
-not a required SHAPER component, a formal adoption of this corpus, or a change
-to SHAPER OS V1.15's **ready-for-use** status.
+RARMURE owns its own intentions, variants and realization records. Its source
+relationship supplies context without changing this framework's adopted scope.

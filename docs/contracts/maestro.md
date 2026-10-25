@@ -1,5 +1,13 @@
 # Maestro Contract
 
+## Persistent ownership
+
+Registrations, schedule definitions, due occurrences, dispatch state and context
+revision references are authoritative in Maestro's private MariaDB. Files are
+import/export or prepared-context material with declared revision, not a second
+schedule store. Rule 4 selects ordinary or partitioned tables by workload.
+
+
 > **Intent Classification**: GENERIC INTENT (Universal / Parameterized Blueprint)
 
 Maestro belongs to **P2**, the agentic perimeter, and is a deterministic scheduler: register tasks, pulse at declared cadence and spend no LLM tokens while idle. The handler decides whether cognition is needed; scheduling carries no business reasoning. Its membership in the four foundational units and its ability to run without an LLM do not make it P1.

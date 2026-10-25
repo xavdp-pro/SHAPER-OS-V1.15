@@ -2,17 +2,26 @@
 
 This file is a canonical part of the [complete rulebook](../../RULES.md#complete-rulebook).
 Read all seven parts in order. The index is navigation, not a substitute for the rule bodies.
-The original rule identifiers, scope and binding force are unchanged.
+Original rule identifiers remain stable. Current scope follows the explicit
+[25 October direction](../../decisions/2026-10-25-COMPOSITION-OWNERSHIP-AND-CONTINUITY.md); earlier adopted revisions retain their recorded boundaries.
 
 <a id="rule-37"></a>
-### Rule 37: The Tree Speaks (Lexicon Closure, Manifest Lineage Fields & the Fleet Map)
+### Rule 37: Shared Vocabulary, Manifest Lineage and Fleet Ownership
+
+The lifecycle state machine, account/class uniqueness and maker protocol below
+apply to the declared governor/maker realization. They do not impose identical
+business state machines or one governor for every logical space. Multiple
+scoped governors retain separate ownership and explicit authority relationships.
+Class definitions and specializations are versioned; instance IDs are stable.
+A private realization repository can describe instance configuration without
+becoming a second instance ledger. See [source roles](../architecture/SOURCE-ROLES.md).
 
 * **Three manifest fields carry all lineage — never the slug**:
-  * `perimeter`: `P1` | `P2` | `P3`, **mandatory on every declared brick**.
-    Perimeter means **LAYER, never OWNER** — a client-specific brick can be P1.
+  * `perimeter`: `P1` | `P2` | `P3`, **mandatory on every declared component**.
+    Perimeter means **FUNCTIONAL PERIMETER, never OWNER or OS/Runtime/Workspace layer** — a client-specific component can be P1.
   * `source`: `base` | `catalogue` | `fork` | `native`, mandatory.
-    `native` = a P3 brick scaffolded inside the class repo (the
-    constructor-generated class realization); `fork` = inherited from a standard brick and
+    `native` = a P3 component scaffolded inside the class repo (the
+    constructor-generated class realization); `fork` = inherited from a standard component and
     specialised.
   * `forkedFrom`: `{ "package": "@shaper/pkg-x", "atVersion": "x.y.z" }` —
     **mandatory when `source` is `fork`**, forbidden otherwise. A Rule 33 fork
@@ -23,7 +32,8 @@ The original rule identifiers, scope and binding force are unchanged.
   `DESIRED → RECONCILING → PURRING → DEGRADED`, plus the terminal `REAPED`
   .
   * **PURRING** is the healthy state, and it is **dated**: the universe writes
-    it to its `status.json` on every on-time beat when observed == desired.
+    the authoritative state in its private MariaDB and projects it to `status.json`
+    on every on-time beat when observed == desired.
     Silence is ambiguous between "fine" and "dead and unable to say so"; a
     stale `lastPurr` timestamp is the alarm. `running`, `green`, `OK` and
     every other synonym are forbidden as state words.
@@ -42,7 +52,7 @@ The original rule identifiers, scope and binding force are unchanged.
     instance holds. A state word for "ended" that did not exist was read
     as "still there".
   * <a id="rule-37-status-json"></a>`status.json` (per instance: state, lastPurr, lastBackup) is the canonical
-    surface; every board, cockpit tile or STATE file is a rendering of it,
+    exported surface of authoritative MariaDB state; every board, cockpit tile or STATE file is a rendering of it,
     never a rival.
 * **The ledger is the only instance store**: one row per instance, in the
   governor functional Podman's own private database (Rule 26). The row : `id`, `account`, `klass`, `matrix`,
@@ -67,7 +77,7 @@ The original rule identifiers, scope and binding force are unchanged.
   own database inside the governor Podman's boundary. Every functional Podman
   carries its own mandatory MariaDB under Rules 4 and 26; `+data` is therefore
   only a retired compatibility alias and never a shared universe database. The governor persists these records in its own private MariaDB.
-  "placement" survives only as the name of the machine-assignment column.
+  Placement names the hosting relationship, independently of containment and authority; the existing `machine` field carries this protocol's assignment.
   Tag precedence: **fleet.yml = the default for new instances and the PRA
   floor; the ledger row = the truth, which may lag during a canary; an audit
   task reconciles them.**
@@ -80,17 +90,16 @@ The original rule identifiers, scope and binding force are unchanged.
   universe repo not registered in its fleet map is refused promotion. A
   sovereign fork (Rule 33) keeps its own mirrored fleet map — a client's PRA
   never hinges on the vendor's repo.
-* **Lexicon closure**: the vocabulary of this architecture is the prefix table
-  (Rule 1, canonical in `docs/architecture/NAMING.md`) plus twenty-three words —
-  class, instance, ledger, drift, PURRING (and its state machine), status.json,
-  board, fleet map, forge, forkedFrom, the mirror rule, source/perimeter, and,
-  by the amendment of 2 September 2026 (maker-and-governor verdict, §10),
-  governor, maker, matrix, REAPED, and, by the amendment of 4 September 2026,
-  rig, tool, and, by the amendment of 16 September 2026 (Rule 11), shape, and,
-  by the amendment of 17 September 2026 (one Helm for every pilot, Rule 0F),
-  Helm, jurisdiction, root, pilot level.
-  A new noun enters only by amending this
-  rule, with the failure it prevents written beside it — as here:
+* **Shared vocabulary with explicit owners**: the [independent glossary](https://github.com/xavdp-pro/shaper-glossary/blob/main/TERMS.md)
+  owns stable concept definitions; [composition](../architecture/COMPOSITION.md)
+  relates them to this edition. Preferred “component” retains “brick” aliases,
+  artifact prefixes, field names and old rule anchors. Stem cell, specialized
+  cell/service, logical space, class, specialization and instance describe
+  distinct responsibilities. New terms have an owner, reason and affected
+  referrers rather than an exhaustive twenty-three-word ceiling. Existing
+  protocol terms below retain their scoped meaning:
+
+
   * **governor** — the universe that holds a ledger and makes it respected:
     it writes what should exist, dates what makers report, and never dials
     out. *Prevents*: "the SaaS" and "the manager" naming two things — the
@@ -105,10 +114,10 @@ The original rule identifiers, scope and binding force are unchanged.
     archive, and five builds of one commit giving five fingerprints.
   * **REAPED** — the fifth, terminal state, above. *Prevents*: a reaped row
     still counted as living, blocking its account and pinning its matrix.
-  * **rig** — the assembled solution: the classes it takes, the bricks they
+  * **rig** — the assembled solution: the classes it takes, the components they
     declare, and the declarations that shape them (sector profile, tool
-    catalogue, seed), pinned together. A rig is NOT a class: a class is one
-    repo, a rig is what is delivered — the demo rig is `univ-demo-saas` and
+    catalogue, seed), pinned together. A rig is an assembled delivery: each class is a versioned
+    definition, and the rig pins the participating definitions — the demo rig is `univ-demo-saas` and
     `univ-demo-crm` and the entry door and the maker, at named tags.
     *Prevents*: "the demo" meaning one repo to the person building it, two
     repos to the person deploying it, and the whole visitor chain to the
@@ -116,22 +125,21 @@ The original rule identifiers, scope and binding force are unchanged.
     and no way to be assembled twice the same.
   * **tool** — one declared capability a class exposes to its agent, with a
     typed contract, from a closed catalogue: the agent may fill it and execute within the human-approved action or action-type policy; approval already embodied in that policy is not requested again. *Prevents*: `tool` naming
-    both a deliverable unit and an agent's capability (the unit is a brick);
+    both a deliverable unit and an agent's capability (the unit is a component);
     and free text reaching an action because the catalogue of what may be
     asked was never declared anywhere.
-  * **shape** — what a universe's container is, declared by its class
-    (`shape` in `manifest.json`, `lxc` when absent): `lxc` or `nested`
-    (Rule 11). A host family is how a machine makes that container; a machine
-    may offer several. *Prevents*: one token naming both what a universe is
-    and how a host builds it, so that a machine offering LXD and rootful
-    Podman cannot be described, and a class cannot say which container it
-    needs.
+  * **shape** — the selected hosting arrangement: `direct`, `lxc` or `nested`
+    under Rule 11. Existing profile versions retain their declared defaults;
+    new selections name the profile explicitly. A host family describes how
+    the host realizes it. Logical space and universe identity remain separate.
+
+
   * **Helm** — the conversational interface between a human and the
     ecosystem in their charge, web or mobile web, text or voice, set by a
     jurisdiction and a pilot level and by nothing else; it sends requests to
     Runtime and never holds authority (Rule 0F). `brick-helm` implements it
     and its local owning intent specifies it: the word names that contract across
-    classes, not one brick, which is why it enters where `steward` did not.
+    classes, not one component, which is why it enters where `steward` did not.
     *Prevents*: KovZu, Helm and "Control Hub" naming one surface under three
     authority models, so that an operator's cockpit and a client's portal
     were designed twice and a customer's question had no defined boundary.
@@ -143,7 +151,7 @@ The original rule identifiers, scope and binding force are unchanged.
     what may this person see and change? — and a client's agent answering
     with another client's universe.
   * **root** — full power over a jurisdiction, held by a human–agent tandem,
-    reaching underneath its universes to their pods. Two strata, never more.
+    reaching underneath its universes to their pods. Two authority categories, distinct from the number of logical nesting levels.
     The **master root** is the founding tandem at the top of the fractal: root
     from underneath every host (Rule 36), sole director of the governor and
     the makers, keeper of matrices and backup contracts, grantor of every
@@ -171,11 +179,11 @@ The original rule identifiers, scope and binding force are unchanged.
   names the human of a root tandem in the architecture documents and remains
   `brick-steward` here.
   What does not enter: `stamp`, `reap`, `validate`, `adopt` — kinds of work,
-  a table in `pkg-governor`, not nouns of the language. New bricks are not
+  a table in `pkg-governor`, not nouns of the language. New components are not
   new nouns — `brick-forge`, `brick-scraper`, `brick-sso` are the prefix
   system doing its job. The forge's line is bounded by the same amendment:
-  `brick-forge` deploys, destroys and repairs BRICKS inside a living universe
-  (the brick level; drift at brick level); universes are born and ended by
+  `brick-forge` deploys, destroys and repairs COMPONENTS inside a living universe
+  (the component level; drift at component level); universes are born and ended by
   the maker, from a ledger row (the universe level; the gap at instance level).
 * **What it protects**: a human juggling several vibecoded projects and a cold
   agent landing in a repo must both answer, from one page — *where is the
@@ -183,8 +191,8 @@ The original rule identifiers, scope and binding force are unchanged.
   universe) — *who births?* (the maker, from a row) — *is everything fine?*
   (the board, rendering status.json) — *how is it all recreated?* (the fleet
   map + R2, Rule 16) — *who may act here?* (the root of this jurisdiction,
-  through Helm, at its pilot level). A vocabulary that cannot fit on one page has already
-  failed them both. `docs/architecture/LEXICON.md` is that page, and the realization verifies that its manifests, interfaces and state machine use that same vocabulary.
+  through Helm, at its pilot level). A task route links each relevant definition, governing contract and reverse
+  dependency without forcing the whole system into one vocabulary page. `docs/architecture/LEXICON.md` is that page, and the realization verifies that its manifests, interfaces and state machine use that same vocabulary.
 
 ## Reading continuation
 

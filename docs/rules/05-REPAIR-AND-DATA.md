@@ -2,7 +2,8 @@
 
 This file is a canonical part of the [complete rulebook](../../RULES.md#complete-rulebook).
 Read all seven parts in order. The index is navigation, not a substitute for the rule bodies.
-The original rule identifiers, scope and binding force are unchanged.
+Original rule identifiers remain stable. Current scope follows the explicit
+[25 October direction](../../decisions/2026-10-25-COMPOSITION-OWNERSHIP-AND-CONTINUITY.md); earlier adopted revisions retain their recorded boundaries.
 
 <a id="rule-23"></a>
 ### Rule 23: External Healing Law (Parent Repairs Child)
@@ -23,7 +24,7 @@ The original rule identifiers, scope and binding force are unchanged.
 <a id="rule-25"></a>
 ### Rule 25: Canary Deployment & Downward Rollback (Anti-Propagation)
 * **Progressive Fleet Updates**:
-  * Whenever a Parent Universe distributes a configuration or brick update to its child fleet:
+  * Whenever a Parent Universe distributes a configuration or component update to its child fleet:
     1. **Canary (1/N)**: Deploy to 1 pilot child universe only.
     2. **Observation Period**: Monitor logs and health for $T$ minutes (bake time, default 5 min).
     3. **Phased Rollout**: If the canary passes its gate → deploy to 10%, then 100% of the fleet.
@@ -36,8 +37,8 @@ The original rule identifiers, scope and binding force are unchanged.
 
 <a id="rule-26"></a>
 ### Rule 26: Complete Database Isolation (MariaDB per Functional Podman)
-* **Zero Domino Effect on Data**:
-  * To guarantee total blast-radius isolation, each functional Podman operates
+* **Small Owned State and Failure Containment**:
+  * To contain data failures within an explicit functional boundary, each functional Podman operates
     its own MariaDB instance inside its own security, storage and lifecycle
     boundary. There is no shared database at universe level.
   * Asterisk, Helm, Vault, Logger, Queue and every other functional Podman each
@@ -64,14 +65,13 @@ The original rule identifiers, scope and binding force are unchanged.
     administrative configuration, at creation and at recreation. An empty MariaDB beside
     authoritative file-based application state does not satisfy the storage
     obligation, and a new artefact never inherits a legacy gap.
-  * **Partition inventory**: for histories and call-detail records, qualification
-    observes the actual SQL monthly partitions required by Rule 4, their UTC
-    timestamp/month boundaries and any declared archive or future catch-all.
-    It verifies that current writes have a valid destination, the administrative
-    calendar-maintenance path remains private, and recreation and a successful
-    restore retain the partition definitions and data. Table names or an
-    unexecuted schema declaration do not establish partitioning. No separate
-    workload or repeated qualification loop is required solely for this inventory.
+  * **Partition inventory**: record each table's workload, retention and chosen
+    ordinary/partitioned layout under Rule 4. For partitioned tables, verify actual
+    SQL definitions, valid write destinations, private administrative maintenance,
+    and restore of definitions and retained rows. UTC months apply when selected,
+    not automatically to every history. Inventory follows the existing functional
+    qualification; it does not require an unrelated campaign.
+
   * Database administration proof uses the local MariaDB root CLI path; application
     behavior proof uses only the confined functional account. Passing one path does
     not prove the other.
@@ -82,7 +82,7 @@ The original rule identifiers, scope and binding force are unchanged.
     mandatory when that functional Podman is rebuilt, replaced, rematerialised
     or promoted: the new artefact must carry its private MariaDB and pass the
     complete qualification above before it takes over.
-  * The Central SaaS database holds exclusively the node inventory registry and global billing data.
+  * A SaaS service owns only the inventory, order, billing or other state assigned by its declared domain contract. It accesses other owners through governed interfaces, never their databases. Infrastructure resilience contains shared-host failure; private databases alone do not remove that common failure domain.
 
 ---
 
@@ -96,7 +96,7 @@ The original rule identifiers, scope and binding force are unchanged.
   * **Fleet-Wide Circuit Breaker**: If more than 20% of a fleet enters `DEGRADED` within one bake window, the parent suspends ALL reconciliation and rollout activity on that fleet and escalates. A systemic fault must never be amplified N times.
 * **The Escalation Channel Is Declared, Never Assumed**: "Alert the operator" is meaningless until the channel exists. Each universe declares its `alerting` channel in `manifest.json` — mobile push, mail, Telegram, or an existing prod-alerting relay. The channel depends on what is being watched and is decided case by case; the doctrine imposes only the contract:
   * It reaches a **human out-of-band** — never a UI nobody is looking at.
-  * It is **tested at deploy time** like any other brick: an unverified alert path is an absent alert path (Rule 0G).
+  * It is **tested at deploy time** like any other component: an unverified alert path is an absent alert path (Rule 0G).
   * A universe with no declared channel MUST NOT be promoted beyond DEV.
 * **Rationale**: Without these bounds, one invalid manifest on a 50-child fleet produces 50 simultaneous restart loops — the reconciliation engine becomes the outage.
 
@@ -116,7 +116,7 @@ The original rule identifiers, scope and binding force are unchanged.
 ### Rule 29: Constructive Integrity (Every Fixed Bug Becomes a Test)
 * **The System Grows a Memory of Its Own Failures**: Any resolved defect — in code, in a manifest, in a WAF rule, in an agent prompt — MANDATORILY gives birth to a new non-regression test committed alongside the fix.
 * **No Fix Without Proof**: A patch whose accompanying test would still pass on the unpatched code does not demonstrate anything and is rejected.
-* **A Correction Lives Where It Survives**: A defect met while deploying or operating a universe is corrected in the **generic path** — the brick, the package, the template, the example deploy script — never only in the universe where it appeared. Its test is placed where it will still run after that universe is gone.
+* **A Correction Lives Where It Survives**: A defect met while deploying or operating a universe is corrected in the **generic path** — the component, the package, the template, the example deploy script — never only in the universe where it appeared. Its test is placed where it will still run after that universe is gone.
   * **Why this is a rule and not advice**: a `-test` universe is destroyed by Rule 10, and a `-dev` one is disposable by design. A fix written into an instance is deleted with the instance, and the next clean sheet meets the same wall having learnt nothing. The next clean construction must inherit the correction from its owning source and test.
   * **The test decides where the fix belongs**: if the non-regression test would disappear with a universe, the fix is in the wrong place. Move both.
   * **A universe may still specialise**: this forbids *correcting* in an instance, not *parameterising* one. When a defect is genuinely specific to one deployment, say so in that universe's INTENT and explain why the generic path is right as it stands.
@@ -145,7 +145,7 @@ The original rule identifiers, scope and binding force are unchanged.
   * `retention`: duration or `unlimited`, per data class (GED documents, JSONL logs, vector collections, database rows).
   * `onTermination`: what is destroyed, what is exported to the client, and in what format, when the universe is decommissioned.
 * **`personalData: false` Is a Valid and Common Answer** — but it must be written down, not left silent. Silence is not a declaration.
-* **Erasure Is Fractal**: deleting a client's data means deleting it in every store of that universe — MariaDB rows, `sav/` volumes, GED files, **and its Qdrant collection**. A vector left behind is a leak; the isolation of Rule 22 is what makes this deletion tractable in the first place.
+* **Erasure Is Fractal**: deleting a client's data means deleting it in every store of that universe — MariaDB rows, `sav/` volumes, GED files, **and any selected derived vector indexes**. A vector left behind is a leak; the isolation of Rule 22 is what makes this deletion tractable in the first place.
 
 ---
 

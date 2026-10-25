@@ -1,5 +1,10 @@
 # Internal reading board
 
+Current scoped direction: [25 October composition, ownership and continuity](../decisions/2026-10-25-COMPOSITION-OWNERSHIP-AND-CONTINUITY.md).
+Task navigation and source custody: [source roles](architecture/SOURCE-ROLES.md);
+scale relationships: [composition](architecture/COMPOSITION.md).
+These pages join the finite foundation; existing adopted revisions remain explicit.
+
 Read the [intentional-recipe direction](../decisions/2026-10-07-INTENTIONAL-RECIPES.md)
 with the repository intent. This board organizes meaning for agents, not a list
 of executables waiting to exist. Specialized product examples illustrate the
@@ -32,7 +37,7 @@ and observed results. The example owns the first-use prerequisite checklist.
    selects OpenCode for the proposed reference composition. The
    [functional-unit MariaDB decision](../decisions/2026-09-24-FUNCTIONAL-UNIT-MARIADB.md)
    states that every next unit under the current model owns a private MariaDB,
-   with existing SQLite prototypes kept as separate, declared debt.
+   with existing realization state and transition evidence retained privately.
    The [first-construction direction](../decisions/2026-10-05-FIRST-CONSTRUCTION-AND-REUSE.md)
    makes code generation explicit and recommends a registry after reusable
    realizations exist. The
@@ -42,7 +47,7 @@ and observed results. The example owns the first-use prerequisite checklist.
 3. [Reading contract](READING-CONTRACT.md): document authority, comprehension
    and continuity after context loss.
 4. [Glossary](GLOSSARY.md): first meanings, then the
-   [vocabulary boundary](architecture/VOCABULARY-BOUNDARY.md) for package/brick/unit.
+   [vocabulary boundary](architecture/VOCABULARY-BOUNDARY.md) for package/component/functional-unit distinctions and compatible brick identifiers.
 5. Choose the [human guide](human/READING-GUIDE.md),
    [medium agent route](agent/MEDIUM.md) or [strong agent route](agent/STRONG.md).
    Human depths select an appropriate subset from the shared material. Agents
@@ -153,7 +158,7 @@ local laws and contracts.
   structure and limits; distinguish containment, authority and physical hosting.
 - Responsibilities: OS, Runtime and Workspace; creation, execution and protection
   frameworks; functional units; declared exchanges and data ownership.
-- Materialization: interpretation, packages, bricks, composition, deployment,
+- Materialization: interpretation, packages, components, composition, deployment,
   verification, supervision, migration, recovery and replacement.
 - Interdependencies: providers/consumers, startup, authority, state, receipts,
   idempotency, degraded behavior, cycles and restoration order.

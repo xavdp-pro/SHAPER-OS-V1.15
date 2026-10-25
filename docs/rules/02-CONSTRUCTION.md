@@ -2,26 +2,24 @@
 
 This file is a canonical part of the [complete rulebook](../../RULES.md#complete-rulebook).
 Read all seven parts in order. The index is navigation, not a substitute for the rule bodies.
-The original rule identifiers, scope and binding force are unchanged.
+Original rule identifiers remain stable. Current scope follows the explicit
+[25 October direction](../../decisions/2026-10-25-COMPOSITION-OWNERSHIP-AND-CONTINUITY.md); earlier adopted revisions retain their recorded boundaries.
 
 <a id="rule-1"></a>
 ### Rule 1: Canonical Naming Conventions & the Universe Repo Grammar
 
-* **The universe class repo grammar**: `univ-<projet>-<classe>`, where
+* **The compatible universe-class repository grammar** (for repositories using this lineage): `univ-<projet>-<classe>`, where
   **projet is ONE word, no hyphen** — everything after the first word is the
   class, which may be composite. One-line parse:
   `^univ-[a-z0-9]+(-[a-z0-9]+)+$`. A single-class project takes `-core`
   (`univ-mailo-core`): five characters against a future rename, settled.
-* **The five repo kinds, exhaustively** — every git repository in the
-  ecosystem is exactly one of these, and nothing else exists:
-
-| Kind | Naming | Example |
-| :--- | :--- | :--- |
-| The base | `SHAPER-OS` (versioned folder/repo) | `shaper-os-v1.15` |
-| The catalogue | `SHAPER-OS-BRICKS` | `<catalogue-repository>` |
-| A universe class | `univ-<projet>-<classe>` | `univ-boutik-shop` |
-| A fork's catalogue | `<projet>-bricks` (Rule 33 forks only) | `fortex-bricks` |
-| The fleet map | `<scope>-fleet` | `shaper-fleet`, `fortex-fleet` |
+* **Source roles are explicit.** Mental frameworks, glossary, ecosystem map,
+  domain intentions, implementation products and fleet definitions retain their
+  owning sources. Every project has a distinct product repository and private
+  `-lab` companion for work/discussions/evidence. Public mental sources and private
+  SaaS/VOX implementations remain separate. The [source-role index](../architecture/SOURCE-ROLES.md)
+  defines custody; the old base/catalogue/universe/fork/fleet names remain
+  compatibility conventions, not an exhaustive list of repositories.
 
 * **A release is an independently readable slice**: its full governing documentation lives in its own repository; implementation releases live in their separate realization repositories. Fleet records pin repository and immutable tag. Independent releases may run side by side; changes are deliberately carried and qualified, never presumed inherited. Verify the destination remote before the first authorized push of a copied workspace.
 
@@ -29,17 +27,20 @@ The original rule identifiers, scope and binding force are unchanged.
   and keeps every classe word, repo kind and file name verbatim
   (`univ-boutik-shop → univ-fortex-shop`). A fork costs zero new vocabulary,
   and `shaper verify` can hold it via the repo-level `forkedFrom`.
-* **Classes have repos; instances never do.** An instance is a ledger row +
-  a vault + volumes. Runtime instance names follow the triumvirate lifecycle
+* **Classes are versioned definitions; instances have stable identities.** A
+  specialization records its inherited base and domain delta. Its source repository
+  owns the reusable definition; an instance is represented by its ledger and owned
+  durable state. Private realization/configuration repositories may describe an
+  instance without becoming its identity or a rival runtime ledger. Runtime instance names follow the triumvirate lifecycle
   (`<slug>-dev`, `<slug>-test`, `<slug>-prod`, Rule 36); DNS names are declared by the realization and remain unique within its domain.
-* **Package and brick prefixes are unchanged**:
+* **Package and component prefixes are unchanged**:
 
 | Element Type | Scope / Layer | Canonical Naming Convention | Real-World Examples |
 | :--- | :--- | :--- | :--- |
-| Composable Logic Bricks | NPM Scope `@shaper/` | `@shaper/<brick>` | `@shaper/pkg-vault`, `@shaper/pkg-logger`, `@shaper/pkg-queue` (**P1**); `@shaper/pkg-maestro`, `@shaper/pkg-mail-agent`, bridges (**P2**) |
-| Deployable bricks | OCI images | `brick-<name>` / `img-<name>` | `brick-vault`, `brick-forge`, `img-logger` |
+| Composable Logic Components | NPM Scope `@shaper/` | `@shaper/<brick>` | `@shaper/pkg-vault`, `@shaper/pkg-logger`, `@shaper/pkg-queue` (**P1**); `@shaper/pkg-maestro`, `@shaper/pkg-mail-agent`, bridges (**P2**) |
+| Deployable components | OCI images | `brick-<name>` / `img-<name>` | `brick-vault`, `brick-forge`, `img-logger` |
 
-* **Brick Isolation Invariant**: A `@shaper/*` package never has knowledge of the universe consuming it (zero coupling, 100% isolated unit test coverage).
+* **Component Isolation Invariant**: A `@shaper/*` package never has knowledge of the universe consuming it (zero coupling, 100% isolated unit test coverage).
 * **The meta-rule this grammar serves**: *the identifier says WHAT a thing is;
   structured data (manifest, LINEAGE.md, ledger row, fleet.yml) says where it
   comes from and where it sits.* No slug ever encodes graph position,
@@ -70,12 +71,12 @@ Build locally for the first construction. A registry is recommended for repeated
 
 <a id="rule-4"></a>
 ### Rule 4: Standard Application Layout & Per-Functional-Podman Database Isolation
-* **Standard Application File Structure (`/apps/<slug>/`)**: Every deployed application or service brick adheres strictly to the canonical application filesystem hierarchy — **same spirit under Podman**: persist what must survive in bind-mounted volumes, never mix cache with backups:
+* **Standard Application File Structure (`/apps/<slug>/`)**: Every deployed application or service component adheres strictly to the canonical application filesystem hierarchy — **same spirit under Podman**: persist what must survive in bind-mounted volumes, never mix cache with backups:
   ```
   /apps/<slug>/          # or <univ>/ for a Podman universe
   ├── app/               # Code (git) — not a substitute for volume backup
   ├── etc/mysql/localhost/passwd
-  ├── log/               # Append-only JSONL
+  ├── log/               # Diagnostic streams/exports; authoritative logs in MariaDB
   ├── sav/               # Persistent volumes (bind-mounted into Podman) — MUST be backed up
   └── nosav/             # Cache, node_modules, image layers, bulky regenerable files — EXCLUDED from backups
   ```
@@ -177,19 +178,21 @@ Build locally for the first construction. A registry is recommended for repeated
        logical dump of its application database, coordinated with its declared
        non-reproducible volumes and versioned reconstruction records. Rules 12,
        16 and 30 govern protection, completeness and restore proof.
-* **Monthly SQL Partitions for Histories and Call Records**: In each functional
-  unit's private MariaDB, append-only time-series histories and call-detail
-  records use SQL partitions by UTC calendar month. This means physical SQL
-  table partitioning, not separate technical/business tables or separate unit
-  databases. Current mutable state and pending work may use ordinary tables.
-  The unit declares its timestamp key, month boundaries, indexes and any
-  explicitly bounded legacy-archive and future catch-all partitions. Its
-  authorized local administrative path creates and extends the forward calendar;
-  the application account never receives partition or schema DDL privileges.
-  A month ending does not authorize deletion: retention and any destructive
-  pruning require the owning data contract and applicable recovery mandate.
-  Dump/restore and recreation preserve partition definitions and retained rows.
-  See the [13 October partition direction](../../decisions/2026-10-13-MONTHLY-SQL-PARTITIONS.md).
+* **Complete Application State**: authoritative business records, logs, scheduler
+  registrations and occurrences, leases, pending work, action records, durable
+  CLI sessions, context revisions and engine-session mappings belong in the
+  private MariaDB of their functional owner. Native tool files and exported
+  JSONL are working material or projections, with explicit reconstruction.
+  Durable media/artifacts have database-owned references and declared storage.
+* **Partitions by Workload**: choose physical SQL table partitioning where data
+  volume, queries, maintenance and retention justify it; ordinary tables remain
+  valid. A selected UTC-month history policy declares keys, boundaries, indexes,
+  forward partitions and bounded catch-alls. Administrative DDL stays separate
+  from the application account. Retention authorizes deletion independently of
+  partition rollover. Consistent dump/restore preserves selected definitions and
+  retained rows. The [25 October direction](../../decisions/2026-10-25-COMPOSITION-OWNERSHIP-AND-CONTINUITY.md)
+  narrows the earlier general monthly requirement.
+
 * **Continuous Architectural Traceability**: Document every architectural choice with *What* (concise description) and *Why* (business rationale).
 
 ---

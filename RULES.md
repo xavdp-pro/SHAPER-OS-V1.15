@@ -1,5 +1,10 @@
 # SHAPER OS & UNIV — Fundamental Engineering Rules & Architecture Invariants
 
+Current scoped direction: [25 October composition, ownership and continuity](decisions/2026-10-25-COMPOSITION-OWNERSHIP-AND-CONTINUITY.md).
+Task navigation and source custody: [source roles](docs/architecture/SOURCE-ROLES.md);
+scale relationships: [composition](docs/architecture/COMPOSITION.md).
+These pages join the finite foundation; existing adopted revisions remain explicit.
+
 <a id="canon-preamble"></a>
 This index and the seven linked rule files form the **canon**. Read the index
 and every rule file in full; neither a summary nor the index alone replaces that reading. Rules are added, never removed to fit what the code currently does —
@@ -31,7 +36,7 @@ judgement rather than convention:
 
 | You are… | Read |
 | :--- | :--- |
-| building or changing a brick | 0A, 0B, 0C, 0D, 0E, 32, 33 |
+| building or changing a component | 0A, 0B, 0C, 0D, 0E, 32, 33 |
 | deploying or operating | 3, 10, 11, 12, 13, 16, 25, 27, 30 |
 | working on agents, bridges, delegation | 0F, 0H, 0K, 6, 7, 8, 19, 21, 23, 24 |
 | handling documents or data | 20, 22, 26, 31; `docs/design/DOCUMENT-PIPELINE.md` is an illustrative example |
@@ -70,7 +75,7 @@ Outside those two cases, the tiers change nothing: you comply with all of them.
 
 ## Current construction scope
 
-This is the complete local V1.15 rulebook. [The self-contained adoption decision](decisions/2026-10-06-SELF-CONTAINED-CORPUS.md) and the [6 October construction and execution direction](decisions/2026-10-06-PRACTICAL-DEPLOYMENT-AND-BRIDGE-CONTINUITY.md) govern the present scope. Implementation artifacts named below are produced in the separate realization, not supplied by this code-free OS. The constructor generates missing code and precise contracts; only a genuinely undecided authority/business policy blocks its dependent action. A protection boundary is not a CLI permission prompt: authorized DEV executes fully, and production applies the tandem's verified per-action/type rights.
+This is the complete local V1.15 rulebook. [The self-contained adoption decision](decisions/2026-10-06-SELF-CONTAINED-CORPUS.md) and the [6 October construction and execution direction](decisions/2026-10-06-PRACTICAL-DEPLOYMENT-AND-BRIDGE-CONTINUITY.md) are read with the superseding [25 October direction](decisions/2026-10-25-COMPOSITION-OWNERSHIP-AND-CONTINUITY.md) for the present scope. Implementation artifacts named below are produced in the separate realization, not supplied by this code-free OS. The constructor generates missing code and precise contracts; only a genuinely undecided authority/business policy blocks its dependent action. A protection boundary is not a CLI permission prompt: authorized DEV executes fully, and production applies the tandem's verified per-action/type rights.
 
 ## Why the rulebook is split
 
@@ -238,7 +243,7 @@ Read [the complete rule](docs/rules/03-EXECUTION-AND-CONTAINMENT.md#rule-10).
 [Complete provision: `rule-10-zero-duration-figure`](docs/rules/03-EXECUTION-AND-CONTAINMENT.md#rule-10-zero-duration-figure).
 
 <a id="rule-11"></a>
-### Rule 11: Two Levels of Containment and Recovery Integrity
+### Rule 11: Declared Containment and Recovery Integrity
 
 Read [the complete rule](docs/rules/03-EXECUTION-AND-CONTAINMENT.md#rule-11).
 
@@ -432,7 +437,7 @@ Read [the complete rule](docs/rules/06-FRACTAL-CONSTRUCTION.md#rule-35).
 Read [the complete rule](docs/rules/06-FRACTAL-CONSTRUCTION.md#rule-36).
 
 <a id="rule-37"></a>
-### Rule 37: The Tree Speaks (Lexicon Closure, Manifest Lineage Fields & the Fleet Map)
+### Rule 37: Shared Vocabulary, Manifest Lineage and Fleet Ownership
 
 Read [the complete rule](docs/rules/07-TREE-AND-FLEET.md#rule-37).
 

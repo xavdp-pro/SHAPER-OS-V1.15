@@ -1,5 +1,10 @@
 # Intent
 
+Current scoped direction: [25 October composition, ownership and continuity](decisions/2026-10-25-COMPOSITION-OWNERSHIP-AND-CONTINUITY.md).
+Task navigation and source custody: [source roles](docs/architecture/SOURCE-ROLES.md);
+scale relationships: [composition](docs/architecture/COMPOSITION.md).
+These pages join the finite foundation; existing adopted revisions remain explicit.
+
 > **Intent Classification**: GENERIC INTENT (Universal / Parameterized Blueprint)
 
 ## Organized thought, realized by agents
@@ -56,10 +61,9 @@ starting point and how experience returns to the map.
 
 ## Practical use and reference scene
 
-SHAPER OS V1.15 is ready for use and is used daily by the operator for the
-creation, deployment and organization of universes. V1.15 carries the enduring framework, its local operational laws and reference
-contracts. Its documentary verification is separate from the operating evidence
-of each realization. See the [practical-use decision](decisions/2026-10-02-PRACTICAL-USE-AND-REFERENCE-SCENE.md).
+SHAPER OS organizes construction, deployment and maintenance through enduring
+intentions, local operational laws and reference contracts. Actual execution
+and release observations remain in each realization's private `-lab`.
 
 The [ideal scene](docs/IDEAL-SCENE.md) explains the intended experience and gives
 readers a first exercise with an agent. It connects the architecture to a human
@@ -112,7 +116,8 @@ responses to correction; the analogy itself establishes no behavioural guarantee
 
 This repository carries intentions, laws, rules, definitions, relationships,
 pedagogical explanations, declarative prose contracts, examples, source lineage
-and review records. It contains no executable implementation, application,
+and maintained source provenance. New working discussions, read coverage and
+execution/release evidence belong in the distinct private project `-lab`. It contains no executable implementation, application,
 library, installer, build script, dependency manifest, container recipe or
 embedded runtime. Tooling used to verify these documents lives outside it.
 
@@ -134,9 +139,11 @@ copying them here would blur its deliberately code-free boundary.
 ## Generic and agnostic
 
 Define purposes, relationships, responsibilities and observable obligations
-without binding SHAPER OS to a model provider, programming language, database,
-container engine, hosting company or business domain. A concrete realization
-records its technology choices, scope, versions and proofs in its own documents.
+across replaceable model providers, programming languages, hosts and business
+domains. The current human-selected construction foundation is private MariaDB
+for complete application state and Podman functional boundaries. A concrete
+realization records its selected profile, scope, versions and evidence; generic
+meaning does not reopen an already settled technology choice.
 
 Agnostic does not mean vague. A contract must identify what enters, what leaves,
 who owns the state, who may act, what depends on it, what failure means, how to

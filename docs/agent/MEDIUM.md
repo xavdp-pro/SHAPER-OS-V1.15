@@ -29,7 +29,7 @@ model credentials or reading obligations. No route selection grants deployment.
 4. Build the dependency explanation: what this function receives, provides,
    persists, requires at startup and must preserve when it fails or is replaced.
 5. Identify the realization profile and explain which choices are specific to
-   it. Do not turn a database, language or provider choice into universal law.
+   it. Preserve the selected MariaDB foundation; do not turn incidental language or provider choices into universal law.
 6. Write the expected observable behavior and failure/recovery scenarios before
    proposing implementation in the separate realization repository.
 7. Follow the mandate through execution, independent observation of effects,

@@ -1,5 +1,16 @@
 # Construction, Hardening and Production Lifecycle
 
+## Hosting and source continuity
+
+The [current composition direction](../../decisions/2026-10-25-COMPOSITION-OWNERSHIP-AND-CONTINUITY.md)
+separates environment from physical topology. DEV, TEST and PROD instantiate
+versioned class/specialization contracts under declared direct/LXC/nested host
+profiles. Linux/macOS/Windows development uses a compatible Linux runtime and
+private environment configuration. Build from source, select a locked artifact
+or restore a consistent recovery point explicitly. Source products and private
+`-lab` records retain separate custody; instance secrets/data never enter a template.
+
+
 > **Intent Classification**: GENERIC INTENT (Universal / Parameterized Blueprint)
 
 DEV, TEST and PROD are separate universe instances and data scopes. A local first build is DEV; a public console or successful model reply does not make it production.
@@ -55,7 +66,7 @@ Replay the accepted integrated workflows under the production rights, verifying 
 
 ## TEST: rebuild, qualify and destroy
 
-1. Create a blank system-container universe, LXC or nested Podman as selected; do not reuse the DEV filesystem.
+1. Create a blank isolated instance under the selected direct, LXC or nested Podman hosting profile; do not reuse the DEV filesystem.
 2. Apply the qualified host profile, install declared runtime prerequisites and retrieve the pinned realization source.
 3. Bootstrap test Vault/state and build every image from source without inherited caches. Register the class in its own fleet map for promotion.
 4. Deploy by the manifest/topology, run native, real integration, regression and typed deliverable checks, including the final permissions of the candidate production profile.

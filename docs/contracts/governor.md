@@ -58,7 +58,7 @@ nor starts another repair budget. Leaving rest requires the documented re-ask
 where permitted or authorized human/root action under
 [Rule 27](../../RULES.md#rule-27); the event table grants no additional recovery authority.
 
-`PURRING` is dated; the canonical instance `status.json` exposes state, `lastPurr` and `lastBackup`. Staleness triggers observation. A DEGRADED row does not silently self-clear; only the documented bounded recovery, explicit re-ask where permitted or authorized human/root action can change it.
+`PURRING` is dated; the canonical instance `status.json` projects authoritative private-MariaDB state, `lastPurr` and `lastBackup`. Staleness triggers observation. A DEGRADED row does not silently self-clear; only the documented bounded recovery, explicit re-ask where permitted or authorized human/root action can change it.
 
 ## Exact HTTP door
 

@@ -34,7 +34,7 @@ deployment, engine-binding or migration steps below when the authorized work
 actually requires them. The principal agent's full-reading obligations remain
 unchanged.
 
-For new construction, identify the intended result, human authority, role, jurisdiction, selected host, resources, dependencies, acceptance and recovery. A new realization may begin empty. Record this OS revision and create concrete intent, manifests, tests, code and recipes there. Local construction needs a capable authorized Podman/LXC host; remote work uses authorized SSH. Probe the real host before choosing its settings.
+For new construction, identify the intended result, human authority, role, jurisdiction, selected host, resources, dependencies, acceptance and recovery. A new realization may begin empty. Record this OS revision and create concrete intent, manifests, tests, code and recipes there. Local construction needs an authorized compatible Linux runtime with the selected direct/LXC/nested Podman profile; remote work uses authorized SSH. Probe the real host before choosing its settings.
 
 Authorized DEV uses the provider-equivalent full noninteractive execution mode without CLI sandbox or repeated approval prompts. The tandem directs construction and observes changing interactions. Resolve implementation details autonomously; a missing recipe is work, not a missing law. A missing human decision or credential blocks only its dependent action. Do not delete unknown state, use production mail for DEV/TEST, or promote beyond the mandate.
 

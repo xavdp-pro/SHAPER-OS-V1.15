@@ -28,9 +28,9 @@ Distinguish that requested logical name from the identifiers of the realization.
 For example, retain `univ-example` as the human's name and record its mapping to
 a single-class repository `univ-example-core`, whose manifest's `universe`
 field matches that class name, and the runtime instance `univ-example-core-dev`.
-When a realization workspace becomes a class implementation repository, it follows
-the [class repository grammar](../../RULES.md#rule-1); it is not a new repository
-kind. The [short-slug exception](../architecture/NAMING.md#the-universe-field-and-the-repo-name)
+When a realization workspace becomes a class implementation repository, it declares its source role and class identity under
+[Rule 1](../../RULES.md#rule-1), with a distinct private `-lab` companion. The
+shown `univ-` mapping is the compatible grammar for that lineage. The [short-slug exception](../architecture/NAMING.md#the-universe-field-and-the-repo-name)
 for universes inside the base still applies. Record the chosen mapping without
 renaming unrelated existing projects or requiring a registry before construction.
 
@@ -77,7 +77,7 @@ requested LXC guest system; the agent checks the host and guest separately.
 | :--- | :--- |
 | A capable coding agent with this repository and authorized tools | Read the frame, create files, run commands, build and observe results. Prior SHAPER history is unnecessary. |
 | The named local machine or an SSH destination, with creation rights | Confirm the target, existing workloads, available CPU, memory, storage and network access. |
-| Suitable Podman or LXC hosting | Prove that the chosen outer universe environment can run its inner Podman functional units; an installed binary alone is insufficient. |
+| Suitable Podman or LXC hosting | Verify the selected direct/LXC/nested profile with actual functional Podman containers and builds; an installed binary alone is insufficient. |
 | A separate writable realization workspace | Generate and retain code, tests, versioned composition and evidence. Prepare build dependencies from available sources within the mandate. |
 
 Any credentials or external services needed by the requested functions are
@@ -134,17 +134,17 @@ functional units run in their own Podman containers, each with its private
 MariaDB. Check the selected host's ability to support that composition before
 building it; do not silently change the profile to work around a hosting issue.
 
-With Podman hosting under the current model, the universe is an outer system
-container carrying its own Podman functional units. With LXC hosting, the LXC
-guest supplies that outer boundary. The agent checks the nesting, storage,
-network and privilege requirements on the actual host before claiming it is fit.
-The operator reports repeated deployment and daily use of this nested model;
-those practical results and qualification of the new candidate have their own
-evidence scopes, as the [crosswalk](../GOVERNING-CORPUS.md#current-construction-crosswalk) explains.
+With direct Podman hosting, functional components run on the authorized Linux
+runtime host. LXC and nested Podman supply an outer boundary when that profile
+is selected. Linux, macOS and Windows development declares its compatible Linux
+backend and private environment configuration. The agent checks actual storage,
+networking and privileges while preserving the same class/state contracts.
 
-Reuse the mandate, hosting choice and parameters already supplied. A Podman
-hosting request follows the nested form described above; it does not require
-asking the human to select LXC again. Existing authorization covers ordinary
+Reuse the mandate, hosting choice and parameters already supplied; select the
+applicable declared profile without forcing physical nesting from a logical name.
+
+
+Existing authorization covers ordinary
 DEV construction choices. Apply the declared cognition policy (its documented
 default when no override is supplied), and request credentials only if the
 selected engine actually needs them and they are unavailable through authorized

@@ -6,9 +6,7 @@ Identifier: **COGNITION-BRIDGE-CONTINUITY**.
 Status: **[MANDATE]** shared semantic obligations from the
 [6 October direction](../../decisions/2026-10-06-PRACTICAL-DEPLOYMENT-AND-BRIDGE-CONTINUITY.md).
 Purpose: give a bounded agent the context and continuity needed to perform
-precise work through replaceable cognition adapters. This is an intent and
-qualification contract; it contains no implementation and does not certify an
-existing adapter.
+precise work through replaceable cognition adapters. It defines the shared intent, interfaces and qualification obligations.
 
 ## Role and authority
 
@@ -37,8 +35,7 @@ Declare the actual approval, sandbox, tool and network behavior of the selected
 adapter/version. If it cannot provide the requested execution policy, expose that
 specific capability gap and construct or adapt a suitable implementation; do not
 silently downgrade the task or substitute fake execution. CLI flags and provider
-settings belong to adapter realizations. This documentation task does not enable
-those modes on an existing runtime.
+settings belong to adapter realizations. The selected realization binds this policy to its authorized runtime.
 
 ## Security by design, followed by a dedicated hardening phase
 
@@ -198,13 +195,13 @@ invent tool execution for it. Missing provider access is an explicit unavailable
 state; a simulated run is test apparatus and cannot qualify real cognition.
 
 The realization owns exact wire fields, endpoint mappings, authentication,
-limits, supported versions and tests. Existing adapters need not already expose
-a common context field or registration endpoint. Record any missing capability
-as an implementation gap, then implement it outside OS when authorized.
+limits, supported versions and tests. The realization supplies the context/session interface through its declared
+transport and maps it to the common semantics. Versioned capability observations
+and implementation work records belong in its private project `-lab`.
 
 ## Realization capability evidence matrix
 
-**[EXPLANATION]** Keep the matrix in the realization repository, for the exact
+**[EXPLANATION]** Keep the matrix in the private realization `-lab`, linked to the exact
 adapter variant, source revision, engine/harness version, configuration and
 environment examined. This is a reusable record format, not a matrix of current
 provider capabilities or certification supplied by SHAPER OS.
@@ -221,7 +218,7 @@ a real engine run and an independently checked effect are different evidence.
 | :--- | :--- |
 | Execution mode and tools | API-only or tool-capable path; actual executor; DEV noninteractive behavior and applicable production permissions. Text generation alone does not prove execution. |
 | Context and continuity | First delivery, changed context on resume, native session or explicit replay, loss/reconstruction and reconciliation of uncertain effects. |
-| Durable ownership | Private MariaDB metadata and declared engine stores; restart/restore observations for the exact configuration. |
+| Durable ownership | Complete authoritative application/session state in private MariaDB, with declared reconstruction of native-engine working stores; restart/restore observations for the exact configuration. |
 | Run and event lifecycle | Correlation, concurrency, unavailable dependencies, cancellation and terminal ownership, including interrupted attempts. |
 | Effects and authority | An authorized real action, its independent effect check and relevant refusal boundaries; identify which Runtime enforces them. |
 
@@ -231,7 +228,8 @@ runtime state. Requalify affected rows when the implementation, engine, tools,
 configuration or target environment changes. A gap in a selected reference
 blocks its dependent qualification, while unrelated base construction proceeds.
 The [OpenCode](cognition-bridge-opencode.md) and [Meta Muse](cognition-bridge-meta-muse.md)
-profiles supply their scoped requirements and historical source observations.
+profiles supply their scoped requirements; source observations remain in the
+private project `-lab`.
 
 ## Example: an email-monitoring unit
 

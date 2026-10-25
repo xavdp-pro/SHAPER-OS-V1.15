@@ -11,7 +11,7 @@ the strongest engine will all be different products. A system that hardcodes
 *which model* is obsolete on that day; a system that declares *what the work
 requires* is not.
 
-So a brick never says "use model X". It says: **this is the reasoning depth my
+So a component never says "use model X". It says: **this is the reasoning depth my
 work needs, this is the throughput order of magnitude it needs, and this is what
 I do when neither is available.** Matching requirement to engine is a separate,
 replaceable decision.
@@ -38,7 +38,7 @@ and is never auto-dispatched (Rule 21).
 | :--- | :--- | :--- |
 | `D0` | No model at all. Deterministic code. | Health probes, checksum verification, boot order |
 | `D1` | Literal transformation: extract, classify, format, follow an unambiguous step | Log tagging, field extraction, acknowledgment text |
-| `D2` | Procedural work: multi-step tool use, follow a written runbook, fix a failure whose cause is already stated, write a test from a template | Standard deployment, routine brick operation |
+| `D2` | Procedural work: multi-step tool use, follow a written runbook, fix a failure whose cause is already stated, write a test from a template | Standard deployment, routine component operation |
 | `D3` | Derivation: infer the action from principles, resolve conflicting evidence, plan across a whole universe, decide what proof is sufficient | Clean-sheet TEST, incident diagnosis, parent-side repair |
 | `D4` | Architecture: change the law or the intent, design taxonomy, decide cross-universe promotion | Doctrine work — **human co-signature required**, under the [governing authority and scope contract](../GOVERNING-CORPUS.md#authority-and-ownership) |
 
@@ -81,7 +81,7 @@ declaration belongs to the work, not to the person: a job that needs `H3` must b
 sent somewhere that has `H3`, and a job that only needs `H0` must never be
 charged for a horizon it will not use.
 
-A brick that requires a horizon it cannot be given must say what it does about
+A component that requires a horizon it cannot be given must say what it does about
 it, exactly as with depth and throughput — `refuse`, `queue`, or run and record
 the limitation. An answer given at `H1` to a question that needed `H3` is not
 wrong in form; it is confident and under-informed, which is worse.
@@ -93,11 +93,11 @@ decision**, not an accident:
 
 | Policy | Meaning |
 | :--- | :--- |
-| `refuse` | The brick must not run below its declared requirement. Failing loudly is correct. |
+| `refuse` | The component must not run below its declared requirement. Failing loudly is correct. |
 | `queue` | Wait for a qualifying engine. The job is parked as `AWAITING_CAPACITY`, the human is told. |
 | `allowed-with-note` | Run anyway, and record the degradation as an audit event so the result is never mistaken for a nominal one. |
 
-A brick that runs degraded **silently** is a Rule 0G violation: the output looks
+A component that runs degraded **silently** is a Rule 0G violation: the output looks
 like nominal output and nothing in the record says otherwise.
 
 For `AWAITING_CAPACITY`, the realization identifies the cognition selection or
@@ -114,7 +114,7 @@ owns the generic claim and handoff requirements; cognition owns this waiting rea
 
 ## The declaration
 
-In the brick's `INTENT.md`:
+In the component's `INTENT.md`:
 
 ```markdown
 ## Cognition
@@ -127,7 +127,7 @@ In the brick's `INTENT.md`:
   ambiguity to resolve, no interactive latency requirement.
 ```
 
-In `manifest.json`, per brick (optional, overrides the brick default for this
+In `manifest.json`, per component (optional, overrides the component default for this
 universe only — [Rule 33](../../RULES.md): specialize by declaration before forking):
 
 ```json

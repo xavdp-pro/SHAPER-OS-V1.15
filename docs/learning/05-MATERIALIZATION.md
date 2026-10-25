@@ -20,7 +20,7 @@ except the explicitly labeled September target below.
 Materialization makes an intention operational under an explicit realization
 profile. The OS explains purpose, responsibilities, constraints, relationships
 and evidence. A separate realization repository owns implementation packages,
-brick artifacts, executable schemas, migrations, manifests, tests and deployment
+component artifacts, executable schemas, migrations, manifests, tests and deployment
 recipes. No implementation language or database engine is necessary to read OS.
 
 The construction agent produces these artifacts from the intentions and
@@ -49,7 +49,7 @@ The tandem agrees that future quotes use validated current prices while accepted
 quotes retain their committed values. It selects a concrete profile, derives unit
 contracts and dependencies, implements outside OS, verifies behavior, qualifies
 deployment and records observed results. Packages may supply reusable code to
-bricks; that is an implementation arrangement, not a replacement of “briques.”
+components; packages, images and runtime instances describe different realization concerns. “Brick/brique” remains an identifier compatibility alias.
 
 **[TARGET S05/S07]** The [September profile](../profiles/SEPTEMBER-CONTAINER-MARIADB.md)
 preserves the Podman/container construction model and private MariaDB per unit.

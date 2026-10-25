@@ -2,7 +2,8 @@
 
 This file is a canonical part of the [complete rulebook](../../RULES.md#complete-rulebook).
 Read all seven parts in order. The index is navigation, not a substitute for the rule bodies.
-The original rule identifiers, scope and binding force are unchanged.
+Original rule identifiers remain stable. Current scope follows the explicit
+[25 October direction](../../decisions/2026-10-25-COMPOSITION-OWNERSHIP-AND-CONTINUITY.md); earlier adopted revisions retain their recorded boundaries.
 
 <a id="rule-13"></a>
 ### Rule 13: Hybrid WireGuard Private Mesh Network & Mandatory Peer Naming
@@ -40,17 +41,18 @@ A distributed realization declares and proves its WireGuard mesh. An isolated fi
 
 <a id="rule-16"></a>
 ### Rule 16: Multi-level backup (container → files tar.bz2 → database → git → S3)
-These five levels cover distinct recovery needs; missing a required level is a gap. Their implementation belongs to the realization.
+These recovery responsibilities are selected and composed under the service contract. Each required state owner has a coherent recovery path; their implementation belongs to the realization.
 
 | Level | What | How (Shaper / Podman spirit) |
 | :--- | :--- | :--- |
-| **1. Infra — entire container** | The universe container as a whole — the LXC/CT (or VM), or the outer Podman container of a `nested` universe | Host snapshot (`vzdump` / ZFS / Proxmox). For `nested`, a consistent export of the stopped outer container plus its declared volumes is the baseline; prove its restoration on the selected host. Checkpoint/live migration is a separate optional capability, not a universal prerequisite or implied proof. This outer recovery does not replace the inner levels. |
+| **1. Infrastructure** | The selected direct host, VM, LXC/CT or nested outer boundary and its reconstruction parameters | Declare snapshots, reconstruction or consistent stopped-container export where appropriate. Preserve external means to rebuild a lost boundary; infrastructure capture complements functional-state recovery. |
+
 | **2. Files — persistent volumes** | Only what must survive a recreate | Archive **Podman bind-mounts** (`<univ>/sav/*`, `/data/<slug>/` persistent volumes) as **`tar.bz2`** (pbzip2), like turbinobash app backups. **Exclude `nosav/`**, caches, image layers, `node_modules`. |
-| **3. Databases** | Every functional Podman's relational / vector state, consistent and separate | Run `mariadb-dump` independently for every functional Podman's private MariaDB — inspect the selected image’s actual client names (`mariadb`/`mariadb-dump` or its documented compatible alternatives); a script falls back to `mysqldump` only where that name still exists. Plus Qdrant snapshots and JSONL rotation where declared. A recovery point is incomplete if one functional database is omitted, and no live volume tar substitutes for a crash-consistent dump. |
+| **3. Databases** | Every functional Podman's relational / vector state, consistent and separate | Run `mariadb-dump` independently for every functional Podman's private MariaDB — inspect the selected image’s actual client names (`mariadb`/`mariadb-dump` or its documented compatible alternatives); a script falls back to `mysqldump` only where that name still exists. An optional derived vector index is reconstructible; declared snapshots accelerate reconstruction. JSONL rotation preserves exports, not an alternate authoritative database. A recovery point is incomplete if one functional database is omitted, and no live volume tar substitutes for an authoritative consistent database capture. |
 | **4. Git** | Code and architecture | Immutable tagged repo. Never treat git as a data backup. |
 | **5. S3 / R2** | Off-site copy of 2+3 (and optionally 1) | Encrypted archives (AES-256-GCM), cold bucket (Cloudflare R2 / Glacier-class). Copies **the tar.bz2 and dumps**, not a second git clone pretending to be backup. |
 
-**Files (level 2) are the volumes, not the overlay.** Recreating the Podman container from a tagged image + restoring `sav/*.tar.bz2` + DB dump **is** the inner restore. Level 1 is the outer safety net (CT gone). With 1–5 together, PCA/PRA data path is covered.
+**Files (level 2) are the volumes, not the overlay.** Recreating the Podman container from a tagged image + restoring `sav/*.tar.bz2` + DB dump **is** the inner restore. Infrastructure recovery restores the selected hosting boundary. The service declares PCA/PRA (BCP/DRP), failure domains, RPO/RTO, capture coordination and restore order. Backups preserve recoverable points; replicas support continuity and can propagate corruption. Redundancy does not replace backups. Promotion of a replacement writer excludes the old writer through controlled activation, then reconciles pending effects before resuming service. These responsibilities keep a localized failure recoverable without imposing distributed SQL on every component.
 
 **The object key is derived, never improvised.** Each function-owned database
 recovery point is stored below
@@ -165,7 +167,7 @@ contracts below.
     * **Data & Imports (CSV, JSON)**: Column typing, primary key uniqueness, provenance validation.
     * **System Actions & External Dispatch**: Payload schema check, dry-run simulation when supported, then the authorized real effect and independent downstream evidence. A dry run alone cannot prove delivery.
   * In case of failure, the job transitions to self-correction or alerts the operator with explicit machine-verifiable diagnostics.
-* **Isolation Is Required by the Contract Type, Not by the Rule**: an ephemeral sandbox exists to contain **execution**, so it is mandatory only where the verification actually runs the artefact — the `code` contract. Documents, data and actions are verified by schema, arithmetic, typing and provenance checks, which execute nothing untrusted and therefore run in the verifying process itself. Demanding a container for those buys no safety and costs privilege, deployment weight and latency. A brick that only produces documents must not be granted runtime access in the name of this rule.
+* **Isolation Is Required by the Contract Type, Not by the Rule**: an ephemeral sandbox exists to contain **execution**, so it is mandatory only where the verification actually runs the artefact — the `code` contract. Documents, data and actions are verified by schema, arithmetic, typing and provenance checks, which execute nothing untrusted and therefore run in the verifying process itself. Demanding a container for those buys no safety and costs privilege, deployment weight and latency. A component that only produces documents must not be granted runtime access in the name of this rule.
 * **No Untyped Deliverable**: A job whose output type has no declared verification contract MUST NOT be silently marked `COMPLETED`. It is held in `NEEDS_CONTRACT` and escalated to the human, who declares the contract once — thereafter it is reusable for that type. Rule 0G applies: an absent contract is never a reason to pass.
 * **Activation Follows the Lifecycle**: DEV may record `NEEDS_CONTRACT` while constructing an unfinished typed gate, but cannot call the affected result verified or promote it. The realization declares and tests its enforcement switch, such as `QUALITY_GATE_ENFORCE=1`. Finalize enforcement during dedicated hardening after integrated acceptance and prove it before production. No real-client production action bypasses its typed evidence contract.
 
@@ -174,7 +176,7 @@ contracts below.
 <a id="rule-21"></a>
 ### Rule 21: Distributed Multi-Agent Delegation Matrix (Abstract Capacity Classes)
 * **Abstract Capacity Classes (Vendor-Agnostic)**:
-  * Maestro is an orchestrator, supervisor, and auditor; it NEVER executes heavy transformation code directly.
+  * Maestro deterministically schedules and records due work; the owning supervisor governs reconciliation and the declared worker performs transformation. Maestro NEVER executes heavy transformation code directly.
   * **`heavy-engineering`**: High-reasoning architecture, multi-file refactoring, autonomous code generation.
   * **`rapid-iteration-ui`**: Interactive GUI components and visual refinement.
   * **`infra-ops`**: Vulnerability scans, system administration, container orchestration.

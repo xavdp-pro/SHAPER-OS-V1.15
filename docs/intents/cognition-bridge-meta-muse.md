@@ -17,12 +17,9 @@ Declare whether the realization uses a CLI with tools or a conversation API.
 These are different execution capabilities. Do not describe an API-only adapter
 as a CLI executor, or infer shell/SSH capability from a fluent answer.
 
-The source comparison on 6 October 2026 found an API adapter that replays stored
-conversation messages and a current system instruction; it has no vendor-native
-session and no local tool-execution loop. Its local history is bounded and only
-successful turns join that history. The older CLI-oriented intent described a
-different realization target, not the capabilities of that API implementation.
-This is a source observation, not a current provider-service or runtime test.
+The selected variant declares its native-session or replay semantics and its
+actual executor. Version-specific source observations and release evidence
+belong in the private project `-lab`, linked to the product revision.
 
 ## API realization
 
@@ -40,9 +37,9 @@ this adapter for analysis/output only. Do not pretend it performed shell command
 handled a mailbox or changed a remote system.
 
 Under the current construction profile, the bridge's authoritative durable
-conversation/context metadata belongs in its private MariaDB. JSON-file history
-in an existing prototype is an implementation gap to migrate and restore-test,
-not an exception to the profile or a silent migration of a running deployment.
+conversation/context state and history belong in its private MariaDB. Native
+engine files or exported histories are managed working material or projections
+with explicit reconstruction and recovery semantics.
 
 ## CLI realization, when selected
 

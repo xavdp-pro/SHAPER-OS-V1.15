@@ -1,154 +1,116 @@
-# September container and MariaDB target
+# Functional Podman and private MariaDB construction profile
 
-Profile identifier: **SEP22-CONTAINER-MARIADB**.
-Purpose: describe the Podman and private-MariaDB construction profile, including
-unit ownership, composition, bootstrap and recovery. **TARGET** statements
-apply within the declared profile; realization records describe actual operation.
-Owners: local [RULES](../../RULES.md), [topology](../architecture/TOPOLOGY.md),
-[unit contracts](../GOVERNING-CORPUS.md) and the scoped decisions below.
-The [source map](../../review/SOURCE-MAP.md) connects their local meanings.
+Profile lineage identifier: **SEP22-CONTAINER-MARIADB**.
+Current scope follows the [25 October direction](../../decisions/2026-10-25-COMPOSITION-OWNERSHIP-AND-CONTINUITY.md).
+The filename and lineage identify the established foundation; adopted revisions
+remain explicit. Owners: [Rules 4/11/26](../../RULES.md), [composition](../architecture/COMPOSITION.md),
+[topology](../architecture/TOPOLOGY.md) and the detailed [unit contracts](../GOVERNING-CORPUS.md).
 
 ## Applicability
 
-**[TARGET S05/S07]** This is the preserved target for reconstruction of the
-functional units in the existing SHAPER universe construction model described
-by those sources. “Existing work” means work governed by that model, not merely
-files created before a calendar date. Creating a new unit or a second universe
-under the same model does not exempt it from these obligations.
-
-**[EDITORIAL]** This edition records the selected construction profile. Its
-applicable obligations guide realization choices. For a new operational request, record the governing
-realization and whether its declared construction model adopts this target.
-If scope is uncertain, resolve it with the authorized owner before selecting a
-conflicting storage or isolation mechanism. No alternate profile is adopted here.
-
-A “future profile” means a separately proposed, explicitly approved construction
-model with a documented mapping of all affected obligations and new qualification.
-It is not a choice an implementation agent may infer from the word agnostic.
-For new work under the current construction model, the owner has answered the
-applicability question: see the
-[24 September functional-unit MariaDB decision](../../decisions/2026-09-24-FUNCTIONAL-UNIT-MARIADB.md).
-The local [rules](../../RULES.md), [topology](../architecture/TOPOLOGY.md)
-and [perimeters](../architecture/PERIMETERS.md) carry these obligations in
-this edition. See the [governing corpus](../GOVERNING-CORPUS.md) for their owners.
+The current construction model uses Podman functional boundaries and complete
+private MariaDB application persistence. Every new or replaced functional owner
+carries that contract. An agent selects ordinary implementation details inside
+this foundation; changing the foundation requires an explicit new direction.
+The [24 September decision](../../decisions/2026-09-24-FUNCTIONAL-UNIT-MARIADB.md)
+and [Turbinobash method](../../decisions/2026-10-10-UNIT-DATABASE-TURBINOBASH-METHOD.md)
+provide its lineage. The 25 October direction changes hosting-profile selection
+and table-partition applicability, preserving functional ownership.
 
 ## Practical topology
 
-**[MANDATE: 6 October clarification]** The operator reports repeated deployment
-and extensive daily use of this universe model, including nested Podman.
-Podman hosting retains an outer system-container universe running its inner
-Podman functional units; LXC hosting supplies that outer system boundary.
-An isolated host application network does not replace the universe container.
-Each unit has its own MariaDB server instance, not merely a separate database
-on a shared server. Docker and a shared development database are not adopted
-alternatives here.
+Infrastructure hosts the selected profile: direct functional Podman containers,
+LXC with functional containers, or nested Podman with functional containers.
+The class declares the profile and required host capabilities; its instance
+records actual placement. A logical space organizes service membership and
+relationships. The current glossary uses universe as a logical-space alias; legacy `univ-*`
+profiles retain their operational-composition usage with an explicit class-role
+mapping, independently of physical hosting.
 
-The [current construction crosswalk](../GOVERNING-CORPUS.md#current-construction-crosswalk)
-identifies the current local requirements. Qualify the newly generated candidate
-and chosen host while preserving the operator-attested record of practical use.
+For Linux, macOS or Windows development, declare the compatible Linux runtime
+backend and environment-specific mounts, networking, storage and private config.
+The same class, interfaces and state owners continue into production through
+versioned builds, locked artifacts or coherent restoration. [Rule 11](../../RULES.md#rule-11)
+owns containment; no logical nesting requires automatic physical nesting.
 
 ## Preserved choices
 
-**[TARGET S05/S07]** Each functional unit has one responsibility, one isolated
-runtime container in the Podman realization, its own system identity and its own
-private MariaDB. Its functional slug identifies the unit, system account,
-database account and database. Application permissions are limited to that
-database; administration uses a separate authorized path. The MariaDB server
-runs in the same container as the application, by the Turbinobash method of
-[Rule 4](../rules/02-CONSTRUCTION.md#rule-4) and the
-[10 October direction](../../decisions/2026-10-10-UNIT-DATABASE-TURBINOBASH-METHOD.md).
+Each functional component has one responsibility, one Podman runtime boundary,
+one system identity and its own MariaDB server in the same container. The
+functional slug names the application account, database account and database.
+The server uses a separate engine account and private local Unix socket;
+application access and administrative root access remain distinct. Application
+accounts receive neither administrative credentials nor schema-management rights.
+[Rule 4](../rules/02-CONSTRUCTION.md#rule-4) owns the complete filesystem,
+credential, identity and administration contract.
 
-Under the [13 October partition direction](../../decisions/2026-10-13-MONTHLY-SQL-PARTITIONS.md),
-time-series histories and call-detail records use monthly SQL partitions in each
-owning private MariaDB. Current mutable state and pending work may remain
-ordinary tables. Rule 4 owns construction and Rule 26 owns the bounded inventory
-and persistence/recovery evidence; retention remains a separate declared choice.
+All authoritative application state belongs to that owner's MariaDB: business
+records, schedules, occurrences, queue leases, logs, agent session/context
+continuity, action evidence and pending effects. Native engine stores are
+managed working material or reconstructible projections. Durable media and
+other artifacts retain database-owned identity, lifecycle and recovery links.
+A selected derived vector index is reconstructible and does not replace MariaDB.
 
-In each minimal universe composition, Vault, Logger, Queue and Maestro are the
-four mandatory base units. Under the [perimeter taxonomy](../architecture/PERIMETERS.md),
-Vault, Logger and generic Queue are P1; Maestro is P2. “Base” names the composition,
-not a single perimeter. Cognition Bridge is optional when a class declares
-bounded cognition jobs (see the
-[generic bridge intent](../intents/cognition-bridge.md) and its scoped adapters). No base unit depends on that adapter. Maestro remains
-idle when no schedule is declared. This is a property of **this target**, not a
-claim that every imaginable implementation must contain these four products.
+Partition tables according to their workload, volume, queries and retention.
+Ordinary tables remain appropriate where partitioning adds no useful benefit.
+UTC monthly histories are a supported declared policy; the
+[earlier monthly direction](../../decisions/2026-10-13-MONTHLY-SQL-PARTITIONS.md)
+retains its historical scope. Rules 4 and 26 now apply the explicit 25 October
+workload-based policy. Rollover alone grants no deletion authority.
 
-**[MANDATE: 24 September reference choice]** The
-[operator decision](../../decisions/2026-09-24-REFERENCE-OPENCODE-BRIDGE.md)
-and [Reference Universe Procedure](../procedures/01-REFERENCE-UNIVERSE.md) now
-select the [OpenCode Cognition Bridge](../intents/cognition-bridge-opencode.md)
-by default as a fifth unit in that
-reference composition. The four base responsibilities above remain independent
-of the bridge; an installed bridge may remain idle until authorized work is
-declared. This scoped choice does not turn OpenCode into a universal
-technology law or assert that a new reference has already been built.
+The generic stem-cell base contains Vault, Logger, Queue and Maestro. Vault,
+Logger and generic Queue are P1; deterministic Maestro is P2. The reference
+adds OpenCode as its default cognition bridge under the
+[24 September choice](../../decisions/2026-09-24-REFERENCE-OPENCODE-BRIDGE.md).
+The base remains operational without cognition; Maestro is idle without schedules.
+A specialized cell/service adds one or more domain components and their owning
+contracts. Its class and specialization versions remain distinct from the
+identity, credentials, state and placement of each instance.
 
-Each unit preserves a durable evidence outbox together with its state transition.
-Logger's receipt, Queue's responsibility and the consumer's real effect have
-different meanings. No cross-database atomic transaction is assumed. Active
-obligations do not become settled history because a month ended.
+Each owner preserves pending evidence with its local state transition. Logger's
+receipt, Queue's responsibility and the consumer's effect retain different
+meanings. Cross-owner commands/events carry stable identities and reconciliation;
+a local transaction is not a distributed transaction across databases.
 
-## Scope placement and unresolved structure
+## Scope placement
 
-**[TARGET S05/S07]** The Execution Framework describes and constrains the hosting
-of the units of one running
-universe instance. Each minimal universe has its declared base composition;
-the sources do not authorize replacing two universes' Logger units with one
-shared state-owning Logger merely because they share a space or host. A separate
-aggregation view would be a different declared function and crossing, not an
-implicit merge of their authoritative histories.
+A logical space declares its service memberships, scoped governance and permitted
+crossings. It does not automatically acquire a duplicate base stack merely by
+existing. Functions actually owned at space level are declared as such with their
+own state and lifecycle. Aggregation is a separate receiving function, not an
+implicit merger of source databases or histories.
 
-**[OPEN F-03a]** The sources reviewed here do not specify a mandatory base-unit
-composition for a containing space itself. Do not recursively manufacture one.
-**[TARGET]** Use the local [perimeter contract](../architecture/PERIMETERS.md)
-for doors across jurisdictions. The realization identifies its actual authority
-roles and approval records. A sender's request or a UI declaration alone is not
-proof of the receiving side's authorization.
-**[OPEN F-03c]** Define permitted space nesting and recursion depth for the
-chosen realization with the authorized owner. Its composition declares finite
-scope, resource limits and authority before recursive creation. The editorial
-crosswalk tracks the general mapping of these choices.
+The realization records logical parent/child relationships, finite resource and
+creation bounds, actual authority on both sides of each crossing, and the owner
+of recovery/retirement. A standing mandate covers matching work without renewed
+approval. Containment, hosting and a screen request grant no authority by themselves.
 
-## Realization record for a containing space
-
-**[EXPLANATION]** F-03a/c leave no universal space composition, named authority
-role or maximum depth to infer. They identify choices to declare for the actual
-realization; they do not suspend the unit, jurisdiction or containment contracts.
-The constructor records the following before the dependent crossing or recursive
-creation, using the existing mandate where it already determines the choice:
-
-| Record | Concrete decision and evidence |
-| :--- | :--- |
-| Space and composition | Identify the containing space, its parent and contained universes; list any space-owned functions and their state owners, or state that none are declared. Each universe retains its own required base units. |
-| Doors and authority | For each crossing, identify sending and receiving jurisdictions, purpose, data/actions, authorized roles on both sides and the receiving side's authorization record. A standing authorization may cover matching exchanges; a sender cannot ratify access for the receiver. |
-| Finite nesting | Declare the permitted parent/child relationships, a finite depth bound with its counting convention, and resource/creation limits. Identify who enforces them before creating a child and who owns its recovery and retirement. |
-| Unresolved choices | Name the missing decision, its authorized owner and the dependent operation held pending it. Continue independent authorized construction. |
-
-This record belongs with the realization's versioned intent and
-[topology](../architecture/TOPOLOGY.md). Use existing role names and authority;
-do not create a new global approver or request the same approval again. An
-isolated universe without inter-universe crossings need not invent a surrounding
-space infrastructure. A declared finite hierarchy qualifies that realization;
-it neither settles a universal depth nor closes the historical F-03 questions
-for every composition.
+| Record | Meaning |
+| --- | --- |
+| Composition | Stable class, specialization and instance identities; base and domain components; logical spaces |
+| Placement | Selected profile, host capabilities and physical boundaries |
+| Doors | Sender/receiver, purpose, data/actions, standing authority, refusal and evidence |
+| Fractal scope | Governor responsibilities, maker/worker jurisdiction, finite creation bounds and external recovery owner |
+| Source custody | Product intentions/code and separate private project `-lab`; private user configuration/data |
 
 ## Bootstrap and recovery direction
 
-**[TARGET S07]** The parent construction path supplies initial Vault identity,
-database access and separately delivered matching key material. Vault verifies
-continuity before other units obtain scoped credentials. The reconstruction
-direction is Vault, then Logger, Queue, Maestro, followed by optional Cognition
-Bridge if selected. This is a dependency direction, not a substitute for each
-unit's readiness, outbox, lease and failure contract.
+The authorized parent supplies initial Vault identity and separately held keys.
+Vault verifies continuity before delivering scoped credentials. The actual
+acyclic hard-dependency graph orders private state, Vault, Logger, Queue,
+Maestro and the selected bridge; parallel work follows declared independence.
+A readiness receipt carries its precise meaning rather than replacing a
+consumer's acceptance or an independently observed effect.
 
-Before data-bearing migration, prove restoration of the owning unit's database
-and persistent volumes, then qualify a bounded rollout. Rebuilding an image must
-not silently create an empty database or a new Vault cryptographic identity.
+Small owned state units support predictable maintenance and localized restore.
+The service declares PCA/PRA, RPO/RTO, consistent database/artifact capture,
+separate backups and replicas, and externally controlled writer activation.
+Restoration uses known class/schema/artifact revisions, excludes stale writers,
+and reconciles uncertain effects before work resumes. [Rules 12/16/30](../../RULES.md)
+own protection and migration. An image rebuild preserves its non-reproducible
+state and cryptographic identity.
 
-Read the detailed local [Vault](../contracts/vault.md),
-[Logger](../contracts/logger.md), [Queue](../contracts/queue.md),
-[Maestro](../contracts/maestro.md), [bridge](../intents/cognition-bridge.md)
-and [lifecycle](../agent/LIFECYCLE.md) contracts before deriving startup,
-recovery and acceptance tests. The realization defines and verifies its actual
-coherent recovery points. This profile contains no executable configuration,
-schema or implementation recipe.
+Read [Vault](../contracts/vault.md), [Logger](../contracts/logger.md),
+[Queue](../contracts/queue.md), [Maestro](../contracts/maestro.md),
+[bridge](../intents/cognition-bridge.md) and [lifecycle](../agent/LIFECYCLE.md)
+for their exact interfaces, authority and recovery obligations.

@@ -46,8 +46,9 @@ obligations and distinguish handover from production promotion.
 ## Comprehension exercise
 
 Complete the [medium route's scenarios](MEDIUM.md). Then explain which principles
-remain invariant if the implementation language, model provider, database or
-hosting topology changes. Identify what must be re-qualified and what cannot
+remain invariant if the implementation language, model provider or
+hosting topology changes within the selected profile; a database-foundation change
+requires explicit new direction. Identify what must be re-qualified and what cannot
 be concluded from an unchanged interface alone.
 
 Examine the result from three perspectives: kernel/governance, human/organization,

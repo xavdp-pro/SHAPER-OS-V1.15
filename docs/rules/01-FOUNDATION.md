@@ -2,7 +2,8 @@
 
 This file is a canonical part of the [complete rulebook](../../RULES.md#complete-rulebook).
 Read all seven parts in order. The index is navigation, not a substitute for the rule bodies.
-The original rule identifiers, scope and binding force are unchanged.
+Original rule identifiers remain stable. Current scope follows the explicit
+[25 October direction](../../decisions/2026-10-25-COMPOSITION-OWNERSHIP-AND-CONTINUITY.md); earlier adopted revisions retain their recorded boundaries.
 
 <a id="rule-0"></a>
 ### Rule 0: Language & Collaboration Protocol (Total Invariant)
@@ -15,7 +16,7 @@ The original rule identifiers, scope and binding force are unchanged.
 <a id="rule-0a"></a>
 ### Rule 0A: Three Perimeters Taxonomy (P1 / P2 / P3)
 
-Every component, package, brick, or app MUST be classified into **exactly one** perimeter before design or deploy. Canonical source: [perimeter taxonomy](../../docs/architecture/PERIMETERS.md).
+Every component, package, component, or app MUST be classified into **exactly one** perimeter before design or deploy. Canonical source: [perimeter taxonomy](../../docs/architecture/PERIMETERS.md).
 
 | Perimeter | Objective | Examples |
 | :--- | :--- | :--- |
@@ -35,7 +36,7 @@ Every component, package, brick, or app MUST be classified into **exactly one** 
 * **Zero Hardcoded Environment Residue**: Never hardcode specific IP addresses, hypervisor node names, private subnets, tenant domains, or static credentials into code, scripts, or specifications.
 <a id="rule-0b-intent-header-classification"></a>
 * **Mandatory Intent Header Classification (Generic vs Specific)**: Every `INTENT.md` or blueprint document in SHAPER OS MUST declare its exact classification at the very top header:
-  * `> **Intent Classification**: GENERIC INTENT (Universal / Parameterized Blueprint)` for reusable abstract bricks in `SHAPER-OS/`.
+  * `> **Intent Classification**: GENERIC INTENT (Universal / Parameterized Blueprint)` for reusable abstract components in `SHAPER-OS/`.
   * `> **Intent Classification**: SPECIFIC INTENT (Universe: <univ_slug>)` for concrete instantiated deployments in experimental sandboxes or apps.
 * **Strict Distinction: Abstract Specs vs Concrete Examples**: Technical documentation must always define abstract parameterized interfaces first (e.g. `<CLIENT_MESH_IP>`, `<GATEWAY_HOST>`, `<DOMAIN_NAME>`).
 * **Explicit Demarcation of Specialized Examples**: Following any generic documentation, specialized real-world implementation examples (e.g. a specific Proxmox hypervisor, cloud node, or demonstrator) MAY be provided, but MUST ALWAYS be explicitly labeled under a dedicated section header: `### Illustrative Example (Non-Binding / Demonstration Only)`. There must be zero ambiguity between universal contracts and specific illustrative cases.
@@ -67,7 +68,7 @@ SHAPER OS uses **two complementary layers** — never one replacing the other:
 * **JSON manifests are mandatory at ecosystem level** via the canonical root `topology.json` generated in the realization repository. It answers *Who depends on Whom* and *In what order*.
 * **Optional local `deps.json`** MAY exist inside a `packages/<name>/` or `bricks/brick-<name>/` directory when a component needs to declare overrides for a specific universe — but the root `topology.json` remains the master graph.
 * **Zero duplication of philosophy in JSON**: JSON files MUST NOT repeat INTENT prose. They carry only structured fields: `id`, `type`, `requires`, `optional`, `provides`, `port`, `bootAfter`.
-* **Agent-Synthesized Defaults**: Business rules and deploy details are **not** stored in `topology.json` unless a human explicitly requests an override. Silence = agent decides freely, as long as each brick `INTENT.md` invariants are respected.
+* **Agent-Synthesized Defaults**: Business rules and deploy details are **not** stored in `topology.json` unless a human explicitly requests an override. Silence = agent decides freely, as long as each component `INTENT.md` invariants are respected.
 * **Override Protocol**: When a human states a specific constraint (port, path, schema, dependency), add it to `topology.json` or a local `deps.json`. Never preemptively.
 * **Validation**: Any `doctor`, bootstrap, or deploy script MUST read `topology.json` for ordering — never hardcode dependency chains in shell scripts. The constructor supplies graph validation against `topology.json` and actual imports, following the [topology contract](../../docs/architecture/TOPOLOGY.md).
 
@@ -133,7 +134,7 @@ The intent constrains construction, tests prove a particular artifact, and the l
   * Tests MUST NEVER simulate, fake, mock, or emulate real operations when validating system capabilities, container runtimes, APIs, or AI agent autonomy.
   * No mock servers, no synthetic HTTP stubs for core services, no dummy return values masquerading as real execution.
 * **Real Environment Execution for Capability Proof**:
-  * Every integration/capability test MUST hit the **real running services** (the real Vault AES encryption, the real Logger audit persistence, the real Queue and its private MariaDB, the real GED filesystem, the real Qdrant vector engine, the real Podman runtime).
+  * Every integration/capability test MUST hit the **real running services** (the real Vault AES encryption, the real Logger audit persistence, the real Queue and its private MariaDB, the real GED filesystem, the real vector engine when selected, the real Podman runtime).
   * If a command is tested (e.g. `podman run --rm alpine uname -a`), it MUST actually spin up the real container and return real kernel output.
 * **Zero Silent Fallback / Fail Hard**:
   * Tests and test runners MUST NEVER silently swallow errors, fall back to simulated success, or catch exceptions just to output a green checkmark.

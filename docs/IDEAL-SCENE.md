@@ -1,11 +1,8 @@
 # SHAPER OS in practice — the ideal scene
 
-Purpose: **EXPLANATION** of the reference architecture and intended experience,
-following the [2 October presentation decision](../decisions/2026-10-02-PRACTICAL-USE-AND-REFERENCE-SCENE.md).
-SHAPER OS V1.15 is ready for use and is used daily to organize and deploy
-universes. This scene helps you
-understand and try its method; concrete capabilities belong to the realization
-and version you choose.
+Purpose: describe the useful intended experience under the
+[25 October direction](../decisions/2026-10-25-COMPOSITION-OWNERSHIP-AND-CONTINUITY.md).
+[Composition](architecture/COMPOSITION.md) connects this scene to exact source owners.
 
 ## Begin with the human need
 
@@ -32,8 +29,10 @@ See the [founding recipe direction](../decisions/2026-10-07-INTENTIONAL-RECIPES.
 
 ## An adaptable space of universes
 
-An entity's **space** brings together its **universes**, each with a purpose,
-identity, owned state and declared exchanges. One organization may choose a
+An entity's logical **space** brings together service instances and declared
+operational compositions, each with a purpose, identity, owned
+state and permitted exchanges. A generic stem cell supplies the base; a specialized
+cell/service adds one or more domain components. One organization may choose a
 telephony universe, another an enterprise universe, and another both. Their
 composition and relationships adapt to the activity.
 

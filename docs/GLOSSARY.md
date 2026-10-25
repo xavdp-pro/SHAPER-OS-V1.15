@@ -1,7 +1,8 @@
 # Working glossary
 
 Purpose: explain the vocabulary used to understand and apply SHAPER OS.
-Definitions follow the local [source and owner map](../review/SOURCE-MAP.md).
+Canonical concept IDs and meanings belong to the [independent glossary](https://github.com/xavdp-pro/shaper-glossary/blob/main/TERMS.md).
+This page explains their SHAPER OS use under the [source-role contract](architecture/SOURCE-ROLES.md); historical attribution remains in the local [source map](../review/SOURCE-MAP.md).
 Definitions are **EXPLANATION**, except terms explicitly labeled **TARGET**.
 
 ## Discernment and delivery
@@ -70,11 +71,12 @@ for human context, agent decisions, examples and limits.
   state and performs declared effects.
 - **Workspace:** the human interaction surface over those capabilities; displaying
   an action is not authorizing it.
-- **Space:** here, the containing scope for several universes, following the
-  current operator direction. It is not automatically a filesystem folder,
-  physical host or global access grant. Historical uses need explicit mapping.
-- **Universe:** a bounded context with declared identity, responsibilities, state
-  and exchanges. Its logical boundary and physical placement are different.
+- **Space:** a logical organization of service instances, membership and permitted
+  relationships. It can contain declared operational compositions (universes);
+  it is distinct from a filesystem folder, container, host or access grant.
+- **Universe:** current glossary alias for logical space. Earlier V1.15 `univ-*`
+  profiles also use it for a bounded operational composition; record that class
+  role explicitly when mapping existing sources. Neither usage implies a container.
 - **Fractal:** a pattern that can recur across scopes with explicit boundaries
   and adapted responsibilities, not a requirement for identical nested stacks.
 - **Door:** a declared controlled crossing with callers, purpose, permitted data,
@@ -92,10 +94,14 @@ for human context, agent decisions, examples and limits.
   refusals, containment and recovery protecting the system.
 - **Functional unit:** a bounded responsibility with identity, owned state,
   declared contracts, lifecycle and proof obligations.
-- **Brick / brique:** retained vocabulary for a deployable realization. In the
-  [September target profile](profiles/SEPTEMBER-CONTAINER-MARIADB.md) it is an
-  image/container with a declared function.
-  The OS describes the contract, not the image or its implementation code.
+- **Component:** a bounded functional part with declared interfaces and ownership;
+  a functional unit emphasizes its responsibility and lifecycle. “Brick/brique”
+  remains a compatibility alias; `brick-*` names remain stable artifact identifiers.
+- **Stem cell:** the generic reusable base composition.
+- **Specialized cell / service:** that base plus one or more domain components.
+- **Class / specialization / instance:** reusable versioned definition, declared
+  derivation, and one stable owned materialization respectively. See [composition](architecture/COMPOSITION.md).
+
 - **Implementation package:** reusable source used to build a realization,
   without its own independent deployment lifecycle. See the local
   [naming contract](architecture/NAMING.md).
@@ -139,7 +145,7 @@ for human context, agent decisions, examples and limits.
 
 For package/brick/unit lineage, read the
 [vocabulary boundary](architecture/VOCABULARY-BOUNDARY.md). No obligatory
-“packages then bricks” conceptual sequence is inferred from the user's wording.
+“packages then components” conceptual sequence is inferred from the user's wording.
 
 ## Cognition and continuity
 

@@ -1,5 +1,10 @@
 # SHAPER OS V1.15 — Operational Law
 
+Current scoped direction: [25 October composition, ownership and continuity](decisions/2026-10-25-COMPOSITION-OWNERSHIP-AND-CONTINUITY.md).
+Task navigation and source custody: [source roles](docs/architecture/SOURCE-ROLES.md);
+scale relationships: [composition](docs/architecture/COMPOSITION.md).
+These pages join the finite foundation; existing adopted revisions remain explicit.
+
 This repository contains the complete governing documentation for constructing V1.15 realizations and for continuing development in projects that explicitly adopt its standard. Read [RULES](RULES.md) in full, the [boot contract](docs/agent/BOOT-CONTRACT.md), and the affected contracts in the [governing map](docs/GOVERNING-CORPUS.md). No separate SHAPER release is needed.
 
 The rulebook consists of the [rule index and all seven canonical parts](RULES.md#complete-rulebook).
@@ -42,9 +47,9 @@ continuing independent authorized work.
 1. The human–agent tandem owns the mission, role and jurisdiction. Knowledge of the frame grants no additional authority. Apply its explicit mandate and the recorded [current decisions](decisions/2026-10-06-SELF-CONTAINED-CORPUS.md).
 2. This OS contains intent and contracts, not implementation. The constructor generates missing code, tests, image recipes and concrete unit contracts in a separate realization workspace. No pre-existing image, codebase or registry is required.
 3. Native tests pass from a fresh realization checkout before images are qualified. Run the real unit and integration/acceptance tests after boot. A failing check is repaired before the dependent promotion; never hide it with a stub or fabricated success.
-4. Start construction in DEV. Rebuild TEST from a blank system-container universe and fresh source, verify the complete affected workflow, preserve evidence and destroy its disposable state. Production remains durable and separately authorized.
-5. Preserve the nested containment, per-functional-unit private MariaDB and Podman-only rules. Reuse a qualified brick by a declared source/digest reference, not an untracked copied implementation. When none exists, construct it.
-6. Helm is the human interface: text and voice, bounded by jurisdiction and validated pilot level. Its console remains in architecture perimeter P2; business tools remain distinct P3 applications. These are layer names, not host identifiers.
+4. Start construction in DEV. Rebuild TEST from a blank isolated instance under its selected hosting profile and fresh source, verify the complete affected workflow, preserve evidence and destroy its disposable state. Production remains durable and separately authorized.
+5. Preserve declared containment, complete per-functional-unit private MariaDB state and Podman-only functional boundaries. Reuse a qualified component by a declared source/digest reference, not an untracked copied implementation. When none exists, construct it.
+6. Helm is the human interface: text and voice, bounded by jurisdiction and validated pilot level. Its console remains in architecture perimeter P2; business tools remain distinct P3 applications. These are functional perimeters, distinct from OS/Runtime/Workspace responsibilities and host identifiers.
 7. The acting agent receives a prepared role-specific context and current evidence. The constructor understands the whole foundation; a runtime task does not carry the entire design corpus as its prompt. Session continuity never replaces an action ledger.
 8. The parent repairs or reconstructs the child; an agent does not replace its own live vital infrastructure. The authorized maker holds its host/child SSH authority; no private key descends into a child or enters the governor's ledger.
 9. Qualify typed deliverables through actual effects and independent observations. Code passing tests, a deployed artifact, a working live path and human acceptance are distinct evidence.

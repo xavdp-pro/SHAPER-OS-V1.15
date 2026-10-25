@@ -8,8 +8,7 @@ Status: **[TARGET]** adapter contract applying the
 [generic bridge intent](cognition-bridge.md). Its default place in the reference
 composition is **[MANDATE]** under the
 [24 September decision](../../decisions/2026-09-24-REFERENCE-OPENCODE-BRIDGE.md).
-This document states what to build and qualify; it is not implementation code
-or a certification of the currently available adapter.
+The profile defines the adapter's intended behavior and acceptance obligations.
 
 ## Function and scope
 
@@ -31,8 +30,9 @@ workspace. Prepare context before the first task; apply current context and
 changed instructions on later tasks; reload the owning unit's action record.
 Persist the mapping, context revision, continuity status and run/evidence links.
 The current construction profile requires the bridge's own private MariaDB for
-its authoritative application state; identify and preserve any additional
-engine-owned session store under the applicable storage contract.
+all authoritative application state, including durable session context/history
+and action continuity. Native engine stores are managed working material or
+recoverable projections with an explicit MariaDB mapping and reconstruction path.
 
 If a native session is missing, a replacement must load reconstructed context
 and reconcile pending/uncertain effects before new actions. A recreated session
@@ -72,19 +72,14 @@ Translate it into actual engine/tool/resource permissions before dispatch and
 execution; Maestro and Queue do not broaden it. Qualify that enforcement and
 the expected effect. A wildcard DEV setting is not the production configuration.
 
-## Implementation gaps are explicit
+## Product source and operational records
 
-The source comparison on 6 October 2026 found a native session-based adapter with
-workspace binding, attachments and asynchronous event translation, but without
-a dedicated context-registration/delivery contract. Missing native sessions were
-recreated, and session metadata used a JSON file. These observations identify
-work to reconcile with the common continuity intent and private-MariaDB profile;
-they do not prevent a new implementation being generated from this contract.
-The source comparison is not a live runtime qualification of any deployment.
-
-The realization must publish a versioned interface document and tests for its
-actual implementation. The OS does not prescribe arbitrary fixed ports, variable
-names or provider models to fill an implementation gap.
+The realization owns its versioned interfaces, context/session schema, engine
+mapping and tests. Its private `-lab` preserves source comparisons, capability
+observations and release evidence with exact revision and environment. Source
+observations do not become timeless claims inside the mental contract.
+The OS defines bounded interfaces; the realization supplies its listener,
+configuration and provider mapping without arbitrary global ports or models.
 
 ## Acceptance
 

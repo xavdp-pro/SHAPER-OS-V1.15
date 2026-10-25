@@ -1,5 +1,19 @@
 # Declarative Dependency Topology
 
+## Composition and source graph
+
+[Composition](COMPOSITION.md) owns the scale model; [source roles](SOURCE-ROLES.md)
+owns canonical documents and reverse navigation. Link every component/service
+node to its class/specialization definition, stable instance identity where
+applicable, owning intent and source revision. Distinguish `contains`, `requires`,
+`governs`, `owns-state`, `hosted-on`, `realizes` and `derived-from` relationships.
+Only hard startup `requires` must be acyclic; governed event feedback can be
+cyclic without becoming a startup cycle. Every edge names its purpose and owner,
+and indexes its referrers. `optionalBrick` and existing `bricks` fields remain
+compatibility identifiers for components; this vocabulary change does not
+silently migrate existing manifests.
+
+
 > **Intent Classification**: GENERIC INTENT (Universal / Parameterized Blueprint)
 
 The constructor creates the realization's root `topology.json`: the single master dependency graph. A local `deps.json` may declare a scoped override without replacing that master. The OS documentation supplies the contract, not a prebuilt graph for every universe.
