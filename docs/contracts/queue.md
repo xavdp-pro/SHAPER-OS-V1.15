@@ -2,6 +2,14 @@
 
 > **Intent Classification**: GENERIC INTENT (Universal / Parameterized Blueprint)
 
+Source role: this edition's governing operational projection of the
+[generic Queue mental contract](https://github.com/xavdp-pro/shaper-ecosystem/blob/main/chapters/components/queue.md)
+(`component:queue`). The ecosystem owns the generic component intention; this
+framework owns its adopted lifecycle, verification, evidence and consumer-claim
+obligations below. Generic classification does not create a second owner of that
+mental contract. A selected realization binds both applicable source revisions
+and declares its concrete interface; see [source roles](../architecture/SOURCE-ROLES.md).
+
 Queue is a generic asynchronous job service with progress and SSE, not a business agent or a source of authority. It owns a private MariaDB and retains its own job evidence.
 
 ## Lifecycle and crash semantics

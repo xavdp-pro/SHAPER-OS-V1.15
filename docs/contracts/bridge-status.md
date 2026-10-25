@@ -2,6 +2,14 @@
 
 > **Intent Classification**: GENERIC INTENT (Universal / Parameterized Blueprint)
 
+Source role: SHAPER OS owns the provider-neutral `shaper-bridge/v1` status,
+readiness and capability protocol in this page. The ecosystem's
+[`component:cognition-bridge`](https://github.com/xavdp-pro/shaper-ecosystem/blob/main/chapters/components/cognition-bridge.md)
+owns the generic mental intention; this edition's [continuity intent](../intents/cognition-bridge.md)
+projects its governing obligations. Adapter realizations own exact payloads and
+provider transport mappings at their selected versions, preserving this protocol
+identity without redefining its status meaning.
+
 1. `GET /api/status` returns protocol identifier `shaper-bridge/v1` with declared readiness and capabilities.
 2. Callers branch on capabilities, never provider names. The common contract names no engine, model, CLI or external provider.
 3. `ready: true` means the adapter can accept work; it proves neither successful model execution nor permission for an action.

@@ -23,7 +23,7 @@ foundation obligation. Runtime briefs contain only the necessary scoped material
 
 | Source role | Owns | Relationship |
 | --- | --- | --- |
-| [SHAPER ecosystem](https://github.com/xavdp-pro/shaper-ecosystem) | Common composition, cross-domain relationships and the five generic component mental contracts in `chapters/components/` | This edition projects those meanings into its local operational laws; `navigation/OWNERS.json` identifies each exact component owner |
+| [SHAPER ecosystem](https://github.com/xavdp-pro/shaper-ecosystem) | Common composition, cross-domain relationships and the five generic component mental contracts in `chapters/components/` and generic base contract `class:stem-cell` in `chapters/30-STEM-CELL.md` | This edition projects those meanings into its local operational laws; `navigation/OWNERS.json` identifies each exact component owner |
 | [SHAPER glossary](https://github.com/xavdp-pro/shaper-glossary/blob/main/TERMS.md) | Stable concept IDs and vocabulary definitions | Local glossary explains usage and preserves compatibility aliases |
 | SHAPER OS | Development/operational laws, adoption and reference contracts | Governs its declared scope; names source owners instead of absorbing them |
 | Domain/service mental source | Domain intention, laws, interfaces and specialization | Refers to common invariants and supplies its own business meaning |
