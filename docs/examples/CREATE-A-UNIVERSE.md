@@ -1,5 +1,20 @@
 # Ask an agent to create a universe
 
+## Composition meaning of this request
+
+In the current vocabulary, the universe is the logical space. This recipe also
+constructs its first member: a specialized service class `univ-example-core` and
+identified service instance `univ-example-core-dev`. Record the space identity,
+service identity and membership relation separately. The reusable stem-cell base
+composes Logger, Vault, Queue and Maestro, with the selected cognition bridge;
+use its declared source/version or construct compatible focused components from
+the owning mental contracts. Domain units specialize that base. `univ-*` names
+remain compatibility identifiers for these operational compositions; they do not
+turn one service container into the whole organizational space. Follow
+[composition](../architecture/COMPOSITION.md) and the
+[generic base owner](https://github.com/xavdp-pro/shaper-ecosystem/blob/main/chapters/30-STEM-CELL.md)
+when resolving the class and selected component versions.
+
 Status: **EXPLANATION** — simple starting requests for a human–agent tandem.
 
 ## Start with one sentence

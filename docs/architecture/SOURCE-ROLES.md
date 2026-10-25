@@ -23,7 +23,7 @@ foundation obligation. Runtime briefs contain only the necessary scoped material
 
 | Source role | Owns | Relationship |
 | --- | --- | --- |
-| [SHAPER ecosystem](https://github.com/xavdp-pro/shaper-ecosystem) | Common composition and cross-domain relationships | This edition projects it into local operational laws |
+| [SHAPER ecosystem](https://github.com/xavdp-pro/shaper-ecosystem) | Common composition, cross-domain relationships and the five generic component mental contracts in `chapters/components/` | This edition projects those meanings into its local operational laws; `navigation/OWNERS.json` identifies each exact component owner |
 | [SHAPER glossary](https://github.com/xavdp-pro/shaper-glossary/blob/main/TERMS.md) | Stable concept IDs and vocabulary definitions | Local glossary explains usage and preserves compatibility aliases |
 | SHAPER OS | Development/operational laws, adoption and reference contracts | Governs its declared scope; names source owners instead of absorbing them |
 | Domain/service mental source | Domain intention, laws, interfaces and specialization | Refers to common invariants and supplies its own business meaning |
@@ -41,9 +41,26 @@ evidence belong in the private lab. A public intent link conveys no code rights.
 ## Hypertext contract
 
 Identify each concept by the owning glossary anchor and each source by repository,
-path and adopted revision. Every relationship records its reason and type:
-`defines`, `specializes`, `instantiates`, `contains`, `requires`, `governs`,
-`owns-state`, `hosted-on`, `realizes`, `derived-from`, or `refers-to`.
+path and adopted revision. The ecosystem's
+[structural relation vocabulary](https://github.com/xavdp-pro/shaper-ecosystem/blob/main/navigation/STRUCTURAL-RELATIONS.md)
+owns canonical edge meanings and direction. Use `implements` for realization →
+owned mental contract, `realizes` for actor → approved operation, and `runs-at`
+for instance/runtime → placement. Every edge records its reason and owner.
+
+Preserve local identifiers through explicit projections: `hosted-on`/`runs-on`
+map to `runs-at`; local `requires` maps to phase-scoped `depends-on`; owner →
+state `owns-state` inverts to state → owner `owned-by`; class → instance
+`instantiates` inverts to instance → class `instance-of`. Resolve `contains`
+by meaning: logical membership inverts to `member-of`, functional composition
+maps to `composes`, and physical enclosure remains the selected hosting profile
+with its instance → placement relationship. It is never one universal synonym.
+Source relations such as `defines` and `refers-to` retain their explanatory roles.
+
+For task closure, traverse only the selected phase's `depends-on` edges with
+explicit mandatory/optional requirements, including optional branches selected
+by that task. Other source links remain navigable without silently becoming
+requirements. This integration-source closure is separate from the selected
+realization's complete runtime/build/recovery dependency inventory.
 The owning page is canonical; a projection labels its source and local scope.
 Maintain reverse references for affected consumers so a changed contract leads
 to its callers, specializations and dependent recipes. Containment is not
