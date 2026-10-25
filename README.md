@@ -138,3 +138,7 @@ without reproducing private dialogue or linking private archives.
 
 RARMURE owns its own intentions, variants and realization records. Its source
 relationship supplies context without changing this framework's adopted scope.
+
+## Dedication
+
+[Personal dedication by Xavier de Poorter](DEDICATION.md).
