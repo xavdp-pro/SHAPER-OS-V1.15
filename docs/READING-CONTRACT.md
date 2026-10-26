@@ -91,6 +91,37 @@ assuming the old understanding remains valid.
 Use the external record format, snapshot identity and replay procedure in
 [verification and continuity](../review/VERIFICATION-AND-CONTINUITY.md).
 
+## Local tree and indexed retrieval
+
+A local repository tree and indexed retrieval provide complementary reading
+views. The tree exposes structure, neighbouring files and complete documents;
+retrieval exposes indexed content and declared relationships across
+repositories. Either view may be incomplete, and an index represents a
+snapshot rather than the live tree.
+
+An agent entering through indexed retrieval checks which source repositories
+are available locally. It asks the human whether it may obtain local reading
+checkouts of all missing public SHAPER repositories and any private
+repositories the human selects and is authorized to access. Repository
+identities and acquisition procedures come from the applicable entrance or
+source registry; missing identities or access information are reported, not
+guessed.
+
+Before acquisition, the agent states the repositories, source locations,
+target locations and reading-only purpose, then waits for explicit approval.
+This approval covers source checkouts, not dependency installation or
+execution of repository code. The agent preserves existing working copies and
+installed state and does not alter existing credentials, visibility or remotes.
+
+If acquisition is declined or unavailable, the agent continues with available
+sources and records the missing local view. Local absence and an unsuccessful
+retrieval query do not establish that a source does not exist. When
+reconciling local and indexed content, the agent compares revisions or file
+content digests and records unresolved differences rather than assuming either
+view is current or authoritative. Missing source dependencies are reported to
+their owner rather than reconstructed. Public records contain no private
+repository identities, paths, credentials or conversations.
+
 ## Complete reading through bounded outputs
 
 **[EDITORIAL] Reading procedure:** tools can cap output by bytes or tokens even
