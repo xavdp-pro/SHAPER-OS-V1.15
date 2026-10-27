@@ -102,9 +102,9 @@ compatible interface versus compatible behavior; new capability versus permissio
 Wrong answer: “A newer model may regenerate the database because its code is better.”
 Open contract: migration, historical-data invariants and the authorized rollout gate.
 
-## C6 — Another universe wants the supplier data
+## C6 — Another cell wants the supplier data
 
-Question: is belonging to the same space enough?
+Question: is belonging to the same universe (space) enough?
 
 Expected reasoning: identify the declared door, authorized caller, purpose,
 permitted subset, retention and refusal behavior. Test the forbidden crossing
@@ -114,7 +114,7 @@ Read [scopes](../learning/02-LAYERS-AND-SCOPES.md).
 
 Required distinctions: shared containment/hosting versus data authority;
 sender intent versus receiving authorization; permitted subset versus all data.
-Wrong answer: “Same space means unrestricted cross-universe database access.”
+Wrong answer: “Same universe means unrestricted cross-cell database access.”
 Realization-specific contract: actual door-ratification roles, schema and permitted
 retention, under the local [perimeter rules](../architecture/PERIMETERS.md).
 

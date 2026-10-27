@@ -18,8 +18,8 @@ unit explanation below does not extend the target profile to every technology.
 
 A functional unit owns one bounded responsibility, identity, state, lifecycle
 and observable proof. Its relationships explain what it needs and promises.
-The preferred term [component](../architecture/VOCABULARY-BOUNDARY.md) names
-that bounded part; implementation packages and deployable images realize it.
+Human-facing texts call it a [component](../architecture/VOCABULARY-BOUNDARY.md);
+implementation packages and deployable images realize it.
 
 For every relationship identify producer and consumer, purpose, authority,
 accepted inputs, outputs, compatibility, persistence, startup needs, refusal,
@@ -36,7 +36,7 @@ neither owning it. An acknowledgment must say precisely what it acknowledges.
 
 **[TARGET S07]** Four base responsibilities are mandatory
 in the [September target profile](../profiles/SEPTEMBER-CONTAINER-MARIADB.md),
-per minimal universe composition, not universally for every possible profile:
+in every cell built on its generic stem cell, not universally for every possible profile:
 
 - Vault (P1) protects secrets and delivers them to authorized unit incarnations.
 - Logger (P1) records authenticated events and proves their ordering and integrity.
@@ -44,13 +44,13 @@ per minimal universe composition, not universally for every possible profile:
 - Maestro (P2) determines when declared recurring work is due and submits an
   idempotent occurrence. With no schedule it creates no work.
 
-“Base” describes this required composition, while P1/P2 describe each unit’s
+“Base” describes this required stem-cell composition, while P1/P2 describe each unit’s
 [architectural perimeter](../architecture/PERIMETERS.md). A deterministic scheduler
 can belong to P2 and remain independent of cognition.
 
 A responsible consumer performs the requested effect. A Cognition Bridge is
 optional when a declared job needs cognition; base units do not depend on it.
-It is not the general inter-universe data gateway. A door in the Protection
+It is not the general data gateway between cells or universes. A door in the Protection
 Framework defines those exchanges.
 
 **[MANDATE: 24 September reference choice]** The selected
@@ -67,13 +67,13 @@ construction path, not invented by an already running Vault.
 
 ## Scope placement
 
-**[TARGET S05]** The profile places the units
-inside the Execution Framework of one running universe. Its base Logger owns
-that universe's declared evidence responsibility; one shared Logger must not
-silently replace two universes' separate units. Any permitted aggregation is a
-distinct function and data crossing with its own contract.
+**[TARGET S05]** The profile places the base units
+inside the Execution Framework of one running cell. Its base Logger owns
+that cell's declared evidence responsibility; one shared Logger must not
+silently replace two cells' separate units. Any permitted aggregation, such as
+a supervision cell, is a distinct function and data crossing with its own contract.
 
-**[EXPLANATION]** The realization declares its space-level composition, actual
+**[EXPLANATION]** The realization declares its universe-level composition, actual
 door-ratification roles and nesting limits under the local perimeter and topology
 contracts. Resolve a business-specific choice with the authorized owner when needed. Fractal
 composition uses explicit local authority, resource limits and unit responsibilities.

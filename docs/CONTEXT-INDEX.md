@@ -46,8 +46,10 @@ and observed results. The example owns the first-use prerequisite checklist.
    the common bridge continuity and DEV execution mandate.
 3. [Reading contract](READING-CONTRACT.md): document authority, comprehension
    and continuity after context loss.
-4. [Glossary](GLOSSARY.md): first meanings, then the
-   [vocabulary boundary](architecture/VOCABULARY-BOUNDARY.md) for package/component/functional-unit distinctions and compatible brick identifiers.
+4. [Glossary](GLOSSARY.md): first meanings, with technical terms for agents and
+   client terms for humans under the
+   [27 October vocabulary direction](../decisions/2026-10-27-TECHNICAL-AND-CLIENT-VOCABULARY.md),
+   then the [vocabulary boundary](architecture/VOCABULARY-BOUNDARY.md) for package/component/functional-unit distinctions and compatible brick identifiers.
 5. Choose the [human guide](human/READING-GUIDE.md),
    [medium agent route](agent/MEDIUM.md) or [strong agent route](agent/STRONG.md).
    Human depths select an appropriate subset from the shared material. Agents
@@ -76,7 +78,7 @@ the foundation. Record actual coverage through the
    information, interpretation, mandate, action and result. Required before all
    later chapters. Check: what does a price-update request actually authorize?
 2. [Layers and scopes](learning/02-LAYERS-AND-SCOPES.md): OS/Runtime/Workspace,
-   space/universes and fractal relationships. Builds on 1; informs boundaries in
+   cells, universes (spaces) and fractal relationships. Builds on 1; informs boundaries in
    3 and dependencies in 4. Check: does a shared host grant shared data access?
 3. [Creation, execution and protection](learning/03-CREATION-EXECUTION-PROTECTION.md):
    what is intended, what runs, what controls crossings. Builds on 2; supplies
@@ -154,8 +156,9 @@ local laws and contracts.
   START/CHANGE/STOP, evidence, learning and explicit revision.
 - Pedagogy: words, gradient, reality; the five questions; five human reading
   levels; medium and strong agent comprehension.
-- Scale: space containing universes; relationships among universes; recursive
-  structure and limits; distinguish containment, authority and physical hosting.
+- Scale: functional units, cells, universes and supervision cells; relationships
+  among cells and universes; recursive structure and limits; distinguish
+  containment, authority and physical hosting.
 - Responsibilities: OS, Runtime and Workspace; creation, execution and protection
   frameworks; functional units; declared exchanges and data ownership.
 - Materialization: interpretation, packages, components, composition, deployment,

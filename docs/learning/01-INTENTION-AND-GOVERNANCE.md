@@ -59,4 +59,4 @@ are observations and which remain hypotheses. Name the actor who can change the
 mandate and the evidence that would show success. If the only answer is “the
 agent knows what to do,” the boundary is not understood.
 
-Next: [layers, space and universes](02-LAYERS-AND-SCOPES.md).
+Next: [layers, cells and universes](02-LAYERS-AND-SCOPES.md).

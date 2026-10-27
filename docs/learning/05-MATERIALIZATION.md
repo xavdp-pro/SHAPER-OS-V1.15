@@ -49,11 +49,11 @@ The tandem agrees that future quotes use validated current prices while accepted
 quotes retain their committed values. It selects a concrete profile, derives unit
 contracts and dependencies, implements outside OS, verifies behavior, qualifies
 deployment and records observed results. Packages may supply reusable code to
-components; packages, images and runtime instances describe different realization concerns. “Brick/brique” remains an identifier compatibility alias.
+functional units; packages, images and runtime instances describe different realization concerns. “Brick/brique” remains an identifier compatibility alias.
 
 **[TARGET S05/S07]** The [September profile](../profiles/SEPTEMBER-CONTAINER-MARIADB.md)
 preserves the Podman/container construction model and private MariaDB per unit.
-Creating another unit or universe under that model retains its obligations.
+Creating another functional unit, cell or universe under that model retains its obligations.
 An agent cannot choose an alternate engine because the OS is agnostic. A future
 profile requires explicit approval and an obligation-by-obligation mapping;
 none is adopted here. The local [rules](../../RULES.md) and

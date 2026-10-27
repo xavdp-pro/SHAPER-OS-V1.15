@@ -35,9 +35,9 @@ Treat applicable SHAPER OS obligations as binding requirements, not optional
 background context. This adoption covers ongoing development; it does not
 require rebuilding the project or creating a new universe.
 
-Identify the project's actual architectural roles, components and applicable
-profiles. A component already declared as a SHAPER universe or functional unit
-retains all its applicable obligations.
+Identify the project's actual architectural roles, functional units, cells and
+applicable profiles. A part already declared as a SHAPER universe, cell or
+functional unit retains all its applicable obligations.
 
 Preserve existing implementations, data, configuration and verified working
 paths. Reuse valid evidence where the implementation and conditions remain
@@ -103,12 +103,12 @@ existing state and unaffected contracts. Apply construction or migration
 procedures only when the authorized task requires them.
 
 A declared gap does not waive an applicable obligation. Do not claim full
-universe or unit conformity from adoption of the development standard alone.
+universe, cell or functional-unit conformity from adoption of the development standard alone.
 Report the actual scope, changes, evidence and remaining gaps.
 ```
 
 Non-applicability is justified by a contract's subject and conditions, not by the
-cost of meeting it. An existing declared SHAPER unit or universe keeps its
+cost of meeting it. An existing declared SHAPER functional unit, cell or universe keeps its
 applicable profile obligations. Record uncertainty as uncertainty, not as a
 self-granted exemption, and resolve it before the dependent action while
 continuing independent work already authorized.

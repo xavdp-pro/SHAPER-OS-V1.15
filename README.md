@@ -55,11 +55,12 @@ the map. No special mapping tool or pre-existing SHAPER executable is required.
 
 ## Discover the ideal scene
 
-An entity has a logical **space/universe**, composed of service instances suited
-to its activity. **Helm** lets the human pilot that scope within their jurisdiction.
-Governors coordinate creation work and makers carry it out. Functional units
-provide the capabilities of each universe, with clear responsibilities and
-relationships.
+An entity has a logical **space** (technical term: universe): the sum of the
+services suited to its activity. **Helm** lets the human pilot that scope within
+their jurisdiction. Governors coordinate creation work, which reaches them
+through a guichet, and makers — the fabrication workshop — carry it out.
+Components (functional units) provide the capabilities of each service, with
+clear responsibilities and relationships.
 
 This pattern can recur at different scales: that is its **fractal** expression.
 Common principles support a diversity of compositions, activities and ways of
@@ -106,7 +107,7 @@ and deployment material in a separate realization workspace. Existing code can
 be reused when appropriate; it is optional. As agents and tools improve, new
 realizations can preserve what matters while improving how it is achieved.
 
-After a universe or its units have been built and verified, a registry is
+After services or their components have been built and verified, a registry is
 recommended for reproducible reuse and duplication. It can come later; see the
 [first-construction direction](decisions/2026-10-05-FIRST-CONSTRUCTION-AND-REUSE.md).
 

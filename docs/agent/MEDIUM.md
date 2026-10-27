@@ -25,7 +25,7 @@ model credentials or reading obligations. No route selection grants deployment.
    The rulebook includes its index and all seven canonical parts; read every
    part using the [bounded-output procedure](../READING-CONTRACT.md#complete-reading-through-bounded-outputs).
 2. Restate the human's intention with outcome, scope, constraints and unknowns.
-3. Identify the owning layer, universe, functional responsibility and authority.
+3. Identify the owning layer, universe, cell, functional responsibility and authority.
 4. Build the dependency explanation: what this function receives, provides,
    persists, requires at startup and must preserve when it fails or is replaced.
 5. Identify the realization profile and explain which choices are specific to

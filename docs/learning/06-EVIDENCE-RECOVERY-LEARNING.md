@@ -36,14 +36,14 @@ For a price update, inspect the actual stored price and a newly calculated quote
 confirm an earlier accepted quote is unchanged, and correlate the operation's
 evidence. If notification is required, verify that specific outcome separately.
 Prove restoration with a controlled recovery exercise rather than only checking
-that an archive exists. Unit restoration and coherent universe restoration are
+that an archive exists. Unit, cell and coherent universe restoration are
 different scopes and need compatible recovery points and dependency handling.
 
 ## What can fail?
 
 One sensor certifies itself; evidence is missing but success is declared; a
 restored unit replays an external effect twice; or local recovery damages another
-universe. Preserve evidence, contain the fault and name the required intervention:
+cell or universe. Preserve evidence, contain the fault and name the required intervention:
 
 **[EXPLANATION S03]** The four intervention names mean:
 

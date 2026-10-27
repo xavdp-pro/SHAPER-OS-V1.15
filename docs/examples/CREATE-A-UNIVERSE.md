@@ -2,16 +2,19 @@
 
 ## Composition meaning of this request
 
-In the current vocabulary, the universe is the logical space. This recipe also
-constructs its first member: a specialized service class `univ-example-core` and
-identified service instance `univ-example-core-dev`. Record the space identity,
-service identity and membership relation separately. The reusable stem-cell base
-composes Logger, Vault, Queue and Maestro, with the selected cognition bridge;
-use its declared source/version or construct compatible focused components from
-the owning mental contracts. Domain units specialize that base. `univ-*` names
-remain compatibility identifiers for these operational compositions; they do not
-turn one service container into the whole organizational space. Follow
-[composition](../architecture/COMPOSITION.md) and the
+The universe the human names is a **space** (technical term: universe): the
+logical sum of the organization's services. This recipe also constructs its
+first **service** (specialized cell): a service class `univ-example-core` and
+its identified instance `univ-example-core-dev`. Record the space identity,
+service identity and membership relation separately. Each service starts from
+the reusable stem-cell base, which composes Logger, Vault, Queue and Maestro,
+with the selected cognition bridge; use its declared source/version or construct
+compatible focused components (functional units) from the owning mental
+contracts. Domain components specialize that base. `univ-*` names remain
+compatibility identifiers for these operational compositions; they do not turn
+one service into the whole organizational space. Follow
+[composition](../architecture/COMPOSITION.md), the
+[27 October vocabulary direction](../../decisions/2026-10-27-TECHNICAL-AND-CLIENT-VOCABULARY.md) and the
 [generic base owner](https://github.com/xavdp-pro/shaper-ecosystem/blob/main/chapters/30-STEM-CELL.md)
 when resolving the class and selected component versions.
 
@@ -46,7 +49,7 @@ field matches that class name, and the runtime instance `univ-example-core-dev`.
 When a realization workspace becomes a class implementation repository, it declares its source role and class identity under
 [Rule 1](../../RULES.md#rule-1), with a distinct private `-lab` companion. The
 shown `univ-` mapping is the compatible grammar for that lineage. The [short-slug exception](../architecture/NAMING.md#the-universe-field-and-the-repo-name)
-for universes inside the base still applies. Record the chosen mapping without
+for compositions inside the base still applies. Record the chosen mapping without
 renaming unrelated existing projects or requiring a registry before construction.
 
 **The agent creates the implementation from SHAPER OS.** It can start with an
@@ -56,30 +59,32 @@ codebase, prebuilt reference or registry is optional reuse, not an entry ticket.
 
 ## Add the functions you already have in mind
 
-Use the [glossary](../GLOSSARY.md) to name what you want to create: a space,
-universe, functional unit, intention, role or jurisdiction. Naming these parts
-and their relationships makes the request clearer and gives the human and agent
-a shared vocabulary for building together.
+Use the [glossary](../GLOSSARY.md) to name what you want to create: a space
+(universe), a service (cell), a component (functional unit), an intention, a
+role or a jurisdiction. Naming these parts and their relationships makes the
+request clearer and gives the human and agent a shared vocabulary for building
+together.
 
-If the human already knows what the universe should do beyond its base units,
-include those intentions in the request. Describe each additional functional
-unit's purpose, expected behavior, data and interactions with the other units.
-The agent helps clarify the intentions and realizes them as additional Podman
-functional units, each with its own responsibility and private database under
-the current construction profile.
+If the human already knows which further services the space needs, include
+those intentions in the request. Describe each additional service's purpose,
+expected behavior, data and interactions with the other services. The agent
+helps clarify the intentions and realizes each one as a service built on its
+own stem-cell base plus the domain components it needs, each component with its
+own responsibility and private database under the current construction profile.
 
 For example, continue the creation request with:
 
-> In addition to the base units, add a product-catalog unit that owns product
-> descriptions and current prices, and a quotation unit that prepares quotations
-> using that catalog. Accepted quotations must retain their agreed descriptions
-> and prices when the catalog changes. Help me express these intentions and
-> organize the units and their authorized exchanges before implementing them.
+> In addition to the first service, add a product-catalog service that owns
+> product descriptions and current prices, and a quotation service that prepares
+> quotations using that catalog. Accepted quotations must retain their agreed
+> descriptions and prices when the catalog changes. Help me express these
+> intentions and organize the services and their authorized exchanges before
+> implementing them.
 
 The intention explains the useful result and what must be preserved. It does
 not need to prescribe the implementation code. The agent connects those
-intentions to the base composition, identifies dependencies and state owners,
-then builds and verifies the additional units within the agreed scope.
+intentions to the stem-cell base, identifies dependencies and state owners,
+then builds and verifies the additional services within the agreed scope.
 
 ## What needs to be available
 
@@ -131,8 +136,8 @@ governing sources and profile, and follows the
 [reference universe procedure](../procedures/01-REFERENCE-UNIVERSE.md).
 It preserves existing workloads while creating the new environment, constructs
 and verifies the first reference, or reuses a suitable verified one when available.
-It gives the new universe its
-own identity, credentials and persistent state. Implementation and operating
+It gives the new space its identity and each of its services its
+own credentials and persistent state. Implementation and operating
 records belong in a separate realization workspace.
 
 For these starter requests, use the reference composition selected by
@@ -142,10 +147,10 @@ every possible profile. Report missing engine access separately from the
 construction and operation of the four base units.
 
 Proxmox and LXC are example hosting choices. The LXC container hosts the
-universe's environment; it does not replace the functional units or their
+services' runtime environment; it does not replace their components or their
 isolation and storage contracts. Under the
 [current construction profile](../profiles/SEPTEMBER-CONTAINER-MARIADB.md),
-functional units run in their own Podman containers, each with its private
+components run in their own Podman containers, each with its private
 MariaDB. Check the selected host's ability to support that composition before
 building it; do not silently change the profile to work around a hosting issue.
 
@@ -176,8 +181,8 @@ question about that point, while independent authorized work continues.
 
 ## What to ask for at completion
 
-Ask the agent to show the universe's identity and location, its functional units
-and their responsibilities, a real operation demonstrating the requested
+Ask the agent to show the space's identity, its services and where they run,
+their components and responsibilities, a real operation demonstrating the requested
 purpose, and the recovery result. Keep source checks, installation, observed
 operation and human acceptance distinguishable.
 
@@ -187,7 +192,7 @@ documentation repository.
 
 ## Reuse after the first success
 
-Once there are verified units or universes worth duplicating, it is recommended
+Once there are verified components or services worth duplicating, it is recommended
 to put their reusable artifacts in a registry, with immutable identifiers and
 links to the composition and proof. The
 [reference procedure](../procedures/01-REFERENCE-UNIVERSE.md#registry-after-verification)

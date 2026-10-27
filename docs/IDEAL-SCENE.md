@@ -3,6 +3,8 @@
 Purpose: describe the useful intended experience under the
 [25 October direction](../decisions/2026-10-25-COMPOSITION-OWNERSHIP-AND-CONTINUITY.md).
 [Composition](architecture/COMPOSITION.md) connects this scene to exact source owners.
+Client terms lead here; the [27 October vocabulary direction](../decisions/2026-10-27-TECHNICAL-AND-CLIENT-VOCABULARY.md)
+pairs them with their technical terms.
 
 ## Begin with the human need
 
@@ -27,32 +29,35 @@ relevant context, use its tools and accept correction. SHAPER gives that tandem 
 coherent frame; it is not a substitute for the agent's foundational education.
 See the [founding recipe direction](../decisions/2026-10-07-INTENTIONAL-RECIPES.md).
 
-## An adaptable space of universes
+## An adaptable space of services
 
-An entity's logical **space** brings together service instances and declared
-operational compositions, each with a purpose, identity, owned
-state and permitted exchanges. A generic stem cell supplies the base; a specialized
-cell/service adds one or more domain components. One organization may choose a
-telephony universe, another an enterprise universe, and another both. Their
-composition and relationships adapt to the activity.
+An entity's **space** (technical term: universe) is the sum of its **services**
+(specialized cells), each with a purpose, identity, owned state and permitted
+exchanges. Each service starts from a generic stem cell, the common base, and
+adds one or more domain **components**. One organization may choose a telephony
+service, another an enterprise service, and another both. Their composition and
+relationships adapt to the activity. The space is logical: it has no physical
+envelope around its services.
 
-**Helm** lets the human pilot the universes within their jurisdiction: act on
-them, shape their behavior and follow their work. Helm is not the container that
-holds the other universes. The space contains them; the jurisdiction defines
-the perimeter of responsibility and permitted action.
+**Helm** lets the human pilot the spaces and services within their jurisdiction:
+act on them, shape their behavior and follow their work. Helm is not a container
+holding the services. The space groups them; the jurisdiction defines the
+perimeter of responsibility and permitted action. A **cockpit** (supervision
+cell) can follow several spaces at once without ever stopping them.
 
-A universe contains **functional units**, each responsible for a bounded function
-and its state. Under the current Podman/MariaDB construction model, each unit has
-its own runtime container and private MariaDB. See the
+A service is made of **components** (functional units), each responsible for a
+bounded function and its state. Under the current Podman/MariaDB construction
+model, each component has its own runtime container and private MariaDB. See the
 [scoped profile](profiles/SEPTEMBER-CONTAINER-MARIADB.md).
 
-## From a request to a universe
+## From a request to a space
 
-Consider a service offering a personalized space to a client. A validated order
-requests a new universe under the agreed service conditions. A **governor**
-coordinates the creation work; one or more **makers** carry it out within their
-mandates and report the result. Helm lets the client pilot the resulting universe
-within their jurisdiction.
+Consider a provider offering a personalized space to a client. A validated order
+at the provider's **guichet** requests a new space, or a new service in an
+existing space, under the agreed conditions. A **governor** behind that guichet
+records the desired result; one or more **makers** — the **fabrication
+workshop** — carry it out within their mandates and report the result. Helm lets
+the client pilot the resulting space within their jurisdiction.
 
 Makers can operate on the selected infrastructure. **PodMesh** is an optional
 container-management tool; its own contracts and version describe supported

@@ -97,7 +97,7 @@ create a permanent mandate.
 Read the complete common sequence, the
 [source map](../../review/SOURCE-MAP.md), and
 [self-checks](METACOGNITION.md). Revisit C5 and C7 from the perspectives of the
-unit, universe, containing space and affected humans. Ask whether a local gain
+component (functional unit), service (cell), space (universe) and affected humans. Ask whether a local gain
 damages the whole, and whether the mechanism intended to detect that damage is
 itself observable. Source provenance makes this reasoning inspectable, not
 infallible.

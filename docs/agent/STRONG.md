@@ -21,7 +21,7 @@ missing, selecting strong does not make them known. Preserve the explicit gaps.
 
 Derive consequences explicitly: name the premise, the relationship it creates,
 the affected contracts and the evidence that could refute the conclusion. Check
-whether a local improvement damages a neighboring unit, another universe or the
+whether a local improvement damages a neighboring unit or cell, another universe or the
 human's ability to understand and control the system.
 
 Maintain distinct models of meaning, authority, functional dependency, data
