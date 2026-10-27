@@ -8,11 +8,16 @@ Original rule identifiers remain stable. Current scope follows the explicit
 <a id="rule-1"></a>
 ### Rule 1: Canonical Naming Conventions & the Universe Repo Grammar
 
-* **The compatible universe-class repository grammar** (for repositories using this lineage): `univ-<projet>-<classe>`, where
-  **projet is ONE word, no hyphen** — everything after the first word is the
+* **The compatible `univ-*` class-repository grammar** (for repositories using this lineage): `univ-<project>-<class>`, where
+  **project is ONE word, no hyphen** — everything after the first word is the
   class, which may be composite. One-line parse:
   `^univ-[a-z0-9]+(-[a-z0-9]+)+$`. A single-class project takes `-core`
   (`univ-mailo-core`): five characters against a future rename, settled.
+  The grammar follows the programming metaphor of a class and its
+  instantiation: the repository defines the class; each instance materializes
+  it with its own identity, environment and state. In this lineage “universe”
+  keeps its earlier sense of one operational composition, usually a specialized
+  cell; see the [27 October vocabulary direction](../../decisions/2026-10-27-TECHNICAL-AND-CLIENT-VOCABULARY.md).
 * **Source roles are explicit.** Mental frameworks, glossary, ecosystem map,
   domain intentions, implementation products and fleet definitions retain their
   owning sources. Every project has a distinct product repository and private
@@ -23,8 +28,8 @@ Original rule identifiers remain stable. Current scope follows the explicit
 
 * **A release is an independently readable slice**: its full governing documentation lives in its own repository; implementation releases live in their separate realization repositories. Fleet records pin repository and immutable tag. Independent releases may run side by side; changes are deliberately carried and qualified, never presumed inherited. Verify the destination remote before the first authorized push of a copied workspace.
 
-* **The mirror rule (Rule 33 forks)**: a fork swaps **only the projet word**
-  and keeps every classe word, repo kind and file name verbatim
+* **The mirror rule (Rule 33 forks)**: a fork swaps **only the project word**
+  and keeps every class word, repo kind and file name verbatim
   (`univ-boutik-shop → univ-fortex-shop`). A fork costs zero new vocabulary,
   and `shaper verify` can hold it via the repo-level `forkedFrom`.
 * **Classes are versioned definitions; instances have stable identities.** A
@@ -33,14 +38,14 @@ Original rule identifiers remain stable. Current scope follows the explicit
   durable state. Private realization/configuration repositories may describe an
   instance without becoming its identity or a rival runtime ledger. Runtime instance names follow the triumvirate lifecycle
   (`<slug>-dev`, `<slug>-test`, `<slug>-prod`, Rule 36); DNS names are declared by the realization and remain unique within its domain.
-* **Package and component prefixes are unchanged**:
+* **Package and functional-unit prefixes are unchanged**:
 
 | Element Type | Scope / Layer | Canonical Naming Convention | Real-World Examples |
 | :--- | :--- | :--- | :--- |
-| Composable Logic Components | NPM Scope `@shaper/` | `@shaper/<brick>` | `@shaper/pkg-vault`, `@shaper/pkg-logger`, `@shaper/pkg-queue` (**P1**); `@shaper/pkg-maestro`, `@shaper/pkg-mail-agent`, bridges (**P2**) |
-| Deployable components | OCI images | `brick-<name>` / `img-<name>` | `brick-vault`, `brick-forge`, `img-logger` |
+| Composable logic packages | NPM Scope `@shaper/` | `@shaper/<brick>` | `@shaper/pkg-vault`, `@shaper/pkg-logger`, `@shaper/pkg-queue` (**P1**); `@shaper/pkg-maestro`, `@shaper/pkg-mail-agent`, bridges (**P2**) |
+| Deployable functional units | OCI images | `brick-<name>` / `img-<name>` | `brick-vault`, `brick-forge`, `img-logger` |
 
-* **Component Isolation Invariant**: A `@shaper/*` package never has knowledge of the universe consuming it (zero coupling, 100% isolated unit test coverage).
+* **Component Isolation Invariant**: A `@shaper/*` package never has knowledge of the cell or universe consuming it (zero coupling, 100% isolated unit test coverage).
 * **The meta-rule this grammar serves**: *the identifier says WHAT a thing is;
   structured data (manifest, LINEAGE.md, ledger row, fleet.yml) says where it
   comes from and where it sits.* No slug ever encodes graph position,

@@ -3,8 +3,10 @@
 The [independent glossary](https://github.com/xavdp-pro/shaper-glossary/blob/main/TERMS.md)
 owns stable shared concept IDs. This local page projects their operational use
 under [Rule 37](../../RULES.md#rule-37); [composition](COMPOSITION.md) connects
-micro and macro scales. Existing identifiers retain compatibility while prose
-uses **component** in place of brick/brique.
+micro and macro scales. Existing identifiers retain compatibility. Agent-facing
+prose leads with the technical terms below and human-facing prose with their
+client terms, under the [27 October vocabulary direction](../../decisions/2026-10-27-TECHNICAL-AND-CLIENT-VOCABULARY.md);
+“brick/brique” remains a compatibility alias.
 
 ## The three grammar rules
 
@@ -17,7 +19,7 @@ uses **component** in place of brick/brique.
 ## Compatible prefixes
 
 [NAMING](NAMING.md) preserves `univ-`, `brick-`, `pkg-`, `img-`, `ctr-`, `vol-`,
-`cfg-`, `ctx-`, `task-` and `proof-` identifiers. The `univ-<projet>-<classe>`
+`cfg-`, `ctx-`, `task-` and `proof-` identifiers. The `univ-<project>-<class>`
 grammar applies to its existing class-repository lineage; other source roles
 have names that identify their ownership. Renames use explicit mappings.
 
@@ -25,10 +27,11 @@ have names that identify their ownership. Renames use explicit mappings.
 
 | Term | Local contract and owner |
 | --- | --- |
-| Component / functional unit | Bounded function, interfaces, lifecycle and private MariaDB; [Rules 4/26](../../RULES.md) |
-| Stem cell | Generic base composition; [profile](../profiles/SEPTEMBER-CONTAINER-MARIADB.md) |
-| Specialized cell / service | Base plus one or more domain components; its owning domain contract |
-| Space / universe | Current shared logical-scope term / legacy operational-composition usage with explicit mapping; [composition](COMPOSITION.md) |
+| Functional unit — FUnit, organelle (client: component) | Bounded function, interfaces, lifecycle and private MariaDB; [Rules 4/26](../../RULES.md) |
+| Generic stem cell | Reusable base cell; [profile](../profiles/SEPTEMBER-CONTAINER-MARIADB.md) |
+| Specialized cell (client: service) | Base plus one or more domain functional units; its owning domain contract |
+| Universe (client: space) | Logical sum of the cells of one organization, without physical envelope; earlier single-composition uses are read by their content; [composition](COMPOSITION.md) |
+| Supervision cell (client: cockpit) | Reads several universes by pull or published events; never in their transactional path |
 | Class / specialization / instance | Reusable definition / declared derivation / stable materialization; [composition](COMPOSITION.md) |
 | Ledger | Governor-owned desired instance state in private MariaDB; [governor](../contracts/governor.md) |
 | Drift | Observed difference from desired state; bounded reconciliation under Rule 27 |
@@ -40,8 +43,8 @@ have names that identify their ownership. Renames use explicit mappings.
 | forkedFrom | Versioned lineage fields for package and repository compatibility |
 | Mirror rule | Preserved Rule 33 fork naming convention in that lineage; source ownership remains explicit |
 | source / perimeter | Provenance and P1/P2/P3 functional classification; neither is OS/Runtime/Workspace or ownership |
-| Governor | Scoped desired-state owner; delegates through the declared protocol, without host keys |
-| Maker | Enrolled deterministic host actor; typed frozen recipes, observed effects and bounded lanes; [maker](../contracts/maker.md) |
+| Governor — public root cell (client: guichet, its request interface) | Scoped desired-state owner; delegates through the declared protocol, without host keys |
+| Maker — private root cell (client: fabrication workshop) | Enrolled deterministic host actor; typed frozen recipes, observed effects and bounded lanes; [maker](../contracts/maker.md) |
 | Matrix | Locked content-addressed artifact selected from versioned class sources |
 | Rig | Delivered composition of pinned classes, components and declarations |
 | Tool | Typed capability available to an agent within its human-approved action policy |

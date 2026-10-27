@@ -4,6 +4,8 @@ Purpose: explain the vocabulary used to understand and apply SHAPER OS.
 Canonical concept IDs and meanings belong to the [independent glossary](https://github.com/xavdp-pro/shaper-glossary/blob/main/TERMS.md).
 This page explains their SHAPER OS use under the [source-role contract](architecture/SOURCE-ROLES.md); historical attribution remains in the local [source map](../review/SOURCE-MAP.md).
 Definitions are **EXPLANATION**, except terms explicitly labeled **TARGET**.
+Technical and client terms follow the [27 October vocabulary direction](../decisions/2026-10-27-TECHNICAL-AND-CLIENT-VOCABULARY.md):
+agent-facing pages lead with the technical term, human-facing pages with the client term.
 
 ## Discernment and delivery
 
@@ -71,12 +73,13 @@ for human context, agent decisions, examples and limits.
   state and performs declared effects.
 - **Workspace:** the human interaction surface over those capabilities; displaying
   an action is not authorizing it.
-- **Space:** a logical organization of service instances, membership and permitted
-  relationships. It can contain declared operational compositions (universes);
-  it is distinct from a filesystem folder, container, host or access grant.
-- **Universe:** current glossary alias for logical space. Earlier V1.15 `univ-*`
-  profiles also use it for a bounded operational composition; record that class
-  role explicitly when mapping existing sources. Neither usage implies a container.
+- **Universe (client term: space):** the logical sum of the cells of one
+  organization, enterprise, shop or project, declared by membership in its
+  governor's records. It has no physical envelope and is distinct from a
+  filesystem folder, container, host or access grant. Earlier sources used
+  “universe” for one operational composition and described a space containing
+  universes; read those uses by the
+  [vocabulary direction](../decisions/2026-10-27-TECHNICAL-AND-CLIENT-VOCABULARY.md#reading-earlier-sources).
 - **Fractal:** a pattern that can recur across scopes with explicit boundaries
   and adapted responsibilities, not a requirement for identical nested stacks.
 - **Door:** a declared controlled crossing with callers, purpose, permitted data,
@@ -92,13 +95,24 @@ for human context, agent decisions, examples and limits.
   operational instance.
 - **Protection Framework:** the identities, permissions, controlled crossings,
   refusals, containment and recovery protecting the system.
-- **Functional unit:** a bounded responsibility with identity, owned state,
-  declared contracts, lifecycle and proof obligations.
-- **Component:** a bounded functional part with declared interfaces and ownership;
-  a functional unit emphasizes its responsibility and lifecycle. “Brick/brique”
-  remains a compatibility alias; `brick-*` names remain stable artifact identifiers.
-- **Stem cell:** the generic reusable base composition.
-- **Specialized cell / service:** that base plus one or more domain components.
+- **Process / binary (level 0):** executable material beneath a functional unit;
+  engineering detail, outside client vocabulary.
+- **Functional unit (FUnit, organelle; client term: component):** a bounded
+  responsibility with identity, owned state, declared contracts, lifecycle and
+  proof obligations. “Brick/brique” remains a compatibility alias; `brick-*`
+  names remain stable artifact identifiers.
+- **Cell:** a composition of functional units with its own boundary and
+  contracts. The **generic stem cell** is the reusable base cell; a **specialized
+  cell (client term: service)** is that base plus one or more domain functional
+  units, for a business, support or transversal purpose.
+- **Supervision cell (client term: cockpit):** a cell that reads the state of
+  several universes by pull or published events, outside their transactional
+  paths; its failure never stops a universe.
+- **Governor (public root cell; client term: guichet, its request interface):**
+  owns approved desired state and receives requests; it holds no host power.
+- **Maker (private root cell; client term: fabrication workshop):** claims
+  approved work, applies frozen recipes that instantiate and specialize cells,
+  and attaches them to a universe. A root cell is not root authority.
 - **Class / specialization / instance:** reusable versioned definition, declared
   derivation, and one stable owned materialization respectively. See [composition](architecture/COMPOSITION.md).
 

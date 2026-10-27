@@ -2,12 +2,16 @@
 
 ## Current vocabulary and source identity
 
-Use **component** for the functional part and retain `brick-*` as a compatible
-artifact prefix. [Composition](COMPOSITION.md) separates class, specialization
-and instance; [source roles](SOURCE-ROLES.md) separates mental/product/lab custody.
-The historical universe grammar below applies to that identifier lineage.
-New source roles are not forced into `univ-*`; renames preserve explicit link,
-submodule, import and image mappings. Repository names never grant runtime identity.
+Agent-facing texts name the functional part a **functional unit** (FUnit,
+organelle) and human-facing texts a **component**, under the
+[27 October vocabulary direction](../../decisions/2026-10-27-TECHNICAL-AND-CLIENT-VOCABULARY.md);
+`brick-*` remains a compatible artifact prefix. [Composition](COMPOSITION.md)
+separates class, specialization and instance; [source roles](SOURCE-ROLES.md)
+separates mental/product/lab custody. The `univ-*` grammar below applies to that
+identifier lineage, where “universe” keeps its earlier sense of one operational
+composition. New source roles are not forced into `univ-*`; renames preserve
+explicit link, submodule, import and image mappings. Repository names never
+grant runtime identity.
 
 
 > **Intent Classification**: GENERIC INTENT (Universal / Parameterized Blueprint)
@@ -16,7 +20,7 @@ Every identifier states its layer. Do not infer a layer from context.
 
 | Prefix | Layer | Example |
 | :--- | :--- | :--- |
-| `univ-` | Deployable universe | `univ-base` |
+| `univ-` | Operational composition of the `univ-*` lineage, usually a specialized cell class or instance | `univ-base` |
 | `brick-` | OCI service definition | `brick-bridge-opencode` |
 | `pkg-` | Reusable source package | `pkg-bridge-opencode` |
 | `img-` | Registry image | `img-bridge-opencode` |
@@ -27,7 +31,7 @@ Every identifier states its layer. Do not infer a layer from context.
 | `task-` | Declared unit of work | `task-mail-triage` |
 | `proof-` | Evidence artefact | `proof-univ-base-<release>` |
 
-A component may exist at several layers. For example, `pkg-bridge-opencode`
+A functional unit may exist at several layers. For example, `pkg-bridge-opencode`
 is code; `brick-bridge-opencode` is the OCI service built from it; and
 `img-bridge-opencode` is its immutable registry artefact. They are not synonyms.
 
@@ -43,9 +47,9 @@ workflow, and neither does `pkg-maestro`, which vendors it. A task carries a
 rename and stayed in the base. Mail intake belongs to catalogue `pkg-mail-agent`
 and to the universe that declares the related `task-*`.
 
-## Where a universe states origin
+## Where a composition manifest states origin
 
-A universe manifest declares each component’s `source`: `base`, `catalogue`, `fork` or `native`; `perimeter`: `P1`, `P2` or `P3`; and `forkedFrom` only for a fork. For example:
+A composition manifest of the `univ-*` lineage declares each functional unit’s `source`: `base`, `catalogue`, `fork` or `native`; `perimeter`: `P1`, `P2` or `P3`; and `forkedFrom` only for a fork. For example:
 
 ```json
 "brick-vault": { "source": "base", "package": "@shaper/pkg-vault", "image": "img-vault", ... }
@@ -57,9 +61,9 @@ Nothing is inferred from a path. The realization validates every declared source
 
 For a **class repo using the compatible `univ-*` profile**, the manifest's `universe` field IS the class name and
 matches the repository name exactly (`univ-mailo-core` in the repo
-`univ-mailo-core`). Universes living **inside the base** (`univ-base`, the
-`_template`, test universes) are not class repos — they keep their short
-slugs and are exempt from the `univ-<projet>-<classe>` grammar, which binds
+`univ-mailo-core`). Compositions living **inside the base** (`univ-base`, the
+`_template`, test compositions) are not class repos — they keep their short
+slugs and are exempt from the `univ-<project>-<class>` grammar, which binds
 repositories, not in-base folders (Rule 1).
 
 [Rule 1](../../RULES.md) owns source roles, compatible naming, immutable release slices and scoped fork mirror grammar. [Rule 37](../../RULES.md#rule-37) and the [lexicon](LEXICON.md) own lifecycle and lineage vocabulary.

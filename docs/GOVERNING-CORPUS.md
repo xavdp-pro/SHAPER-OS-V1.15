@@ -25,6 +25,7 @@ record the result before the action that depends on it.
 
 The current construction directions are local:
 
+- [Technical and client vocabulary](../decisions/2026-10-27-TECHNICAL-AND-CLIENT-VOCABULARY.md).
 - [Prevention of agentic overzealousness](../decisions/2026-10-16-PREVENTION-OF-AGENTIC-OVERZEALOUSNESS.md).
 - [Intentional recipes and ideal scenes](../decisions/2026-10-07-INTENTIONAL-RECIPES.md).
 - [Code-free, generic framework](../decisions/2026-09-23-AGNOSTIC-NO-CODE.md).

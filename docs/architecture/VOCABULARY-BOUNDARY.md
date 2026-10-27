@@ -6,13 +6,15 @@ artifacts, so readers can move clearly from intention to realization.
 ## Current definitions
 
 A **package** is reusable implementation material without an independent
-runtime lifecycle. A **component** is a bounded functional part. A **functional
-unit** emphasizes its responsibility, identity, private state and lifecycle.
-A deployable image is its realization artifact. “Brick/brique” is retained as a
-compatibility alias, including existing `brick-*` names and manifest fields.
+runtime lifecycle. A **functional unit** (FUnit, organelle) is a bounded
+responsibility with its identity, private state and lifecycle; **component** is
+its client-facing name. A deployable image is its realization artifact.
+“Brick/brique” is retained as a compatibility alias, including existing
+`brick-*` names and manifest fields.
 [The independent glossary](https://github.com/xavdp-pro/shaper-glossary/blob/main/TERMS.md)
-owns common concept IDs; [composition](COMPOSITION.md) connects units to stem
-cells, specialized cells/services, logical spaces and fractal governance.
+owns common concept IDs; [composition](COMPOSITION.md) connects functional units
+to stem cells, specialized cells, universes and fractal governance under the
+[27 October vocabulary direction](../../decisions/2026-10-27-TECHNICAL-AND-CLIENT-VOCABULARY.md).
 
 
 The current container profile realizes each unit in an isolated Podman container
@@ -25,7 +27,7 @@ with private MariaDB. These obligations are carried in the local
 SHAPER OS describes the meaning of a function and the obligations of its
 relationships. A realization chooses and documents how that function is built.
 In the existing container realization, implementation packages can contribute
-code to a deployable component that realizes the functional-unit contract.
+code to a deployable image that realizes the functional-unit contract.
 
 These are different questions: what responsibility is needed; what code is
 reused; what artifact can be deployed; what is actually running? Do not assume a
@@ -42,7 +44,7 @@ packages-to-bricks ordering is introduced.
 The Queue responsibility is to hold and distribute deferred work durably under
 declared authority. Its contract explains acceptance, ownership, retry, failure
 and evidence. In a chosen realization, a package implements that logic and a
-component delivers it with the required runtime and private storage arrangements.
+deployable functional unit delivers it with the required runtime and private storage arrangements.
 A future implementation can replace the package while preserving and proving
 the contract. None of that implementation belongs in this SHAPER OS repository.
 

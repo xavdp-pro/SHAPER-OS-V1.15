@@ -1,10 +1,14 @@
 # Composition across scales
 
 Stable concept IDs: [human-ai-tandem](https://github.com/xavdp-pro/shaper-glossary/blob/main/TERMS.md#human-ai-tandem),
+[functional-unit](https://github.com/xavdp-pro/shaper-glossary/blob/main/TERMS.md#functional-unit),
 [component](https://github.com/xavdp-pro/shaper-glossary/blob/main/TERMS.md#component),
 [stem-cell](https://github.com/xavdp-pro/shaper-glossary/blob/main/TERMS.md#stem-cell),
 [service](https://github.com/xavdp-pro/shaper-glossary/blob/main/TERMS.md#service),
 [space](https://github.com/xavdp-pro/shaper-glossary/blob/main/TERMS.md#space),
+[cockpit](https://github.com/xavdp-pro/shaper-glossary/blob/main/TERMS.md#cockpit),
+[governor](https://github.com/xavdp-pro/shaper-glossary/blob/main/TERMS.md#governor),
+[maker](https://github.com/xavdp-pro/shaper-glossary/blob/main/TERMS.md#maker),
 [class](https://github.com/xavdp-pro/shaper-glossary/blob/main/TERMS.md#class),
 [specialization](https://github.com/xavdp-pro/shaper-glossary/blob/main/TERMS.md#specialization),
 [instance](https://github.com/xavdp-pro/shaper-glossary/blob/main/TERMS.md#instance).
@@ -13,25 +17,31 @@ Concept route: [ecosystem composition owner](https://github.com/xavdp-pro/shaper
 → [independent glossary](https://github.com/xavdp-pro/shaper-glossary/blob/main/TERMS.md)
 → this SHAPER OS projection → [owning laws](../../RULES.md).
 Adoption: [25 October direction](../../decisions/2026-10-25-COMPOSITION-OWNERSHIP-AND-CONTINUITY.md).
+Vocabulary registers: [27 October direction](../../decisions/2026-10-27-TECHNICAL-AND-CLIENT-VOCABULARY.md).
 
 ## Composition contract
 
-| Scale | Responsibility | Owning relationship |
+| Scale — technical term (client term) | Responsibility | Owning relationship |
 | --- | --- | --- |
-| Infrastructure | Host execution, connectivity and recovery capacity | Hosts a selected realization; placement grants no business authority |
-| Component / functional unit | One bounded responsibility, interface, identity and private state | Provides a capability; implementation packages and images realize it |
-| Generic stem cell | Reusable base composition | Pins compatible base components and their contracts |
-| Specialized cell / service | Base plus one or more domain components | Specializes the base; exposes a declared business/service contract |
-| Logical space | Organizes service instances and permitted relationships | Membership and presentation, independently of host/container boundaries |
-| Fractal scope | Repeats bounded governance at an appropriate scale | Governor(s) own scoped desired state; makers/workers carry out authorized work |
+| Infrastructure; process and binary at level 0 (no client term) | Host execution, connectivity and recovery capacity | Hosts a selected realization; placement grants no business authority |
+| Functional unit — FUnit, organelle (component) | One bounded responsibility, interface, identity and private state | Provides a capability; implementation packages and images realize it |
+| Generic stem cell | Reusable base cell | Pins compatible base functional units and their contracts |
+| Specialized cell (service) | Base plus one or more domain functional units | Specializes the base; exposes a declared business, support or transversal contract |
+| Universe (space) | Logical sum of the cells of one organization, enterprise, shop or project | Declared membership and relationships, independently of host or container boundaries |
+| Supervision cell (cockpit) | Reads the state of several universes | Pull or published events only; never in a universe's transactional path |
+| Fractal scope — governor and maker root cells (guichet; fabrication workshop) | Repeats bounded governance at an appropriate scale | Governor(s) own scoped desired state; makers/workers carry out authorized work |
 | Human–AI tandem | Steers purpose, judgment and delegation at every scope | Grants and revises mandates; retains the means to understand and redirect |
 
-The current shared glossary uses **logical space / universe** for a stable
-organizational scope relating services. Earlier V1.15 `univ-*` classes and
-protocols also use “universe” for a bounded operational composition. Their
-recorded class role maps explicitly to the current concept; identifiers and
-instances remain unchanged. A legacy service composition is not silently
-reclassified or renamed, and neither usage requires a physical outer container.
+Agent-facing sources lead with the technical term and human-facing ones with
+the client term. A universe has no physical envelope: membership is declared in
+its governor's records, and each cell keeps its own runtime boundary and private
+state. A realization may give a universe shared storage or IPC jurisdiction as a
+profile choice, outside the logical definition. Earlier V1.15 `univ-*` classes
+and protocols use “universe” for one operational composition, often a single
+service, and earlier texts describe a space containing universes. Read each such
+use by its actual content, usually a specialized cell, its class or its instance;
+identifiers and instances remain unchanged, and no legacy composition is
+silently reclassified or renamed.
 
 OS specifies intentions and laws. Runtime enforces permissions and performs
 stateful effects. Workspace presents and requests permitted work. These three
@@ -49,7 +59,7 @@ A repository can own a class or related definitions; repository count and slug
 are not runtime cardinality. The [governor protocol](../contracts/governor.md)
 retains its scoped account/class uniqueness and immutable live-row parameters.
 
-A telephony service and a CRM service specialize the base independently. A
+A telephony cell and a CRM cell specialize the base independently. A
 softphone requests authorized telephony actions; a CRM owns customer records.
 Their integration uses declared commands/events and stable references, never
 cross-database access. A shop manager owns its order/provisioning contract;
@@ -104,6 +114,7 @@ owns adoption. These projections link outward rather than redefining domain laws
 - [README.md](../../README.md): applies this composition projection.
 - [RULES.md](../../RULES.md): applies this composition projection.
 - [decisions/2026-10-25-COMPOSITION-OWNERSHIP-AND-CONTINUITY.md](../../decisions/2026-10-25-COMPOSITION-OWNERSHIP-AND-CONTINUITY.md): applies this composition projection.
+- [decisions/2026-10-27-TECHNICAL-AND-CLIENT-VOCABULARY.md](../../decisions/2026-10-27-TECHNICAL-AND-CLIENT-VOCABULARY.md): applies this composition projection.
 - [docs/CONTEXT-INDEX.md](../CONTEXT-INDEX.md): applies this composition projection.
 - [docs/GLOSSARY.md](../GLOSSARY.md): applies this composition projection.
 - [docs/GOVERNING-CORPUS.md](../GOVERNING-CORPUS.md): applies this composition projection.
