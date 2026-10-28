@@ -42,7 +42,7 @@ Authorized DEV uses the provider-equivalent full noninteractive execution mode w
 
 Generate parameterized host-specific construction, not a rigid monolithic installer. Install necessary dependencies within authority. Every declared unit has its intent, perimeter, source, dependency graph, private MariaDB, ports, storage and acceptance evidence. One functional unit is one Podman boundary; do not combine databases to simplify the first build.
 
-Boot by the actual acyclic topology: establish required secret/data state, Logger, Queue, then the selected bridge and orchestration/Helm dependencies. The [reference procedure](../procedures/01-REFERENCE-UNIVERSE.md) owns the selected composition. Validate dependencies and optional capabilities explicitly; a service is not ready merely because its process exists.
+Boot by the actual acyclic topology: establish required secret/data state, Logger, Queue, then the selected bridge and orchestration/Helm dependencies. The [reference procedure](../procedures/01-REFERENCE-UNIVERSE.md) owns the selected composition. Validate dependencies and optional capabilities explicitly; a functional unit (component) is not ready merely because its process exists.
 
 ## 4. Bind the engine and prepared context
 

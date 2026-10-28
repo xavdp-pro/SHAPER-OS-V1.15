@@ -30,8 +30,8 @@ declared architectural role, composition or realization profile. Non-applicabili
 follows from the actual subject and scope; it is not an exemption chosen for
 convenience.
 
-Adopting the development standard does not, by itself, declare every project
-component to be a universe, cell or functional unit. Conversely, an existing component
+Adopting the development standard does not, by itself, declare every part of a
+project to be a universe, cell or functional unit. Conversely, an existing part
 declared as a SHAPER universe, cell or unit retains its applicable architectural,
 storage, lifecycle and proof obligations. A project-scoped adoption cannot
 silently waive them.
@@ -48,12 +48,12 @@ continuing independent authorized work.
 2. This OS contains intent and contracts, not implementation. The constructor generates missing code, tests, image recipes and concrete unit contracts in a separate realization workspace. No pre-existing image, codebase or registry is required.
 3. Native tests pass from a fresh realization checkout before images are qualified. Run the real unit and integration/acceptance tests after boot. A failing check is repaired before the dependent promotion; never hide it with a stub or fabricated success.
 4. Start construction in DEV. Rebuild TEST from a blank isolated instance under its selected hosting profile and fresh source, verify the complete affected workflow, preserve evidence and destroy its disposable state. Production remains durable and separately authorized.
-5. Preserve declared containment, complete per-functional-unit private MariaDB state and Podman-only functional boundaries. Reuse a qualified component by a declared source/digest reference, not an untracked copied implementation. When none exists, construct it.
+5. Preserve declared containment, complete per-functional-unit private MariaDB state and Podman-only functional boundaries. Reuse a qualified functional unit (component) by a declared source/digest reference, not an untracked copied implementation. When none exists, construct it.
 6. Helm is the human interface: text and voice, bounded by jurisdiction and validated pilot level. Its console remains in architecture perimeter P2; business tools remain distinct P3 applications. These are functional perimeters, distinct from OS/Runtime/Workspace responsibilities and host identifiers.
 7. The acting agent receives a prepared role-specific context and current evidence. The constructor understands the whole foundation; a runtime task does not carry the entire design corpus as its prompt. Session continuity never replaces an action ledger.
 8. The parent repairs or reconstructs the child; an agent does not replace its own live vital infrastructure. The authorized maker holds its host/child SSH authority; no private key descends into a child or enters the governor's ledger.
 9. Qualify typed deliverables through actual effects and independent observations. Code passing tests, a deployed artifact, a working live path and human acceptance are distinct evidence.
-10. Promote by the canary protocol. Repairs are bounded; a failed component rests `DEGRADED` and escalation is observable. A resolved defect produces a regression test and an improved owning intent.
+10. Promote by the canary protocol. Repairs are bounded; a failed instance rests `DEGRADED` and escalation is observable. A resolved defect produces a regression test and an improved owning intent.
 11. Secrets never enter tracked files, chat transcripts, public provenance or backup archives beside the key that opens them. Validate required credentials before their dependent operation and continue other authorized work.
 12. Design security boundaries from the outset. Implement necessary functional/perimeter protections during DEV while the tandem actively directs construction. After integrated functional acceptance, harden the complete system and verify the accepted workflows under the production action/type permissions. Do not invent repeated approvals inside an already approved envelope.
 13. Speak French with the operator and write technical artifacts in English. Human-facing business answers use plain language; technical evidence remains inspectable.

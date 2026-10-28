@@ -36,7 +36,7 @@ judgement rather than convention:
 
 | You are… | Read |
 | :--- | :--- |
-| building or changing a component | 0A, 0B, 0C, 0D, 0E, 32, 33 |
+| building or changing a functional unit (component) | 0A, 0B, 0C, 0D, 0E, 32, 33 |
 | deploying or operating | 3, 10, 11, 12, 13, 16, 25, 27, 30 |
 | working on agents, bridges, delegation | 0F, 0H, 0K, 6, 7, 8, 19, 21, 23, 24 |
 | handling documents or data | 20, 22, 26, 31; `docs/design/DOCUMENT-PIPELINE.md` is an illustrative example |

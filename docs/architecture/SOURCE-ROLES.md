@@ -8,7 +8,7 @@ precise retrieval before explanatory depth for a human audience.
 | Task | Exact local entrance | Required neighboring owners |
 | --- | --- | --- |
 | Understand or change composition | [Composition](COMPOSITION.md) | Ecosystem, glossary, Rules 1/11/37, topology and fleet |
-| Construct or specialize a service | [Boot](../agent/BOOT-CONTRACT.md) | Adopted LAW/rules, service's own intent, selected profile, dependency closure |
+| Construct or specialize a cell (service) | [Boot](../agent/BOOT-CONTRACT.md) | Adopted LAW/rules, cell's own intent, selected profile, dependency closure |
 | Persist or recover state | [Rules 4/26](../../RULES.md) | Owning unit, Rules 12/16/30, schema/artifact and recovery contract |
 | Run a persistent acting agent | [Common bridge](../intents/cognition-bridge.md) | Operating contract, Queue/Maestro, selected adapter and task authority |
 | Govern or provision instances | [Governor](../contracts/governor.md) | Maker, typed recipes, fleet, bounded repair and selected host profile |
@@ -23,10 +23,10 @@ foundation obligation. Runtime briefs contain only the necessary scoped material
 
 | Source role | Owns | Relationship |
 | --- | --- | --- |
-| [SHAPER ecosystem](https://github.com/xavdp-pro/shaper-ecosystem) | Common composition, cross-domain relationships and the five generic component mental contracts in `chapters/components/` and generic base contract `class:stem-cell` in `chapters/30-STEM-CELL.md` | This edition projects those meanings into its local operational laws; `navigation/OWNERS.json` identifies each exact component owner |
+| [SHAPER ecosystem](https://github.com/xavdp-pro/shaper-ecosystem) | Common composition, cross-domain relationships and the five generic functional unit mental contracts in `chapters/components/` and generic base contract `class:stem-cell` in `chapters/30-STEM-CELL.md` | This edition projects those meanings into its local operational laws; `navigation/OWNERS.json` identifies the exact owner of each |
 | [SHAPER glossary](https://github.com/xavdp-pro/shaper-glossary/blob/main/TERMS.md) | Stable concept IDs and vocabulary definitions | Local glossary explains usage and preserves compatibility aliases |
 | SHAPER OS | Development/operational laws, adoption and reference contracts | Governs its declared scope; names source owners instead of absorbing them |
-| Domain/service mental source | Domain intention, laws, interfaces and specialization | Refers to common invariants and supplies its own business meaning |
+| Domain/cell mental source | Domain intention, laws, interfaces and specialization | Refers to common invariants and supplies its own business meaning |
 | Product realization | Code, interfaces, versioned configuration templates and tests | Realizes selected contracts; private SaaS and VOX code stay private |
 | Project `-lab` | Working derivations, read coverage, reviews and execution/release evidence | Distinct private repository; references product revisions without becoming law; original conversations retain separate private custody |
 

@@ -59,7 +59,7 @@ Original rule identifiers remain stable. Current scope follows the explicit
 
 * The human is the Git author. A materially writing agent is identified in a truthful `Co-Authored-By: <agent identity> <email>` trailer; an advising or reviewing agent uses `Agent-Assisted-By: <agent identity> <email>`. State the actual engine/version when known and do not invent one behind an alias.
 * A wholly human change declares `No-Agent-Assistance: true`; that marker is mutually exclusive with agent attribution. Multiple actual contributors may be identified.
-* Keep changes atomic by component or coherent feature, with an English description and a clean, verifiable history. Commit and publish within the human's mandate; preparing an atomic change does not override a request to wait for review.
+* Keep changes atomic by functional unit (component), package or coherent feature, with an English description and a clean, verifiable history. Commit and publish within the human's mandate; preparing an atomic change does not override a request to wait for review.
 * The realization verifies missing or malformed attribution and incompatible markers. This documentation does not claim that an executable provenance guard ships here.
 * Attribution records who produced the change so that later defects can be traced to a decision or derivation.
 
@@ -76,7 +76,7 @@ Build locally for the first construction. A registry is recommended for repeated
 
 <a id="rule-4"></a>
 ### Rule 4: Standard Application Layout & Per-Functional-Podman Database Isolation
-* **Standard Application File Structure (`/apps/<slug>/`)**: Every deployed application or service component adheres strictly to the canonical application filesystem hierarchy — **same spirit under Podman**: persist what must survive in bind-mounted volumes, never mix cache with backups:
+* **Standard Application File Structure (`/apps/<slug>/`)**: Every deployed functional unit adheres strictly to the canonical application filesystem hierarchy — **same spirit under Podman**: persist what must survive in bind-mounted volumes, never mix cache with backups:
   ```
   /apps/<slug>/          # or <univ>/ for a univ-* cell under Podman
   ├── app/               # Code (git) — not a substitute for volume backup

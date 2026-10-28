@@ -46,7 +46,7 @@ unchanged.
 Report:
 1. Your understanding of SHAPER OS and its application to this project.
 2. Obligations already satisfied, with inspectable evidence.
-3. Confirmed conformity gaps, their consequences and affected components.
+3. Confirmed conformity gaps, their consequences and affected parts of the project.
 4. A proportionate correction plan within the current mandate.
 
 Distinguish an unverified condition from an observed defect. A documented gap
@@ -89,7 +89,7 @@ obligations as binding requirements, not optional background context.
 
 - Corpus location: <accessible corpus path>
 - Immutable revision: <full commit SHA or content-manifest digest>
-- Adoption scope: <project components and development responsibilities>
+- Adoption scope: <project parts and development responsibilities>
 - Declared architectural roles and applicable profiles: <actual declarations>
 - Existing conformity gaps: <rule/contract, observed gap, consequence,
   authorized correction scope and required evidence>

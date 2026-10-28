@@ -17,11 +17,11 @@ A private realization repository can describe instance configuration without
 becoming a second instance ledger. See [source roles](../architecture/SOURCE-ROLES.md).
 
 * **Three manifest fields carry all lineage — never the slug**:
-  * `perimeter`: `P1` | `P2` | `P3`, **mandatory on every declared component**.
-    Perimeter means **FUNCTIONAL PERIMETER, never OWNER or OS/Runtime/Workspace layer** — a client-specific component can be P1.
+  * `perimeter`: `P1` | `P2` | `P3`, **mandatory on every declared functional unit**.
+    Perimeter means **FUNCTIONAL PERIMETER, never OWNER or OS/Runtime/Workspace layer** — a client-specific unit can be P1.
   * `source`: `base` | `catalogue` | `fork` | `native`, mandatory.
-    `native` = a P3 component scaffolded inside the class repo (the
-    constructor-generated class realization); `fork` = inherited from a standard component and
+    `native` = a P3 unit scaffolded inside the class repo (the
+    constructor-generated class realization); `fork` = inherited from a standard unit and
     specialised.
   * `forkedFrom`: `{ "package": "@shaper/pkg-x", "atVersion": "x.y.z" }` —
     **mandatory when `source` is `fork`**, forbidden otherwise. A Rule 33 fork
@@ -116,8 +116,8 @@ becoming a second instance ledger. See [source roles](../architecture/SOURCE-ROL
     archive, and five builds of one commit giving five fingerprints.
   * **REAPED** — the fifth, terminal state, above. *Prevents*: a reaped row
     still counted as living, blocking its account and pinning its matrix.
-  * **rig** — the assembled solution: the classes it takes, the components they
-    declare, and the declarations that shape them (sector profile, tool
+  * **rig** — the assembled solution: the classes it takes, the functional units
+    they declare, and the declarations that shape them (sector profile, tool
     catalogue, seed), pinned together. A rig is an assembled delivery: each class is a versioned
     definition, and the rig pins the participating definitions — the demo rig is `univ-demo-saas` and
     `univ-demo-crm` and the entry door and the maker, at named tags.
@@ -127,7 +127,7 @@ becoming a second instance ledger. See [source roles](../architecture/SOURCE-ROL
     and no way to be assembled twice the same.
   * **tool** — one declared capability a class exposes to its agent, with a
     typed contract, from a closed catalogue: the agent may fill it and execute within the human-approved action or action-type policy; approval already embodied in that policy is not requested again. *Prevents*: `tool` naming
-    both a deliverable unit and an agent's capability (the unit is a component);
+    both a deliverable functional unit and an agent's capability;
     and free text reaching an action because the catalogue of what may be
     asked was never declared anywhere.
   * **shape** — the selected hosting arrangement: `direct`, `lxc` or `nested`
@@ -142,7 +142,7 @@ becoming a second instance ledger. See [source roles](../architecture/SOURCE-ROL
     jurisdiction and a pilot level and by nothing else; it sends requests to
     Runtime and never holds authority (Rule 0F). `brick-helm` implements it
     and its local owning intent specifies it: the word names that contract across
-    classes, not one component, which is why it enters where `steward` did not.
+    classes, not one functional unit, which is why it enters where `steward` did not.
     *Prevents*: KovZu, Helm and "Control Hub" naming one surface under three
     authority models, so that an operator's cockpit and a client's portal
     were designed twice and a customer's question had no defined boundary.
@@ -182,11 +182,11 @@ becoming a second instance ledger. See [source roles](../architecture/SOURCE-ROL
   names the human of a root tandem in the architecture documents and remains
   `brick-steward` here.
   What does not enter: `stamp`, `reap`, `validate`, `adopt` — kinds of work,
-  a table in `pkg-governor`, not nouns of the language. New components are not
+  a table in `pkg-governor`, not nouns of the language. New functional units are not
   new nouns — `brick-forge`, `brick-scraper`, `brick-sso` are the prefix
   system doing its job. The forge's line is bounded by the same amendment:
-  `brick-forge` deploys, destroys and repairs COMPONENTS inside a living cell instance
-  (the component level; drift at component level); cell instances are born and ended by
+  `brick-forge` deploys, destroys and repairs FUNCTIONAL UNITS inside a living cell instance
+  (the unit level; drift at unit level); cell instances are born and ended by
   the maker, from a ledger row (the cell level; the gap at instance level).
 * **What it protects**: a human juggling several vibecoded projects and a cold
   agent landing in a repo must both answer, from one page — *where is the

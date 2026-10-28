@@ -8,7 +8,7 @@
 **Cooperative Intelligence Ecology** is the working name for the direction
 behind SHAPER OS.
 
-It describes an ecology in which people, AI systems, business components,
+It describes an ecology in which people, AI systems, business components (functional units),
 organizations, and infrastructure cooperate without dissolving their distinct
 responsibilities. It is not a claim that software is alive, that nature is
 morally simple, or that every automated decision is beneficial. It is a design

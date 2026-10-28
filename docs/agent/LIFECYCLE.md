@@ -21,7 +21,7 @@ Its use descriptions do not replace the instance and promotion obligations here.
 
 ## DEV: build the integrated function
 
-The tandem actively directs authorized construction and follows changing interactions. The lead agent uses full noninteractive provider-equivalent execution without a CLI sandbox or repetitive approval questions within the mandate. Generate missing implementations, test components, correct defects and build the complete workflow.
+The tandem actively directs authorized construction and follows changing interactions. The lead agent uses full noninteractive provider-equivalent execution without a CLI sandbox or repetitive approval questions within the mandate. Generate missing implementations, test the functional units (components), correct defects and build the complete workflow.
 
 Design security from the outset: roles, jurisdiction, resource/data boundaries, sensitive operations and expected evidence. Implement what is necessary for correct functions, separation and preservation of data during DEV. Avoid freezing every granular permission before interactions are understood or repeatedly patching permissions by trial and error. Keep the designed boundaries recorded as the system evolves.
 

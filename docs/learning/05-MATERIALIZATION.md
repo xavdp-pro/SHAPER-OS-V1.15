@@ -20,7 +20,7 @@ except the explicitly labeled September target below.
 Materialization makes an intention operational under an explicit realization
 profile. The OS explains purpose, responsibilities, constraints, relationships
 and evidence. A separate realization repository owns implementation packages,
-component artifacts, executable schemas, migrations, manifests, tests and deployment
+functional unit artifacts, executable schemas, migrations, manifests, tests and deployment
 recipes. No implementation language or database engine is necessary to read OS.
 
 The construction agent produces these artifacts from the intentions and

@@ -6,7 +6,7 @@ The first DEV proof of a cell (service) is a real loop: construction â†’ order â
 
 | Step | Actual check | Required evidence |
 | :--- | :--- | :--- |
-| 0 | Fresh native tests, real stack boot and applicable live tests | Candidate revision, image digests, actual services and results |
+| 0 | Fresh native tests, real stack boot and applicable live tests | Candidate revision, image digests, actual running functional units (components) and results |
 | 1 | Ask what runs, list jobs, enqueue a dedicated test task | True answers and correlated job ID |
 | 2 | Execute a task and recover its result | Terminal Queue state, persisted `job.result.answer`, correlated retained audit, independently inspected artifact/effect |
 | 3 | Analyze a declared fixture file | Result agrees with its known contents, without invented values |

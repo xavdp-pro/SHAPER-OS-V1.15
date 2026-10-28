@@ -19,7 +19,7 @@ No existing SHAPER code repository, image or registry is required to start.
 Use the [creation example's prerequisites](../examples/CREATE-A-UNIVERSE.md#what-needs-to-be-available)
 to establish the destination and available means.
 
-The result is a generic stem-cell composition and its declared functional components,
+The result is a generic stem-cell composition and its declared functional units (components),
 configured, working and tested against the applicable contracts. Its versioned
 composition is the reusable starting point that a project deploys before adding its own
 functions. A base image alone does not include external state or qualification
@@ -72,7 +72,7 @@ own qualification; keep the previous reference identifiable for recovery.
    [Cognition Bridge](../intents/cognition-bridge-opencode.md) as the default fifth
    unit under the same isolation contract and the
    [generic context/session obligations](../intents/cognition-bridge.md).
-   A specialized cell/service adds one or more domain components. Select direct,
+   A specialized cell (service) adds one or more domain functional units. Select direct,
    LXC or nested hosting under Rule 11 while preserving this state ownership.
    A different persistence foundation requires explicit new direction.
 4. **Integrate, then harden the composition.** Design the intended security

@@ -21,7 +21,7 @@ Every identifier states its layer. Do not infer a layer from context.
 | Prefix | Layer | Example |
 | :--- | :--- | :--- |
 | `univ-` | Operational composition of the `univ-*` lineage, usually a specialized cell class or instance | `univ-base` |
-| `brick-` | OCI service definition | `brick-bridge-opencode` |
+| `brick-` | OCI deployable definition | `brick-bridge-opencode` |
 | `pkg-` | Reusable source package | `pkg-bridge-opencode` |
 | `img-` | Registry image | `img-bridge-opencode` |
 | `ctr-` | Running container role | `univ-base-ctr-bridge-opencode` |
@@ -32,10 +32,10 @@ Every identifier states its layer. Do not infer a layer from context.
 | `proof-` | Evidence artefact | `proof-univ-base-<release>` |
 
 A functional unit may exist at several layers. For example, `pkg-bridge-opencode`
-is code; `brick-bridge-opencode` is the OCI service built from it; and
+is code; `brick-bridge-opencode` is the deployable OCI definition built from it; and
 `img-bridge-opencode` is its immutable registry artefact. They are not synonyms.
 
-**A layer must be earned.** In the realization, a deployable `brick-` has an actual build definition and can become a Podman image; a source-only component is `pkg-`. This code-free OS describes those layers without carrying their code.
+**A layer must be earned.** In the realization, a deployable `brick-` has an actual build definition and can become a Podman image; source-only code is a `pkg-` package. This code-free OS describes those layers without carrying their code.
 
 ## Generic boundary
 

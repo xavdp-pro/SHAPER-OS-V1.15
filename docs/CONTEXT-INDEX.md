@@ -13,7 +13,7 @@ frame without becoming universal implementation requirements.
 
 Framework: **V1.15 — ready for use**. This board helps you choose a reading path.
 The editorial ledger tracks the framework's ongoing documentary evolution.
-Read this map before narrowing to a component.
+Read this map before narrowing to one part of the framework.
 The source coverage and open work are recorded in the
 [reading ledger](../review/READING-LEDGER.md). This board is a map, not a second
 copy of the law and not a deployment-status database.
@@ -161,7 +161,7 @@ local laws and contracts.
   containment, authority and physical hosting.
 - Responsibilities: OS, Runtime and Workspace; creation, execution and protection
   frameworks; functional units; declared exchanges and data ownership.
-- Materialization: interpretation, packages, components, composition, deployment,
+- Materialization: interpretation, packages, functional units, composition, deployment,
   verification, supervision, migration, recovery and replacement.
 - Interdependencies: providers/consumers, startup, authority, state, receipts,
   idempotency, degraded behavior, cycles and restoration order.

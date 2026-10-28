@@ -41,7 +41,7 @@ A distributed realization declares and proves its WireGuard mesh. An isolated fi
 
 <a id="rule-16"></a>
 ### Rule 16: Multi-level backup (container → files tar.bz2 → database → git → S3)
-These recovery responsibilities are selected and composed under the service contract. Each required state owner has a coherent recovery path; their implementation belongs to the realization.
+These recovery responsibilities are selected and composed under the declared recovery contract. Each required state owner has a coherent recovery path; their implementation belongs to the realization.
 
 | Level | What | How (Shaper / Podman spirit) |
 | :--- | :--- | :--- |
@@ -52,7 +52,7 @@ These recovery responsibilities are selected and composed under the service cont
 | **4. Git** | Code and architecture | Immutable tagged repo. Never treat git as a data backup. |
 | **5. S3 / R2** | Off-site copy of 2+3 (and optionally 1) | Encrypted archives (AES-256-GCM), cold bucket (Cloudflare R2 / Glacier-class). Copies **the tar.bz2 and dumps**, not a second git clone pretending to be backup. |
 
-**Files (level 2) are the volumes, not the overlay.** Recreating the Podman container from a tagged image + restoring `sav/*.tar.bz2` + DB dump **is** the inner restore. Infrastructure recovery restores the selected hosting boundary. The service declares PCA/PRA (BCP/DRP), failure domains, RPO/RTO, capture coordination and restore order. Backups preserve recoverable points; replicas support continuity and can propagate corruption. Redundancy does not replace backups. Promotion of a replacement writer excludes the old writer through controlled activation, then reconciles pending effects before resuming service. These responsibilities keep a localized failure recoverable without imposing distributed SQL on every component.
+**Files (level 2) are the volumes, not the overlay.** Recreating the Podman container from a tagged image + restoring `sav/*.tar.bz2` + DB dump **is** the inner restore. Infrastructure recovery restores the selected hosting boundary. The cell (service) declares PCA/PRA (BCP/DRP), failure domains, RPO/RTO, capture coordination and restore order. Backups preserve recoverable points; replicas support continuity and can propagate corruption. Redundancy does not replace backups. Promotion of a replacement writer excludes the old writer through controlled activation, then reconciles pending effects before resuming service. These responsibilities keep a localized failure recoverable without imposing distributed SQL on every functional unit (component).
 
 **The object key is derived, never improvised.** Each function-owned database
 recovery point is stored below
@@ -167,7 +167,7 @@ contracts below.
     * **Data & Imports (CSV, JSON)**: Column typing, primary key uniqueness, provenance validation.
     * **System Actions & External Dispatch**: Payload schema check, dry-run simulation when supported, then the authorized real effect and independent downstream evidence. A dry run alone cannot prove delivery.
   * In case of failure, the job transitions to self-correction or alerts the operator with explicit machine-verifiable diagnostics.
-* **Isolation Is Required by the Contract Type, Not by the Rule**: an ephemeral sandbox exists to contain **execution**, so it is mandatory only where the verification actually runs the artefact — the `code` contract. Documents, data and actions are verified by schema, arithmetic, typing and provenance checks, which execute nothing untrusted and therefore run in the verifying process itself. Demanding a container for those buys no safety and costs privilege, deployment weight and latency. A component that only produces documents must not be granted runtime access in the name of this rule.
+* **Isolation Is Required by the Contract Type, Not by the Rule**: an ephemeral sandbox exists to contain **execution**, so it is mandatory only where the verification actually runs the artefact — the `code` contract. Documents, data and actions are verified by schema, arithmetic, typing and provenance checks, which execute nothing untrusted and therefore run in the verifying process itself. Demanding a container for those buys no safety and costs privilege, deployment weight and latency. A unit that only produces documents must not be granted runtime access in the name of this rule.
 * **No Untyped Deliverable**: A job whose output type has no declared verification contract MUST NOT be silently marked `COMPLETED`. It is held in `NEEDS_CONTRACT` and escalated to the human, who declares the contract once — thereafter it is reusable for that type. Rule 0G applies: an absent contract is never a reason to pass.
 * **Activation Follows the Lifecycle**: DEV may record `NEEDS_CONTRACT` while constructing an unfinished typed gate, but cannot call the affected result verified or promote it. The realization declares and tests its enforcement switch, such as `QUALITY_GATE_ENFORCE=1`. Finalize enforcement during dedicated hardening after integrated acceptance and prove it before production. No real-client production action bypasses its typed evidence contract.
 
@@ -199,7 +199,7 @@ contracts below.
 <a id="rule-22-isolated-qdrant-collection"></a>
 
 * A query cannot cross its authorized cell, universe or tenant scope. Parents consume
-  authorized service responses, never raw child collections by implicit privilege.
+  authorized responses through declared interfaces, never raw child collections by implicit privilege.
 * Unavailable embedding capability produces an explicit pending/failure state;
   do not insert placeholder vectors or silently mix incompatible vector spaces.
 * Revocation, erasure and retention cover source access and derived retrieval.

@@ -24,7 +24,7 @@ Original rule identifiers remain stable. Current scope follows the explicit
 <a id="rule-25"></a>
 ### Rule 25: Canary Deployment & Downward Rollback (Anti-Propagation)
 * **Progressive Fleet Updates**:
-  * Whenever a parent level ($K+1$: its governor writes the rows, its makers apply them) distributes a configuration or component update to its child fleet:
+  * Whenever a parent level ($K+1$: its governor writes the rows, its makers apply them) distributes a configuration or functional unit (component) update to its child fleet:
     1. **Canary (1/N)**: Deploy to 1 pilot child instance only.
     2. **Observation Period**: Monitor logs and health for $T$ minutes (bake time, default 5 min).
     3. **Phased Rollout**: If the canary passes its gate → deploy to 10%, then 100% of the fleet.
@@ -82,7 +82,7 @@ Original rule identifiers remain stable. Current scope follows the explicit
     mandatory when that functional Podman is rebuilt, replaced, rematerialised
     or promoted: the new artefact must carry its private MariaDB and pass the
     complete qualification above before it takes over.
-  * A SaaS service owns only the inventory, order, billing or other state assigned by its declared domain contract. It accesses other owners through governed interfaces, never their databases. Infrastructure resilience contains shared-host failure; private databases alone do not remove that common failure domain.
+  * A specialized SaaS cell (service) owns only the inventory, order, billing or other state assigned by its declared domain contract. It accesses other owners through governed interfaces, never their databases. Infrastructure resilience contains shared-host failure; private databases alone do not remove that common failure domain.
 
 ---
 
@@ -96,7 +96,7 @@ Original rule identifiers remain stable. Current scope follows the explicit
   * **Fleet-Wide Circuit Breaker**: If more than 20% of a fleet enters `DEGRADED` within one bake window, the parent suspends ALL reconciliation and rollout activity on that fleet and escalates. A systemic fault must never be amplified N times.
 * **The Escalation Channel Is Declared, Never Assumed**: "Alert the operator" is meaningless until the channel exists. Each cell declares its `alerting` channel in `manifest.json` — mobile push, mail, Telegram, or an existing prod-alerting relay. The channel depends on what is being watched and is decided case by case; the doctrine imposes only the contract:
   * It reaches a **human out-of-band** — never a UI nobody is looking at.
-  * It is **tested at deploy time** like any other component: an unverified alert path is an absent alert path (Rule 0G).
+  * It is **tested at deploy time** like any other unit: an unverified alert path is an absent alert path (Rule 0G).
   * A cell with no declared channel MUST NOT be promoted beyond DEV.
 * **Rationale**: Without these bounds, one invalid manifest on a 50-child fleet produces 50 simultaneous restart loops — the reconciliation engine becomes the outage.
 
@@ -116,7 +116,7 @@ Original rule identifiers remain stable. Current scope follows the explicit
 ### Rule 29: Constructive Integrity (Every Fixed Bug Becomes a Test)
 * **The System Grows a Memory of Its Own Failures**: Any resolved defect — in code, in a manifest, in a WAF rule, in an agent prompt — MANDATORILY gives birth to a new non-regression test committed alongside the fix.
 * **No Fix Without Proof**: A patch whose accompanying test would still pass on the unpatched code does not demonstrate anything and is rejected.
-* **A Correction Lives Where It Survives**: A defect met while deploying or operating an instance is corrected in the **generic path** — the component, the package, the template, the example deploy script — never only in the instance where it appeared. Its test is placed where it will still run after that instance is gone.
+* **A Correction Lives Where It Survives**: A defect met while deploying or operating an instance is corrected in the **generic path** — the functional unit, the package, the template, the example deploy script — never only in the instance where it appeared. Its test is placed where it will still run after that instance is gone.
   * **Why this is a rule and not advice**: a `-test` instance is destroyed by Rule 10, and a `-dev` one is disposable by design. A fix written into an instance is deleted with the instance, and the next clean sheet meets the same wall having learnt nothing. The next clean construction must inherit the correction from its owning source and test.
   * **The test decides where the fix belongs**: if the non-regression test would disappear with an instance, the fix is in the wrong place. Move both.
   * **A cell may still specialise**: this forbids *correcting* in an instance, not *parameterising* one. When a defect is genuinely specific to one deployment, say so in that cell's INTENT and explain why the generic path is right as it stands.

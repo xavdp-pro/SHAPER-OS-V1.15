@@ -5,8 +5,8 @@
 Source role: this edition's governing continuity projection of the ecosystem's
 [generic cognition-bridge contract](https://github.com/xavdp-pro/shaper-ecosystem/blob/main/chapters/components/cognition-bridge.md)
 (`component:cognition-bridge`). `COGNITION-BRIDGE-CONTINUITY` remains this
-framework's scoped obligation identifier, not an alias for a second component
-owner. The [status contract](../contracts/bridge-status.md) owns `shaper-bridge/v1`;
+framework's scoped obligation identifier, not an alias for a second owner
+of that contract. The [status contract](../contracts/bridge-status.md) owns `shaper-bridge/v1`;
 selected adapters bind these revisions and own their concrete transport schemas.
 
 Identifier: **COGNITION-BRIDGE-CONTINUITY**.

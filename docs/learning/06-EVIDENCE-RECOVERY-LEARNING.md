@@ -49,11 +49,11 @@ cell or universe. Preserve evidence, contain the fault and name the required int
 
 - CORRECT changes a known faulty rule, configuration or implementation.
 - REPAIR restores valuable state that cannot simply be regenerated.
-- REBUILD recreates a reproducible component from trusted sources.
+- REBUILD recreates reproducible runtime from trusted sources.
 - QUARANTINE isolates a suspect participant while preserving evidence.
 
 These are not the same axis as development, testing and production environments.
-The cause of compromise must be addressed before trusting a rebuilt component.
+The cause of compromise must be addressed before trusting rebuilt runtime.
 
 ## How do we verify understanding?
 

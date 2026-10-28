@@ -84,9 +84,9 @@ partitions are a selected policy, not a rule for every history. Administrative
 DDL, retention and restore remain separate governed operations.
 
 Small elementary state units contain local failures. [Rule 16](../../RULES.md#rule-16)
-connects consistent captures, replicas, service redundancy, independent recovery
+connects consistent captures, replicas, declared redundancy, independent recovery
 means and controlled writer activation. Declare BCP/DRP (PCA/PRA), RPO/RTO and
-recovery dependencies for the service; no component count creates a guarantee.
+recovery dependencies for the cell; no unit count creates a guarantee.
 
 ## Local development and production
 

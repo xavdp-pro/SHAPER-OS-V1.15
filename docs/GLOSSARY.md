@@ -15,8 +15,8 @@ agent-facing pages lead with the technical term, human-facing pages with the cli
   coherence and usefulness through using an assembled system.
 - **Apparent usability:** a provisional judgment grounded in interactions
   actually tried, not a claim of complete qualification.
-- **Current level of exigence:** what must work for the present component and
-  use, under the human mandate and applicable obligations.
+- **Current level of exigence:** what must work for the thing being built and its
+  present use, under the human mandate and applicable obligations.
 
 Read [Prevention of Agentic Overzealousness](human/PREVENTION-OF-AGENTIC-OVERZEALOUSNESS.md)
 for human context, agent decisions, examples and limits.

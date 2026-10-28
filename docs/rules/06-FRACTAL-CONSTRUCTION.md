@@ -8,20 +8,20 @@ Original rule identifiers remain stable. Current scope follows the explicit
 <a id="rule-32"></a>
 ### Rule 32: The Perfected Generic Base Comes Before Any Specialisation (Founding Method)
 * **How work is framed here, and it is not negotiable**: for each thing we build, we first **delimit a perimeter**, then we make what sits inside it **excellent, generic, extensible and open to what comes next** — a base that will interact with other systems we have not met yet. Business specifics are built *on top of it*, never *into it*.
-* **Why it is the founding logic, not a preference**: this is what makes the four promised properties true rather than claimed. A versioned base is **adaptable** through compatible component replacement, **scalable** within its declared resource and workload envelope, **evolving** through owned corrections, and **composable** through explicit parallel responsibilities. And it is what makes the architecture genuinely **fractal**: the pattern is only worth repeating if the pattern is good.
+* **Why it is the founding logic, not a preference**: this is what makes the four promised properties true rather than claimed. A versioned base is **adaptable** through compatible replacement of functional units (components), **scalable** within its declared resource and workload envelope, **evolving** through owned corrections, and **composable** through explicit parallel responsibilities. And it is what makes the architecture genuinely **fractal**: the pattern is only worth repeating if the pattern is good.
 * **The economic argument is explicit**: time spent perfecting the base is not time lost, it is time bought back on every project that follows. A specific requirement then costs an adaptation, not a rebuild — and often costs nothing at all because the base already covers it.
 * **Binding consequences**:
-  1. **No client requirement is ever written into a generic component.** It goes into a P3 application or a declared handler. A component that carries one client's particularity has stopped being a base.
+  1. **No client requirement is ever written into a generic unit.** It goes into a P3 application or a declared handler. A unit that carries one client's particularity has stopped being a base.
   2. **A base is finished when it is boring** — when the next specific need is met by configuration and a handler, not by editing it.
-  3. **Elasticity is part of "generic"**: the same component must run modestly on a small VPS and hold up on a large server, by parameter and never by fork. A component that only works at one scale is not a base.
+  3. **Elasticity is part of "generic"**: the same unit must run modestly on a small VPS and hold up on a large server, by parameter and never by fork. A unit that only works at one scale is not a base.
   4. **When a specialisation forces a change to the base**, that change must be made *generic* before being merged — the particular case reveals a missing capability, it does not authorise a special case.
-* **Applies to every agent working on this repository.** Delivering a working specific feature by contaminating a generic component is a regression, not a delivery, however green the tests are.
-* **The total vision is what dictates the steps on the base components.** A component is never perfected in the abstract, against an imagined future — it is perfected **against the whole picture of where the project is going**. Holding the complete vision is what tells us which capability the base must carry, which one it must not, and in what order to build them. This is why the doctrine is written before the code: not as ceremony, but because the map is what turns "make it generic" into a list of concrete steps. An agent that has not read the vision cannot decide what belongs in a base.
-* **A stray specific bit is not a catastrophe.** If something slightly specific slips into a component, the sky does not fall: the day a *more* specific need arrives, we meet that same code again and generalise it then. What must hold is that **the broad lines cover a good part of the perimeter** — enough that we can walk into a client situation and discover the rest from a working base, not from nothing. Perfectionism that blocks delivery is not this rule.
+* **Applies to every agent working on this repository.** Delivering a working specific feature by contaminating a generic unit is a regression, not a delivery, however green the tests are.
+* **The total vision is what dictates the steps on the base units.** A unit is never perfected in the abstract, against an imagined future — it is perfected **against the whole picture of where the project is going**. Holding the complete vision is what tells us which capability the base must carry, which one it must not, and in what order to build them. This is why the doctrine is written before the code: not as ceremony, but because the map is what turns "make it generic" into a list of concrete steps. An agent that has not read the vision cannot decide what belongs in a base.
+* **A stray specific bit is not a catastrophe.** If something slightly specific slips into a unit, the sky does not fall: the day a *more* specific need arrives, we meet that same code again and generalise it then. What must hold is that **the broad lines cover a good part of the perimeter** — enough that we can walk into a client situation and discover the rest from a working base, not from nothing. Perfectionism that blocks delivery is not this rule.
 See [Prevention of Agentic Overzealousness](../human/PREVENTION-OF-AGENTIC-OVERZEALOUSNESS.md)
 for human context and contrasting applications of this stage-dependent exigence.
 
-* **The level of exigence is set per thing and per moment.** Not everything deserves the same rigour at the same time, and pretending otherwise stalls the work. Each component is made robust *at its own level of exigence*, decided by the human. The declared requirement for the current component and stage governs.
+* **The level of exigence is set per thing and per moment.** Not everything deserves the same rigour at the same time, and pretending otherwise stalls the work. Each thing we build is made robust *at its own level of exigence*, decided by the human. The declared requirement for the current thing and stage governs.
 * **Prevent agentic overzealousness.** Build a coherent whole early and let actual
   use and human feedback inform the next increment. Progressive satisfaction
   recognizes that the assembled result seems to work well in observed use;
@@ -41,10 +41,10 @@ Security boundaries are designed during DEV and necessary functional protections
 
 <a id="rule-33"></a>
 ### Rule 33: The Client Fractal Fork (Assumed Divergence, Never Contamination)
-* **The mechanism**: when a client's needs require it, we take the base components and **fork the whole solution fractally** for that client. The fork diverges from the original creation, and **that divergence is assumed** — it is the fruit of shaping something for a real need, not an accident to be repaired.
-* **Why this does not contradict Rule 32**: Rule 32 forbids putting a client's particularity **inside a shared generic component**. Rule 33 authorises **a separate branch of the tree** for that client. The base stays clean for everyone; the client gets exactly what they need. This is precisely what the fractal architecture exists to make possible — a branch has the shape of the tree without being the tree.
+* **The mechanism**: when a client's needs require it, we take the base units and **fork the whole solution fractally** for that client. The fork diverges from the original creation, and **that divergence is assumed** — it is the fruit of shaping something for a real need, not an accident to be repaired.
+* **Why this does not contradict Rule 32**: Rule 32 forbids putting a client's particularity **inside a shared generic unit**. Rule 33 authorises **a separate branch of the tree** for that client. The base stays clean for everyone; the client gets exactly what they need. This is precisely what the fractal architecture exists to make possible — a branch has the shape of the tree without being the tree.
 * **When to fork, and when not to**:
-  * **Do not fork** for a small business need. An artisan's CRM is met with base components, a P3 application and declared handlers. Forking there would be paying a permanent cost for a temporary difference.
+  * **Do not fork** for a small business need. An artisan's CRM is met with base units, a P3 application and declared handlers. Forking there would be paying a permanent cost for a temporary difference.
   * **Fork** when a client imposes requirements that reach into the socle itself — strict security posture, role systems, information compartmentation, regulatory constraints. Those cannot live as a configuration flag on everyone else's base.
 * **Obligations of a fork**:
   1. It states **what it diverged from** — the base version it was cut at — and **why**. A fork whose origin is unknown cannot be maintained.
@@ -59,9 +59,9 @@ Security boundaries are designed during DEV and necessary functional protections
 
 A CLI bridge exists to run a command-line agent; a declared API adapter states its equivalent runtime dependencies. A bridge whose CLI **cannot start** answers `ok` on `/api/health` and does nothing — the most expensive failure shape there is, because everything downstream believes it.
 
-* **The image carries the prerequisites, not the operator's memory.** Every runtime dependency of the CLI — interpreter, shell, fonts, language data, system libraries — belongs in the component's image and is **pinned**. If a CLI needs something absent, it is the component's duty to install it, declared in its `INTENT.md`. An operator who must remember to install something by hand has been handed a landmine.
+* **The image carries the prerequisites, not the operator's memory.** Every runtime dependency of the CLI — interpreter, shell, fonts, language data, system libraries — belongs in the unit's image and is **pinned**. If a CLI needs something absent, it is the unit's duty to install it, declared in its `INTENT.md`. An operator who must remember to install something by hand has been handed a landmine.
 
-* **A prerequisite is proven, never assumed.** The component's health must establish that the CLI is **executable**, by running its own version command, not that a path was configured. `which` proves a string; running proves a binary. An image that only builds or only runs on some machines is not an artefact you can tag (Rule 0E).
+* **A prerequisite is proven, never assumed.** The unit's health must establish that the CLI is **executable**, by running its own version command, not that a path was configured. `which` proves a string; running proves a binary. An image that only builds or only runs on some machines is not an artefact you can tag (Rule 0E).
 
 * **Three traps that cost a session each, and are now law:**
   1. **Never mount a symlink into a container.** It arrives pointing at a path that does not exist there. Mount the resolved target.
@@ -83,7 +83,7 @@ The adapter declares its actual noninteractive approval/sandbox modes. Mandated 
 
 Rule 29 requires that every bug resolved gives birth to a regression test. That protects the code. It does not protect the **next cell**, which is built from `INTENT.md` and not from our test suite.
 
-* **A problem experienced updates the component's `INTENT.md`.** Not a changelog of incidents — the *invariant the incident revealed*, stated as the component's intent so anyone materialising it again starts from what we learned. A fix that lives only in code is a lesson one refactor away from being lost.
+* **A problem experienced updates the unit's `INTENT.md`.** Not a changelog of incidents — the *invariant the incident revealed*, stated as the unit's intent so anyone materialising it again starts from what we learned. A fix that lives only in code is a lesson one refactor away from being lost.
 
 * **Write the constraint, not the anecdote.** "A missing CLI is a state, not a crash" belongs in the intent. "On 23 August the cursor bridge died" does not; it belongs in the commit that fixed it.
 

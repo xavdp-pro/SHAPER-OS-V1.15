@@ -4,13 +4,13 @@
 
 Source role: this edition's governing operational projection of the
 [generic Queue mental contract](https://github.com/xavdp-pro/shaper-ecosystem/blob/main/chapters/components/queue.md)
-(`component:queue`). The ecosystem owns the generic component intention; this
+(`component:queue`). The ecosystem owns the generic intention of this functional unit (component); this
 framework owns its adopted lifecycle, verification, evidence and consumer-claim
 obligations below. Generic classification does not create a second owner of that
 mental contract. A selected realization binds both applicable source revisions
 and declares its concrete interface; see [source roles](../architecture/SOURCE-ROLES.md).
 
-Queue is a generic asynchronous job service with progress and SSE, not a business agent or a source of authority. It owns a private MariaDB and retains its own job evidence.
+Queue is a generic functional unit for asynchronous jobs, with progress and SSE, not a business agent or a source of authority. It owns a private MariaDB and retains its own job evidence.
 
 ## Lifecycle and crash semantics
 
@@ -24,7 +24,7 @@ A lane cannot remain held by silence. For an executing job, bound terminal-event
 
 ## Deferred prerequisites and consumer claims
 
-The service responsible for a missing prerequisite owns its waiting reason and
+The unit responsible for a missing prerequisite owns its waiting reason and
 durable resumption policy: [Maestro](maestro.md#interactive-work) owns
 `AWAITING_HUMAN`; the declared [cognition selection/dispatch unit](../architecture/COGNITION.md#axis-5--degradation-policy-what-happens-when-you-cannot-have-it)
 owns `AWAITING_CAPACITY`; an ingestion unit owns document states such as

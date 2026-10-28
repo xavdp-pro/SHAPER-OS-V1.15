@@ -54,7 +54,7 @@ Original rule identifiers remain stable. Current scope follows the explicit
   aged with them. A default that must be edited when a vendor ships a new version
   is not a rule, it is a cache.
 * **What is binding instead**:
-  * Each component declares the cognition its work requires — capacity class, depth
+  * Each functional unit (component) declares the cognition its work requires — capacity class, depth
     `D0`–`D4`, throughput `T0`–`T3`, degradation policy — in its `INTENT.md`
     ([`docs/architecture/COGNITION.md`](../../docs/architecture/COGNITION.md)).
   * At every deployment the agent enumerates the engines actually reachable from
@@ -107,7 +107,7 @@ Every containerized agent exposes:
 
 | Method and path | Meaning |
 | :--- | :--- |
-| `GET /api/health` | Service readiness and its private database connection |
+| `GET /api/health` | Unit readiness and its private database connection |
 | `POST /api/inject` | Context-bearing task injection |
 | `GET /api/events` | Server-Sent Events for correlated live execution |
 | `GET /api/metrics` | Structured events and latency metrics |
@@ -151,13 +151,13 @@ Security is designed from the outset; implement functional/perimeter necessities
   profiles retain their declared operational-composition role, usually one
   specialized cell, through an explicit compatibility mapping; neither usage
   requires an outer physical container. Each functional
-  component runs in its own Podman application boundary with its private MariaDB.
+  unit runs in its own Podman application boundary with its private MariaDB.
   No Docker runtime, installer or shared Docker image/network/store path is adopted.
 * A class declares its hosting profile: `shape: direct` uses functional Podman
   containers on an authorized Linux runtime host; `shape: lxc` uses a system
   container; `shape: nested` uses an outer Podman system container hosting inner
   functional containers. Existing profile versions retain their `lxc` default;
-  new selections declare shape explicitly. A component does not recursively
+  new selections declare shape explicitly. A functional unit does not recursively
   contain another runtime merely because the business organization is fractal.
 * Host family describes the means of realizing that shape: `direct`, `proxmox`,
   `lxd`, `liblxc` or `nested`. Declare one selected family per shape on a machine,
@@ -169,7 +169,7 @@ Security is designed from the outset; implement functional/perimeter necessities
 * Verify the selected host's actual capabilities with a disposable construction,
   real functional Podman container and image build. For nested profiles, perform
   these checks inside the declared outer boundary. Live migration, checkpointing
-  and availability are separate declared service/infrastructure capabilities.
+  and availability are separate declared cell/infrastructure capabilities.
 * Linux, macOS and Windows development profiles specify their compatible Linux
   runtime backend, mounts, networking and private environment configuration.
   They retain the same class, application-state and production-promotion contracts.
@@ -186,14 +186,14 @@ Security is designed from the outset; implement functional/perimeter necessities
 <a id="rule-11-nesting-needs-a-restart"></a>
 * A nesting change on an existing LXC requires the corresponding authorized restart before validation. Prefer declaring it at launch. Nested Podman namespaces/delegation are established when the outer container is created.
 <a id="rule-11-declared-ports-are-free"></a>
-* Compare declared listening ports with actual sockets before deployment. Distinguish the owned component being replaced from a foreign holder. Identify a conflict and its owner; do not silently pick another port or stop an unrelated service. A shared network namespace, if chosen, is confined to the declared composition and preserves its functional isolation and authorized crossings. Every functional unit's MariaDB remains private, using its own socket/network boundary; do not expose several databases on one shared localhost port.
+* Compare declared listening ports with actual sockets before deployment. Distinguish the owned unit being replaced from a foreign holder. Identify a conflict and its owner; do not silently pick another port or stop an unrelated service. A shared network namespace, if chosen, is confined to the declared composition and preserves its functional isolation and authorized crossings. Every functional unit's MariaDB remains private, using its own socket/network boundary; do not expose several databases on one shared localhost port.
 
 <a id="rule-11-what-is-restored"></a>
 * Restorable identity consists of `manifest.json`, `cfg-image-lock.json` and declared volumes. Images are rebuilt from pinned source or pulled by digest, never treated as backup state. Complete restoration with the cell's own acceptance proof.
 <a id="rule-11-a-brick-is-rebuilt-not-repaired"></a>
 * Four operations remain distinct: **CORRECT** fixes a known error in controlled source; **REPAIR** restores non-reproducible database/volume state; **REBUILD** recreates reproducible runtime from a known-good image; **QUARANTINE** removes suspect runtime from service while retaining evidence. An in-place cleanup does not re-establish trust.
-* Close the cause before rebuilding a compromised component. Incident order is: notice suspicion, reduce/freeze privileges, capture evidence, quarantine, identify cause, correct source, rebuild, test, obtain a counter-view, restore service, observe, deliberately retire/archive the old instance. This is distinct from DEV → TEST → PROD. Quarantine is a trust condition, not a fourth environment; a suspect instance never returns unchanged.
-* A service start recreates the complete application container from its known image. Its declared non-reproducible volumes survive. A class may add components but may not invent an in-place patch as a fifth recovery operation. The [consulted-context doctrine](../../docs/design/CONSULTED-CONTEXT.md) explains the design/acting boundary.
+* Close the cause before rebuilding compromised runtime. Incident order is: notice suspicion, reduce/freeze privileges, capture evidence, quarantine, identify cause, correct source, rebuild, test, obtain a counter-view, restore service, observe, deliberately retire/archive the old instance. This is distinct from DEV → TEST → PROD. Quarantine is a trust condition, not a fourth environment; a suspect instance never returns unchanged.
+* A service start recreates the complete application container from its known image. Its declared non-reproducible volumes survive. A class may add functional units but may not invent an in-place patch as a fifth recovery operation. The [consulted-context doctrine](../../docs/design/CONSULTED-CONTEXT.md) explains the design/acting boundary.
 <a id="rule-11-a-brick-runs-as-its-own-class-not-root"></a>
 * Own application code runs as the unit's declared system user, with the same slug for system user, database and database user. Use a fixed numeric UID above 1000, build-time ownership and the correct runtime user. Scope ownership changes to files that process actually owns; never recursively chown another unit's database volume. Grant the specific low-port bind capability if needed instead of running the application as root. Upstream images retain their documented internal service identities; administrative root/Podman provisioning is a separate authorized path. Full DEV lead-agent execution does not make every application service root.
 

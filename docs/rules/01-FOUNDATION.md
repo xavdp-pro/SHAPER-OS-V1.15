@@ -16,7 +16,7 @@ Original rule identifiers remain stable. Current scope follows the explicit
 <a id="rule-0a"></a>
 ### Rule 0A: Three Perimeters Taxonomy (P1 / P2 / P3)
 
-Every component, package, component, or app MUST be classified into **exactly one** perimeter before design or deploy. Canonical source: [perimeter taxonomy](../../docs/architecture/PERIMETERS.md).
+Every functional unit (component), package or app MUST be classified into **exactly one** perimeter before design or deploy. Canonical source: [perimeter taxonomy](../../docs/architecture/PERIMETERS.md).
 
 | Perimeter | Objective | Examples |
 | :--- | :--- | :--- |
@@ -36,7 +36,7 @@ Every component, package, component, or app MUST be classified into **exactly on
 * **Zero Hardcoded Environment Residue**: Never hardcode specific IP addresses, hypervisor node names, private subnets, tenant domains, or static credentials into code, scripts, or specifications.
 <a id="rule-0b-intent-header-classification"></a>
 * **Mandatory Intent Header Classification (Generic vs Specific)**: Every `INTENT.md` or blueprint document in SHAPER OS MUST declare its exact classification at the very top header:
-  * `> **Intent Classification**: GENERIC INTENT (Universal / Parameterized Blueprint)` for reusable abstract components in `SHAPER-OS/`.
+  * `> **Intent Classification**: GENERIC INTENT (Universal / Parameterized Blueprint)` for reusable abstract blueprints in `SHAPER-OS/`.
   * `> **Intent Classification**: SPECIFIC INTENT (Universe: <univ_slug>)` for concrete instantiated deployments in experimental sandboxes or apps. The literal keeps its earlier word; `<univ_slug>` names the specific cell.
 * **Strict Distinction: Abstract Specs vs Concrete Examples**: Technical documentation must always define abstract parameterized interfaces first (e.g. `<CLIENT_MESH_IP>`, `<GATEWAY_HOST>`, `<DOMAIN_NAME>`).
 * **Explicit Demarcation of Specialized Examples**: Following any generic documentation, specialized real-world implementation examples (e.g. a specific Proxmox hypervisor, cloud node, or demonstrator) MAY be provided, but MUST ALWAYS be explicitly labeled under a dedicated section header: `### Illustrative Example (Non-Binding / Demonstration Only)`. There must be zero ambiguity between universal contracts and specific illustrative cases.
@@ -66,9 +66,9 @@ SHAPER OS uses **two complementary layers** — never one replacing the other:
 
 * **INTENT.md is mandatory** for every `@shaper/*` package and every `brick-*` directory. It answers *What* and *Why*.
 * **JSON manifests are mandatory at ecosystem level** via the canonical root `topology.json` generated in the realization repository. It answers *Who depends on Whom* and *In what order*.
-* **Optional local `deps.json`** MAY exist inside a `packages/<name>/` or `bricks/brick-<name>/` directory when a component needs to declare overrides for a specific cell — but the root `topology.json` remains the master graph.
+* **Optional local `deps.json`** MAY exist inside a `packages/<name>/` or `bricks/brick-<name>/` directory when that package or unit needs to declare overrides for a specific cell — but the root `topology.json` remains the master graph.
 * **Zero duplication of philosophy in JSON**: JSON files MUST NOT repeat INTENT prose. They carry only structured fields: `id`, `type`, `requires`, `optional`, `provides`, `port`, `bootAfter`.
-* **Agent-Synthesized Defaults**: Business rules and deploy details are **not** stored in `topology.json` unless a human explicitly requests an override. Silence = agent decides freely, as long as each component `INTENT.md` invariants are respected.
+* **Agent-Synthesized Defaults**: Business rules and deploy details are **not** stored in `topology.json` unless a human explicitly requests an override. Silence = agent decides freely, as long as the `INTENT.md` invariants of each package or unit are respected.
 * **Override Protocol**: When a human states a specific constraint (port, path, schema, dependency), add it to `topology.json` or a local `deps.json`. Never preemptively.
 * **Validation**: Any `doctor`, bootstrap, or deploy script MUST read `topology.json` for ordering — never hardcode dependency chains in shell scripts. The constructor supplies graph validation against `topology.json` and actual imports, following the [topology contract](../../docs/architecture/TOPOLOGY.md).
 

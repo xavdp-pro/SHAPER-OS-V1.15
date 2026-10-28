@@ -22,8 +22,8 @@ and table-partition applicability, preserving functional ownership.
 Infrastructure hosts the selected profile: direct functional Podman containers,
 LXC with functional containers, or nested Podman with functional containers.
 The class declares the profile and required host capabilities; its instance
-records actual placement. A logical space organizes service membership and
-relationships. The current glossary uses universe as a logical-space alias; legacy `univ-*`
+records actual placement. A universe (space) organizes cell membership and
+relationships. Legacy `univ-*`
 profiles retain their operational-composition usage with an explicit class-role
 mapping, independently of physical hosting.
 
@@ -35,7 +35,7 @@ owns containment; no logical nesting requires automatic physical nesting.
 
 ## Preserved choices
 
-Each functional component has one responsibility, one Podman runtime boundary,
+Each functional unit (component) has one responsibility, one Podman runtime boundary,
 one system identity and its own MariaDB server in the same container. The
 functional slug names the application account, database account and database.
 The server uses a separate engine account and private local Unix socket;
@@ -63,7 +63,7 @@ Logger and generic Queue are P1; deterministic Maestro is P2. The reference
 adds OpenCode as its default cognition bridge under the
 [24 September choice](../../decisions/2026-09-24-REFERENCE-OPENCODE-BRIDGE.md).
 The base remains operational without cognition; Maestro is idle without schedules.
-A specialized cell/service adds one or more domain components and their owning
+A specialized cell (service) adds one or more domain functional units and their owning
 contracts. Its class and specialization versions remain distinct from the
 identity, credentials, state and placement of each instance.
 
@@ -74,9 +74,9 @@ a local transaction is not a distributed transaction across databases.
 
 ## Scope placement
 
-A logical space declares its service memberships, scoped governance and permitted
+A universe declares its cell memberships, scoped governance and permitted
 crossings. It does not automatically acquire a duplicate base stack merely by
-existing. Functions actually owned at space level are declared as such with their
+existing. Functions actually owned at universe level are declared as such with their
 own state and lifecycle. Aggregation is a separate receiving function, not an
 implicit merger of source databases or histories.
 
@@ -87,7 +87,7 @@ approval. Containment, hosting and a screen request grant no authority by themse
 
 | Record | Meaning |
 | --- | --- |
-| Composition | Stable class, specialization and instance identities; base and domain components; logical spaces |
+| Composition | Stable class, specialization and instance identities; base and domain functional units; universes |
 | Placement | Selected profile, host capabilities and physical boundaries |
 | Doors | Sender/receiver, purpose, data/actions, standing authority, refusal and evidence |
 | Fractal scope | Governor responsibilities, maker/worker jurisdiction, finite creation bounds and external recovery owner |
@@ -103,7 +103,7 @@ A readiness receipt carries its precise meaning rather than replacing a
 consumer's acceptance or an independently observed effect.
 
 Small owned state units support predictable maintenance and localized restore.
-The service declares PCA/PRA, RPO/RTO, consistent database/artifact capture,
+The cell declares PCA/PRA, RPO/RTO, consistent database/artifact capture,
 separate backups and replicas, and externally controlled writer activation.
 Restoration uses known class/schema/artifact revisions, excludes stale writers,
 and reconciles uncertain effects before work resumes. [Rules 12/16/30](../../RULES.md)

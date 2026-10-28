@@ -24,11 +24,11 @@ implementation packages and deployable images realize it.
 For every relationship identify producer and consumer, purpose, authority,
 accepted inputs, outputs, compatibility, persistence, startup needs, refusal,
 timeouts, retry and duplicate handling, evidence and recovery. Distinguish a
-build-time dependency from a running service dependency.
+build-time dependency from a dependency on running software.
 
 ## Why does it exist?
 
-A list of components cannot explain behavior after a partial failure. Explicit
+A list of functional units cannot explain behavior after a partial failure. Explicit
 contracts prevent two units from both assuming the other owns an obligation, or
 neither owning it. An acknowledgment must say precisely what it acknowledges.
 

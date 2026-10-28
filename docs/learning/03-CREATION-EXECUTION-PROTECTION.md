@@ -28,7 +28,7 @@ framework with the same meaning as the other three.
 
 ## Why does it exist?
 
-Specifying only a service's useful behavior leaves unanswered who may invoke it,
+Specifying only a unit's or cell's useful behavior leaves unanswered who may invoke it,
 what it depends on, how it stops and how its state survives. Separating the three
 questions makes these omissions visible without binding the OS to one technology.
 

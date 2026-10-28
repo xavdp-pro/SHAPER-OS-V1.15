@@ -24,7 +24,7 @@ An instance's death does not delete the source matrix. The governor's references
 
 ## Validate
 
-Read the child's declared acceptance specification, conventionally `/etc/shaper/checks.json`, and run a verifier whose input is that bounded declarative vocabulary. Reject operations outside it. Wait a bounded interval for actual service readiness before judging; a silent child is a failed check with an explicit reason, not a healthy or invented verdict. Preserve the failing step and evidence such as screenshots where the check uses a browser.
+Read the child's declared acceptance specification, conventionally `/etc/shaper/checks.json`, and run a verifier whose input is that bounded declarative vocabulary. Reject operations outside it. Wait a bounded interval for the child's actual readiness before judging; a silent child is a failed check with an explicit reason, not a healthy or invented verdict. Preserve the failing step and evidence such as screenshots where the check uses a browser.
 
 | Exit | Meaning |
 | :--- | :--- |

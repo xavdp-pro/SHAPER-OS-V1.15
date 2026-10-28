@@ -9,9 +9,9 @@ Logger supplies append-only structured audit for telemetry, execution and securi
 * Persist before acknowledging/streaming an event; distinguish accepted durable evidence from a merely open connection. Declared retention and erasure requirements still apply to data payloads and backup copies.
 
 <a id="identity"></a>
-## Service identity
+## Unit identity
 
-Every service announces `service: "brick-<component>"` on `/api/health` and `/api/vitals`. The supervisor relies on that identity. A fixed version suffix cannot substitute for the component's identity; update the whole contract consistently.
+Every functional unit (component) announces `service: "brick-<component>"` on `/api/health` and `/api/vitals`. The supervisor relies on that identity. A fixed version suffix cannot substitute for the unit's identity; update the whole contract consistently.
 
 <a id="sibling-paths"></a>
 ## Import placement

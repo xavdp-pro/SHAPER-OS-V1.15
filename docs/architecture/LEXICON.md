@@ -39,14 +39,14 @@ have names that identify their ownership. Renames use explicit mappings.
 | status.json | Canonical exported status surface derived from authoritative MariaDB; no rival file-based application store |
 | Board | Runtime view of dated status for the authorized scope; the documentation board is navigation |
 | Fleet map | Pinned reusable definitions and host capabilities, not instance state; [fleet](FLEET.md) |
-| Forge | `brick-forge` lifecycle function for declared components inside its scope; never authority over its own vital substrate |
+| Forge | `brick-forge` lifecycle function for declared functional units inside its scope; never authority over its own vital substrate |
 | forkedFrom | Versioned lineage fields for package and repository compatibility |
 | Mirror rule | Preserved Rule 33 fork naming convention in that lineage; source ownership remains explicit |
 | source / perimeter | Provenance and P1/P2/P3 functional classification; neither is OS/Runtime/Workspace or ownership |
 | Governor — public root cell (client: guichet, its request interface) | Scoped desired-state owner; delegates through the declared protocol, without host keys |
 | Maker — private root cell (client: fabrication workshop) | Enrolled deterministic host actor; typed frozen recipes, observed effects and bounded lanes; [maker](../contracts/maker.md) |
 | Matrix | Locked content-addressed artifact selected from versioned class sources |
-| Rig | Delivered composition of pinned classes, components and declarations |
+| Rig | Delivered composition of pinned classes, functional units and declarations |
 | Tool | Typed capability available to an agent within its human-approved action policy |
 | Bridge | Neutral cognition/execution capability contract; OpenCode is the default reference adapter |
 | Helm | Human conversational interface requesting governed work; UI does not grant authority |
