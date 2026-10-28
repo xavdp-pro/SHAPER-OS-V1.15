@@ -70,7 +70,7 @@ Original rule identifiers remain stable. Current scope follows the explicit
 
 When software or configuration affects a container, rebuild the image, record its immutable digest, apply the authorized service-manager update and verify the actual service. The realization declares its Quadlet/systemd configuration or equivalent compliant service contract.
 
-Build locally for the first construction. A registry is recommended for repeated distribution once reusable images exist, and its address is an operator parameter reachable from inside the consuming universe. Never invent a registry address or make an existing registry a bootstrap dependency. Production consumes the locked artifact, not a floating tag.
+Build locally for the first construction. A registry is recommended for repeated distribution once reusable images exist, and its address is an operator parameter reachable from inside the consuming cell. Never invent a registry address or make an existing registry a bootstrap dependency. Production consumes the locked artifact, not a floating tag.
 
 ---
 
@@ -78,7 +78,7 @@ Build locally for the first construction. A registry is recommended for repeated
 ### Rule 4: Standard Application Layout & Per-Functional-Podman Database Isolation
 * **Standard Application File Structure (`/apps/<slug>/`)**: Every deployed application or service component adheres strictly to the canonical application filesystem hierarchy — **same spirit under Podman**: persist what must survive in bind-mounted volumes, never mix cache with backups:
   ```
-  /apps/<slug>/          # or <univ>/ for a Podman universe
+  /apps/<slug>/          # or <univ>/ for a univ-* cell under Podman
   ├── app/               # Code (git) — not a substitute for volume backup
   ├── etc/mysql/localhost/passwd
   ├── log/               # Diagnostic streams/exports; authoritative logs in MariaDB
@@ -88,11 +88,11 @@ Build locally for the first construction. A registry is recommended for repeated
 * **Mandatory Functional-Podman Database Convention**:
   * **Every Functional Podman Owns One**: Every application, telephony, agent,
     queue, logger, vault or other functional Podman materialises its own MariaDB
-    instance inside that Podman's security and lifecycle boundary. A universe
+    instance inside that Podman's security and lifecycle boundary. A cell
     therefore contains as many independent MariaDB instances as functional Podmans.
-  * **Never Shared**: No universe-wide MariaDB exists. A Podman never reads or
-    writes another Podman's database, even inside the same universe, and no parent,
-    child or peer universe crosses that boundary.
+  * **Never Shared**: No cell-wide or universe-wide MariaDB exists. A Podman never
+    reads or writes another Podman's database, even inside the same cell, and no
+    parent, child or peer cell crosses that boundary.
   * **One Name Everywhere**: the functional slug is the function identity, the
     Linux system account, the MariaDB account and the MariaDB database name:
     `<functional-slug> = system-user = database-user = database`. The Podman
@@ -108,8 +108,8 @@ Build locally for the first construction. A registry is recommended for repeated
     administers MariaDB through the local `root` command-line path and has the
     database privileges required by its mandate. The agent never administers the
     server with the application's login or password; the application never receives
-    the MariaDB root credential. Root authority does not widen the agent's universe
-    mandate or permit cross-function data use.
+    the MariaDB root credential. Root authority does not widen the agent's
+    declared mandate or permit cross-function data use.
   * **Password Resolution Order**:
     1. Primary source of truth: read directly from
        `/apps/<functional-slug>/etc/mysql/localhost/passwd`. It contains the
@@ -205,7 +205,7 @@ Build locally for the first construction. A registry is recommended for repeated
 <a id="rule-5"></a>
 ### Rule 5: Native Unit and Contract Tests
 * A 100% pass rate for the complete applicable native/unit and contract suite is required before staging or production promotion. Generate meaningful tests for the selected implementation.
-* Use the selected language's native test facilities and avoid unnecessary heavyweight frameworks. In a Node.js realization, the native runner is `node --test` and the cold test-process startup budget is 2000 ms; measure that scoped test budget rather than presenting it as a universe boot or recovery promise.
+* Use the selected language's native test facilities and avoid unnecessary heavyweight frameworks. In a Node.js realization, the native runner is `node --test` and the cold test-process startup budget is 2000 ms; measure that scoped test budget rather than presenting it as a cell boot or recovery promise.
 * The OS does not require every implementation to use Node.js. Language choice remains subject to the agnostic construction direction and the owning unit's actual contract.
 
 ---

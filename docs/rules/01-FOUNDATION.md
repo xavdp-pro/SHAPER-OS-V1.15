@@ -37,7 +37,7 @@ Every component, package, component, or app MUST be classified into **exactly on
 <a id="rule-0b-intent-header-classification"></a>
 * **Mandatory Intent Header Classification (Generic vs Specific)**: Every `INTENT.md` or blueprint document in SHAPER OS MUST declare its exact classification at the very top header:
   * `> **Intent Classification**: GENERIC INTENT (Universal / Parameterized Blueprint)` for reusable abstract components in `SHAPER-OS/`.
-  * `> **Intent Classification**: SPECIFIC INTENT (Universe: <univ_slug>)` for concrete instantiated deployments in experimental sandboxes or apps.
+  * `> **Intent Classification**: SPECIFIC INTENT (Universe: <univ_slug>)` for concrete instantiated deployments in experimental sandboxes or apps. The literal keeps its earlier word; `<univ_slug>` names the specific cell.
 * **Strict Distinction: Abstract Specs vs Concrete Examples**: Technical documentation must always define abstract parameterized interfaces first (e.g. `<CLIENT_MESH_IP>`, `<GATEWAY_HOST>`, `<DOMAIN_NAME>`).
 * **Explicit Demarcation of Specialized Examples**: Following any generic documentation, specialized real-world implementation examples (e.g. a specific Proxmox hypervisor, cloud node, or demonstrator) MAY be provided, but MUST ALWAYS be explicitly labeled under a dedicated section header: `### Illustrative Example (Non-Binding / Demonstration Only)`. There must be zero ambiguity between universal contracts and specific illustrative cases.
 
@@ -66,7 +66,7 @@ SHAPER OS uses **two complementary layers** — never one replacing the other:
 
 * **INTENT.md is mandatory** for every `@shaper/*` package and every `brick-*` directory. It answers *What* and *Why*.
 * **JSON manifests are mandatory at ecosystem level** via the canonical root `topology.json` generated in the realization repository. It answers *Who depends on Whom* and *In what order*.
-* **Optional local `deps.json`** MAY exist inside a `packages/<name>/` or `bricks/brick-<name>/` directory when a component needs to declare overrides for a specific universe — but the root `topology.json` remains the master graph.
+* **Optional local `deps.json`** MAY exist inside a `packages/<name>/` or `bricks/brick-<name>/` directory when a component needs to declare overrides for a specific cell — but the root `topology.json` remains the master graph.
 * **Zero duplication of philosophy in JSON**: JSON files MUST NOT repeat INTENT prose. They carry only structured fields: `id`, `type`, `requires`, `optional`, `provides`, `port`, `bootAfter`.
 * **Agent-Synthesized Defaults**: Business rules and deploy details are **not** stored in `topology.json` unless a human explicitly requests an override. Silence = agent decides freely, as long as each component `INTENT.md` invariants are respected.
 * **Override Protocol**: When a human states a specific constraint (port, path, schema, dependency), add it to `topology.json` or a local `deps.json`. Never preemptively.
@@ -99,8 +99,8 @@ The intent constrains construction, tests prove a particular artifact, and the l
   their charge**: web and mobile web, text and voice. A pilot asks; Helm
   answers, prepares and, within authority, acts, over the universes of that
   pilot's jurisdiction and nothing else.
-* **Two settings, and no third** (Rule 37): its **jurisdiction**, the universes
-  it may see and act upon down to their constituent pods, and the
+* **Two settings, and no third** (Rule 37): its **jurisdiction**, the universes it may see and act upon, or some cells
+  within them, down to their constituent pods, and the
   **pilot level**, what the person at the Helm has validated. The master root and a
   client's jurisdiction root use the same Helm; what differs between them is
   the jurisdiction, never a second product.
@@ -112,8 +112,9 @@ The intent constrains construction, tests prove a particular artifact, and the l
   jurisdiction root at the shaping level adds, configures or removes what its
   classes offer. A feature no class offers becomes a change to the class, made
   by the class's makers, never an exception inside one instance (divergence is
-  Rule 33's fork). A **blank universe** (a scoped offer: a universe
-  granted without class content to an infrastructure client) is the one place
+  Rule 33's fork). A **blank universe** (a scoped offer whose name predates the current
+  vocabulary: a bare cell instance granted without class content to an
+  infrastructure client) is the one place
   where a jurisdiction root builds what it wants, bounded by its backup
   contract.
 * **Client business tools are strictly distinct applications** (unchanged since
@@ -172,7 +173,7 @@ Unit-test doubles may isolate a code path, but never substitute for real integra
     concrete engine is a deployment-time decision, recorded with the measurement
     that justified it.
 * **Bridge Compatibility Invariant**:
-  * Every CLI runtime connects to Helm and receives identical context digests (the universe context file, `topology.json`, persistent memory).
+  * Every CLI runtime connects to Helm and receives identical context digests (the cell context file `ctx-universe.md`, `topology.json`, persistent memory).
 
 ---
 
@@ -201,7 +202,7 @@ The common [cognition-bridge intent](../../docs/intents/cognition-bridge.md) own
 * Before an operation that needs a credential, check that its declared secret reference resolves to a nonempty, appropriate credential through the authorized secret channel. Never start a dependent operation hoping an absent secret works or supplying a dummy value.
 <a id="rule-0j-zero-blind-execution"></a>
 * A genuinely missing credential blocks its dependent operation. State the missing capability and how the operator can provision it securely; continue independent authorized construction. Do not require unrelated production credentials for a local build, or ask for a secret already available through an authorized channel.
-* Keep runtime credentials consistent with their declared consumer and deployment. Propagate only the references and secrets that unit is entitled to use; never copy a universe's entire secret set into every container.
+* Keep runtime credentials consistent with their declared consumer and deployment. Propagate only the references and secrets that unit is entitled to use; never copy the entire secret set of a cell or universe into every container.
 * A complete configuration enables repeatable construction and qualification; it does not constitute evidence that an untested implementation succeeds. Experimental partial configurations must identify inactive or degraded functions rather than presenting them as qualified.
 * Use the declared DEV execution mode and production action policy in the [common bridge contract](../../docs/intents/cognition-bridge.md). Security design begins with construction; dedicated hardening follows integrated functional acceptance.
 

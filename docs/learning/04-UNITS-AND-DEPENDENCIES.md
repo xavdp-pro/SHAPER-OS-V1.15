@@ -54,7 +54,7 @@ It is not the general data gateway between cells or universes. A door in the Pro
 Framework defines those exchanges.
 
 **[MANDATE: 24 September reference choice]** The selected
-[reference-universe composition](../procedures/01-REFERENCE-UNIVERSE.md)
+[reference stem cell composition](../procedures/01-REFERENCE-UNIVERSE.md)
 includes an OpenCode bridge by default. It adds a fifth unit to that reference,
 without making the four base responsibilities depend on cognition.
 

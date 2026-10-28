@@ -25,7 +25,7 @@ Every identifier states its layer. Do not infer a layer from context.
 | `pkg-` | Reusable source package | `pkg-bridge-opencode` |
 | `img-` | Registry image | `img-bridge-opencode` |
 | `ctr-` | Running container role | `univ-base-ctr-bridge-opencode` |
-| `vol-` | Persistent universe-owned volume | `vol-univ-base-vault` |
+| `vol-` | Persistent cell-owned volume | `vol-univ-base-vault` |
 | `cfg-` | Configuration file or object | `cfg-univ-base.env` |
 | `ctx-` | Agent context | `ctx-mail-triage.md` |
 | `task-` | Declared unit of work | `task-mail-triage` |
@@ -39,13 +39,13 @@ is code; `brick-bridge-opencode` is the OCI service built from it; and
 
 ## Generic boundary
 
-`pkg-agent-runtime` is generic. It dispatches a universe-declared `task-*` to one
+`pkg-agent-runtime` is generic. It dispatches a cell-declared `task-*` to one
 selected `brick-bridge-*`; it knows no IMAP, SMTP, client, customer or business
 workflow, and neither does `pkg-maestro`, which vendors it. A task carries a
 `slug` and a cadence — nothing else is required of it, because requiring a
 `label` and a `port` is how a monitored mailbox and its container port survived a
 rename and stayed in the base. Mail intake belongs to catalogue `pkg-mail-agent`
-and to the universe that declares the related `task-*`.
+and to the cell that declares the related `task-*`.
 
 ## Where a composition manifest states origin
 

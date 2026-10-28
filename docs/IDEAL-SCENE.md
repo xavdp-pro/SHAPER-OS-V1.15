@@ -110,7 +110,7 @@ its own tools, contracts and operating conditions.
 - [Human reading guide](human/READING-GUIDE.md): choose your depth of explanation.
 - [Shared learning sequence](CONTEXT-INDEX.md#common-learning-sequence): connect
   intention, architecture, functional units, realization and learning.
-- [Reference universe procedure](procedures/01-REFERENCE-UNIVERSE.md): derive a
+- [Reference stem cell procedure](procedures/01-REFERENCE-UNIVERSE.md): derive a
   concrete base under a declared construction profile.
 - [SHAPER Three Layers](https://github.com/xavdp-pro/shaper-three-layers): OS,
   Runtime and Workspace perspectives.

@@ -10,7 +10,7 @@ Original rule identifiers remain stable. Current scope follows the explicit
 
 The lifecycle state machine, account/class uniqueness and maker protocol below
 apply to the declared governor/maker realization. They do not impose identical
-business state machines or one governor for every logical space. Multiple
+business state machines or one governor for every universe. Multiple
 scoped governors retain separate ownership and explicit authority relationships.
 Class definitions and specializations are versioned; instance IDs are stable.
 A private realization repository can describe instance configuration without
@@ -31,7 +31,7 @@ becoming a second instance ledger. See [source roles](../architecture/SOURCE-ROL
 * **One state machine, one set of names, everywhere**:
   `DESIRED → RECONCILING → PURRING → DEGRADED`, plus the terminal `REAPED`
   .
-  * **PURRING** is the healthy state, and it is **dated**: the universe writes
+  * **PURRING** is the healthy state, and it is **dated**: the instance writes
     the authoritative state in its private MariaDB and projects it to `status.json`
     on every on-time beat when observed == desired.
     Silence is ambiguous between "fine" and "dead and unable to say so"; a
@@ -44,7 +44,7 @@ becoming a second instance ledger. See [source roles](../architecture/SOURCE-ROL
     robot may end (`dev`, `test`, `demo`) — the broken row's deadline
     becomes now, a maker reaps whatever half-exists, a fresh row is born —
     or, for a `prod` row, by human or Root Guardian action alone.
-  * **REAPED** is the end: a maker ended the universe on the row's deadline
+  * **REAPED** is the end: a maker ended the instance on the row's deadline
     and looked (the reap recipe verifies the absence, it does not assume
     it), or a human ended it. Terminal, and dated by its event. *Prevents*:
     a reaped row still counted as living — its account blocked forever
@@ -73,10 +73,10 @@ becoming a second instance ledger. See [source roles](../architecture/SOURCE-ROL
   facts makers reported, from which every transition is derived by one
   table. `env` ranks `dev`, `test`, `demo`, `prod`: the first three are
   environments a robot may end; `demo` is what a row carries when it names
-  none, and it is not production. **The canonical [governor contract](../../docs/contracts/governor.md) is binding**, including its state/transition table and work kinds — stamp, reap, validate, adopt. A standalone universe governs itself: its ledger lives in its
+  none, and it is not production. **The canonical [governor contract](../../docs/contracts/governor.md) is binding**, including its state/transition table and work kinds — stamp, reap, validate, adopt. A standalone cell governs itself: its ledger lives in its
   own database inside the governor Podman's boundary. Every functional Podman
   carries its own mandatory MariaDB under Rules 4 and 26; `+data` is therefore
-  only a retired compatibility alias and never a shared universe database. The governor persists these records in its own private MariaDB.
+  only a retired compatibility alias and never a shared cell or universe database. The governor persists these records in its own private MariaDB.
   Placement names the hosting relationship, independently of containment and authority; the existing `machine` field carries this protocol's assignment.
   Tag precedence: **fleet.yml = the default for new instances and the PRA
   floor; the ledger row = the truth, which may lag during a canary; an audit
@@ -87,20 +87,22 @@ becoming a second instance ledger. See [source roles](../architecture/SOURCE-ROL
   (Rule 0E), plus the `machines:` inventory. Instances NEVER appear in it;
   R2 buckets are derivable (`r2://<instance-id>`), never enumerated. `-dev`
   bypasses the fleet map by law; `-test` and `-prod` are guarded by it: a
-  universe repo not registered in its fleet map is refused promotion. A
+  class repo not registered in its fleet map is refused promotion. A
   sovereign fork (Rule 33) keeps its own mirrored fleet map — a client's PRA
   never hinges on the vendor's repo.
 * **Shared vocabulary with explicit owners**: the [independent glossary](https://github.com/xavdp-pro/shaper-glossary/blob/main/TERMS.md)
   owns stable concept definitions; [composition](../architecture/COMPOSITION.md)
-  relates them to this edition. Preferred “component” retains “brick” aliases,
+  relates them to this edition, pairing technical and client terms under the
+  [27 October direction](../../decisions/2026-10-27-TECHNICAL-AND-CLIENT-VOCABULARY.md).
+  The functional unit (client term: component) retains “brick” aliases,
   artifact prefixes, field names and old rule anchors. Stem cell, specialized
-  cell/service, logical space, class, specialization and instance describe
+  cell (service), universe (logical space), class, specialization and instance describe
   distinct responsibilities. New terms have an owner, reason and affected
   referrers rather than an exhaustive twenty-three-word ceiling. Existing
   protocol terms below retain their scoped meaning:
 
 
-  * **governor** — the universe that holds a ledger and makes it respected:
+  * **governor** — the public root cell that holds a ledger and makes it respected:
     it writes what should exist, dates what makers report, and never dials
     out. *Prevents*: "the SaaS" and "the manager" naming two things — the
     product and the organ — and the maker learning which one it serves.
@@ -110,7 +112,7 @@ becoming a second instance ledger. See [source roles](../architecture/SOURCE-ROL
     whose state nobody knows, and a form field reaching a shell.
   * **matrix** — the locked, content-addressed artefact (sha256) from which
     instances are stamped; baked by the tandem from a class, never by a
-    robot. *Prevents*: "image" meaning both a podman image and a universe
+    robot. *Prevents*: "image" meaning both a podman image and a cell
     archive, and five builds of one commit giving five fingerprints.
   * **REAPED** — the fifth, terminal state, above. *Prevents*: a reaped row
     still counted as living, blocking its account and pinning its matrix.
@@ -131,7 +133,8 @@ becoming a second instance ledger. See [source roles](../architecture/SOURCE-ROL
   * **shape** — the selected hosting arrangement: `direct`, `lxc` or `nested`
     under Rule 11. Existing profile versions retain their declared defaults;
     new selections name the profile explicitly. A host family describes how
-    the host realizes it. Logical space and universe identity remain separate.
+    the host realizes it. A cell's identity and its universe membership remain
+    separate from its shape.
 
 
   * **Helm** — the conversational interface between a human and the
@@ -143,7 +146,7 @@ becoming a second instance ledger. See [source roles](../architecture/SOURCE-ROL
     *Prevents*: KovZu, Helm and "Control Hub" naming one surface under three
     authority models, so that an operator's cockpit and a client's portal
     were designed twice and a customer's question had no defined boundary.
-  * **jurisdiction** — the universes a pilot is in charge of, down to their
+  * **jurisdiction** — the universes a pilot is in charge of, or some cells within them, down to their
     constituent pods, granted by the root above; Helm sees nothing and answers
     for nothing outside it. Jurisdictions nest: a root may grant a narrower
     jurisdiction inside its own, never a wider one. *Prevents*: "tenant",
@@ -182,13 +185,13 @@ becoming a second instance ledger. See [source roles](../architecture/SOURCE-ROL
   a table in `pkg-governor`, not nouns of the language. New components are not
   new nouns — `brick-forge`, `brick-scraper`, `brick-sso` are the prefix
   system doing its job. The forge's line is bounded by the same amendment:
-  `brick-forge` deploys, destroys and repairs COMPONENTS inside a living universe
-  (the component level; drift at component level); universes are born and ended by
-  the maker, from a ledger row (the universe level; the gap at instance level).
+  `brick-forge` deploys, destroys and repairs COMPONENTS inside a living cell instance
+  (the component level; drift at component level); cell instances are born and ended by
+  the maker, from a ledger row (the cell level; the gap at instance level).
 * **What it protects**: a human juggling several vibecoded projects and a cold
   agent landing in a repo must both answer, from one page — *where is the
   truth?* (the ledger) — *who repairs?* (the forge, on drift, inside a
-  universe) — *who births?* (the maker, from a row) — *is everything fine?*
+  cell instance) — *who births?* (the maker, from a row) — *is everything fine?*
   (the board, rendering status.json) — *how is it all recreated?* (the fleet
   map + R2, Rule 16) — *who may act here?* (the root of this jurisdiction,
   through Helm, at its pilot level). A task route links each relevant definition, governing contract and reverse

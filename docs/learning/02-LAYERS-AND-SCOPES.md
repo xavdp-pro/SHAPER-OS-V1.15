@@ -64,7 +64,7 @@ unit must not be the sole judge of its own recovery.
 
 Read the [profile's scope-placement section](../profiles/SEPTEMBER-CONTAINER-MARIADB.md)
 to connect cells to their base units. Functions owned at universe level,
-actual door-ratification roles and permitted nesting of universes are declared by the
+actual door-ratification roles and permitted nesting of containment boundaries are declared by the
 realization under the local [perimeters](../architecture/PERIMETERS.md) and
 [topology](../architecture/TOPOLOGY.md) contracts. This chapter does not invent
 a business hierarchy through a fractal analogy.

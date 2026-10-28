@@ -124,7 +124,7 @@ context, explains the possible next action, and routes a permitted request
 toward Runtime and the relevant capability. It is not the source of authority.
 
 Two settings bound it: the **jurisdiction**, the universes the pilot is in
-charge of, and the **pilot level**, what that person has validated in pilot
+charge of or some cells within them, and the **pilot level**, what that person has validated in pilot
 training. The founding tandem at the top of the fractal holds the master root;
 a customer given Helm over their Workspace or Vox holds the root of that
 jurisdiction, with full power inside it and none over the hosts, the governor

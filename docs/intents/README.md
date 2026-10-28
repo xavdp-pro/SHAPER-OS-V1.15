@@ -11,7 +11,7 @@ stays outside it. See the [repository boundary](../../INTENT.md).
 | Intent | Role and authority |
 | :--- | :--- |
 | [Generic cognition bridge](cognition-bridge.md) | Shared mission, human-bounded jurisdiction, prepared context, session continuity, precise actions and independently checked evidence. |
-| [OpenCode cognition bridge](cognition-bridge-opencode.md) | Scoped adapter selected by default for the reference universe; native session and tool integration qualified against the shared contract. |
+| [OpenCode cognition bridge](cognition-bridge-opencode.md) | Scoped adapter selected by default for the reference stem cell; native session and tool integration qualified against the shared contract. |
 | [Meta Muse cognition bridge](cognition-bridge-meta-muse.md) | Optional scoped adapter; distinguish API history replay from a CLI/tool realization. |
 
 Other providers implement the same shared intent through their own declared

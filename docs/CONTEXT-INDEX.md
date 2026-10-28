@@ -121,8 +121,8 @@ contracts listed in the governing corpus. Read those documents in full.
 - A dependency or receipt question: [units](learning/04-UNITS-AND-DEPENDENCIES.md).
 - A concrete technology or deployment question:
   [materialization](learning/05-MATERIALIZATION.md), then the realization's
-  own contract, which the agent creates for new work. For a new universe, use the
-  [reference-universe procedure](procedures/01-REFERENCE-UNIVERSE.md).
+  own contract, which the agent creates for new work. For a new universe, start from the
+  [reference stem cell procedure](procedures/01-REFERENCE-UNIVERSE.md).
   It covers building the first reference as well as reusing one; the agent writes
   the executable material outside this OS repository.
 - A cognition/session question: [generic bridge intent](intents/cognition-bridge.md),

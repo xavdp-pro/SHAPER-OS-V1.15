@@ -68,7 +68,7 @@ A CLI bridge exists to run a command-line agent; a declared API adapter states i
   2. **Never mount a launcher without its siblings.** Modern CLIs ship as a small script that executes files beside it; mount the whole version directory or nothing.
   3. **Never assume the base image has a shell.** A launcher beginning `#!/usr/bin/env bash` fails on Alpine with `can't execute 'bash'`, and the exit code will not say so plainly.
 
-* **A CLI may be bound to its host**: when qualification establishes that it cannot run in the unit container, declare a host-resident adapter and its address and evidence. This exception concerns the CLI adapter location, not the universe containment or per-unit database contract.
+* **A CLI may be bound to its host**: when qualification establishes that it cannot run in the unit container, declare a host-resident adapter and its address and evidence. This exception concerns the CLI adapter location, not the cell containment or per-unit database contract.
 
 * **What a bridge must publish about its CLI**: the binary it resolved, the version it obtained by running it, and whether authentication is present. any test-only `stubMode` must be visible and must never be the live default — a simulated bridge that looks live is a lie with a long fuse.
 
@@ -81,7 +81,7 @@ The adapter declares its actual noninteractive approval/sandbox modes. Mandated 
 
 ### Rule 35: Experience Corrects the Intent, Not Only the Code (Constructive Integrity, Upstream)
 
-Rule 29 requires that every bug resolved gives birth to a regression test. That protects the code. It does not protect the **next universe**, which is built from `INTENT.md` and not from our test suite.
+Rule 29 requires that every bug resolved gives birth to a regression test. That protects the code. It does not protect the **next cell**, which is built from `INTENT.md` and not from our test suite.
 
 * **A problem experienced updates the component's `INTENT.md`.** Not a changelog of incidents — the *invariant the incident revealed*, stated as the component's intent so anyone materialising it again starts from what we learned. A fix that lives only in code is a lesson one refactor away from being lost.
 
@@ -96,7 +96,7 @@ Rule 29 requires that every bug resolved gives birth to a regression test. That 
 <a id="rule-36"></a>
 ### Rule 36: Fractal SSH Authority & Ephemeral Sandbox Access Law (Clean-Sheet Dev/Test Promotion)
 
-* **Parent Authority Over Child Lifecycle**: To supervise, develop, and test improvements on a child universe without risking production, the Parent Universe ($K+1$) has the explicit authority to instantiate, access, and destroy child environments ($K$). An agent never mutates its own vital organs in-flight (Rule 23); its supervisor operates the lifecycle.
+* **Parent Authority Over Child Lifecycle**: To supervise, develop, and test improvements on a child cell without risking production, the parent level ($K+1$), through its maker, has the explicit authority to instantiate, access, and destroy child environments ($K$). An agent never mutates its own vital organs in-flight (Rule 23); its supervisor operates the lifecycle.
 * **Selected hosting boundary**: lifecycle authority is held by the authorized
   parent/maker even for a direct profile; logical parentage does not require a
   nested container. Host-local container operations or the selected SSH path
@@ -105,12 +105,12 @@ Rule 29 requires that every bug resolved gives birth to a regression test. That 
   * The Parent generates an **Ed25519 SSH authority key pair** stored in its Vault or `sav/ssh/id_ed25519`. The private key **never** leaves the Parent.
   * When an ephemeral child container is provisioned, the bootstrap mechanism automatically appends the Parent's public key (`id_ed25519.pub`) into `/root/.ssh/authorized_keys`.
 * **Dynamic Suffix & Environment Separation**:
-  * **`*-prod` (Nominal)**: Permanent production universe, dedicated port base (e.g. `9200`), persistent encrypted `sav/`, production DNS/tunnel (`app.example.com`).
+  * **`*-prod` (Nominal)**: Permanent production instance, dedicated port base (e.g. `9200`), persistent encrypted `sav/`, production DNS/tunnel (`app.example.com`).
   * **`*-dev` (Ephemeral Dev)**: Separate environment for active coding and prompt tuning, offset port base (e.g. `9300`), scratch storage, dev DNS/tunnel (`app-dev.example.com`).
   * **`*-test` (Clean-Sheet Validation)**: Rebuilt **from scratch** on a blank container to eliminate caching artifacts. Runs 100% unit tests + Rule 29 regression test + Rule 20 typed deliverable on test DNS/tunnel (`app-test.example.com`).
 * **Canary Promotion & Garbage Collection**:
   * Once the clean-sheet `-test` container passes 100% green, production hardening is verified and promotion is authorized, the git commit/tag is promoted to production via the canary protocol (Rule 25).
-  * After retaining necessary evidence and state, the Parent executes scoped destruction of disposable environments (`podman rm -f` / `lxc delete`) of the `-dev` and `-test` containers, releasing all ports, memory, and scratch volumes (Universe Garbage Collector).
+  * After retaining necessary evidence and state, the Parent executes scoped destruction of disposable environments (`podman rm -f` / `lxc delete`) of the `-dev` and `-test` containers, releasing all ports, memory, and scratch volumes (instance garbage collection).
 * **The maker is the Parent's hand** : in the fractal of Rule 11, the level $K+1$ of an instance is its **governor and the makers that governor enrolled** — the tandem, root from underneath, brought each maker into being and declared it (the maker template's invariant 7). The authority this rule grants — to instantiate, access and destroy a child — is held by the **maker organ of that level**, in its vault, on the one machine it acts on: never by the governor, which writes rows and holds no key to any host, and **it never leaves the level** — no private key crosses down into a child, none climbs up into a ledger. The Parent's public key reaches a child through the stamp recipe, as a file, never as a command built from the row. Birth and end (`lxc launch` / `lxc delete`, `pct create` / `pct destroy`, and for `direct` or `nested` shapes the appropriately scoped `podman run` / `podman rm` — or the PodMesh operations that wrap them where PodMesh is installed) are the maker's gestures on a ledger row; the garbage collection above is the same gesture, driven by the row's deadline. The host's own SSH door is the tandem's, from underneath; it is not the maker's, and the maker holds no inbound door of its own.
 
 

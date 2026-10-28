@@ -14,9 +14,9 @@
 
 1. P1 knows no P3 business rules, schemas, clients or prompts. P2 enriches the organism; it does not absorb business applications.
 2. Helm is the same conversational interface for every authorized pilot. Its `/console`, including voice, is P2. A client owner does not make it P3. Business chat is a separate tenant/dossier-scoped real-time service, not Helm under a different name.
-3. Construct P3 units in the universe class realization, not in the generic base or inside Helm. They have their own intent, code/image, port, UX/branding, authentication boundary, lifecycle and universe-owned volume. Reusable source packages are optional; a deployable component must really build.
+3. Construct P3 units in the cell's class realization, not in the generic base or inside Helm. They have their own intent, code/image, port, UX/branding, authentication boundary, lifecycle and cell-owned volume. Reusable source packages are optional; a deployable component must really build.
 4. Every component manifest states `perimeter`, `source` and, only for a fork, `forkedFrom`. Never infer these from a path, pilot identity or repository name.
-5. A `ctx-*` or `task-*` carrying business behavior is P3 behavior even when hosted by P1/P2 units. It does not need a separate perimeter slot; the hosting universe's declared component layers remain unchanged.
+5. A `ctx-*` or `task-*` carrying business behavior is P3 behavior even when hosted by P1/P2 units. It does not need a separate perimeter slot; the hosting cell's declared component layers remain unchanged.
 6. In the selected reference, establish Vault and required state before Logger, Queue and P2 dependents. The actual [topology](TOPOLOGY.md) determines healthy boot waves; a convenient group name such as `minimalSocle` never reclassifies a P2 node as P1.
 
 ## Classify by what the component does

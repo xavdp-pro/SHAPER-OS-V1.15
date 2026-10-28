@@ -93,7 +93,8 @@ See the
 - Learning through practice: [self-checks](docs/human/METACOGNITION.md),
   [comprehension exercises](docs/examples/COMPREHENSION-CHECKS.md) and
   [worked answers](docs/examples/WORKED-ANSWERS.md).
-- Building a reference universe: [construction procedure](docs/procedures/01-REFERENCE-UNIVERSE.md)
+- Building the common base of each service (the reference stem cell):
+  [construction procedure](docs/procedures/01-REFERENCE-UNIVERSE.md)
   and [current realization profile](docs/profiles/SEPTEMBER-CONTAINER-MARIADB.md).
 - Asking an agent to create a universe on your machine:
   [a concrete starting request](docs/examples/CREATE-A-UNIVERSE.md), locally or

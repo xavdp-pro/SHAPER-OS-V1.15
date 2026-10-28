@@ -115,6 +115,11 @@ for human context, agent decisions, examples and limits.
   and attaches them to a universe. A root cell is not root authority.
 - **Class / specialization / instance:** reusable versioned definition, declared
   derivation, and one stable owned materialization respectively. See [composition](architecture/COMPOSITION.md).
+- **Lifecycle level (K, K+1, N):** a level of the tree that says who repairs,
+  updates, creates and ends whom. An instance's parent level is its governor and
+  the makers that governor enrolled; the maker alone holds host capability. It is
+  not a composition level 0–4: universes never contain universes. See the
+  [28 October rules and contracts direction](../decisions/2026-10-28-RULES-AND-CONTRACTS-VOCABULARY.md).
 
 - **Implementation package:** reusable source used to build a realization,
   without its own independent deployment lifecycle. See the local
@@ -130,7 +135,7 @@ for human context, agent decisions, examples and limits.
   agent creates it when starting from zero; it is an output of the work, not a
   required pre-existing codebase. See [the creation example](examples/CREATE-A-UNIVERSE.md).
 - **Registry:** a service for retaining and distributing versioned reusable
-  artifacts. For a universe, image digests remain linked to its composition and
+  artifacts. For a cell, image digests remain linked to its composition and
   qualification records. Recommended once verified realizations are worth
   duplicating; not required for first construction. See the
   [reference procedure](procedures/01-REFERENCE-UNIVERSE.md#registry-after-verification).
@@ -164,8 +169,9 @@ For package/brick/unit lineage, read the
 ## Cognition and continuity
 
 - **Jurisdiction:** the scope of responsibility and permitted action assigned by
-  the human; a tool credential or shared host does not enlarge it.
-- **Context package:** the relevant universe, mission, role, resources,
+  the human: universes, or some cells within them. A tool credential, a shared host or
+  universe membership does not enlarge it.
+- **Context package:** the relevant universe and cell, mission, role, resources,
   relationships, rules, current state, prior actions and expected evidence,
   identified by revision and prepared by the tandem.
 - **Logical session:** the stable work context identified by SHAPER, mapped to a

@@ -1,9 +1,10 @@
-# Reference Universe Procedure
+# Reference Stem Cell Procedure
 
-Identifier: **Procedure 01**.
+Identifier: **Procedure 01**. The file keeps its earlier name,
+`01-REFERENCE-UNIVERSE.md`.
 
 Purpose: **[EDITORIAL]** guide the construction and renewal of a reusable
-reference universe, following the operator's 24 September direction and
+reference stem cell, following the operator's 24 September direction and
 [5 October first-construction clarification](../../decisions/2026-10-05-FIRST-CONSTRUCTION-AND-REUSE.md).
 Use the [governing-corpus map](../GOVERNING-CORPUS.md) and the realization's
 versioned contracts to connect this sequence to its concrete deployment tools
@@ -58,7 +59,7 @@ own qualification; keep the previous reference identifiable for recovery.
    composition, qualification record and supported profile.
    A running container, a successful build or a healthy endpoint alone is not
    a qualified reference. Qualify the result before using it to derive another
-   universe; absence of a reusable reference does not block its construction.
+   cell; absence of a reusable reference does not block its construction.
 3. **Write and construct the isolated reference.** Derive the concrete unit
    interfaces, schemas, lifecycle and tests from the requirements below and
    their applicable sources. Write the code, container builds and deployment
@@ -92,20 +93,22 @@ own qualification; keep the previous reference identifiable for recovery.
 5. **Freeze a reproducible reference.** Record immutable image digests *and* the
    versioned composition, configuration schema, migrations, qualification
    evidence and provenance. An image alone cannot contain the proof of external
-   databases or the contract of a multi-unit universe. Publish a reference
+   databases or the contract of a multi-unit cell. Publish a reference
    identifier only after the required checks pass. A local versioned record
    suffices to identify the first result; registry distribution can follow.
-6. **Derive a new universe safely.** Instantiate from the qualified reference
-   with fresh universe identity, scoped credentials, empty or explicitly migrated
+6. **Derive a new cell safely.** Instantiate from the qualified reference
+   with fresh instance identity, scoped credentials, empty or explicitly migrated
    state, and its own persistent volumes/databases. Never clone Vault's secret
-   identity or another universe's live business history. Recheck target-specific
-   integrations and prove the derived universe's own operation before promotion.
+   identity or another instance's live business history. A specialized cell adds
+   its declared domain units; instantiation alone never specializes it. Recheck
+   target-specific integrations and prove the derived cell's own operation before
+   promotion.
 7. **Rebuild when the reference changes.** A change to the governing rules,
    functional-unit structure, dependencies, storage, bootstrap, identity model
    or intended behavior triggers an impact review. If it affects the qualified
    composition, rebuild and requalify the base, then publish a new immutable
    reference identifier. Never mutate the old reference in place or silently relabel it
-   compliant. Existing derived universes need a separate migration and
+   compliant. Existing derived cells need a separate migration and
    requalification decision; a new base does not upgrade them automatically.
 
 ## From unit intentions to implementation
@@ -155,16 +158,16 @@ or that one scenario qualifies every contract. Keep the full acceptance checklis
 ## Registry after verification
 
 Following the [5 October direction](../../decisions/2026-10-05-FIRST-CONSTRUCTION-AND-REUSE.md),
-a registry is recommended when units or universes become useful to duplicate.
+a registry is recommended when units or cells become useful to duplicate.
 The first construction can be completed before that service exists.
 
-Keep immutable image digests together with a versioned reference to the universe
+Keep immutable image digests together with a versioned reference to the cell
 composition, applicable profile, source revisions, configuration schema and
 qualification evidence. An OCI image registry may hold the images while those
 other records live in the realization repository. Record how to obtain both.
 Keep secrets, unique identities and live data outside reusable artifacts.
 Duplication instantiates the composition with fresh identities and state, as in
-step 6; it does not copy a running universe's confidential history.
+step 6; it does not copy a running instance's confidential history.
 
 ## Decision gates
 
@@ -181,7 +184,7 @@ must never be reported as full compliance.
 The reference record should answer: **which rules and profile, which units and
 artifacts, which identity and state boundaries, which tests and recovery proof,
 which remaining gaps, and who accepted the result?** Keep source tests, reference
-qualification, installation of a derived universe and real-use acceptance as
+qualification, installation of a derived cell and real-use acceptance as
 separate evidence.
 
 Next: [materialization](../learning/05-MATERIALIZATION.md) and

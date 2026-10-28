@@ -28,8 +28,8 @@ For an existing project, verify the adopted corpus revision, project mandate,
 declared scope, current architecture, applicable profiles, existing state and
 evidence under [LAW's adoption contract](../../LAW.md#two-uses-and-explicit-adoption).
 Use the existing project workspace and its versioned records. Apply the governing
-contracts to the requested development or correction; do not restart universe
-construction merely because this boot contract was read. Follow the construction,
+contracts to the requested development or correction; do not restart the
+construction of a cell or universe merely because this boot contract was read. Follow the construction,
 deployment, engine-binding or migration steps below when the authorized work
 actually requires them. The principal agent's full-reading obligations remain
 unchanged.
@@ -66,6 +66,6 @@ Check secret availability through authorized references before the dependent ope
 
 ## 8. Deliver honestly
 
-Keep atomic changes and actual contributor attribution, verify repository/remotes before an authorized publication, and report code written, checks performed, artifact deployed and human acceptance separately. State remaining gaps, exact reproduction/observation and next proof. Retain necessary evidence and remove only the task's disposable resources; do not leave a test universe running as production by accident.
+Keep atomic changes and actual contributor attribution, verify repository/remotes before an authorized publication, and report code written, checks performed, artifact deployed and human acceptance separately. State remaining gaps, exact reproduction/observation and next proof. Retain necessary evidence and remove only the task's disposable resources; do not leave a test instance running as production by accident.
 
 The result is complete only when the requested function works under its contract with recorded evidence. A healthy endpoint, plausible assistant answer, stub bridge or a proposed next step does not substitute for that result.

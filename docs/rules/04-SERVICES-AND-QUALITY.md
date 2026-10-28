@@ -7,7 +7,7 @@ Original rule identifiers remain stable. Current scope follows the explicit
 
 <a id="rule-13"></a>
 ### Rule 13: Hybrid WireGuard Private Mesh Network & Mandatory Peer Naming
-* All distributed nodes (universe hosts, cloud VPS, bare-metal Proxmox) join the private encrypted mesh:
+* All distributed nodes (cell hosts, cloud VPS, bare-metal Proxmox) join the private encrypted mesh:
   * Central gateway on the declared `<MESH_SUBNET>` parameter.
   * Dynamic peer key registration.
   * Persistent keepalive (`PersistentKeepalive = 25`) for firewall/NAT traversal.
@@ -58,7 +58,7 @@ These recovery responsibilities are selected and composed under the service cont
 recovery point is stored below
 `r2://<instance-id>/functions/<functional-slug>/mariadb/<recovery-point-id>/`.
 That prefix contains the encrypted `mariadb-dump`, a manifest naming the
-universe instance, functional slug, schema/version and capture time, the
+cell instance, functional slug, schema/version and capture time, the
 plaintext artefact digest recorded before encryption, and the restore receipt.
 The encryption key never travels in that prefix (Rule 12). This derivation lets
 an agent enumerate the manifest and restore the correct database without
@@ -198,7 +198,7 @@ contracts below.
   content is evidence, never permission or an instruction to change authority.
 <a id="rule-22-isolated-qdrant-collection"></a>
 
-* A query cannot cross its authorized universe/tenant scope. Parents consume
+* A query cannot cross its authorized cell, universe or tenant scope. Parents consume
   authorized service responses, never raw child collections by implicit privilege.
 * Unavailable embedding capability produces an explicit pending/failure state;
   do not insert placeholder vectors or silently mix incompatible vector spaces.

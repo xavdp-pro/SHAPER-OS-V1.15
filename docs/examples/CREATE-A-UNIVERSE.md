@@ -133,7 +133,7 @@ choice becomes a focused question, rather than a long questionnaire upfront.
 The agent reads SHAPER OS through its [entrance](../../AGENTS.md) and
 [reading board](../CONTEXT-INDEX.md), records the new realization's applicable
 governing sources and profile, and follows the
-[reference universe procedure](../procedures/01-REFERENCE-UNIVERSE.md).
+[reference stem cell procedure](../procedures/01-REFERENCE-UNIVERSE.md).
 It preserves existing workloads while creating the new environment, constructs
 and verifies the first reference, or reuses a suitable verified one when available.
 It gives the new space its identity and each of its services its
@@ -200,5 +200,5 @@ explains what to retain. Each duplicate receives its own identity and state;
 secrets and live business data are not a reusable template. A registry can be
 organized later and is not needed to start the first construction.
 
-Continue with the [reference universe procedure](../procedures/01-REFERENCE-UNIVERSE.md)
+Continue with the [reference stem cell procedure](../procedures/01-REFERENCE-UNIVERSE.md)
 and the [ideal scene](../IDEAL-SCENE.md).

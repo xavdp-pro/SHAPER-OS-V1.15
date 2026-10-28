@@ -39,7 +39,7 @@ and is never auto-dispatched (Rule 21).
 | `D0` | No model at all. Deterministic code. | Health probes, checksum verification, boot order |
 | `D1` | Literal transformation: extract, classify, format, follow an unambiguous step | Log tagging, field extraction, acknowledgment text |
 | `D2` | Procedural work: multi-step tool use, follow a written runbook, fix a failure whose cause is already stated, write a test from a template | Standard deployment, routine component operation |
-| `D3` | Derivation: infer the action from principles, resolve conflicting evidence, plan across a whole universe, decide what proof is sufficient | Clean-sheet TEST, incident diagnosis, parent-side repair |
+| `D3` | Derivation: infer the action from principles, resolve conflicting evidence, plan across a whole cell or universe, decide what proof is sufficient | Clean-sheet TEST, incident diagnosis, parent-side repair |
 | `D4` | Architecture: change the law or the intent, design taxonomy, decide cross-universe promotion | Doctrine work — **human co-signature required**, under the [governing authority and scope contract](../GOVERNING-CORPUS.md#authority-and-ownership) |
 
 `D4` is never dispatched autonomously, whatever the engine's capability.
@@ -65,7 +65,7 @@ their raw capability does.
 | :--- | :--- | :--- |
 | `H0` | Nothing but its own input | Classification, extraction, acknowledgment |
 | `H1` | The current session | A conversation, a deployment run |
-| `H2` | The state of this universe | Diagnosis, repair, a decision about this system |
+| `H2` | The state of this cell or universe | Diagnosis, repair, a decision about this system |
 | `H3` | The operator's accumulated usage — months of prior exchanges | Advice about direction, recognising a pattern the operator has lived through |
 
 This axis exists because of an asymmetry the operator meets daily, not because of
@@ -128,7 +128,7 @@ In the component's `INTENT.md`:
 ```
 
 In `manifest.json`, per component (optional, overrides the component default for this
-universe only — [Rule 33](../../RULES.md): specialize by declaration before forking):
+cell only — [Rule 33](../../RULES.md): specialize by declaration before forking):
 
 ```json
 "bricks": {
@@ -138,7 +138,7 @@ universe only — [Rule 33](../../RULES.md): specialize by declaration before fo
     "package": "@shaper/pkg-queue",
     "image": "img-queue",
     "intent": "./bricks/brick-queue/INTENT.md",
-    "role": "Async work ledger for this universe",
+    "role": "Async work ledger for this cell",
     "cognition": {
       "capacityClass": "infra-ops",
       "depth": "D2",

@@ -28,14 +28,14 @@ which they can shape systems suited to reality. The principal agent must know
 the whole SHAPER frame and its interdependencies well enough to explain,
 specialize, test and revise a realization with the human.
 
-This foundation serves both construction of universes and their units and ongoing
+This foundation serves both construction of universes, their cells and their units, and ongoing
 development in an existing project that explicitly adopts it as a governing
 standard. [LAW owns adoption and scope](LAW.md#two-uses-and-explicit-adoption):
 applicable obligations are binding, while adoption alone does not authorize a
 project-wide architectural transformation.
 
-The practical aim is reliable creation, deployment and management of agents and
-universes at scale, including fractal compositions. Shared principles support
+The practical aim is reliable creation, deployment and management of agents,
+cells and universes at scale, including fractal compositions. Shared principles support
 creative initiative: responsibilities and relationships stay understandable while
 methods and implementations evolve. Repeatable
 controls reduce dependence on uninterrupted human vigilance without taking away

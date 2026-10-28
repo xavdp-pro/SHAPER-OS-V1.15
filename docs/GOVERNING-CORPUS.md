@@ -25,6 +25,7 @@ record the result before the action that depends on it.
 
 The current construction directions are local:
 
+- [Rules and contracts vocabulary](../decisions/2026-10-28-RULES-AND-CONTRACTS-VOCABULARY.md).
 - [Technical and client vocabulary](../decisions/2026-10-27-TECHNICAL-AND-CLIENT-VOCABULARY.md).
 - [Prevention of agentic overzealousness](../decisions/2026-10-16-PREVENTION-OF-AGENTIC-OVERZEALOUSNESS.md).
 - [Intentional recipes and ideal scenes](../decisions/2026-10-07-INTENTIONAL-RECIPES.md).
@@ -58,7 +59,7 @@ The architecture is defined locally by [perimeters](architecture/PERIMETERS.md),
 [fleet](architecture/FLEET.md). These explain authority, placement and relations,
 not a pre-existing infrastructure the reader must find.
 
-For the reference universe, read each unit's contract:
+For the reference stem cell, read each unit's contract:
 [Vault](contracts/vault.md), [Logger](contracts/logger.md),
 [Queue](contracts/queue.md), [Maestro](contracts/maestro.md), the
 [generic cognition bridge](intents/cognition-bridge.md), its
@@ -100,7 +101,7 @@ that satisfy the local obligations. An absent build recipe, internal schema or
 implementation is work to do. An unknown authority or business policy is a
 specific decision gap; resolve it before its dependent action while continuing
 independent authorized work. Do not demand unrelated production credentials for
-a DEV build or decide cross-jurisdiction policy for an isolated base universe.
+a DEV build or decide cross-jurisdiction policy for an isolated base cell.
 
 Existing realizations carry their own versioned composition, implementation and
 operating records. Inspect those when acting on such a system. Documentation

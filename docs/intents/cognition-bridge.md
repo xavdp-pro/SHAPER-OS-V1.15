@@ -105,7 +105,7 @@ The tandem prepares a bounded, identifiable context package:
 
 | Element | What it establishes |
 | :--- | :--- |
-| Universe and identity | Which universe, functional unit, human owner and jurisdiction this agent serves. |
+| Universe, cell and identity | Which universe, cell, functional unit, human owner and jurisdiction this agent serves. |
 | Mission and role | The meaningful outcome, responsibilities, allowed initiative and completion conditions. |
 | Resources and tools | Authorized data, documents, workspaces, services, credentials by reference, and usable actions. |
 | Relationships | Providers, consumers, other units, controlled exchanges and dependency owners. |

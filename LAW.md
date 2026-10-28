@@ -13,7 +13,7 @@ bodies in every part retain their binding force.
 
 ## Two uses and explicit adoption
 
-SHAPER OS supports both constructing universes and their units, and governing
+SHAPER OS supports both constructing universes, their cells and their units, and governing
 development within an existing project.
 
 Reading or receiving this corpus alone does not authorize converting a project
@@ -31,8 +31,8 @@ follows from the actual subject and scope; it is not an exemption chosen for
 convenience.
 
 Adopting the development standard does not, by itself, declare every project
-component to be a universe or functional unit. Conversely, an existing component
-declared as a SHAPER universe or unit retains its applicable architectural,
+component to be a universe, cell or functional unit. Conversely, an existing component
+declared as a SHAPER universe, cell or unit retains its applicable architectural,
 storage, lifecycle and proof obligations. A project-scoped adoption cannot
 silently waive them.
 

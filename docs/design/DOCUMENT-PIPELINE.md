@@ -15,7 +15,7 @@ can ask questions whose answers identify the exact permitted source version.
   uncertainty and provenance; the hub does not perform that analysis.
 - A semantic retrieval function splits the approved content into meaningful
   chunks, obtains embeddings and maintains a derived searchable index.
-- These functions can share one document-universe maintenance perimeter while
+- These functions can share one document cell's maintenance perimeter while
   retaining separate responsibilities and private state.
 - A control cockpit calls their authorized interfaces; it does not absorb their
   storage, analysis or vector engine into its own maintenance perimeter.

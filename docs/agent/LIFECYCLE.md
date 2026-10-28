@@ -13,7 +13,7 @@ or restore a consistent recovery point explicitly. Source products and private
 
 > **Intent Classification**: GENERIC INTENT (Universal / Parameterized Blueprint)
 
-DEV, TEST and PROD are separate universe instances and data scopes. A local first build is DEV; a public console or successful model reply does not make it production.
+DEV, TEST and PROD are separate cell instances and data scopes. A local first build is DEV; a public console or successful model reply does not make it production.
 
 For the human and agent context of useful staged handover, read
 [Prevention of Agentic Overzealousness](../human/PREVENTION-OF-AGENTIC-OVERZEALOUSNESS.md).

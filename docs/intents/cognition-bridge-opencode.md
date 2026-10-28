@@ -1,7 +1,7 @@
 # Realization intent — OpenCode cognition bridge
 
 > **Intent Classification**: GENERIC INTENT (Universal / Parameterized Blueprint)
-> **Scope**: Reusable OpenCode adapter profile; concrete universe bindings belong to its realization.
+> **Scope**: Reusable OpenCode adapter profile; concrete cell bindings belong to its realization.
 
 Identifier: **REALIZATION-BRIDGE-OPENCODE**.
 Status: **[TARGET]** adapter contract applying the

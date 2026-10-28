@@ -5,10 +5,10 @@
 ## 1. Declarative Objective
 
 The hand of a machine. It asks its **governor** what should exist on
-its host, stamps universes from matrices, reports what happened, and goes
-back to asking. A governor is whatever universe holds the ledger it serves —
+its host, stamps cell instances from matrices, reports what happened, and goes
+back to asking. A governor is whatever cell holds the ledger it serves —
 a demo SaaS today, a fractal manager tomorrow: the maker learns nothing about
-which, it reads where to ask. For automated fleet lifecycle work, it is the actor that can create a child universe that does not yet exist; it operates at the parent/host level, never inside the child it must create, and holds the authorized host capability. A human–constructor tandem may bootstrap an isolated first universe directly on its authorized host before a governor or maker exists. The tandem creates these organs when the intended automation needs them; they are not prerequisites for first construction. It is a robot: it does not decide, it does not interpret,
+which, it reads where to ask. For automated fleet lifecycle work, it is the actor that can create a child cell instance that does not yet exist; it operates at the parent/host level, never inside the child it must create, and holds the authorized host capability. A human–constructor tandem may bootstrap an isolated first cell directly on its authorized host before a governor or maker exists. The tandem creates these organs when the intended automation needs them; they are not prerequisites for first construction. It is a robot: it does not decide, it does not interpret,
 it does not improvise.
 
 ## 2. Invariants
@@ -48,7 +48,7 @@ it does not improvise.
    as a digest: the thing itself, never the name given to it.
 6. **It declares what it holds.** At every poll it states its host, its
    version, its lanes and the matrices it actually carries with their
-   digests. A universe is never assigned to a machine that has not proven it
+   digests. An instance is never assigned to a machine that has not proven it
    holds the bytes.
 7. **It is created and enrolled by the tandem, and never enrols itself.** A
    human and their agent — root on the system, coming in from underneath —
@@ -68,7 +68,7 @@ it does not improvise.
    birth: an end is proven by the recipe's exit code (absence verified, or
    not), a birth only by the facts it looked at.
 11. **A refusal is reported under its own name.** A recipe may refuse — an
-   unverified matrix, an absent one, a production universe asked to end —
+   unverified matrix, an absent one, a production instance asked to end —
    and says so by its exit code. The reap’s refusal has a name of
    its own (exit 4 → `REAP_REFUSED`), because it is the one the governor
    would otherwise offer again at every beat: a refused end retried forever

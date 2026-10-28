@@ -7,7 +7,7 @@ Original rule identifiers remain stable. Current scope follows the explicit
 
 <a id="rule-6"></a>
 ### Rule 6: Targeted Agent Bootstrapping (Token Optimization & Zero Idle Waste)
-* Every AI agent is bootstrapped with an isolated, targeted context file (`ctx-universe.md`).
+* Every AI agent is bootstrapped with an isolated, targeted context file (`ctx-universe.md`, a name kept from earlier editions: it describes the agent's cell and names its universe).
 * Never re-inject entire system rulebooks into execution prompts; send the prepared role-specific context, current deltas/instruction and action evidence needed for that execution. Reconstruct missing continuity before action.
 * Leverage prompt caching, local deterministic idempotence checkpoints in the owning unit’s durable database, and zero token consumption when idle.
 
@@ -67,19 +67,19 @@ Original rule identifiers remain stable. Current scope follows the explicit
        performant than another measured engine is discarded — that is a fact,
        not a policy. What remains is the frontier, where every choice is
        legitimate.
-    3. **The universe declares its cursor** (`enginePolicy` in its manifest;
+    3. **The cell declares its cursor** (`enginePolicy` in its manifest;
        absent means `frugal`):
        `frugal` — the cheapest engine on the frontier. Dominance makes it
        automatically the fastest of the cheapest, so free-tier ties resolve
        to measured speed, as before.
-       `swift` — the most performant engine on the frontier; for voice and
-       real-time universes, where a slow engine is useless at any price.
+       `swift` — the most performant engine on the frontier; for voice or
+       real-time cells, where a slow engine is useless at any price.
        `budget: <max cost per task>` — the most performant engine under a
        ceiling the operator declares. The number comes from the operator,
        never from this canon: a weighting constant invented here would be an
        unmeasured figure, and Rule 10 forbids those.
     **The probe is the contract.** An engine is measured on the shape of the
-    work the universe will ask of it — for the base, write-a-file-then-reply,
+    work the cell will ask of it — for the base, write-a-file-then-reply,
     never a bare echo: an engine has passed the ping and then hung on the
     real task, answering generic text once stopped .
     Performance is **measured from the target host** — correctness on a
@@ -127,7 +127,7 @@ A cognition bridge additionally obeys [bridge status](../../docs/contracts/bridg
 <a id="rule-10"></a>
 ### Rule 10: DEV, TEST, PROD and Three Recovery Clocks
 
-Every universe keeps three decoupled lifecycle environments:
+Every cell keeps three decoupled lifecycle environments:
 
 1. `<slug>-dev`: authorized construction and prompt tuning, in its separate workspace and data scope.
 2. `<slug>-test`: a blank isolated instance under its selected hosting profile, actual functional Podman units, appropriate mesh attachment when distributed, Vault injection and the full applicable test suite. Rebuild all images from source without inherited cache; pulling an existing image cannot prove a clean build.
@@ -147,9 +147,10 @@ Security is designed from the outset; implement functional/perimeter necessities
 <a id="rule-11"></a>
 ### Rule 11: Declared Containment and Recovery Integrity
 
-* A logical space/universe organizes services. Existing `univ-*` profiles retain
-  their declared operational-composition role through an explicit compatibility
-  mapping; neither usage requires an outer physical container. Each functional
+* A universe (logical space) organizes cells (services). Existing `univ-*`
+  profiles retain their declared operational-composition role, usually one
+  specialized cell, through an explicit compatibility mapping; neither usage
+  requires an outer physical container. Each functional
   component runs in its own Podman application boundary with its private MariaDB.
   No Docker runtime, installer or shared Docker image/network/store path is adopted.
 * A class declares its hosting profile: `shape: direct` uses functional Podman
@@ -173,13 +174,13 @@ Security is designed from the outset; implement functional/perimeter necessities
   runtime backend, mounts, networking and private environment configuration.
   They retain the same class, application-state and production-promotion contracts.
 
-* A universe-management tool such as PodMesh is optional and grants no authority. If selected, the maker's typed recipe invokes its declared operations and verifies effects from outside. Its per-host node and active manager are distinct from the governor and maker; the active manager holds a current externally issued activation lease/epoch. Qualify only the operations actually used.
+* A placement and recovery tool such as PodMesh is optional and grants no authority. If selected, the maker's typed recipe invokes its declared operations and verifies effects from outside. PodMesh keeps the name `universe` for the runtime unit it places, moves and captures; the realization declares what that unit contains: functional units, a cell instance, or the cells of a universe given shared storage. Its per-host node and active manager are distinct from the governor and maker; the active manager holds a current externally issued activation lease/epoch. Qualify only the operations actually used.
 * First boot prepares the selected Linux runtime boundary and, where present, updates its system-container OS and installs the declared packages, shell configuration and host modules. The realization supplies this recipe; no skeleton files are assumed to ship with the OS documentation.
 
 <a id="rule-11-nftables-inside-the-universe"></a>
-* Inner Podman networking requires its firewall dependencies, including `nftables` for netavark. Install and prove them inside the universe rather than relying on a host inventory.
+* Inner Podman networking requires its firewall dependencies, including `nftables` for netavark. Install and prove them inside the cell rather than relying on a host inventory.
 <a id="rule-11-declared-outbound-connectivity"></a>
-* Required network connectivity is part of universe construction. The constructor declares each functional unit's network dependencies and establishes the name resolution and outbound connectivity they require, across the selected containment boundaries. The mechanism belongs to the substrate-specific recipe; no particular routing, translation or proxy mechanism is universally required. Record the configuration in the versioned recipe and manifest so it is reproduced without manual steps on creation, recreation and restoration. Verify actual dependency access from inside each dependent functional unit at those stages; a successful host-level check or temporary diagnostic path does not qualify the delivered path. A scope without external dependencies requires no outgoing Internet access. Resolve ordinary network implementation choices within the existing human mandate; identify host, hypervisor or site network changes outside that mandate before acting, without requesting approval again for already authorized work.
+* Required network connectivity is part of cell construction. The constructor declares each functional unit's network dependencies and establishes the name resolution and outbound connectivity they require, across the selected containment boundaries. The mechanism belongs to the substrate-specific recipe; no particular routing, translation or proxy mechanism is universally required. Record the configuration in the versioned recipe and manifest so it is reproduced without manual steps on creation, recreation and restoration. Verify actual dependency access from inside each dependent functional unit at those stages; a successful host-level check or temporary diagnostic path does not qualify the delivered path. A scope without external dependencies requires no outgoing Internet access. Resolve ordinary network implementation choices within the existing human mandate; identify host, hypervisor or site network changes outside that mandate before acting, without requesting approval again for already authorized work.
 <a id="rule-11-read-profiles-with-config-show"></a>
 * Read actual applied LXC configuration (`lxc config show`, profile configuration or `pct config`); an information command that omits the profile cannot validate it.
 <a id="rule-11-nesting-needs-a-restart"></a>
@@ -188,7 +189,7 @@ Security is designed from the outset; implement functional/perimeter necessities
 * Compare declared listening ports with actual sockets before deployment. Distinguish the owned component being replaced from a foreign holder. Identify a conflict and its owner; do not silently pick another port or stop an unrelated service. A shared network namespace, if chosen, is confined to the declared composition and preserves its functional isolation and authorized crossings. Every functional unit's MariaDB remains private, using its own socket/network boundary; do not expose several databases on one shared localhost port.
 
 <a id="rule-11-what-is-restored"></a>
-* Restorable identity consists of `manifest.json`, `cfg-image-lock.json` and declared volumes. Images are rebuilt from pinned source or pulled by digest, never treated as backup state. Complete restoration with the universe's own acceptance proof.
+* Restorable identity consists of `manifest.json`, `cfg-image-lock.json` and declared volumes. Images are rebuilt from pinned source or pulled by digest, never treated as backup state. Complete restoration with the cell's own acceptance proof.
 <a id="rule-11-a-brick-is-rebuilt-not-repaired"></a>
 * Four operations remain distinct: **CORRECT** fixes a known error in controlled source; **REPAIR** restores non-reproducible database/volume state; **REBUILD** recreates reproducible runtime from a known-good image; **QUARANTINE** removes suspect runtime from service while retaining evidence. An in-place cleanup does not re-establish trust.
 * Close the cause before rebuilding a compromised component. Incident order is: notice suspicion, reduce/freeze privileges, capture evidence, quarantine, identify cause, correct source, rebuild, test, obtain a counter-view, restore service, observe, deliberately retire/archive the old instance. This is distinct from DEV → TEST → PROD. Quarantine is a trust condition, not a fourth environment; a suspect instance never returns unchanged.

@@ -15,7 +15,7 @@ A `<scope>-fleet` repository contains `fleet.yml`: the map of pinned reusable de
 
 `kinds` declares `direct`, `proxmox`, `lxd`, `liblxc` or `nested`, at most one selected family per shape. Direct hosting supplies functional Podman containers on a compatible Linux runtime; the next three supply LXC, and nested supplies an outer Podman boundary. A machine may offer several shapes. The maker selects the qualified matching recipe. Class/specialization versions and logical instance identity remain distinct from placement. Existing fleet schema revisions retain their declared supported values; a new direct profile has its explicit versioned schema and recipes before use.
 
-If a registry is used, its address must be reachable from **inside** the consuming universe, not merely relative to the host. The agent records the actual parameter and never invents one. First construction needs no catalogue or registry; create and pin the generated realization before TEST/PROD promotion. Recommend registry-backed reuse afterward.
+If a registry is used, its address must be reachable from **inside** the consuming cell, not merely relative to the host. The agent records the actual parameter and never invents one. First construction needs no catalogue or registry; create and pin the generated realization before TEST/PROD promotion. Recommend registry-backed reuse afterward.
 
 ## Map laws
 

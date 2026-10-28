@@ -24,10 +24,11 @@
 **A designer or deployment agent** follows [AGENTS.md](../../AGENTS.md) and its
 required reading. This contract does not shorten or replace the canon.
 
-**A runtime agent** receives the universe's
-`ctx-universe.md` generated in the realization,
+**A runtime agent** receives its cell's
+`ctx-universe.md` generated in the realization (the file keeps its earlier
+name; it describes the agent's cell and names its universe),
 its current task and the capabilities actually attached to its harness. The
-designer derives this scoped material from this local framework and the universe intent.
+designer derives this scoped material from this local framework and the cell's intent.
 Do not load unrelated tenants, credentials or the whole archive into every run.
 
 ## What must survive changing engines
@@ -35,7 +36,7 @@ Do not load unrelated tenants, credentials or the whole archive into every run.
 | Surface | Required information | Owner |
 | --- | --- | --- |
 | Task | Objective, perimeter, finish line, proof reference | Human / authorised caller |
-| Context | Universe identity, relevant decisions, tool map, recovery references | Universe designer / operator |
+| Context | Universe and cell identity, relevant decisions, tool map, recovery references | Cell designer / operator |
 | Execution | Job id, conversation and run ids, observed state, error or outcome | Queue and selected bridge |
 | Handoff | Completed actions, uncertain effects, artefact references, next safe step | Operator with job and audit evidence |
 | Permissions | Effective filesystem, network and tool grants | Harness / infrastructure |
