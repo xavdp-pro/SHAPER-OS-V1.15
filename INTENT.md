@@ -153,7 +153,14 @@ to reality without making their incidental technologies universal law.
 The existing MariaDB/Podman decisions are preserved in the
 [September target profile](docs/profiles/SEPTEMBER-CONTAINER-MARIADB.md).
 Its applicability is explicit; it cannot be opted out of by an agent choosing
-another engine. The local laws and contracts state its current obligations.
+another engine. The local laws and contracts state its current obligations,
+including **Pure Membrane containment** (when an outer `lxc` or `nested`
+system container acts as the cell membrane hosting inner functional Podman
+organite containers, zero application runtimes, web servers or MariaDB
+instances may ever be installed directly in the outer membrane, preserving
+inter-organite security), **Engine (`*-engine`) vs optional Web Surface
+(`*-web`) organite separation**, and the **canonical Shaper React web mold
+(`univ-webapp-core`)** for human web interface organites.
 
 ## Why implementation remains replaceable
 

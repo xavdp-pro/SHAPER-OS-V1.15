@@ -31,7 +31,16 @@ For Linux, macOS or Windows development, declare the compatible Linux runtime
 backend and environment-specific mounts, networking, storage and private config.
 The same class, interfaces and state owners continue into production through
 versioned builds, locked artifacts or coherent restoration. [Rule 11](../../RULES.md#rule-11)
-owns containment; no logical nesting requires automatic physical nesting.
+owns containment; no logical nesting requires automatic physical nesting. When
+an outer `lxc` or `nested` system container acts as the cell membrane hosting
+inner functional Podman organites, the outer membrane stays 100% pure (zero
+host-level `node`, `mariadbd`, web UI or business daemon installed in the
+membrane OS, and zero leftover `.tar` build archives) to preserve inter-organite
+security ([`rule-11-pure-membrane-inter-organite-security`](../../RULES.md#rule-11-pure-membrane-inter-organite-security)).
+Domain capabilities split into a mandatory headless engine organite (`*-engine`)
+and an optional human web surface organite (`*-web`) built on the canonical
+Shaper React web mold (`univ-webapp-core`) inside its own functional Podman
+container ([`rule-11-engine-web-organite-separation`](../../RULES.md#rule-11-engine-web-organite-separation)).
 
 ## Preserved choices
 

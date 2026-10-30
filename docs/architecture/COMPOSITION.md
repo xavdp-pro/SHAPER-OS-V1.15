@@ -47,6 +47,14 @@ OS specifies intentions and laws. Runtime enforces permissions and performs
 stateful effects. Workspace presents and requests permitted work. These three
 responsibilities cross the composition scales; they are not three container
 levels. P1/P2/P3 remain functional [perimeters](PERIMETERS.md), another axis.
+When a cell is hosted inside an outer `lxc` or `nested` membrane container
+([Rule 11](../../RULES.md#rule-11-pure-membrane-inter-organite-security)), that
+outer membrane remains strictly pure (zero direct application, web or database
+processes in the membrane OS) so inter-organite namespace security is never
+bypassed. Domain services separate their mandatory headless engine organite
+(`*-engine`) from their optional human web surface organite (`*-web`), and web
+surface organites use the reusable Shaper React web mold (`univ-webapp-core`)
+inside their own functional Podman boundary ([Rule 11](../../RULES.md#rule-11-engine-web-organite-separation)).
 
 ## Class, specialization and instance
 

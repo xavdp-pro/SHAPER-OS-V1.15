@@ -268,6 +268,12 @@ Read [the complete rule](docs/rules/03-EXECUTION-AND-CONTAINMENT.md#rule-11).
 <a id="rule-11-a-brick-runs-as-its-own-class-not-root"></a>
 [Complete provision: `rule-11-a-brick-runs-as-its-own-class-not-root`](docs/rules/03-EXECUTION-AND-CONTAINMENT.md#rule-11-a-brick-runs-as-its-own-class-not-root).
 
+<a id="rule-11-pure-membrane-inter-organite-security"></a>
+[Complete provision: `rule-11-pure-membrane-inter-organite-security`](docs/rules/03-EXECUTION-AND-CONTAINMENT.md#rule-11-pure-membrane-inter-organite-security).
+
+<a id="rule-11-engine-web-organite-separation"></a>
+[Complete provision: `rule-11-engine-web-organite-separation`](docs/rules/03-EXECUTION-AND-CONTAINMENT.md#rule-11-engine-web-organite-separation).
+
 <a id="rule-12"></a>
 ### Rule 12: Secure Archive Distribution & Cold Recovery
 
